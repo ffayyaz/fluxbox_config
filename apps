@@ -7,14 +7,17 @@
 [group] (workspace)
   [app] (urxvt)
     [Dimensions]    {485 340}
+    [Position]      {TOPLEFT} {0 0}
 [end]
 
 # group chromium instances in one workspace
 [group] (workspace)
   [app] (Chromium)
+    [Position]      {TOPLEFT} {0 0}
 [end]
 
 # group iceweasel instances in one workspace
 [group] (workspace)
   [app] (Navigator)
+    [Position]      {TOPLEFT} {0 0}
 [end]
