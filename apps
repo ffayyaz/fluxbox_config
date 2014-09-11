@@ -3,6 +3,13 @@
   [Layer]	{2}
 [end]
 
+# force skype to be started in workspace 4 (DOES NOT WORK)
+[app] (Skype)
+    [Workspace]     {3}
+    [Jump]          {true}
+    [Position]      {BOTTOMLEFT} {0 0}
+[end]
+
 # group urxvt instances in one workspace
 [group] (workspace)
   [app] (urxvt)
