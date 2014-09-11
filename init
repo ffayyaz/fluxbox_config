@@ -27,7 +27,7 @@ session.screen0.toolbar.alpha:	255
 session.screen0.toolbar.maxOver:	false
 session.screen0.toolbar.tools:	prevworkspace, workspacename, nextworkspace, prevwindow, nextwindow, iconbar, clock, systemtray
 session.screen0.toolbar.layer:	Dock
-session.screen0.iconbar.mode:	{static groups}
+session.screen0.iconbar.mode:	{static groups} (workspace)
 session.screen0.iconbar.usePixmap:	true
 session.screen0.iconbar.iconWidth:	128
 session.screen0.iconbar.iconTextPadding:	10
