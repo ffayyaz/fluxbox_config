@@ -3,7 +3,7 @@
   [Layer]	{2}
 [end]
 
-# force skype to be started in workspace 4 (DOES NOT WORK)
+# force skype to be started in workspace 4
 [app] (Skype)
     [Workspace]     {3}
     [Jump]          {true}
@@ -21,10 +21,17 @@
 [group] (workspace)
   [app] (Chromium)
     [Position]      {TOPLEFT} {0 0}
+    [Maximized]     {yes}
 [end]
 
 # group iceweasel instances in one workspace
 [group] (workspace)
   [app] (Navigator)
     [Position]      {TOPLEFT} {0 0}
+    [Maximized]     {yes}
 [end]
+
+# test
+# [app] (xterm)
+    # [Close]         {true}
+# [end]
