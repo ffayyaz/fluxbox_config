@@ -2,3 +2,19 @@
   [Position]	(WINCENTER)	{0 0}
   [Layer]	{2}
 [end]
+
+# group urxvt instances in one workspace
+[group] (workspace)
+  [app] (urxvt)
+    [Dimensions]    {485 340}
+[end]
+
+# group chromium instances in one workspace
+[group] (workspace)
+  [app] (Chromium)
+[end]
+
+# group iceweasel instances in one workspace
+[group] (workspace)
+  [app] (Navigator)
+[end]
