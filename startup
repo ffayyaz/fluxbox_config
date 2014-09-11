@@ -44,29 +44,13 @@ if [ "${?}" = "0" ]; then
 	xchat &
 fi
 
-# # Autostart Bizz
-# /sbin/ifconfig|egrep '192.108.234.118'
-# if [ "${?}" = "0" ]; then
-# 	#truecrypt /data/bizz #TODO only root can do this
-  # skype &
-  # firefox &
-  # chromium &
-  # icedove &
-  # #opera-next & # crashes
- # 	eclipse &
-# 	#netbeans &
-  # sqldeveloper &
-# 	#lilexterm all
-# fi
-
 # Autostart anyway
 xrdb -load ~/.Xresources
 urxvt &
 urxvt &
 gnome-terminal &
-#gkrellm -w & # does not work since the toolbar/taskbar is on top
-# gkrellm -g +1720+20 &
 gkrellm -w &
+conky -dq &
 
 # END AUTOSTART -----------------------------------------------------------
 
