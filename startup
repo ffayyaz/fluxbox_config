@@ -50,7 +50,7 @@ urxvt &
 urxvt &
 gnome-terminal &
 gkrellm -w &
-conky -dq &
+# conky -dq &
 
 # END AUTOSTART -----------------------------------------------------------
 
