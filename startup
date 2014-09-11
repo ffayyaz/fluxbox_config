@@ -62,7 +62,8 @@ urxvt &
 urxvt &
 gnome-terminal &
 #gkrellm -w & # does not work since the toolbar/taskbar is on top
-gkrellm -g +1720+20 &
+# gkrellm -g +1720+20 &
+gkrellm -w
 
 # END AUTOSTART -----------------------------------------------------------
 
