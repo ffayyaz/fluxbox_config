@@ -1,44 +1,58 @@
 [app] (name=fbrun)
-  [Position]	(WINCENTER)	{0 0}
-  [Layer]	{2}
+  [Position]  (WINCENTER) {0 0}
+  [Layer] {2}
 [end]
 
-# force skype to be started in workspace 4
-[app] (Skype)
-    [Workspace]     {3}
-    [Jump]          {true}
-    [Position]      {BOTTOMLEFT} {0 0}
+# group and position chat programs in all workspaces
+[group] 
+  [app] (wync)
+  [app] (skype)
+    [Dimensions]    {100% 50%}
+    [Position]      (BOTTOMLEFT) {0 0}
+    [Sticky]        {true}
+    # [Workspace]    {0}
+    # [Jump]          {true}
 [end]
 
 # group urxvt instances in one workspace
 [group] (workspace)
   [app] (urxvt)
-    [Dimensions]    {485 340}
-    [Position]      {TOPLEFT} {0 0}
-    [Deco]          {NORMAL}
+    [Dimensions]    {30% 50%}
+    [Position]      (TOPLEFT) {0 0}
 [end]
 
-# group wync instances in one workspace
-[group] (workspace)
-  [app] (Wync)
-    [Position]      {BOTTOMRIGHT} {0 0}
+# position gnome-terminal
+[app] (gnome-terminal-server)
+  [Dimensions]    {64% 50%}
+  [Position]      (TOPRIGHT) {6% 0}
 [end]
 
 # group chromium instances in one workspace
 [group] (workspace)
-  [app] (Chromium)
-    [Position]      {TOPLEFT} {0 0}
-    [Maximized]     {yes}
+  [app] (name=Chromium) (class=Chromium)
+    [Dimensions]    {100% 100%}
+    [Position]      (TOPRIGHT) {0 0}
 [end]
 
 # group iceweasel instances in one workspace
 [group] (workspace)
+  # [app] (name=Iceweasel) (class=Navigator)
   [app] (Navigator)
-    [Position]      {TOPLEFT} {0 0}
-    [Maximized]     {yes}
+    [Dimensions]    {100% 100%}
+    [Position]      (TOPRIGHT) {0 0}
 [end]
 
-# test
-# [app] (xterm)
-    # [Close]         {true}
+# # group opera instances in one workspace
+# [group] (workspace)
+  # [app] (name=opera) (class=Opera)
+  # # [app] (opera)
+    # [Dimensions]    {100% 100%}
+    # [Position]      (TOPRIGHT) {0 0}
 # [end]
+
+# position icedove mail
+# [app] (name=Mail) (class=Icedove)
+[app] (name=Mail)
+  [Dimensions]    {100% 100%}
+  [Position]      (TOPRIGHT) {0 0}
+[end]
