@@ -4,6 +4,9 @@
 #
 # Lines starting with a '#' are ignored.
 
+# set black background forcibly (maybe overlay is not needed anymore)
+/usr/bin/fbsetroot -solid black
+
 # Change your keymap:
 xmodmap "/home/fafa/.Xmodmap"
 
