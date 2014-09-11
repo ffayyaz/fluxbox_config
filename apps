@@ -15,6 +15,7 @@
   [app] (urxvt)
     [Dimensions]    {485 340}
     [Position]      {TOPLEFT} {0 0}
+    [Deco]          {NORMAL}
 [end]
 
 # group wync instances in one workspace
