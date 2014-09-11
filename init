@@ -1,6 +1,5 @@
 ! session.screen0.rootCommand: fbsetbg ~/.fluxbox/wallpaper/black.jpg
 ! session.screen1.rootCommand: fbsetbg ~/.fluxbox/wallpaper/red.jpg
-
 session.screen0.titlebar.left:	Stick 
 session.screen0.titlebar.right:	Minimize Maximize Close 
 session.screen0.slit.alpha:	255
