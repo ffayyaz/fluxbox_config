@@ -17,6 +17,12 @@
     [Position]      {TOPLEFT} {0 0}
 [end]
 
+# group wync instances in one workspace
+[group] (workspace)
+  [app] (Wync)
+    [Position]      {BOTTOMRIGHT} {0 0}
+[end]
+
 # group chromium instances in one workspace
 [group] (workspace)
   [app] (Chromium)
