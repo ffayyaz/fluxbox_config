@@ -27,12 +27,6 @@
   [Position]      (TOPRIGHT) {0 0}
 [end]
 
-# position xchat
-[app] (xchat)
-  [Dimensions]    {70% 50%}
-  [Position]      (TOPRIGHT) {0 0}
-[end]
-
 # group chromium instances in one workspace
 [group] (workspace)
   [app] (name=Chromium) (class=Chromium)
