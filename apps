@@ -70,5 +70,5 @@
     [Workspace]         {0}
     [Jump]              {yes}
     [Position]          (TOPRIGHT) {0 0}
-    [Fullscreen]        {yes}
+    # [Fullscreen]        {yes}
 [end]
