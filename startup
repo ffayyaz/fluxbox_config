@@ -49,6 +49,7 @@ xrdb -load ~/.Xresources
 urxvt &
 urxvt &
 gnome-terminal &
+xscreensaver&
 gkrellm -w &
 # conky -dq &
 
