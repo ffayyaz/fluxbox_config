@@ -85,6 +85,9 @@ Mod1 117 :Exec amixer sset Master 10%-
 #160 :Exec amixer sset Master,0 toggle
 Mod1 115 :Exec amixer sset Master,0 toggle
 
+# lock screen
+Mod4 115 :Exec xscreensaver-command -lock 
+
 # current window commands
 Mod1 F4 :Close
 #Mod1 F5 :Kill
