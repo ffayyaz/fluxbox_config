@@ -42,7 +42,7 @@ session.screen0.clickRaises:	true
 session.screen0.maxIgnoreIncrement:	true
 session.screen0.menuDelay:	0
 session.screen0.maxDisableMove:	false
-session.screen0.edgeSnapThreshold:	0
+session.screen0.edgeSnapThreshold:  10	
 session.screen0.workspaces:	4
 session.screen0.workspaceNames:	Default,Work,Doc,Playground
 session.screen0.noFocusWhileTypingDelay:	0
