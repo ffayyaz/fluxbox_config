@@ -1,58 +1,65 @@
 [app] (name=fbrun)
-  [Position]  (WINCENTER) {0 0}
-  [Layer] {2}
+    [Position]          (WINCENTER) {0 0}
+    [Layer]             {2}
 [end]
 
 # group and position chat programs in all workspaces
 [group] 
-  [app] (wync)
-  [app] (skype)
-    [Dimensions]    {100% 50%}
-    [Position]      (BOTTOMLEFT) {0 0}
-    [Sticky]        {true}
-    # [Workspace]    {0}
-    # [Jump]          {true}
+    [app] (wync)
+    [app] (skype)
+        [Dimensions]    {100% 50%}
+        [Position]      (BOTTOMLEFT) {0 0}
+        [Sticky]        {true}
+        # [Workspace]     {0}
+        # [Jump]          {true}
 [end]
 
 # group urxvt instances in one workspace
 [group] (workspace)
-  [app] (urxvt)
-    [Dimensions]    {30% 50%}
-    [Position]      (TOPLEFT) {0 0}
+    [app] (urxvt) 
+        [Dimensions]    {30% 50%}
+        [Position]      (TOPLEFT) {0 0}
 [end]
 
 # position gnome-terminal
 [app] (gnome-terminal-server)
-  [Dimensions]    {70% 50%}
-  [Position]      (TOPRIGHT) {0 0}
+        [Dimensions]    {40% 50%}
+        [Position]      (TOPRIGHT) {0 0}
 [end]
 
 # group chromium instances in one workspace
 [group] (workspace)
-  [app] (name=Chromium) (class=Chromium)
-    [Dimensions]    {100% 100%}
-    [Position]      (TOPRIGHT) {0 0}
+    [app] (name=Chromium) (class=Chromium)
+        [Dimensions]    {99% 100%}
+        [Position]      (TOPLEFT) {0 0}
 [end]
 
 # group iceweasel instances in one workspace
 [group] (workspace)
-  # [app] (name=Iceweasel) (class=Navigator)
-  [app] (Navigator)
-    [Dimensions]    {100% 100%}
-    [Position]      (TOPRIGHT) {0 0}
+    [app] (name=Navigator) (class=Iceweasel)
+        [Dimensions]    {99% 100%}
+        [Position]      (TOPRIGHT) {0 0}
 [end]
 
 # # group opera instances in one workspace
 # [group] (workspace)
-  # [app] (name=opera) (class=Opera)
-  # # [app] (opera)
-    # [Dimensions]    {100% 100%}
-    # [Position]      (TOPRIGHT) {0 0}
+    # [app] (name=opera) (class=Opera)
+    # # [app] (opera)
+        # [Dimensions]    {99% 100%}
+        # [Position]      (TOPRIGHT) {0 0}
 # [end]
 
-# position icedove mail
+# # position icedove mail
 # [app] (name=Mail) (class=Icedove)
-[app] (name=Mail)
-  [Dimensions]    {100% 100%}
-  [Position]      (TOPRIGHT) {0 0}
+# [app] (name=Mail)
+    # [Dimensions]        {99% 100%}
+    # [Position]          (TOPRIGHT) {0 0}
+# [end]
+
+# position virtualbox and force it to be in workspace 1
+[app] (name=Qt-subapplication) (class=VirtualBox)
+    [Workspace]         {0}
+    [Jump]              {true}
+    [Position]          (TOPRIGHT) {0 0}
+    [Fullscreen]        {true}
 [end]
