@@ -31,7 +31,7 @@
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
         [Dimensions]    {99% 100%}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPRIGHT) {0 0}
 [end]
 
 # group iceweasel instances in one workspace
@@ -41,13 +41,19 @@
         [Position]      (TOPRIGHT) {0 0}
 [end]
 
-# # group opera instances in one workspace
-# [group] (workspace)
-    # [app] (name=opera) (class=Opera)
-    # # [app] (opera)
-        # [Dimensions]    {99% 100%}
-        # [Position]      (TOPRIGHT) {0 0}
-# [end]
+# group opera instances in one workspace
+[group] (workspace)
+    [app] (name=opera) (class=Opera)
+        [Dimensions]    {99% 100%}
+        [Position]      (TOPRIGHT) {0 0}
+[end]
+
+# group opera-next instances in one workspace
+[group] (workspace)
+    [app] (name=opera-next) (class=Opera-next)
+        [Dimensions]    {99% 100%}
+        [Position]      (TOPRIGHT) {0 0}
+[end]
 
 # # position icedove mail
 # [app] (name=Mail) (class=Icedove)
