@@ -28,6 +28,7 @@
         [Position]      (TOPLEFT) {0 0}
         [Sticky]        {yes}
         [Layer]         {12}
+        [IconHidden]    {yes}
 [end]
 
 # position gnome-terminal
