@@ -15,9 +15,11 @@
 # group urxvt instances in one workspace
 [group] (workspace)
     [app] (urxvt) 
-        [Dimensions]    {50% 50%}
+        # [Dimensions]    {50% 50%}
+        [Dimensions]    {94% 100%}
         [Position]      (TOPLEFT) {0 0}
         [Sticky]        {yes}
+        [Layer]         {12}
 [end]
 
 # position gnome-terminal
@@ -25,7 +27,7 @@
         [Dimensions]    {50% 50%}
         # [Position]      (TOPLEFT) {0 0}
         [Workspace]     {2}
-        [Jump]          {yes}
+        [Jump]          {no}
 [end]
 
 # group chromium instances in one workspace
