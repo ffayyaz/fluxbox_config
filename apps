@@ -15,6 +15,14 @@
 # group urxvt instances in one workspace
 [group] (workspace)
     [app] (urxvt) 
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {0 0}
+        [Sticky]        {yes}
+[end]
+
+# group xterm instances in one workspace
+[group] (workspace)
+    [app] (name=xterm) (class=XTerm)
         # [Dimensions]    {50% 50%}
         [Dimensions]    {94% 100%}
         [Position]      (TOPLEFT) {0 0}
