@@ -34,13 +34,16 @@ if [ "${?}" = "0" ]; then
 	skype &
 	firefox &
 	chromium &
-	#icedove &
+	icedove &
 	#opera-next & # crashes
 fi
 
 # Autostart Ganja only
 /sbin/ifconfig|egrep '192.168.85.10'
 if [ "${?}" = "0" ]; then
+	skype &
+	firefox &
+	chromium &
 	xchat &
 fi
 
@@ -50,7 +53,6 @@ urxvt &
 urxvt &
 gnome-terminal &
 gkrellm -w &
-# conky -dq &
 
 # END AUTOSTART -----------------------------------------------------------
 

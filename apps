@@ -7,68 +7,71 @@
 [group] 
     [app] (wync)
     [app] (skype)
-        [Dimensions]    {99% 50%}
-        # [Dimensions]    {50% 50%}
+        [Dimensions]    {100% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
         [Sticky]        {yes}
-        # [Workspace]     {0}
-        # [Jump]          {yes}
 [end]
 
 # group urxvt instances in one workspace
 [group] (workspace)
     [app] (urxvt) 
-        # [Dimensions]    {30% 50%}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
+        [Sticky]        {yes}
 [end]
 
 # position gnome-terminal
 [app] (gnome-terminal-server)
-        # [Dimensions]    {40% 50%}
         [Dimensions]    {50% 50%}
-        [Position]      (TOPRIGHT) {0 0}
+        # [Position]      (TOPLEFT) {0 0}
+        [Workspace]     {2}
+        [Jump]          {yes}
 [end]
 
 # group chromium instances in one workspace
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
-        [Dimensions]    {99% 99%}
-        [Position]      (TOPRIGHT) {0 0}
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
 [end]
 
 # group iceweasel instances in one workspace
 [group] (workspace)
     [app] (name=Navigator) (class=Iceweasel)
-        [Dimensions]    {99% 99%}
-        [Position]      (TOPRIGHT) {0 0}
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
 [end]
 
+# TODO dimension does not work
 # group opera instances in one workspace
 [group] (workspace)
     [app] (name=opera) (class=Opera)
-        [Dimensions]    {99% 99%}
-        [Position]      (TOPRIGHT) {0 0}
+        [Dimensions]    {50% 100%}
+        [Position]      (TOPLEFT) {0 0}
 [end]
 
+# TODO dimension does no twork
 # group opera-next instances in one workspace
 [group] (workspace)
-    [app] (name=opera-next) (class=Opera-next)
-        [Dimensions]    {99% 99%}
-        [Position]      (TOPRIGHT) {0 0}
+    [app] (name=opera) (class=OperaNext)
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
 [end]
 
-# # position icedove mail
-# [app] (name=Mail) (class=Icedove)
-# [app] (name=Mail)
-    # [Dimensions]        {99% 99%}
-    # [Position]          (TOPRIGHT) {0 0}
-# [end]
+# TODO dimension does no twork
+# position icedove mail
+[app] (name=Mail) (class=Icedove)
+    [Workspace]         {0}
+    [Jump]              {yes}
+    [Dimensions]        {50% 10%}
+    [Position]          (TOPLEFT) {0 0}
+[end]
 
+# TODO dimensions only work for manager
 # position virtualbox and force it to be in workspace 1
 [app] (name=Qt-subapplication) (class=VirtualBox)
     [Workspace]         {0}
     [Jump]              {yes}
+    [Dimensions]        {50% 50%}
     [Position]          (TOPRIGHT) {0 0}
-    # [Fullscreen]        {yes}
 [end]
