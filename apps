@@ -12,6 +12,17 @@
         [Sticky]        {yes}
 [end]
 
+# example for permanent log file term
+# starting program -name somename
+# example in startup file: 
+# xterm -name syslogterm -c "tail -f logfile" &
+# [group] (workspace)
+    # [app] (.*somename.*)
+        # [Dimensions]    {50% 50%}
+        # [Position]      (TOPRIGHT) {0 0}
+        # [Sticky]        {yes}
+# [end]
+
 # group urxvt instances in one workspace
 [group] (workspace)
     [app] (urxvt) 
