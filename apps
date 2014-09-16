@@ -3,14 +3,27 @@
     [Layer]             {2}
 [end]
 
-# group and position chat programs in all workspaces
-[group] 
-    [app] (wync)
-    [app] (skype)
-        [Dimensions]    {100% 50%}
-        [Position]      (BOTTOMLEFT) {0 0}
-        [Sticky]        {yes}
+# TOPLEFT 50% 50%
+[app] (TR5050)
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPRIGHT) {0% 0%}
 [end]
+# TOPRIGHT 50% 50%
+[app] (TL5050)
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {0% 0%}
+[end]
+# BOTTOMLEFT 50% 50%
+[app] (BL5050)
+        [Dimensions]    {50% 50%}
+        [Position]      (BOTTOMLEFT) {0% 0%}
+[end]
+# BOTTOMRIGHT 50% 50%
+[app] (BR5050)
+        [Dimensions]    {50% 50%}
+        [Position]      (BOTTOMRIGHT) {0% 0%}
+[end]
+
 
 # example for permanent log file term
 # starting program -name somename
@@ -54,6 +67,15 @@
 [app] (.*log8)
         [Dimensions]    {50% 25%}
         [Position]      (TOPLEFT) {50% 75%}
+[end]
+
+# group and position chat programs in all workspaces
+[group] 
+    [app] (wync)
+    [app] (skype)
+        [Dimensions]    {100% 50%}
+        [Position]      (BOTTOMLEFT) {0 0}
+        [Sticky]        {yes}
 [end]
 
 # group urxvt instances in one workspace
