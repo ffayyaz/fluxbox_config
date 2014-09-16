@@ -23,6 +23,39 @@
         # [Sticky]        {yes}
 # [end]
 
+[app] (.*log1)
+        [Dimensions]    {50% 25%}
+        [Position]      (TOPLEFT) {0% 0%}
+[end]
+[app] (.*log2)
+        [Dimensions]    {50% 25%}
+        [Position]      (TOPLEFT) {50% 0%}
+[end]
+[app] (.*log3)
+        [Dimensions]    {50% 25%}
+        [Position]      (TOPLEFT) {0% 25%}
+[end]
+[app] (.*log4)
+        [Dimensions]    {50% 25%}
+        [Position]      (TOPLEFT) {50% 25%}
+[end]
+[app] (.*log5)
+        [Dimensions]    {50% 25%}
+        [Position]      (TOPLEFT) {0% 50%}
+[end]
+[app] (.*log6)
+        [Dimensions]    {50% 25%}
+        [Position]      (TOPLEFT) {50% 50%}
+[end]
+[app] (.*log7)
+        [Dimensions]    {50% 25%}
+        [Position]      (TOPLEFT) {0% 75%}
+[end]
+[app] (.*log8)
+        [Dimensions]    {50% 25%}
+        [Position]      (TOPLEFT) {50% 75%}
+[end]
+
 # group urxvt instances in one workspace
 [group] (workspace)
     [app] (urxvt) 
