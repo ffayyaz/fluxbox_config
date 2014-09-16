@@ -92,9 +92,11 @@
         # [Dimensions]    {50% 50%}
         [Dimensions]    {94% 100%}
         [Position]      (TOPLEFT) {0 0}
+        [Deco]          {NONE}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
+        [FocusHidden]   {yes}
         [FocusNewWindow] {no}
 [end]
 
