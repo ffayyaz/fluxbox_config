@@ -29,6 +29,7 @@
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
+        [FocusNewWindow] {no}
 [end]
 
 # position gnome-terminal
