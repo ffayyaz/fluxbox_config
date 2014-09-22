@@ -104,7 +104,7 @@
 [app] (gnome-terminal-server)
         [Dimensions]    {50% 50%}
         # [Position]      (TOPLEFT) {0 0}
-        [Workspace]     {2}
+        # [Workspace]     {2}
         [Jump]          {no}
 [end]
 
