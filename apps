@@ -153,6 +153,12 @@
     [Position]          (TOPLEFT) {0 0}
 [end]
 
+# position and dimension libreoffice
+[app] (name=libreoffice)
+    [Dimensions]        {100% 100%}
+    [Position]          (TOPLEFT) {0 0}
+[end]
+
 # TODO dimensions only work for manager
 # position virtualbox and force it to be in workspace 1
 [app] (name=Qt-subapplication) (class=VirtualBox)
