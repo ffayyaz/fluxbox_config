@@ -11,7 +11,7 @@ OnDesktop Mouse5 :NextWorkspace
 # OnToolbar Mouse4 :PrevWindow {static groups} (iconhidden=no)
 # OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
 OnToolbar Mouse4 :PrevWindow {static} (workspace=[current])
-OnToolbar Mouse5 :NextWindow {static} (workspace=[current])
+Onoolbar Mouse5 :NextWindow {static} (workspace=[current])
 
 # alt + left/right click to move/resize a window
 OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
@@ -78,6 +78,7 @@ Mod1 F5 :Exec iceweasel
 Mod1 F6 :Exec opera-next
 Mod1 F7 :Exec opera
 Mod1 F8 :Exec icedove
+Mod1 F9 :Exec gedit
 
 # open a dialog to run programs
 #Mod1 F2 :Exec fbrun
