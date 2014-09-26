@@ -72,7 +72,7 @@ OnTab Mouse5 :NextWindow {static} (workspace=[current])
 
 # some shortcuts to start programs
 Mod1 F1 :Exec urxvt
-Mod1 F2 :Exec gnome-terminal
+Mod1 F2 :Exec gnome-terminal --tab --tab
 Mod1 F3 :Exec chromium
 Mod1 F5 :Exec iceweasel
 Mod1 F6 :Exec opera-next
