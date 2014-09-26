@@ -28,7 +28,7 @@
 # example for permanent log file term
 # starting program -name somename
 # example in startup file: 
-# xterm -name syslogterm -c "tail -f logfile" &
+# urxvt -name syslogterm -c "tail -f logfile" &
 # [group] (workspace)
     # [app] (.*somename.*)
         # [Dimensions]    {50% 50%}
@@ -86,9 +86,9 @@
         [Sticky]        {yes}
 [end]
 
-# group xterm instances in one workspace
+# group urxvt instances in one workspace
 [group] (workspace)
-    [app] (name=xterm-desktop) (class=XTerm)
+    [app] (name=urxvt-desktop)
         # [Dimensions]    {50% 50%}
         [Dimensions]    {94% 100%}
         [Position]      (TOPLEFT) {0 0}
@@ -100,11 +100,11 @@
         [FocusNewWindow] {no}
 [end]
 
-# dimension xterm for clusterssh
+# dimension urxvt for clusterssh
 # positioning could be better
 # some of the popped up windows overlap 
 # each other about a titlebar height
-[app] (name=xterm-cluster) (class=XTerm)
+[app] (name=urxvt-cluster)
         [Workspace]     {2}
         [Jump]          {yes}
         # [Dimensions]    {20% 20%}

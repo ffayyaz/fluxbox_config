@@ -51,10 +51,10 @@ fi
 xrdb -load ~/.Xresources
 urxvt &
 urxvt &
-xterm -name xterm-desktop&
-xterm -name xterm-desktop&
-xterm -name xterm-desktop&
-xterm -name xterm-desktop&
+urxvt -name urxvt-desktop&
+urxvt -name urxvt-desktop&
+urxvt -name urxvt-desktop&
+urxvt -name urxvt-desktop&
 gnome-terminal &
 xscreensaver&
 gkrellm -w &
