@@ -78,7 +78,7 @@ Mod1 F5 :Exec iceweasel
 Mod1 F6 :Exec opera-next
 Mod1 F7 :Exec opera
 Mod1 F8 :Exec icedove
-Mod1 F9 :Exec gedit
+Mod1 F9 :Exec kate
 
 # open a dialog to run programs
 #Mod1 F2 :Exec fbrun
