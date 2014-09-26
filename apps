@@ -100,6 +100,17 @@
         [FocusNewWindow] {no}
 [end]
 
+# dimension xterm for clusterssh
+# positioning could be better
+# some of the popped up windows overlap 
+# each other about a titlebar height
+[app] (name=xterm-cluster) (class=XTerm)
+        [Workspace]     {2}
+        [Jump]          {yes}
+        # [Dimensions]    {20% 20%}
+        # [Deco]          {NORMAL}
+[end]
+
 # position gnome-terminal
 [app] (gnome-terminal-server)
         [Dimensions]    {50% 50%}
