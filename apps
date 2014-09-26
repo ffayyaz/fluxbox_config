@@ -90,7 +90,7 @@
 [group] (workspace)
     [app] (name=urxvt-desktop)
         # [Dimensions]    {50% 50%}
-        [Dimensions]    {94% 100%}
+        [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
         [Deco]          {NONE}
         [Sticky]        {yes}
