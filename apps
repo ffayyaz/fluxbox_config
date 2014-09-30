@@ -168,7 +168,7 @@
 
 # position and dimension libreoffice
 [app] (name=libreoffice)
-    [Dimensions]        {100% 100%}
+    [Dimensions]        {50% 100%}
     [Position]          (TOPLEFT) {0 0}
 [end]
 
