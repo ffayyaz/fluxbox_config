@@ -72,6 +72,7 @@
 # group and position chat programs in all workspaces
 [group] 
     [app] (wync)
+    [app] (Pidgin)
     [app] (skype)
         [Dimensions]    {100% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
@@ -154,21 +155,29 @@
 [app] (name=Mail) (class=Icedove)
     [Workspace]         {0}
     [Jump]              {yes}
-    [Dimensions]        {50% 10%}
+    [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0 0}
 [end]
 
 # position and dimension kate
+# gedit crashes fluxbox
 # [app] (name=kate) (class=Kate)
 [app] (kate)
     [Dimensions]        {50% 50%}
     [Position]          (TOPLEFT) {0 0}
-    # [Maximized]         {no}
 [end]
 
 # position and dimension libreoffice
 [app] (name=libreoffice)
     [Dimensions]        {50% 100%}
+    [Position]          (TOPLEFT) {0 0}
+[end]
+
+# position and dimension nautilus
+# TODO does not work
+# [app] (name=nautilus) (class=Nautilus)
+[app] (nautilus)
+    [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0 0}
 [end]
 
@@ -185,6 +194,13 @@
 # group evince instances in one workspace
 [group] (workspace)
     [app] (evince) 
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
+[end]
+
+# group eog instances in one workspace
+[group] (workspace)
+    [app] (eog) 
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
 [end]
