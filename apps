@@ -155,7 +155,6 @@
 
 # position,dimension kate
 # gedit crashes fluxbox
-# [app] (name=kate) (class=Kate)
 [app] (kate)
     [Dimensions]        {50% 50%}
     [Position]          (TOPLEFT) {0 0}
