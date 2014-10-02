@@ -204,7 +204,7 @@
 
 # group,position,dimension gvim instances in one workspace
 [group] (workspace)
-    [app] (eog) 
+    [app] (gvim) 
         [Dimensions]    {50% 50%}
         [Position]      (TOPRIGHT) {0 0}
 [end]
