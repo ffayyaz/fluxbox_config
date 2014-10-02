@@ -131,7 +131,6 @@
         [Position]      (TOPLEFT) {0 0}
 [end]
 
-# TODO dimension does not work
 # group,position,dimension opera instances in one workspace
 [group] (workspace)
     [app] (name=opera) (class=Opera)
@@ -139,7 +138,6 @@
         [Position]      (TOPLEFT) {0 0}
 [end]
 
-# TODO dimension does no twork
 # group,position,dimension opera-next instances in one workspace
 [group] (workspace)
     [app] (name=opera) (class=OperaNext)
@@ -147,7 +145,6 @@
         [Position]      (TOPLEFT) {0 0}
 [end]
 
-# TODO dimension does no twork
 # position,dimension icedove mail
 [app] (name=Mail) (class=Icedove)
     [Workspace]         {0}
@@ -167,14 +164,6 @@
 # position,dimension libreoffice
 [app] (name=libreoffice)
     [Dimensions]        {50% 100%}
-    [Position]          (TOPLEFT) {0 0}
-[end]
-
-# position,dimension nautilus
-# TODO does not work
-# [app] (name=nautilus) (class=Nautilus)
-[app] (nautilus)
-    [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0 0}
 [end]
 
