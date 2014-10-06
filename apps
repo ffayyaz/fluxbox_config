@@ -99,6 +99,7 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
         [FocusNewWindow] {no}
+        [Maximized]]    {yes}
 [end]
 
 # clusterssh urxvt 
@@ -122,6 +123,7 @@
     [app] (name=Chromium) (class=Chromium)
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
+        [Maximized]]    {yes}
 [end]
 
 # group,position,dimension iceweasel instances in one workspace
@@ -129,6 +131,7 @@
     [app] (name=Navigator) (class=Iceweasel)
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
+        [Maximized]]    {yes}
 [end]
 
 # group,position,dimension opera instances in one workspace
@@ -143,6 +146,7 @@
     [app] (name=opera) (class=OperaNext)
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
+        [Maximized]]    {yes}
 [end]
 
 # position,dimension icedove mail
@@ -151,6 +155,7 @@
     [Jump]              {yes}
     [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0 0}
+    [Maximized]]    {yes}
 [end]
 
 # position,dimension kate
@@ -181,6 +186,7 @@
     [app] (evince) 
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
+        [Maximized]]    {yes}
 [end]
 
 # group,position,dimension eog instances in one workspace
@@ -188,6 +194,7 @@
     [app] (eog) 
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
+        [Maximized]]    {yes}
 [end]
 
 # group,position,dimension gvim instances in one workspace
