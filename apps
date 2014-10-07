@@ -206,3 +206,11 @@
         [Dimensions]    {50% 50%}
         [Position]      (TOPRIGHT) {0 0}
 [end]
+
+# group,position,dimension gvim instances in one workspace
+# WM_CLASS(STRING) = "VNC: fayyaz:0", "Vncviewer"
+[group] (workspace)
+    [app] (class=Vncviewer) 
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
+[end]
