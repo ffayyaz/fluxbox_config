@@ -73,11 +73,12 @@
 [group] 
     [app] (wync)
     [app] (Pidgin)
+    [app] (xchat)
     [app] (skype)
-        [Dimensions]    {100% 50%}
+        [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
         [Sticky]        {yes}
-        [Maximized]     {horz}
+        # [Maximized]     {horz}
 [end]
 
 # group,position,dimension urxvt instances in one workspace
@@ -213,11 +214,4 @@
     [app] (class=Vncviewer) 
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
-[end]
-
-# position,dimension xchat
-[app] (name=xchat) (class=Xchat)
-    [Dimensions]        {100% 50%}
-    [Position]          (TOPLEFT) {0 0}
-    [Maximized]         {vert}
 [end]
