@@ -77,6 +77,7 @@
         [Dimensions]    {100% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
         [Sticky]        {yes}
+        [Maximized]     {horz}
 [end]
 
 # group,position,dimension urxvt instances in one workspace
@@ -139,6 +140,7 @@
     [app] (name=opera) (class=Opera)
         [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {0 0}
+        [Maximized]     {vert}
 [end]
 
 # group,position,dimension opera-next instances in one workspace
@@ -169,6 +171,7 @@
 [app] (name=libreoffice)
     [Dimensions]        {50% 100%}
     [Position]          (TOPLEFT) {0 0}
+    [Maximized]         {vert}
 [end]
 
 # TODO dimensions only work for manager
