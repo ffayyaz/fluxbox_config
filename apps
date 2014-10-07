@@ -91,9 +91,10 @@
 
 # group,position,dimension urxvt instances in one workspace
 [group] (workspace)
-    [app] (name=urxvt-desktop)
+    [app] (name=urxvt-desktop-topleft)
         # [Dimensions]    {50% 50%}
-        [Dimensions]    {94% 100%}
+        #[Dimensions]    {94% 100%}
+        [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
         [Deco]          {NONE}
         [Sticky]        {yes}
@@ -101,7 +102,46 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
         [FocusNewWindow] {no}
-        [Maximized]]    {yes}
+        # [Maximized]]    {yes}
+[end]
+[group] (workspace)
+    [app] (name=urxvt-desktop-topright)
+        # [Dimensions]    {50% 50%}
+        [Dimensions]    {44% 50%}
+        [Position]      (TOPRIGHT) {6% 0}
+        [Deco]          {NONE}
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [FocusNewWindow] {no}
+        # [Maximized]]    {yes}
+[end]
+[group] (workspace)
+    [app] (name=urxvt-desktop-bottomleft)
+        # [Dimensions]    {50% 50%}
+        [Dimensions]    {50% 50%}
+        [Position]      (BOTTOMLEFT) {0 0}
+        [Deco]          {NONE}
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [FocusNewWindow] {no}
+        # [Maximized]]    {yes}
+[end]
+[group] (workspace)
+    [app] (name=urxvt-desktop-bottomright)
+        # [Dimensions]    {50% 50%}
+        [Dimensions]    {44% 50%}
+        [Position]      (BOTTOMRIGHT) {6% 0}
+        [Deco]          {NONE}
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [FocusNewWindow] {no}
+        # [Maximized]]    {yes}
 [end]
 
 # clusterssh urxvt 

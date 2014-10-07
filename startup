@@ -59,10 +59,10 @@ fi
 xrdb -load ~/.Xresources
 urxvt &
 urxvt &
-urxvt -name urxvt-desktop&
-urxvt -name urxvt-desktop&
-urxvt -name urxvt-desktop&
-urxvt -name urxvt-desktop&
+urxvt -name urxvt-desktop-topleft -e htop&
+urxvt -name urxvt-desktop-topright -e top&
+urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
+urxvt -name urxvt-desktop-bottomright&
 gnome-terminal --tab --tab &
 xscreensaver&
 gkrellm -w &
