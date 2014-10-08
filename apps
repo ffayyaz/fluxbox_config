@@ -205,7 +205,7 @@
 # gedit crashes fluxbox
 [app] (kate)
     [Dimensions]        {50% 50%}
-    [Position]          (TOPRIGHT) {0 0}
+    [Position]          (BOTTOMRIGHT) {0 0}
 [end]
 
 # position,dimension libreoffice
