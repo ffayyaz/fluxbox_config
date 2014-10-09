@@ -96,7 +96,7 @@
         #[Dimensions]    {94% 100%}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
-        [Deco]          {NONE}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
@@ -109,7 +109,7 @@
         # [Dimensions]    {50% 50%}
         [Dimensions]    {44% 50%}
         [Position]      (TOPRIGHT) {6% 0}
-        [Deco]          {NONE}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
@@ -122,7 +122,7 @@
         # [Dimensions]    {50% 50%}
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
-        [Deco]          {NONE}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
@@ -135,7 +135,7 @@
         # [Dimensions]    {50% 50%}
         [Dimensions]    {44% 50%}
         [Position]      (BOTTOMRIGHT) {6% 0}
-        [Deco]          {NONE}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
