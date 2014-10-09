@@ -64,6 +64,7 @@ urxvt -name urxvt-desktop-topright -e top&
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
 urxvt -hold -name urxvt-desktop-bottomright -e cal -yh&
 gnome-terminal --tab --tab &
+kate &
 xscreensaver&
 gkrellm -w &
 
