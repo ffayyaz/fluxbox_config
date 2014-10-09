@@ -255,3 +255,10 @@
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
 [end]
+
+# group,position,dimension filezilla instances in one workspace
+[group] (workspace)
+    [app] (filezilla) 
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
+[end]
