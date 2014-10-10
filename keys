@@ -70,6 +70,12 @@ Mod4 9 :Tab 9
 OnTab Mouse4 :PrevWindow {static} (workspace=[current])
 OnTab Mouse5 :NextWindow {static} (workspace=[current]) 
 
+# 'scroll' through tabs using Mod4+(Left|Right)
+# does work, but not perfectly like the other
+# cycles configured in here
+OnTab Mod4 Left :PrevWindow {static} (workspace=[current])
+OnTab Mod4 Right :NextWindow {static} (workspace=[current]) 
+
 # some shortcuts to start programs
 Mod1 F1 :Exec urxvt
 Mod1 F2 :Exec gnome-terminal --tab --tab
@@ -112,9 +118,10 @@ Control Mod1 Delete :Exit
 Control Mod1 Left :PrevWorkspace
 Control Mod1 Right :NextWorkspace
 
-# send the current window to previous/next workspace
-Mod4 Left :SendToPrevWorkspace
-Mod4 Right :SendToNextWorkspace
+# send the current window to previous/next workspace # never used yet
+# use these keys for 'scrolling' throught tabs keywise
+# Mod4 Left :SendToPrevWorkspace
+# Mod4 Right :SendToNextWorkspace
 
 # send the current window and follow it to previous/next workspace
 Control Mod4 Left :TakeToPrevWorkspace
