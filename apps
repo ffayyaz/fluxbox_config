@@ -179,9 +179,9 @@
 # group,position,dimension opera instances in one workspace
 [group] (workspace)
     [app] (name=opera) (class=Opera)
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
-        [Maximized]     {vert}
+        [Maximized]     {yes}
 [end]
 
 # group,position,dimension opera-next instances in one workspace
