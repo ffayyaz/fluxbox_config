@@ -262,3 +262,10 @@
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
 [end]
+
+# group,position,dimension okular instances in one workspace
+[group] (workspace)
+    [app] (okular) 
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
+[end]
