@@ -51,7 +51,7 @@ fi
 # Autostart Netstream only
 /sbin/ifconfig|egrep '192.168.1.116'
 if [ "${?}" = "0" ]; then
-    wync&
+    #wync&
     pidgin&
 fi
 
