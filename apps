@@ -269,3 +269,10 @@
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
 [end]
+
+# group,position,dimension rdesktop instances in one workspace
+[group] (workspace)
+    [app] (rdesktop) 
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
+[end]
