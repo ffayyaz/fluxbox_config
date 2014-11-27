@@ -58,8 +58,8 @@ fi
 xrdb -load ~/.Xresources
 urxvt &
 urxvt &
-urxvt -name urxvt-desktop-topleft -e htop&
-urxvt -name urxvt-desktop-topright -e top&
+urxvt -name urxvt-desktop-top -e htop&
+# urxvt -name urxvt-desktop-topright -e top&
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
 urxvt -hold -name urxvt-desktop-bottomright -e cal -yh&
 gnome-terminal --tab --tab &
