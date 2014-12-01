@@ -160,7 +160,7 @@
     [app] (name=orage)
         [Dimensions]    {43% 49%}
         [Position]      (BOTTOMRIGHT) {7% 1%}
-        [Deco]          {BORDER}
+        # [Deco]          {BORDER}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
