@@ -61,7 +61,7 @@ urxvt &
 urxvt -name urxvt-desktop-top -e htop&
 # urxvt -name urxvt-desktop-topright -e top&
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
-urxvt -hold -name urxvt-desktop-bottomright -e watch -n7200 cal -y&
+orage &
 gnome-terminal --tab --tab &
 kate &
 xscreensaver&

@@ -155,6 +155,19 @@
         [Head]          {1}
 [end]
 
+# group,position,dimension orage (desktop) instances in one workspace
+[group] (workspace)
+    [app] (name=orage)
+        [Dimensions]    {43% 49%}
+        [Position]      (BOTTOMRIGHT) {7% 1%}
+        [Deco]          {BORDER}
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [FocusNewWindow] {no}
+        [Head]          {1}
+
 # clusterssh urxvt 
 # positioning could be better
 # some of the popped up windows overlap 
