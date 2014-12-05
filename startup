@@ -63,7 +63,7 @@ urxvt -name urxvt-desktop-top -e htop&
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
 orage &
 gnome-terminal --tab --tab &
-kate &
+# kate &
 xscreensaver&
 gkrellm -w &
 
