@@ -58,14 +58,13 @@ fi
 xrdb -load ~/.Xresources
 urxvt &
 urxvt &
-# urxvt -name urxvt-desktop-topleft -e htop&
-urxvt -name urxvt-desktop-topleft -e mutt&
+# urxvt -name urxvt-desktop-top -e htop&
 urxvt -name urxvt-desktop-topright -e top&
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
 urxvt -name urxvt-desktop-bottomright -hold -e cal -yh&
 # orage &
-#gnome-terminal --tab --tab &
-urxvt -name URxvt-remote
+# gnome-terminal --tab --tab &
+urxvt -name URxvt-remote&
 # kate &
 xscreensaver&
 gkrellm -w &
