@@ -33,6 +33,7 @@ xmodmap "/home/fafa/.Xmodmap"
 /sbin/ifconfig|egrep '192.168.85.(21|22)'
 if [ "${?}" = "0" ]; then
 	skype &
+    pidgin&
 # 	firefox &
 	chromium &
 	icedove &
@@ -43,6 +44,7 @@ fi
 /sbin/ifconfig|egrep '192.168.85.10'
 if [ "${?}" = "0" ]; then
 	skype &
+    pidgin&
 # 	firefox &
 	chromium &
 	xchat &
