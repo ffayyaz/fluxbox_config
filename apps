@@ -176,8 +176,8 @@
 # group, position,dimension URxvt-remote
 [group] (workspace)
     [app] (URxvt-remote)
-        [Dimensions]    {44% 50%}
-        [Position]      (TOPRIGHT) {6% 0}
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPRIGHT) {0% 0}
         [Jump]          {no}
         [Head]          {1}
 [end]
