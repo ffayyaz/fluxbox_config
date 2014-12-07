@@ -33,7 +33,7 @@ xmodmap "/home/fafa/.Xmodmap"
 /sbin/ifconfig|egrep '192.168.85.(21|22)'
 if [ "${?}" = "0" ]; then
 	skype &
-	firefox &
+# 	firefox &
 	chromium &
 	icedove &
 	#opera-next & # crashes
@@ -43,7 +43,7 @@ fi
 /sbin/ifconfig|egrep '192.168.85.10'
 if [ "${?}" = "0" ]; then
 	skype &
-	firefox &
+# 	firefox &
 	chromium &
 	xchat &
 fi
@@ -59,11 +59,10 @@ xrdb -load ~/.Xresources
 urxvt &
 urxvt &
 # urxvt -name urxvt-desktop-top -e htop&
-urxvt -name urxvt-desktop-topleft -e mutt&
-urxvt -name urxvt-desktop-topright -e top&
+urxvt -name urxvt-desktop-topleft -e top&
+urxvt -name urxvt-desktop-topright -e mutt&
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
 urxvt -name urxvt-desktop-bottomright -hold -e cal -yh&
-# gnome-terminal --tab --tab &
 urxvt -name URxvt-remote&
 # kate &
 xscreensaver&
