@@ -121,8 +121,8 @@
 [end]
 [group] (workspace)
     [app] (name=urxvt-desktop-topright)
-        [Dimensions]    {43% 50%}
-        [Position]      (TOPRIGHT) {7% 0}
+        [Dimensions]    {44% 50%}
+        [Position]      (TOPRIGHT) {6% 0}
         [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
@@ -145,8 +145,8 @@
 [end]
 [group] (workspace)
     [app] (name=urxvt-desktop-bottomright)
-        [Dimensions]    {43% 50%}
-        [Position]      (BOTTOMRIGHT) {7% 0}
+        [Dimensions]    {44% 50%}
+        [Position]      (BOTTOMRIGHT) {6% 0}
         [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
@@ -159,8 +159,8 @@
 # group,position,dimension orage (desktop) instances in one workspace
 [group] (workspace)
     [app] (name=orage)
-        [Dimensions]    {43% 49%}
-        [Position]      (BOTTOMRIGHT) {7% 1%}
+        [Dimensions]    {44% 49%}
+        [Position]      (BOTTOMRIGHT) {6% 1%}
         [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
@@ -180,8 +180,8 @@
 
 # # position,dimension gnome-terminal
 # [app] (gnome-terminal-server)
-        # [Dimensions]    {43% 50%}
-        # [Position]      (TOPRIGHT) {7% 0}
+        # [Dimensions]    {44% 50%}
+        # [Position]      (TOPRIGHT) {6% 0}
         # [Jump]          {no}
         # [Head]          {1}
 # [end]
@@ -189,8 +189,8 @@
 # group, position,dimension URxvt-remote
 [group] (workspace)
     [app] (URxvt-remote)
-        [Dimensions]    {43% 50%}
-        [Position]      (TOPRIGHT) {7% 0}
+        [Dimensions]    {44% 50%}
+        [Position]      (TOPRIGHT) {6% 0}
         [Jump]          {no}
         [Head]          {1}
 [end]
@@ -244,8 +244,8 @@
 # position,dimension kate
 # gedit crashes fluxbox
 [app] (kate)
-    [Dimensions]        {43% 50%}
-    [Position]          (BOTTOMRIGHT) {7% 0}
+    [Dimensions]        {44% 50%}
+    [Position]          (BOTTOMRIGHT) {6% 0}
     [Head]              {1}
 [end]
 
