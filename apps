@@ -177,8 +177,17 @@
         [Jump]          {yes}
 [end]
 
-# position,dimension gnome-terminal
-[app] (gnome-terminal-server)
+# # position,dimension gnome-terminal
+# [app] (gnome-terminal-server)
+        # [Dimensions]    {43% 50%}
+        # [Position]      (TOPRIGHT) {7% 0}
+        # [Jump]          {no}
+        # [Head]          {1}
+# [end]
+
+# group, position,dimension URxvt-remote
+[group]
+    [app] (URxvt-remote)
         [Dimensions]    {43% 50%}
         [Position]      (TOPRIGHT) {7% 0}
         [Jump]          {no}

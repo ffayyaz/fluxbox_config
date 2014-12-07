@@ -62,7 +62,8 @@ urxvt -name urxvt-desktop-top -e htop&
 # urxvt -name urxvt-desktop-topright -e top&
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
 orage &
-gnome-terminal --tab --tab &
+#gnome-terminal --tab --tab &
+urxvt -name URxvt-remote
 # kate &
 xscreensaver&
 gkrellm -w &
