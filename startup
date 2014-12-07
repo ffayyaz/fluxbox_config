@@ -60,9 +60,10 @@ urxvt &
 urxvt &
 # urxvt -name urxvt-desktop-top -e htop&
 urxvt -name urxvt-desktop-topleft -e top&
-urxvt -name urxvt-desktop-topright -e mutt&
+urxvt -name urxvt-desktop-topright -hold -e mutt&
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
-urxvt -name urxvt-desktop-bottomright -hold -e cal -yh&
+urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
+# urxvt -name urxvt-desktop-bottomrightright -hold -e /usr/bin/wetter Dübendorf&
 urxvt -name URxvt-remote&
 # kate &
 xscreensaver&

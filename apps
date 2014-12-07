@@ -144,8 +144,20 @@
         [Head]          {1}
 [end]
 [group] (workspace)
-    [app] (name=urxvt-desktop-bottomright)
-        [Dimensions]    {44% 50%}
+    [app] (name=urxvt-desktop-bottomrightleft)
+        [Dimensions]    {22% 50%}
+        [Position]      (BOTTOMRIGHT) {28% 0}
+        [Deco]          {NORMAL}
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [FocusNewWindow] {no}
+        [Head]          {1}
+[end]
+[group] (workspace)
+    [app] (name=urxvt-desktop-bottomrightright)
+        [Dimensions]    {22% 50%}
         [Position]      (BOTTOMRIGHT) {6% 0}
         [Deco]          {NORMAL}
         [Sticky]        {yes}
