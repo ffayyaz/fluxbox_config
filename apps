@@ -87,6 +87,7 @@
     [app] (urxvt) 
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
+        [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Head]          {1}
 [end]
@@ -96,7 +97,7 @@
     [app] (name=urxvt-desktop-top)
         [Dimensions]    {93% 50%}
         [Position]      (TOPLEFT) {0 0}
-        # [Deco]          {BORDER}
+        [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
@@ -110,7 +111,7 @@
     [app] (name=urxvt-desktop-topleft)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
-        # [Deco]          {BORDER}
+        [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
@@ -122,7 +123,7 @@
     [app] (name=urxvt-desktop-topright)
         [Dimensions]    {43% 50%}
         [Position]      (TOPRIGHT) {7% 0}
-        # [Deco]          {BORDER}
+        [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
@@ -134,7 +135,7 @@
     [app] (name=urxvt-desktop-bottomleft)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
-        # [Deco]          {BORDER}
+        [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
@@ -146,7 +147,7 @@
     [app] (name=urxvt-desktop-bottomright)
         [Dimensions]    {43% 50%}
         [Position]      (BOTTOMRIGHT) {7% 0}
-        # [Deco]          {BORDER}
+        [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
@@ -160,7 +161,7 @@
     [app] (name=orage)
         [Dimensions]    {43% 49%}
         [Position]      (BOTTOMRIGHT) {7% 1%}
-        # [Deco]          {BORDER}
+        [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
         [IconHidden]    {yes}
