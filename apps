@@ -243,8 +243,8 @@
 # position,dimension kate
 # gedit crashes fluxbox
 [app] (kate)
-    [Dimensions]        {44% 50%}
-    [Position]          (BOTTOMRIGHT) {6% 0}
+    [Dimensions]        {50% 50%}
+    [Position]          (BOTTOMRIGHT) {0% 0}
     [Head]              {1}
 [end]
 
