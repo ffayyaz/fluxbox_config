@@ -265,7 +265,7 @@
     [Jump]              {yes}
     # [Dimensions]        {50% 50%}
     [Dimensions]        {100% 100%}
-    [Fullscreen]        {yes}
+    # [Fullscreen]        {yes}
     [Position]          (TOPLEFT) {0 0}
     [Sticky]            {yes}
     [Head]              {2}
