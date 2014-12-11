@@ -89,6 +89,7 @@
         [Position]      (TOPLEFT) {0 0}
         [Deco]          {NORMAL}
         [Sticky]        {yes}
+        [FocusNewWindow] {yes}
         [Head]          {1}
 [end]
 
@@ -190,7 +191,8 @@
     [app] (URxvt-remote)
         [Dimensions]    {50% 50%}
         [Position]      (TOPRIGHT) {0% 0}
-        [Jump]          {yes}
+        [Jump]          {no}
+        [FocusNewWindow] {yes}
         [Head]          {1}
 [end]
 
