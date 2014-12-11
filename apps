@@ -327,3 +327,11 @@
         [Position]      (TOPLEFT) {0 0}
         [Head]          {2}
 [end]
+
+# group,position,dimension wireshark instances in one workspace
+[group] (workspace)
+    [app] (wireshark) 
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
+        [Head]          {2}
+[end]
