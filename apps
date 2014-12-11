@@ -190,7 +190,7 @@
     [app] (URxvt-remote)
         [Dimensions]    {50% 50%}
         [Position]      (TOPRIGHT) {0% 0}
-        [Jump]          {no}
+        [Jump]          {yes}
         [Head]          {1}
 [end]
 
