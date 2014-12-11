@@ -146,8 +146,8 @@
 [end]
 [group] (workspace)
     [app] (name=urxvt-desktop-bottomrightleft)
-        [Dimensions]    {25% 50%}
-        [Position]      (BOTTOMRIGHT) {25% 0}
+        [Dimensions]    {24% 50%}
+        [Position]      (BOTTOMRIGHT) {26% 0}
         [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Layer]         {12}
