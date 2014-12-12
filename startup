@@ -30,9 +30,10 @@ xmodmap "/home/fafa/.Xmodmap"
 #fi
 
 # Autostart Home only
-/sbin/ifconfig|egrep '192.168.85.(21|22)'
+/sbin/ifconfig|egrep '192.168.85.(10|21|22)'
 if [ "${?}" = "0" ]; then
 	icedove &
+    kate /tmp/notesx.y.z.txt &
 fi
 
 # Autostart Ganja only
@@ -45,6 +46,7 @@ fi
 /sbin/ifconfig|egrep '192.168.1.116'
 if [ "${?}" = "0" ]; then
     virtualbox&
+    kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
 fi
 
 # Autostart anyway
@@ -59,7 +61,6 @@ urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
 #urxvt -name urxvt-desktop-bottomrightright -hold -e olive&
 #urxvt -name urxvt-desktop-bottomrightright -e note&
 # urxvt -name URxvt-remote&
-kate &
 skype &
 pidgin &
 chromium &
