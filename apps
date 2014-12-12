@@ -97,7 +97,7 @@
         [Tab]           {no}
         [FocusNewWindow] {no}
         [FocusHidden]   {no}
-        [IconHidden]    {yes}
+        [IconHidden]    {no}
         [Minimized]     {yes}
 [end]
 
@@ -308,13 +308,16 @@
 [app] (name=Qt-subapplication) (class=VirtualBox)
     [Workspace]         {0}
     [Jump]              {yes}
+    [Sticky]            {yes}
     [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0 0}
     [Head]              {2}
+    [Layer]             {12}
     [Deco]              {NONE}
     [Tab]               {no}
     [FocusNewWindow]    {no}
     [FocusHidden]       {yes}
+    [IconHidden]        {yes}
     [Fullscreen]        {no}
 [end]
 
