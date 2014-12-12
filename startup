@@ -58,7 +58,7 @@ urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
 urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
 #urxvt -name urxvt-desktop-bottomrightright -hold -e olive&
 #urxvt -name urxvt-desktop-bottomrightright -e note&
-urxvt -name URxvt-remote&
+# urxvt -name URxvt-remote&
 kate &
 skype &
 pidgin &
