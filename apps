@@ -189,7 +189,8 @@
 # these windows could be tabbed, if you know the name of each one
 # but this requires a rule in here, which is not existant yet
 # therefore disable tabbing for those windows
-[app] (name=urxvt-cluster)
+[app] (name=urxvt-cluster) (class=URxvt)
+        # [Dimensions]    {25% 25%} # only works for the first window
         [Workspace]     {2}
         [Jump]          {yes}
         [Head]          {1}
