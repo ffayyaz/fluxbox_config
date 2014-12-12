@@ -29,31 +29,22 @@ xmodmap "/home/fafa/.Xmodmap"
 #	dhclient eth0
 #fi
 
-# Autostart Home
+# Autostart Home only
 /sbin/ifconfig|egrep '192.168.85.(21|22)'
 if [ "${?}" = "0" ]; then
-	skype &
-    pidgin&
-# 	firefox &
-	chromium &
 	icedove &
-	#opera-next & # crashes
 fi
 
 # Autostart Ganja only
 /sbin/ifconfig|egrep '192.168.85.10'
 if [ "${?}" = "0" ]; then
-	skype &
-    pidgin&
-# 	firefox &
-	chromium &
 	xchat &
 fi
 
 # Autostart Netstream only
 /sbin/ifconfig|egrep '192.168.1.116'
 if [ "${?}" = "0" ]; then
-    pidgin&
+    virtualbox&
 fi
 
 # Autostart anyway
@@ -68,7 +59,10 @@ urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
 #urxvt -name urxvt-desktop-bottomrightright -hold -e olive&
 #urxvt -name urxvt-desktop-bottomrightright -e note&
 urxvt -name URxvt-remote&
-# kate &
+kate &
+skype &
+pidgin &
+chromium &
 xscreensaver&
 gkrellm -w &
 
