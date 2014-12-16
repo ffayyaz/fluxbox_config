@@ -96,7 +96,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {no}
-        [FocusHidden]   {no}
         [IconHidden]    {no}
         [Minimized]     {yes}
 [end]
@@ -109,7 +108,6 @@
         [Sticky]        {yes}
         [Head]          {1}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension urxvt (desktop) instances in one workspace
@@ -216,7 +214,6 @@
         [Position]      (TOPRIGHT) {0% 0}
         [Head]          {1}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension chromium instances in one workspace
@@ -228,7 +225,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension iceweasel instances in one workspace
@@ -240,7 +236,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension opera instances in one workspace
@@ -252,7 +247,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension opera-next instances in one workspace
@@ -264,7 +258,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # position,dimension icedove mail
@@ -277,7 +270,6 @@
     [Head]              {1}
     [Tab]               {no}
     [FocusNewWindow]    {yes}
-    [FocusHidden]       {no}
 [end]
 
 # position,dimension kate
@@ -289,7 +281,6 @@
     [Head]              {1}
     [Tab]               {no}
     [FocusNewWindow]    {yes}
-    [FocusHidden]       {no}
 [end]
 
 # position,dimension libreoffice
@@ -300,7 +291,6 @@
     [Head]              {1}
     [Tab]               {yes}
     [FocusNewWindow]    {yes}
-    [FocusHidden]       {no}
 [end]
 
 # position,dimension virtualbox and force it to be in workspace 1
@@ -329,7 +319,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension eog instances in one workspace
@@ -341,7 +330,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension gvim instances in one workspace
@@ -352,7 +340,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension gvim instances in one workspace
@@ -380,7 +367,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension okular instances in one workspace
@@ -392,7 +378,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # group,position,dimension rdesktop instances in one workspace
@@ -419,7 +404,6 @@
         [Head]          {2}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
 
 # position,dimension gucharmap instances in one workspace
@@ -430,5 +414,4 @@
         [Head]          {2}
         [Tab]           {no}
         [FocusNewWindow] {yes}
-        [FocusHidden]   {no}
 [end]
