@@ -284,20 +284,21 @@
 [end]
 
 # position,dimension virtualbox and force it to be in workspace 1
-[app] (name=Qt-subapplication) (class=VirtualBox)
-    # [Workspace]         {0}
-    # [Jump]              {yes}
-    [Sticky]            {yes}
-    [Dimensions]        {100% 100%}
-    [Position]          (TOPLEFT) {0 0}
-    [Head]              {2}
-    [Layer]             {12}
-    [Deco]              {NONE}
-    [Tab]               {no}
-    [FocusNewWindow]    {no}
-    [FocusHidden]       {yes}
-    [IconHidden]        {yes}
-    [Fullscreen]        {no}
+[group] (workspace)
+    [app] (name=Qt-subapplication) (class=VirtualBox)
+	    # [Workspace]         {0}
+	    # [Jump]              {yes}
+	    [Sticky]            {yes}
+	    [Dimensions]        {100% 100%}
+	    [Position]          (TOPLEFT) {0 0}
+	    [Head]              {2}
+	    [Layer]             {12}
+# 	    [Deco]              {NONE}
+	    [Tab]               {no}
+	    [FocusNewWindow]    {no}
+	    [FocusHidden]       {yes}
+	    [IconHidden]        {yes}
+	    [Fullscreen]        {no}
 [end]
 
 # group,position,dimension evince instances in one workspace
