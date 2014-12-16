@@ -214,7 +214,6 @@
     [app] (URxvt-remote)
         [Dimensions]    {50% 50%}
         [Position]      (TOPRIGHT) {0% 0}
-        [FocusNewWindow] {yes}
         [Head]          {1}
         [FocusNewWindow] {yes}
         [FocusHidden]   {no}
@@ -306,8 +305,8 @@
 
 # position,dimension virtualbox and force it to be in workspace 1
 [app] (name=Qt-subapplication) (class=VirtualBox)
-    [Workspace]         {0}
-    [Jump]              {yes}
+    # [Workspace]         {0}
+    # [Jump]              {yes}
     [Sticky]            {yes}
     [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0 0}
