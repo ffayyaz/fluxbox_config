@@ -284,7 +284,7 @@
 [end]
 
 # position,dimension virtualbox and force it to be in workspace 1
-[group] (workspace)
+# [group] (workspace)
     [app] (name=Qt-subapplication) (class=VirtualBox)
 	    # [Workspace]         {0}
 	    # [Jump]              {yes}
@@ -293,8 +293,8 @@
 	    [Position]          (TOPLEFT) {0 0}
 	    [Head]              {2}
 	    [Layer]             {12}
-# 	    [Deco]              {NONE}
-	    [Tab]               {no}
+	    [Deco]              {NONE}
+# 	    [Tab]               {no}
 	    [FocusNewWindow]    {no}
 	    [FocusHidden]       {yes}
 	    [IconHidden]        {yes}

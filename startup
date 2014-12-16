@@ -56,7 +56,7 @@ urxvt &
 # urxvt -name urxvt-desktop-top -e htop&
 urxvt -name urxvt-desktop-topleft -e top&
 if [ "$(uname -n)" != "nacho" ]; then
-	urxvt -name urxvt-desktop-topright -hold -e mutt&
+# 	urxvt -name urxvt-desktop-topright -hold -e mutt&
 	urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
 fi
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
