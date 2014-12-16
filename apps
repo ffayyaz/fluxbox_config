@@ -241,21 +241,11 @@
 # group,position,dimension opera instances in one workspace
 [group] (workspace)
     [app] (name=opera) (class=Opera)
-        [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
-        [Maximized]]    {yes}
-        [Head]          {1}
-        [Tab]           {no}
-        [FocusNewWindow] {yes}
-[end]
-
-# group,position,dimension opera-next instances in one workspace
-[group] (workspace)
     [app] (name=opera) (class=OperaNext)
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
         [Maximized]]    {yes}
-        [Head]          {1}
+        [Head]          {2}
         [Tab]           {no}
         [FocusNewWindow] {yes}
 [end]
