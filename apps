@@ -283,23 +283,36 @@
     [FocusNewWindow]    {yes}
 [end]
 
-# position,dimension virtualbox and force it to be in workspace 1
-# [group] (workspace)
-    [app] (name=Qt-subapplication) (class=VirtualBox)
-	    # [Workspace]         {0}
-	    # [Jump]              {yes}
-	    [Sticky]            {yes}
-	    [Dimensions]        {100% 100%}
-	    [Position]          (TOPLEFT) {0 0}
-	    [Head]              {2}
-	    [Layer]             {12}
-	    [Deco]              {NONE}
-# 	    [Tab]               {no}
-	    [FocusNewWindow]    {no}
-	    [FocusHidden]       {yes}
-	    [IconHidden]        {yes}
-	    [Fullscreen]        {no}
+# position,dimension virtualbox and place it to desktop
+# WM_NAME=Windows 8 [Running] - Oracle VM VirtualBox
+#[app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*VirtualBox.*)
+# [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running)
+# [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Windows.*8.*\[Running\].*-.*Oracle.*VM.*VirtualBox)
+[app] (name=Qt-subapplication) (class=VirtualBox) 
+    [Sticky]            {yes}
+    [Dimensions]        {100% 100%}
+    [Position]          (TOPLEFT) {0 0}
+    [Head]              {2}
+    [Layer]             {12}
+    [Deco]              {NONE}
+    [FocusNewWindow]    {no}
+    [FocusHidden]       {yes}
+    [IconHidden]        {yes}
+    [Fullscreen]        {no}
 [end]
+# # position,dimension virtualbox main window and place it to desktop
+# [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
+    # [Sticky]            {yes}
+    # [Dimensions]        {50% 50%}
+    # [Position]          (TOPRIGHT) {0 0}
+    # [Head]              {1}
+    # # [Layer]             {12}
+    # # [Deco]              {NONE}
+    # [FocusNewWindow]    {no}
+    # [FocusHidden]       {yes}
+    # [IconHidden]        {yes}
+    # [Fullscreen]        {no}
+# [end]
 
 # group,position,dimension evince instances in one workspace
 [group] (workspace)
