@@ -414,6 +414,6 @@
         [Maximized]]    {yes}
         [Head]          {2}
         [Tab]           {no}
-        [FocusNewWindow] {yes}
+        [FocusNewWindow] {no}
         [Fullscreen]    {yes}
 [end]
