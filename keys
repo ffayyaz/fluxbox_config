@@ -173,3 +173,8 @@ Control F12 :Workspace 12
 # show desktop
 #Mod1	m	:ShowDesktop
 Mod4  d	:ShowDesktop
+
+# raise focused window to top 
+# this should work with focusnewwindow setting in apps 
+# but seems not to work for tabbed windows, only for new ones
+Shift r :Raise
