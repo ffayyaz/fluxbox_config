@@ -420,8 +420,8 @@
         [FocusNewWindow] {yes}
 [end]
 
-# position,dimension vlc instances in one workspace
-[app] (vlc) 
+# position,dimension vlc media player instances in one workspace
+[app] (vlc) (title=VLC media player)
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0 0}
         [Maximized]]    {yes}
@@ -429,4 +429,14 @@
         [Tab]           {no}
         [FocusNewWindow] {no}
         [Fullscreen]    {yes}
+[end]
+# position,dimension vlc media player messages instances in one workspace
+[app] (vlc) (title=Messages)
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
+        [Maximized]]    {yes}
+        [Head]          {1}
+        [Tab]           {no}
+        [FocusNewWindow] {no}
+        [Fullscreen]    {no}
 [end]
