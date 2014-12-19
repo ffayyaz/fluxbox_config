@@ -428,7 +428,7 @@
         [Head]          {2}
         [Tab]           {no}
         [FocusNewWindow] {no}
-        [Fullscreen]    {yes}
+        [Fullscreen]    {no}
 [end]
 # position,dimension vlc media player messages instances in one workspace
 [app] (vlc) (title=Messages)
