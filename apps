@@ -440,3 +440,14 @@
         [FocusNewWindow] {no}
         [Fullscreen]    {no}
 [end]
+
+# position,dimension mplayer instances in one workspace
+[app] (xv) (class=MPlayer)
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0 0}
+        [Maximized]]    {yes}
+        [Head]          {2}
+        [Tab]           {no}
+        [FocusNewWindow] {no}
+        [Fullscreen]    {no}
+[end]
