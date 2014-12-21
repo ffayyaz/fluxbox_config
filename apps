@@ -218,8 +218,8 @@
 [end]
 # position,dimension virtualbox main window 
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
-    [Dimensions]        {50% 50%}
-    [Position]          (TOPRIGHT) {0 0}
+    [Dimensions]        {44% 50%}
+    [Position]          (TOPRIGHT) {6% 0}
     [Head]              {1}
     [Layer]             {12}
     # [Deco]              {NONE}
