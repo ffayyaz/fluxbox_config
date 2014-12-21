@@ -64,7 +64,7 @@ urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
 #urxvt -name urxvt-desktop-bottomrightright -e note&
 # urxvt -name URxvt-remote&
 skype &
-pidgin &
+# pidgin &
 chromium &
 xscreensaver&
 gkrellm -w &
