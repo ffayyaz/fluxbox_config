@@ -1,106 +1,99 @@
-# Check if the following settings are useful to be placed on every app
-# Workspace
-# Jump
-# Head
-# Layer (not yet)
-# Deco
-# Tab (enabled or not)
-# FocusNewWindow
-# FocusHidden (may fix he alt+tab behaviour)
-# IconHidden (in icon area of toolbar)
-# Minimized
-# Fullscreen
-# Close (save settings when app is closed. maybe useful for some apps)
-
-
-# [app] (name=fbrun)
-    # [Position]          (WINCENTER) {0 0}
-    # [Layer]             {2}
-# [end]
-
-# # TOPRIGHT 50% 50%
-# [app] (TR5050)
-        # [Dimensions]    {50% 50%}
-        # [Position]      (TOPRIGHT) {0% 0%}
-# [end]
-# # TOPRIGHT 50% 50%
-# [app] (TL5050)
-        # [Dimensions]    {50% 50%}
-        # [Position]      (TOPLEFT) {0% 0%}
-# [end]
-# # BOTTOMLEFT 50% 50%
-# [app] (BL5050)
-        # [Dimensions]    {50% 50%}
-        # [Position]      (BOTTOMLEFT) {0% 0%}
-# [end]
-# # BOTTOMRIGHT 50% 50%
-# [app] (BR5050)
-        # [Dimensions]    {50% 50%}
-        # [Position]      (BOTTOMRIGHT) {0% 0%}
-# [end]
-
-
-# example for permanent log file term
-# starting program -name somename
-# example in startup file: 
-# urxvt -name syslogterm -c "tail -f logfile" &
-# [group] (workspace)
-    # [app] (.*somename.*)
-        # [Dimensions]    {50% 50%}
-        # [Position]      (TOPRIGHT) {0 0}
-        # [Sticky]        {yes}
-# [end]
-
-# [app] (.*log1)
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {0% 0%}
-# [end]
-# [app] (.*log2)
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {50% 0%}
-# [end]
-# [app] (.*log3)
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {0% 25%}
-# [end]
-# [app] (.*log4)
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {50% 25%}
-# [end]
-# [app] (.*log5)
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {0% 50%}
-# [end]
-# [app] (.*log6)
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {50% 50%}
-# [end]
-# [app] (.*log7)
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {0% 75%}
-# [end]
-# [app] (.*log8)
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {50% 75%}
-# [end]
-
-# group/position/dimension chat programs in all workspaces
-[group] 
-    # [app] (wync)
-    [app] (Pidgin)
-    [app] (xchat)
-    [app] (skype)
-        [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMLEFT) {0 0}
+###############################################################################
+#
+# ON DESKTOP LAYER
+#
+###############################################################################
+# group,position,dimension *-desktop-top instances (sticky on head 1)
+[group] (workspace)
+    [app] (name=.*-desktop-top)
+        [Dimensions]    {93% 50%}
+        [Position]      (TOPLEFT) {0 0}
+        [Deco]          {NORMAL}
         [Sticky]        {yes}
         [Head]          {1}
-        [Tab]           {no}
+        [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {no}
-        [Minimized]     {yes}
+        [Hidden]        {yes}
+[end]
+# group,position,dimension *-desktop-topleft instances (sticky on head 1)
+[group] (workspace)
+    [app] (name=.*-desktop-topleft)
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {0 0}
+        [Deco]          {NORMAL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [Hidden]        {yes}
+[end]
+# group,position,dimension *-desktop-topright instances (sticky on head 1)
+[group] (workspace)
+    [app] (name=.*-desktop-topright)
+        [Dimensions]    {44% 50%}
+        [Position]      (TOPRIGHT) {6% 0}
+        [Deco]          {NORMAL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [Hidden]        {yes}
+[end]
+# group,position,dimension *-desktop-bottomleft instances (sticky on head 1)
+[group] (workspace)
+    [app] (name=.*-desktop-bottomleft)
+        [Dimensions]    {50% 50%}
+        [Position]      (BOTTOMLEFT) {0 0}
+        [Deco]          {NORMAL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [Hidden]        {yes}
+[end]
+# group,position,dimension *-desktop-bottomright instances (sticky on head 1)
+[group] (workspace)
+    [app] (name=.*-desktop-bottomright)
+        [Dimensions]    {50% 50%}
+        [Position]      (BOTTOMRIGHT) {0 0}
+        [Deco]          {NORMAL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [Hidden]        {yes}
+[end]
+# group,position,dimension *-desktop-bottomrightleft instances (sticky on head 1)
+[group] (workspace)
+    [app] (name=.*-desktop-bottomrightleft)
+        [Dimensions]    {24% 50%}
+        [Position]      (BOTTOMRIGHT) {26% 0}
+        [Deco]          {NORMAL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [Hidden]        {yes}
+[end]
+# group,position,dimension *-desktop-bottomrightright instances (sticky on head 1)
+[group] (workspace)
+    [app] (name=urxvt-desktop-bottomrightright)
+        [Dimensions]    {19% 50%}
+        [Position]      (BOTTOMRIGHT) {6% 0}
+        [Deco]          {NORMAL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [Hidden]        {yes}
 [end]
 
-# group,position,dimension urxvt instances in one workspace
+###############################################################################
+#
+# TERMINALS
+#
+###############################################################################
+# group,position,dimension urxvt instances (sticky on head 1)
 [group] (workspace)
     [app] (urxvt) 
         [Dimensions]    {50% 50%}
@@ -109,103 +102,6 @@
         [Head]          {1}
         [FocusNewWindow] {yes}
 [end]
-
-# group,position,dimension urxvt (desktop) instances in one workspace
-[group] (workspace)
-    [app] (name=urxvt-desktop-top)
-        [Dimensions]    {93% 50%}
-        [Position]      (TOPLEFT) {0 0}
-        [Sticky]        {yes}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-        [IconHidden]    {yes}
-[end]
-
-# group,position,dimension urxvt (desktop) instances in one workspace
-[group] (workspace)
-    [app] (name=urxvt-desktop-topleft)
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0 0}
-        [Sticky]        {yes}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-        [IconHidden]    {yes}
-[end]
-[group] (workspace)
-    [app] (name=urxvt-desktop-topright)
-        [Dimensions]    {44% 50%}
-        [Position]      (TOPRIGHT) {6% 0}
-        [Sticky]        {yes}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-        [IconHidden]    {yes}
-[end]
-[group] (workspace)
-    [app] (name=urxvt-desktop-bottomleft)
-        [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMLEFT) {0 0}
-        [Sticky]        {yes}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-        [IconHidden]    {yes}
-[end]
-[group] (workspace)
-    [app] (name=urxvt-desktop-bottomrightleft)
-        [Dimensions]    {24% 50%}
-        [Position]      (BOTTOMRIGHT) {26% 0}
-        [Sticky]        {yes}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-        [IconHidden]    {yes}
-[end]
-[group] (workspace)
-    [app] (name=urxvt-desktop-bottomrightright)
-        [Dimensions]    {19% 50%}
-        [Position]      (BOTTOMRIGHT) {6% 0}
-        [Sticky]        {yes}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-        [IconHidden]    {yes}
-[end]
-
-# clusterssh urxvt 
-# positioning could be better
-# some of the popped up windows overlap 
-# each other about a titlebar height
-# these windows could be tabbed, if you know the name of each one
-# but this requires a rule in here, which is not existant yet
-# therefore disable tabbing for those windows
-[app] (name=urxvt-cluster) (class=URxvt)
-        # [Dimensions]    {25% 25%} # only works for the first window
-        [Workspace]     {2}
-        [Jump]          {yes}
-        [Head]          {1}
-        [Tab]           {no}    
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-[end]
-
-# # position,dimension gnome-terminal
-# [app] (gnome-terminal-server)
-        # [Dimensions]    {44% 50%}
-        # [Position]      (TOPRIGHT) {6% 0}
-        # [Head]          {1}
-        # [Tab]           {no}
-        # [FocusNewWindow] {yes}
-        # [FocusHidden]   {no}
-# [end]
 
 # group, position,dimension URxvt-remote
 [group] (workspace)
@@ -216,14 +112,50 @@
         [FocusNewWindow] {yes}
 [end]
 
+# clusterssh urxvt 
+# positioning could be better
+# some of the popped up windows overlap 
+# each other about a titlebar height
+# these windows could be tabbed, if you know the name of each one
+# but this requires a rule in here, which is not existant yet
+# therefore disable tabbing for those windows
+[app] (name=urxvt-cluster) (class=URxvt)
+        [Dimensions]    {50% 50%}
+        [Workspace]     {2}
+        [Jump]          {yes}
+        [Head]          {1}
+        [Tab]           {no}    
+        [FocusNewWindow] {no}
+        [Hidden]        {yes} # maybe not good
+[end]
+
+###############################################################################
+#
+# GUI PROGRAMS
+#
+###############################################################################
+# group/position/dimension chat programs (sticky on head 1)
+[group] 
+    [app] (wync)
+    [app] (Pidgin)
+    [app] (xchat)
+    [app] (skype)
+        [Dimensions]    {50% 50%}
+        [Position]      (BOTTOMLEFT) {0 0}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Tab]           {no}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+[end]
+
 # group,position,dimension chromium instances in one workspace
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
         [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
         [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {0 0}
         [Head]          {1}
-        [Tab]           {no}
         [FocusNewWindow] {yes}
 [end]
 
@@ -231,8 +163,8 @@
 [group] (workspace)
     [app] (name=Navigator) (class=Iceweasel)
         [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
         [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {0 0}
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {yes}
@@ -243,8 +175,8 @@
     [app] (name=opera) (class=Opera)
     [app] (name=opera) (class=OperaNext)
         [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
         [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {0 0}
         [Head]          {2}
         [Tab]           {no}
         [FocusNewWindow] {yes}
@@ -255,8 +187,8 @@
     [Workspace]         {0}
     [Jump]              {yes}
     [Dimensions]        {100% 100%}
-    [Position]          (TOPLEFT) {0 0}
     [Maximized]]        {yes}
+    [Position]          (TOPLEFT) {0 0}
     [Head]              {1}
     [Tab]               {no}
     [FocusNewWindow]    {yes}
@@ -264,124 +196,62 @@
 
 # position,dimension kate
 # gedit crashes fluxbox
-[app] (kate)
-    [Dimensions]        {50% 50%}
-    [Position]          (BOTTOMRIGHT) {0% 0}
-    [Sticky]            {yes}
-    [Head]              {1}
-    [Tab]               {no}
-    [FocusNewWindow]    {yes}
+[group] (workspace)
+    [app] (kate)
+        [Dimensions]        {50% 50%}
+        [Position]          (BOTTOMRIGHT) {0% 0}
+        [Sticky]            {yes}
+        [Head]              {1}
+        [FocusNewWindow]    {yes}
 [end]
 
 # position,dimension libreoffice
-[app] (name=libreoffice)
-    [Dimensions]        {50% 100%}
-    [Position]          (TOPLEFT) {0 0}
-    [Maximized]         {vert}
-    [Head]              {1}
-    [Tab]               {yes}
-    [FocusNewWindow]    {yes}
+[group] (workspace)
+    [app] (name=libreoffice)
+        [Dimensions]        {100% 100%}
+        [Maximized]         {yes}
+        [Position]          (TOPLEFT) {0 0}
+        [Head]              {1}
+        [FocusNewWindow]    {yes}
 [end]
 
 # position,dimension virtualbox and place it to desktop
 # WM_NAME=Windows 8 [Running] - Oracle VM VirtualBox
-#[app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*VirtualBox.*)
-# [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running)
-# [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Windows.*8.*\[Running\].*-.*Oracle.*VM.*VirtualBox)
-[app] (name=Qt-subapplication) (class=VirtualBox) 
+# does not work
+[app] (name=Qt-subapplication) (class=VirtualBox) (title=^.*\[Running.*)
     [Sticky]            {yes}
-    [Dimensions]        {100% 100%}
+    [Dimensions]        {50% 50%}
     [Position]          (TOPLEFT) {0 0}
     [Head]              {2}
     [Layer]             {12}
     [Deco]              {NONE}
     [FocusNewWindow]    {no}
-    [FocusHidden]       {yes}
-    [IconHidden]        {yes}
-    [Fullscreen]        {no}
+    [Hidden]            {yes}
 [end]
-# # position,dimension virtualbox main window and place it to desktop
-# [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
-    # [Sticky]            {yes}
-    # [Dimensions]        {50% 50%}
-    # [Position]          (TOPRIGHT) {0 0}
-    # [Head]              {1}
-    # # [Layer]             {12}
-    # # [Deco]              {NONE}
-    # [FocusNewWindow]    {no}
-    # [FocusHidden]       {yes}
-    # [IconHidden]        {yes}
-    # [Fullscreen]        {no}
-# [end]
-
-# group,position,dimension evince instances in one workspace
-[group] (workspace)
-    [app] (evince) 
-        [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
-        [Maximized]]    {yes}
-        [Head]          {1}
-        [Tab]           {no}
-        [FocusNewWindow] {yes}
+# position,dimension virtualbox main window 
+[app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
+    [Dimensions]        {50% 50%}
+    [Position]          (TOPRIGHT) {0 0}
+    [Head]              {1}
+    # [Layer]             {12}
+    # [Deco]              {NONE}
+    [FocusNewWindow]    {no}
+    [Hidden]            {yes}
 [end]
 
-# group,position,dimension eog instances in one workspace
-[group] (workspace)
-    [app] (eog) 
-        [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
-        [Maximized]]    {yes}
-        [Head]          {1}
-        [Tab]           {no}
-        [FocusNewWindow] {yes}
-[end]
-
-# group,position,dimension gvim instances in one workspace
-[group] (workspace)
-    [app] (gvim) 
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPRIGHT) {0 0}
-        [Head]          {1}
-        [Tab]           {no}
-        [FocusNewWindow] {yes}
-[end]
-
-# group,position,dimension gvim instances in one workspace
+# group,position,dimension vncviewer instances in one workspace
 # WM_CLASS(STRING) = "VNC: fayyaz:0", "Vncviewer"
 [group] (workspace)
     [app] (class=Vncviewer) 
         [Workspace]         {2}
         [Jump]              {yes}
         [Dimensions]        {100% 100%}
+        [Maximized]         {yes}
         [Position]          (TOPLEFT) {0 0}
         [Head]              {2}
-        [Deco]              {NONE}
-        [Tab]               {no}
         [FocusNewWindow]    {no}
         [FocusHidden]       {yes}
         [Fullscreen]        {no}
-[end]
-
-# group,position,dimension filezilla instances in one workspace
-[group] (workspace)
-    [app] (filezilla) 
-        [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
-        [Maximized]]    {yes}
-        [Head]          {1}
-        [Tab]           {no}
-        [FocusNewWindow] {yes}
-[end]
-
-# group,position,dimension okular instances in one workspace
-[group] (workspace)
-    [app] (okular) 
-        [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
-        [Maximized]]    {yes}
-        [Head]          {1}
-        [Tab]           {no}
-        [FocusNewWindow] {yes}
 [end]
 
 # group,position,dimension rdesktop instances in one workspace
@@ -390,10 +260,9 @@
         [Workspace]         {2}
         [Jump]              {yes}
         [Dimensions]        {100% 100%}
+        [Maximized]         {yes}
         [Position]          (TOPLEFT) {0 0}
         [Head]              {2}
-        [Deco]              {NONE}
-        [Tab]               {no}
         [FocusNewWindow]    {no}
         [FocusHidden]       {yes}
         [Fullscreen]        {no}
@@ -403,51 +272,30 @@
 [group] (workspace)
     [app] (wireshark) 
         [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
         [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {0 0}
         [Head]          {2}
         [Tab]           {no}
         [FocusNewWindow] {yes}
 [end]
 
-# position,dimension gucharmap instances in one workspace
-[app] (gucharmap) 
+# group, position,dimension any media player instances in one workspace
+[group] (workspace)
+    [app] (vlc) (class=Vlc) (title=VLC media player)
+    [app] (xv) (class=MPlayer)
+    [app] (vdpau) (class=MPlayer)
         [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
         [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {0 0}
         [Head]          {2}
         [Tab]           {no}
-        [FocusNewWindow] {yes}
+        [FocusNewWindow] {no}
+        [FocusHidden]   {yes}
+        [Fullscreen]    {no} # not usable with yes
 [end]
 
-# position,dimension vlc media player instances in one workspace
-[app] (vlc) (title=VLC media player)
-        [Dimensions]    {100% 100%}
+# position,dimension vlc messages window in one workspac3
+[app] (vlc) (class=Vlc) (title=Messages)
+        [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
-        [Maximized]]    {yes}
-        [Head]          {2}
-        [Tab]           {no}
-        [FocusNewWindow] {no}
-        [Fullscreen]    {no}
-[end]
-# position,dimension vlc media player messages instances in one workspace
-[app] (vlc) (title=Messages)
-        [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
-        [Maximized]]    {yes}
-        [Head]          {1}
-        [Tab]           {no}
-        [FocusNewWindow] {no}
-        [Fullscreen]    {no}
-[end]
-
-# position,dimension mplayer instances in one workspace
-[app] (xv) (class=MPlayer)
-        [Dimensions]    {100% 100%}
-        [Position]      (TOPLEFT) {0 0}
-        [Maximized]]    {yes}
-        [Head]          {2}
-        [Tab]           {no}
-        [FocusNewWindow] {no}
-        [Fullscreen]    {no}
 [end]
