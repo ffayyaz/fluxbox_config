@@ -32,7 +32,7 @@ xmodmap "/home/fafa/.Xmodmap"
 # Autostart Home only
 /sbin/ifconfig|egrep '192.168.85.(10|21|22)'
 if [ "${?}" = "0" ]; then
-	icedove &
+# 	icedove &
     kate /tmp/notesx.y.z.txt &
 fi
 
@@ -51,23 +51,19 @@ fi
 
 # Autostart anyway
 xrdb -load ~/.Xresources
-urxvt &
-urxvt &
-# urxvt -name urxvt-desktop-top -e htop&
 urxvt -name urxvt-desktop-topleft -e top&
 if [ "$(uname -n)" != "nacho" ]; then
-# 	urxvt -name urxvt-desktop-topright -hold -e mutt&
 	urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
 fi
 urxvt -name urxvt-desktop-bottomleft -e sudo tail -f /var/log/syslog&
-#urxvt -name urxvt-desktop-bottomrightright -hold -e olive&
-#urxvt -name urxvt-desktop-bottomrightright -e note&
-# urxvt -name URxvt-remote&
 skype &
-# pidgin &
 chromium &
 xscreensaver&
 gkrellm -w &
+
+sleep 3
+urxvt &
+urxvt &
 
 # END AUTOSTART -----------------------------------------------------------
 
