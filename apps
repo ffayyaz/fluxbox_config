@@ -146,7 +146,6 @@
         [Head]          {1}
         [Tab]           {no}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
 [end]
 
 # group,position,dimension chromium instances in one workspace
@@ -187,32 +186,21 @@
     [Workspace]         {0}
     [Jump]              {yes}
     [Dimensions]        {100% 100%}
-    [Maximized]]        {yes}
+    [Minimized]]        {yes}
     [Position]          (TOPLEFT) {0 0}
     [Head]              {1}
-    [Tab]               {no}
-    [FocusNewWindow]    {yes}
+    [FocusNewWindow]    {no}
 [end]
 
 # position,dimension kate
 # gedit crashes fluxbox
-[group] (workspace)
-    [app] (kate)
+# [group] (workspace)
+    [app] (name=kate) (class=Kate)
         [Dimensions]        {50% 50%}
         [Position]          (BOTTOMRIGHT) {0% 0}
         [Sticky]            {yes}
         [Head]              {1}
-        [FocusNewWindow]    {yes}
-[end]
-
-# position,dimension libreoffice
-[group] (workspace)
-    [app] (name=libreoffice)
-        [Dimensions]        {100% 100%}
-        [Maximized]         {yes}
-        [Position]          (TOPLEFT) {0 0}
-        [Head]              {1}
-        [FocusNewWindow]    {yes}
+        [FocusNewWindow]    {no}
 [end]
 
 # position,dimension virtualbox and place it to desktop
@@ -233,9 +221,9 @@
     [Dimensions]        {50% 50%}
     [Position]          (TOPRIGHT) {0 0}
     [Head]              {1}
-    # [Layer]             {12}
+    [Layer]             {12}
     # [Deco]              {NONE}
-    [FocusNewWindow]    {no}
+    [FocusNewWindow]    {yes}
     [Hidden]            {yes}
 [end]
 
