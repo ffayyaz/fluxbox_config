@@ -1,3 +1,11 @@
+# transient windows
+# dialogs like save as or print
+# do not show their icon in toolbar
+[transient] (title=.*)
+        [Position]      {CENTER}
+        [IconHidden]    {yes}
+[end]
+
 ###############################################################################
 #
 # ON DESKTOP LAYER
@@ -13,7 +21,8 @@
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [Hidden]        {yes}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 # group,position,dimension *-desktop-topleft instances (sticky on head 1)
 [group] (workspace)
@@ -25,7 +34,8 @@
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [Hidden]        {yes}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 # group,position,dimension *-desktop-topright instances (sticky on head 1)
 [group] (workspace)
@@ -37,7 +47,8 @@
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [Hidden]        {yes}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 # group,position,dimension *-desktop-bottomleft instances (sticky on head 1)
 [group] (workspace)
@@ -49,7 +60,8 @@
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [Hidden]        {yes}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 # group,position,dimension *-desktop-bottomright instances (sticky on head 1)
 [group] (workspace)
@@ -61,7 +73,8 @@
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [Hidden]        {yes}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 # group,position,dimension *-desktop-bottomrightleft instances (sticky on head 1)
 [group] (workspace)
@@ -73,7 +86,8 @@
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [Hidden]        {yes}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 # group,position,dimension *-desktop-bottomrightright instances (sticky on head 1)
 [group] (workspace)
@@ -85,7 +99,8 @@
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [Hidden]        {yes}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 
 ###############################################################################
@@ -126,7 +141,8 @@
         [Head]          {1}
         [Tab]           {no}    
         [FocusNewWindow] {no}
-        [Hidden]        {yes} # maybe not good
+        [IconHidden]    {yes} # maybe not good
+        [FocusHidden]   {yes}
 [end]
 
 ###############################################################################
@@ -144,7 +160,6 @@
         [Position]      (BOTTOMLEFT) {0 0}
         [Sticky]        {yes}
         [Head]          {1}
-        [Tab]           {no}
         [FocusNewWindow] {no}
 [end]
 
@@ -165,7 +180,6 @@
         [Maximized]]    {yes}
         [Position]      (TOPLEFT) {0 0}
         [Head]          {1}
-        [Tab]           {no}
         [FocusNewWindow] {yes}
 [end]
 
@@ -177,7 +191,6 @@
         [Maximized]]    {yes}
         [Position]      (TOPLEFT) {0 0}
         [Head]          {2}
-        [Tab]           {no}
         [FocusNewWindow] {yes}
 [end]
 
@@ -195,7 +208,7 @@
 # position,dimension kate
 # gedit crashes fluxbox
 # [group] (workspace)
-    [app] (name=kate) (class=Kate)
+[app] (name=kate) (class=Kate)
         [Dimensions]        {50% 50%}
         [Position]          (BOTTOMRIGHT) {0% 0}
         [Sticky]            {yes}
@@ -216,7 +229,8 @@
     [Layer]             {12}
     [Deco]              {NONE}
     [FocusNewWindow]    {no}
-    [Hidden]            {yes}
+    [IconHidden]        {yes}
+    [FocusHidden]       {yes}
 [end]
 # position,dimension virtualbox main window 
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
@@ -226,7 +240,8 @@
     [Layer]             {12}
     # [Deco]              {NONE}
     [FocusNewWindow]    {yes}
-    [Hidden]            {yes}
+    [IconHidden]        {yes}
+    [FocusHidden]       {yes}
 [end]
 
 # group,position,dimension vncviewer instances in one workspace
@@ -265,7 +280,6 @@
         [Maximized]]    {yes}
         [Position]      (TOPLEFT) {0 0}
         [Head]          {2}
-        [Tab]           {no}
         [FocusNewWindow] {yes}
 [end]
 
@@ -278,7 +292,6 @@
         [Maximized]]    {yes}
         [Position]      (TOPLEFT) {0 0}
         [Head]          {2}
-        [Tab]           {no}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
         [Fullscreen]    {no} # not usable with yes

@@ -52,6 +52,7 @@ fi
 # Autostart anyway
 #xrdb -load ~/.Xresources
 urxvt -name urxvt-desktop-topleft -e top&
+urxvt -name urxvt-desktop-topright &
 if [ "$(uname -n)" != "nacho" ]; then
 	urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
 fi
