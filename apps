@@ -206,9 +206,11 @@
 # position,dimension virtualbox and place it to desktop
 # WM_NAME=Windows 8 [Running] - Oracle VM VirtualBox
 # does not work
-[app] (name=Qt-subapplication) (class=VirtualBox) (title=^.*\[Running.*)
+# [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*)
+# [app] (name=Qt-subapplication) (class=VirtualBox) (title=WindowsXP [Running] - Oracle VM VirtualBox)
+[app] (name=Qt-subapplication) (class=VirtualBox) 
     [Sticky]            {yes}
-    [Dimensions]        {50% 50%}
+    [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0 0}
     [Head]              {2}
     [Layer]             {12}
