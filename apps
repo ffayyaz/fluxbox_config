@@ -3,6 +3,7 @@
 # do not show their icon in toolbar
 [transient] (title=.*)
         [Position]      {CENTER}
+        [Dimensions]    {50% 50%}
         [IconHidden]    {yes}
 [end]
 
@@ -16,7 +17,7 @@
     [app] (name=.*-desktop-top)
         [Dimensions]    {93% 50%}
         [Position]      (TOPLEFT) {0 0}
-        [Deco]          {NORMAL}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -29,7 +30,7 @@
     [app] (name=.*-desktop-topleft)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
-        [Deco]          {NORMAL}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -42,7 +43,7 @@
     [app] (name=.*-desktop-topright)
         [Dimensions]    {44% 50%}
         [Position]      (TOPRIGHT) {6% 0}
-        [Deco]          {NORMAL}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -55,7 +56,7 @@
     [app] (name=.*-desktop-bottomleft)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
-        [Deco]          {NORMAL}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -68,7 +69,7 @@
     [app] (name=.*-desktop-bottomright)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMRIGHT) {0 0}
-        [Deco]          {NORMAL}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -81,7 +82,7 @@
     [app] (name=.*-desktop-bottomrightleft)
         [Dimensions]    {24% 50%}
         [Position]      (BOTTOMRIGHT) {26% 0}
-        [Deco]          {NORMAL}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -94,7 +95,7 @@
     [app] (name=urxvt-desktop-bottomrightright)
         [Dimensions]    {19% 50%}
         [Position]      (BOTTOMRIGHT) {6% 0}
-        [Deco]          {NORMAL}
+        [Deco]          {BORDER}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
