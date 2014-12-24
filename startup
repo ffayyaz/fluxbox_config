@@ -50,21 +50,20 @@ if [ "${?}" = "0" ]; then
 fi
 
 # Autostart anyway
-#xrdb -load ~/.Xresources
+xrdb -merge ~/.Xresources
 # urxvt -name urxvt-desktop-topleft -e top&
 # urxvt -name urxvt-desktop-topright &
 # if [ "$(uname -n)" != "nacho" ]; then
 # 	urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
 # fi
-urxvt -title /var/log/messages -name messagesterm -tn messagesterm&
-urxvt -title /var/log/syslog -name syslogterm -tn syslogterm &
-urxvt -title /var/log/debug -name debuglogterm -tn debuglogterm &
-urxvt -title /var/log/dmesg -name dmesglogterm -tn dmesglogterm &
-# urxvt -title /var/log/Xorg.0.log -name xorglogterm -tn xorglogterm &
-urxvt -title /var/log/auth.log -name authlogterm -tn authlogterm &
-urxvt -title /var/log/kern.log -name kernlogterm -tn kernlogterm &
-urxvt -title diskusage -name diskusageterm -tn diskusageterm &
-# urxvt -title /var/log/xdm.log -name xdmlogterm &
+messagesterm
+syslogterm
+debuglogterm
+dmesglogterm
+authlogterm
+kernlogterm
+diskusageterm
+
 skype &
 chromium &
 xscreensaver&
