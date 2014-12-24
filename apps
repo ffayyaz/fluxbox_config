@@ -7,17 +7,100 @@
         [IconHidden]    {yes}
 [end]
 
+[app] (name=htopterm)
+        [Fullscreen]    {yes}
+[end]
+
 ###############################################################################
 #
 # ON DESKTOP LAYER
 #
 ###############################################################################
+[app] (name=messagesterm)
+        [Dimensions]    {70% 25%}
+        [Position]      (TOPLEFT) {0 0}
+        [Deco]          {TOOL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+[app] (name=syslogterm)
+        [Dimensions]    {70% 25%}
+        [Position]      (TOPLEFT) {0% 25%}
+        [Deco]          {TOOL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+[app] (name=debuglogterm)
+        [Dimensions]    {70% 25%}
+        [Position]      (TOPLEFT) {0% 50%}
+        [Deco]          {TOOL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+[app] (name=dmesglogterm)
+        [Dimensions]    {70% 25%}
+        [Position]      (TOPLEFT) {0% 75%}
+        [Deco]          {TOOL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+[app] (name=authlogterm)
+        [Dimensions]    {30% 34%}
+        [Position]      (TOPLEFT) {70% 0}
+        [Deco]          {TOOL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+[app] (name=kernlogterm)
+        [Dimensions]    {30% 33%}
+        [Position]      (TOPLEFT) {70% 34%}
+        [Deco]          {TOOL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+[app] (name=diskusageterm)
+        [Dimensions]    {30% 33%}
+        [Position]      (TOPLEFT) {70% 67%}
+        [Deco]          {TOOL}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+
+
 # group,position,dimension *-desktop-top instances (sticky on head 1)
 [group] (workspace)
     [app] (name=.*-desktop-top)
         [Dimensions]    {93% 50%}
         [Position]      (TOPLEFT) {0 0}
-        [Deco]          {BORDER}
+        [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -30,7 +113,7 @@
     [app] (name=.*-desktop-topleft)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
-        [Deco]          {BORDER}
+        [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -43,7 +126,7 @@
     [app] (name=.*-desktop-topright)
         [Dimensions]    {44% 50%}
         [Position]      (TOPRIGHT) {6% 0}
-        [Deco]          {BORDER}
+        [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -56,7 +139,7 @@
     [app] (name=.*-desktop-bottomleft)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
-        [Deco]          {BORDER}
+        [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -69,7 +152,7 @@
     [app] (name=.*-desktop-bottomright)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMRIGHT) {0 0}
-        [Deco]          {BORDER}
+        [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -82,7 +165,7 @@
     [app] (name=.*-desktop-bottomrightleft)
         [Dimensions]    {24% 50%}
         [Position]      (BOTTOMRIGHT) {26% 0}
-        [Deco]          {BORDER}
+        [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -95,7 +178,7 @@
     [app] (name=urxvt-desktop-bottomrightright)
         [Dimensions]    {19% 50%}
         [Position]      (BOTTOMRIGHT) {6% 0}
-        [Deco]          {BORDER}
+        [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
@@ -299,7 +382,7 @@
 [end]
 
 # position,dimension vlc messages window in one workspac3
-[app] (vlc) (class=Vlc) (title=Messages)
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0 0}
-[end]
+# [app] (vlc) (class=Vlc) (title=Messages)
+        # [Dimensions]    {50% 50%}
+        # [Position]      (TOPLEFT) {0 0}
+# [end]

@@ -178,3 +178,6 @@ Mod4  d	:ShowDesktop
 # this should work with focusnewwindow setting in apps 
 # but seems not to work for tabbed windows, only for new ones
 Mod4 r :Raise
+
+# htop terminal (see apps)
+Mod4 t :Exec  urxvt -name htopterm -e htop
