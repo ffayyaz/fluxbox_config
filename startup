@@ -56,14 +56,6 @@ xrdb -merge ~/.Xresources
 # if [ "$(uname -n)" != "nacho" ]; then
 # 	urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
 # fi
-messagesterm
-syslogterm
-debuglogterm
-dmesglogterm
-authlogterm
-kernlogterm
-diskusageterm
-
 skype &
 chromium &
 xscreensaver&
@@ -72,6 +64,19 @@ gkrellm -w &
 sleep 3
 urxvt &
 urxvt &
+
+# they need to be started at the end, otherwise 
+# they are not drawn correctly (they overlap the slit)
+# BULLCRAP workaround
+messagesterm
+syslogterm
+debuglogterm
+dmesglogterm
+authlogterm
+kernlogterm
+diskusageterm
+
+
 
 # END AUTOSTART -----------------------------------------------------------
 
