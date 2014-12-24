@@ -245,6 +245,7 @@
         [Sticky]        {yes}
         [Head]          {1}
         [FocusNewWindow] {no}
+        [IconHidden]    {yes}
 [end]
 
 # group,position,dimension chromium instances in one workspace
