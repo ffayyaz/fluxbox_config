@@ -64,56 +64,62 @@ fi
 
 # TODO mail watcher
 
-#_______ Autostart Netstream only ______________________________________________
-/sbin/ifconfig|egrep '192.168.1.116'
-if [ "${?}" = "0" ]; then
-    [ -x /usr/bin/virtualbox ] && virtualbox &
-    [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
-fi
-
-################### TERMINALS ##################################################
+################### GUI APPLICATIONS ###########################################
+# NOTE: gui apps need to be started delayed
+#       otherwise all windows are messed up 
 
 fluxbox &
 fbpid=$!
 
 sleep 4
 {
-#_______ Autostart Home only ___________________________________________________
-/sbin/ifconfig|egrep '192.168.85.(10|21|22)'
-if [ "${?}" = "0" ]; then
-    [ -x /usr/bin/icedove ] && icedove &
-    [ -x /usr/bin/kate ] && kate /tmp/notesx.y.z.txt &
-fi
+    #_______ Autostart Home only _______________________________________________
+    /sbin/ifconfig|egrep '192.168.85.(10|14|21|22)'
+    if [ "${?}" = "0" ]; then
+        [ -x /usr/bin/icedove ] && icedove &
+        [ -x /usr/bin/kate ] && kate /tmp/notesx.y.z.txt &
+    fi
 
-#_______ Autostart Ganja only __________________________________________________
-/sbin/ifconfig|egrep '192.168.85.10'
-if [ "${?}" = "0" ]; then
-	[ -x /usr/bin/xchat ] && xchat &
-fi
+    #_______ Autostart Ganja only ______________________________________________
+    /sbin/ifconfig|egrep '192.168.85.10'
+    if [ "${?}" = "0" ]; then
+	    [ -x /usr/bin/xchat ] && xchat &
+    fi
 
+    #_______ Autostart Netstream only __________________________________________
+    /sbin/ifconfig|egrep '192.168.1.116'
+    if [ "${?}" = "0" ]; then
+        [ -x /usr/bin/virtualbox ] && virtualbox &
+        [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
+    fi
 
-# gui applications
-[ -x /usr/bin/skype ] && skype &
-[ -x /usr/bin/chromium ] && chromium &
-[ -x /usr/bin/audacious ] && audacious &
-   # Applications you want to run after fluxbox has started
-   # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN & AT THE END.
+    #_______ Autostart anyway __________________________________________________
+    [ -x /usr/bin/skype ] && skype &
+    [ -x /usr/bin/chromium ] && chromium &
+    [ -x /usr/bin/audacious ] && audacious &
 
-sleep 1
-urxvt &
-urxvt &
+    urxvt &
+    urxvt &
 
-# they need to be started at the end, otherwise 
-# they are not drawn correctly (they overlap the slit)
-# BULLCRAP workaround
-messagesterm &
-syslogterm &
-debuglogterm &
-dmesglogterm &
-authlogterm &
-kernlogterm &
-diskusageterm &
+    # they need to be started at the end, otherwise 
+    # they are not drawn correctly (they overlap the slit)
+    # BULLCRAP workaround
+    messagesterm &
+    syslogterm &
+    debuglogterm &
+    dmesglogterm &
+    authlogterm &
+    kernlogterm &
+    diskusageterm &
 
+    #
+    # Debian-local change:
+    #   - fbautostart has been added with a quick hack to check to see if it
+    #     exists. If it does, we'll start it up by default.
+    which fbautostart > /dev/null
+    if [ $? -eq 0 ]; then
+        fbautostart
+    fi
 } &
  
 wait $fbpid
@@ -121,14 +127,6 @@ wait $fbpid
 
 # END AUTOSTART -----------------------------------------------------------
 
-#
-# Debian-local change:
-#   - fbautostart has been added with a quick hack to check to see if it
-#     exists. If it does, we'll start it up by default.
-which fbautostart > /dev/null
-if [ $? -eq 0 ]; then
-    fbautostart
-fi
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
