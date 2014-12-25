@@ -12,18 +12,41 @@
 [end]
 
 [app] (gdeskcal)
-        [Position]      (TOPRIGHT) {0 0} 
+        [Position]      (TOPRIGHT) {12% 0} 
+        [Dimensions}    {12% 17%}
         [Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
+        [Deco]          {BORDER}
 [end]
 
 [app] (xclock)
         [Position]      (TOPRIGHT) {0% 17%}
         [Dimensions]    {12% 17%} 
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [Deco]          {BORDER}
+[end]
+
+[app] (wmmixer)
+        [Position]      (TOPRIGHT) {0% 34%}
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [Deco]          {BORDER}
+[end]
+
+[app] (xfce4-notes)
+        [Position]      (TOPRIGHT) {12% 0%}
+        [Dimensions]    {28% 40%} 
         [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
