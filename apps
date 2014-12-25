@@ -2,7 +2,7 @@
 # dialogs like save as or print
 # do not show their icon in toolbar
 [transient] (title=.*)
-        [Position]      {CENTER}
+        [Position]      (CENTER) {0 0}
         [Dimensions]    {50% 50%}
         [IconHidden]    {yes}
 [end]
@@ -11,13 +11,34 @@
         [Fullscreen]    {yes}
 [end]
 
+[app] (gdeskcal)
+        [Position]      (TOPRIGHT) {0 0} 
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+
+[app] (xclock)
+        [Position]      (TOPRIGHT) {0% 17%}
+        [Dimensions]    {12% 17%} 
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [Deco]          {BORDER}
+[end]
+
 ###############################################################################
 #
 # ON DESKTOP LAYER
 #
 ###############################################################################
 [app] (name=messagesterm)
-        [Dimensions]    {60% 25%}
+        [Dimensions]    {30% 25%}
         [Position]      (TOPLEFT) {0 0}
         [Deco]          {TOOL}
         [Sticky]        {yes}
@@ -28,7 +49,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=syslogterm)
-        [Dimensions]    {60% 25%}
+        [Dimensions]    {30% 25%}
         [Position]      (TOPLEFT) {0% 25%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
@@ -39,7 +60,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=debuglogterm)
-        [Dimensions]    {60% 25%}
+        [Dimensions]    {30% 25%}
         [Position]      (TOPLEFT) {0% 50%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
@@ -50,7 +71,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=dmesglogterm)
-        [Dimensions]    {60% 25%}
+        [Dimensions]    {30% 25%}
         [Position]      (TOPLEFT) {0% 75%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
@@ -62,7 +83,7 @@
 [end]
 [app] (name=authlogterm)
         [Dimensions]    {30% 34%}
-        [Position]      (TOPLEFT) {60% 0}
+        [Position]      (TOPLEFT) {30% 0}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -73,7 +94,7 @@
 [end]
 [app] (name=kernlogterm)
         [Dimensions]    {30% 33%}
-        [Position]      (TOPLEFT) {60% 34%}
+        [Position]      (TOPLEFT) {30% 34%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -84,7 +105,7 @@
 [end]
 [app] (name=diskusageterm)
         [Dimensions]    {30% 33%}
-        [Position]      (TOPLEFT) {60% 67%}
+        [Position]      (TOPLEFT) {30% 67%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
