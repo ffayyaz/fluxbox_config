@@ -17,7 +17,7 @@
 #
 ###############################################################################
 [app] (name=messagesterm)
-        [Dimensions]    {70% 25%}
+        [Dimensions]    {60% 25%}
         [Position]      (TOPLEFT) {0 0}
         [Deco]          {TOOL}
         [Sticky]        {yes}
@@ -28,7 +28,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=syslogterm)
-        [Dimensions]    {70% 25%}
+        [Dimensions]    {60% 25%}
         [Position]      (TOPLEFT) {0% 25%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
@@ -39,7 +39,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=debuglogterm)
-        [Dimensions]    {70% 25%}
+        [Dimensions]    {60% 25%}
         [Position]      (TOPLEFT) {0% 50%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
@@ -50,7 +50,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=dmesglogterm)
-        [Dimensions]    {70% 25%}
+        [Dimensions]    {60% 25%}
         [Position]      (TOPLEFT) {0% 75%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
@@ -62,7 +62,7 @@
 [end]
 [app] (name=authlogterm)
         [Dimensions]    {30% 34%}
-        [Position]      (TOPLEFT) {70% 0}
+        [Position]      (TOPLEFT) {60% 0}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -73,7 +73,7 @@
 [end]
 [app] (name=kernlogterm)
         [Dimensions]    {30% 33%}
-        [Position]      (TOPLEFT) {70% 34%}
+        [Position]      (TOPLEFT) {60% 34%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -84,7 +84,7 @@
 [end]
 [app] (name=diskusageterm)
         [Dimensions]    {30% 33%}
-        [Position]      (TOPLEFT) {70% 67%}
+        [Position]      (TOPLEFT) {60% 67%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -93,7 +93,6 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-
 
 # group,position,dimension *-desktop-top instances (sticky on head 1)
 [group] (workspace)
