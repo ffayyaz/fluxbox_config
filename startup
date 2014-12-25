@@ -7,19 +7,29 @@
 # set black background forcibly (maybe overlay is not needed anymore)
 /usr/bin/fbsetroot -solid black
 
+# or set a background image
+#fbsetbg -f /path/to/image.jpg
+
+# show fluxbox splash screen
+#fbsetbg -C /usr/share/fluxbox/splash.jpg
+
+# turn off beeps
+xset b off
+
+# own font path
+# xset +fp "~/.fonts"
+
 # Change your keymap:
-xmodmap "/home/fafa/.Xmodmap"
+#xmodmap "~/.Xmodmap" # TODO check this
 [ -f /usr/bin/setxkbmap ] && /usr/bin/setxkbmap ch
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 #
-# unclutter -idle 2 &
-# wmnd &
-# wmsmixer -w &
-# idesk &
+[ -x /usr/bin/gkrellm ] && gkrellm -w &
+[ -x /usr/bin/wmmoonclock ] && wmmoonclock &
 
-# BEGIN AUTOSTART ---------------------------------------------------------
+################### PROGRAMS ###################################################
 
 #source /home/fafa/.bashrc
 #truecrypt /data/bizz
@@ -29,53 +39,84 @@ xmodmap "/home/fafa/.Xmodmap"
 #	dhclient eth0
 #fi
 
-# Autostart Home only
-/sbin/ifconfig|egrep '192.168.85.(10|21|22)'
-if [ "${?}" = "0" ]; then
-# 	icedove &
-    kate /tmp/notesx.y.z.txt &
+#_______ Autostart everywhere _________________________________________________
+
+# visual effects
+# TODO check this in general
+if [ -x /usr/bin/xcompmgr ]; then
+    # only one
+    # xcompmgr -c &
+    xcompmgr -fF -I-.004 -O-.004 -D2 -cC -t-4 -l-6 -r6 &
 fi
 
-# Autostart Ganja only
-/sbin/ifconfig|egrep '192.168.85.10'
-if [ "${?}" = "0" ]; then
-	xchat &
-fi
+# tools / gadgets / eyecandies
+[ -x /usr/bin/unclutter ] && unclutter -idle 2 &
+[ -x /usr/bin/xscreensaver ] && xscreensaver &
+# TODO notes
+#[ -x /usr/bin/xfce4-notes ] && xfce4-notes &
+#[ -x /usr/bin/gdeskcal ] && gdeskcal & # FI SURE. NEEDS PLACEMENT
+#[ -x /usr/bin/xfishtank ] && xfishtank &
+#[ -x /usr/bin/xclock ] && xclock -digital -strftime %Y%m%d.%H%M -update 30 -geometry +960+0 &
+#[ -x /usr/bin/xdesktopwaves ] && xdesktopwaves -c 5 -vs 5 -li 9 -nwm -si 4 -lal 50 -laz 0 -fr 75 -sf 2 &
+#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 25 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -sc darkred -whirl 1 -xspeed 4 -yspeed 7 -wsnowdepth 25 &
+#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 350 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -nokeepsnowonwindows -sc darkcyan -whirl 1 -xspeed 4 -yspeed 7 &
 
-# Autostart Netstream only
+
+# TODO mail watcher
+
+#_______ Autostart Netstream only ______________________________________________
 /sbin/ifconfig|egrep '192.168.1.116'
 if [ "${?}" = "0" ]; then
-    virtualbox&
-    kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
+    [ -x /usr/bin/virtualbox ] && virtualbox &
+    [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
 fi
 
-# Autostart anyway
-xrdb -merge ~/.Xresources
-# urxvt -name urxvt-desktop-topleft -e top&
-# urxvt -name urxvt-desktop-topright &
-# if [ "$(uname -n)" != "nacho" ]; then
-# 	urxvt -name urxvt-desktop-bottomrightleft -hold -e cal -yh&
-# fi
-skype &
-chromium &
-xscreensaver&
-gkrellm -w &
+################### TERMINALS ##################################################
 
-sleep 3
+fluxbox &
+fbpid=$!
+
+sleep 4
+{
+#_______ Autostart Home only ___________________________________________________
+/sbin/ifconfig|egrep '192.168.85.(10|21|22)'
+if [ "${?}" = "0" ]; then
+    [ -x /usr/bin/icedove ] && icedove &
+    [ -x /usr/bin/kate ] && kate /tmp/notesx.y.z.txt &
+fi
+
+#_______ Autostart Ganja only __________________________________________________
+/sbin/ifconfig|egrep '192.168.85.10'
+if [ "${?}" = "0" ]; then
+	[ -x /usr/bin/xchat ] && xchat &
+fi
+
+
+# gui applications
+[ -x /usr/bin/skype ] && skype &
+[ -x /usr/bin/chromium ] && chromium &
+[ -x /usr/bin/audacious ] && audacious &
+   # Applications you want to run after fluxbox has started
+   # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN & AT THE END.
+
+sleep 1
 urxvt &
 urxvt &
 
 # they need to be started at the end, otherwise 
 # they are not drawn correctly (they overlap the slit)
 # BULLCRAP workaround
-messagesterm
-syslogterm
-debuglogterm
-dmesglogterm
-authlogterm
-kernlogterm
-diskusageterm
+messagesterm &
+syslogterm &
+debuglogterm &
+dmesglogterm &
+authlogterm &
+kernlogterm &
+diskusageterm &
 
+} &
+ 
+wait $fbpid
 
 
 # END AUTOSTART -----------------------------------------------------------
@@ -92,6 +133,6 @@ fi
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
-exec fluxbox -log "/home/fafa/.fluxbox/log"
+#exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/fafa/.fluxbox/log"
