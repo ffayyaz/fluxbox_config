@@ -44,6 +44,17 @@
         [Deco]          {BORDER}
 [end]
 
+[app] (xpad)
+        [Position]      (TOPRIGHT) {0% 40%}
+        [Dimensions]    {12% 17%} 
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [Deco]          {TAB}
+[end]
+
 [app] (audacious)
         [Workspace]     {4}
         [Position]      (TOPLEFT) {0 0}
@@ -341,7 +352,7 @@
 # position,dimension icedove mail
 [app] (name=Mail) (class=Icedove)
     [Workspace]         {5}
-    [Jump]              {yes}
+    # [Jump]              {yes}
     [Dimensions]        {100% 100%}
     [Minimized]]        {yes}
     [Position]          (TOPLEFT) {0 0}
