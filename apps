@@ -3,7 +3,7 @@
 # do not show their icon in toolbar
 [transient] (title=.*)
         [Position]      (CENTER) {0 0}
-        [Dimensions]    {50% 50%}
+        # [Dimensions]    {50% 50%}
         [IconHidden]    {yes}
 [end]
 
