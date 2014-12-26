@@ -71,7 +71,8 @@ sleep 4
 	[ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 	[ -x /usr/bin/wmmixer ] && wmmixer &
 	# TODO mail watcher
-	# TODO rss reader
+	# TODO rss reader (liferea, yarssr
+	[ -x /usr/bin/liferea ] && liferea &
 	# TODO notes
 
     # gui applications
