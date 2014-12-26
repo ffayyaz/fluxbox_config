@@ -85,7 +85,7 @@ sleep 4
     /sbin/ifconfig|egrep '192.168.85.(10|14|21|22)'
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/icedove ] && icedove &
-        [ -x /usr/bin/kate ] && kate /tmp/notesx.y.z.txt &
+        # [ -x /usr/bin/kate ] && kate /tmp/notesx.y.z.txt &
     fi
 
     #_______ Autostart Ganja only ______________________________________________
@@ -98,7 +98,7 @@ sleep 4
     /sbin/ifconfig|egrep '192.168.1.116'
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/virtualbox ] && virtualbox &
-        [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
+        # [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
     fi
 
     #_______ Autostart everywhere (final)_______________________________________
