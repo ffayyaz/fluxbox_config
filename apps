@@ -55,12 +55,25 @@
         [Deco]          {TAB}
 [end]
 
-[app] (audacious)
+[app] (name=audacious) (class=Audacious) (title=Audacious)
         [Workspace]     {4}
         [Position]      (TOPLEFT) {0 0}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
+        [Dimensions]    {88% 57%}
+        [Layer]         {12}
         [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [Deco]          {NONE}
+[end]
+[app] (name=audacious) (class=Audacious) (title!=Audacious)
+        [Workspace]     {4}
+        [Position]      (TOPLEFT) {0% 50%}
+        [Dimensions]    {50% 43%}
+        [Layer]         {12}
+        [FocusNewWindow] {yes}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [Deco]          {NONE}
 [end]
 
 [app] (liferea)
