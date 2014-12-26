@@ -78,8 +78,8 @@
 
 [app] (liferea)
         [Workspace]     {6}
-        [Position]      (BOTTOMRIGHT) {0 0}
-        [Dimensions]    {40% 60%}
+        [Position]      (TOPLEFT) {0 0}
+        [Dimensions]    {88% 100%}
         # [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
