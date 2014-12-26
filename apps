@@ -77,7 +77,7 @@
 [end]
 
 [app] (liferea)
-        [Workspace]     {4}
+        [Workspace]     {6}
         [Position]      (BOTTOMRIGHT) {0 0}
         [Dimensions]    {40% 60%}
         # [Sticky]        {yes}
@@ -303,7 +303,7 @@
 # therefore disable tabbing for those windows
 [app] (name=urxvt-cluster) (class=URxvt)
         [Dimensions]    {50% 50%}
-        [Workspace]     {2}
+        [Workspace]     {1}
         [Jump]          {yes}
         [Head]          {1}
         [Tab]           {no}    
@@ -377,7 +377,7 @@
 # gedit crashes fluxbox
 # [group] (workspace)
 [app] (name=kate) (class=Kate)
-        [Workspace]         {4}
+        [Workspace]         {6}
         [Dimensions]        {50% 50%}
         [Position]          (BOTTOMRIGHT) {0% 0}
         # [Sticky]            {yes}
@@ -417,7 +417,7 @@
 # WM_CLASS(STRING) = "VNC: fayyaz:0", "Vncviewer"
 [group] (workspace)
     [app] (class=Vncviewer) 
-        [Workspace]         {2}
+        [Workspace]         {1}
         [Jump]              {yes}
         [Dimensions]        {100% 100%}
         [Maximized]         {yes}
@@ -431,7 +431,7 @@
 # group,position,dimension rdesktop instances in one workspace
 [group] (workspace)
     [app] (rdesktop) 
-        [Workspace]         {2}
+        [Workspace]         {1}
         [Jump]              {yes}
         [Dimensions]        {100% 100%}
         [Maximized]         {yes}
