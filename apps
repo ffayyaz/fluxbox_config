@@ -67,8 +67,8 @@
 [end]
 [app] (name=audacious) (class=Audacious) (title!=Audacious)
         [Workspace]     {4}
-        [Position]      (TOPLEFT) {0% 50%}
-        [Dimensions]    {50% 43%}
+        [Position]      (TOPLEFT) {0% 40%}
+        [Dimensions]    {50% 40%}
         [Layer]         {12}
         [FocusNewWindow] {yes}
         [IconHidden]    {yes}
