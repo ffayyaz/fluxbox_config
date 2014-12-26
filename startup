@@ -31,38 +31,6 @@ xset b off
 
 ################### PROGRAMS ###################################################
 
-#source /home/fafa/.bashrc
-#truecrypt /data/bizz
-#lan
-#/sbin/ifconfig|egrep '192.1'
-#if [ ${?} -ne 0 ]; then
-#	dhclient eth0
-#fi
-
-#_______ Autostart everywhere _________________________________________________
-
-# visual effects
-# TODO check this in general
-if [ -x /usr/bin/xcompmgr ]; then
-    # only one
-    # xcompmgr -c &
-    xcompmgr -fF -I-.004 -O-.004 -D2 -cC -t-4 -l-6 -r6 &
-fi
-
-# tools / gadgets / eyecandies
-[ -x /usr/bin/unclutter ] && unclutter -idle 2 &
-[ -x /usr/bin/xscreensaver ] && xscreensaver &
-# TODO notes
-#[ -x /usr/bin/xfce4-notes ] && xfce4-notes &
-#[ -x /usr/bin/gdeskcal ] && gdeskcal & # FI SURE. NEEDS PLACEMENT
-#[ -x /usr/bin/xfishtank ] && xfishtank &
-#[ -x /usr/bin/xclock ] && xclock -digital -strftime %Y%m%d.%H%M -update 30 -geometry +960+0 &
-#[ -x /usr/bin/xdesktopwaves ] && xdesktopwaves -c 5 -vs 5 -li 9 -nwm -si 4 -lal 50 -laz 0 -fr 75 -sf 2 &
-#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 25 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -sc darkred -whirl 1 -xspeed 4 -yspeed 7 -wsnowdepth 25 &
-#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 350 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -nokeepsnowonwindows -sc darkcyan -whirl 1 -xspeed 4 -yspeed 7 &
-
-
-# TODO mail watcher
 
 ################### GUI APPLICATIONS ###########################################
 # NOTE: gui apps need to be started delayed
@@ -73,6 +41,44 @@ fbpid=$!
 
 sleep 4
 {
+	#source /home/fafa/.bashrc
+	#truecrypt /data/bizz
+	#lan
+	#/sbin/ifconfig|egrep '192.1'
+	#if [ ${?} -ne 0 ]; then
+	#	dhclient eth0
+	#fi
+	
+	#_______ Autostart everywhere ______________________________________________
+	
+	# visual effects
+	# TODO check this in general
+	if [ -x /usr/bin/xcompmgr ]; then
+	    # xcompmgr -c &
+	    xcompmgr -fF -I-.004 -O-.004 -D2 -cC -t-4 -l-6 -r6 &
+	fi
+
+    # eye candies
+	#[ -x /usr/bin/xfishtank ] && xfishtank &
+	#[ -x /usr/bin/xdesktopwaves ] && xdesktopwaves -c 5 -vs 5 -li 9 -nwm -si 4 -lal 50 -laz 0 -fr 75 -sf 2 &
+	#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 25 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -sc darkred -whirl 1 -xspeed 4 -yspeed 7 -wsnowdepth 25 &
+	#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 350 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -nokeepsnowonwindows -sc darkcyan -whirl 1 -xspeed 4 -yspeed 7 &
+	
+	# tools / gadgets 
+	[ -x /usr/bin/unclutter ] && unclutter -idle 2 &
+	[ -x /usr/bin/xscreensaver ] && xscreensaver &
+	[ -x /usr/bin/gdeskcal ] && gdeskcal & 
+	[ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
+	[ -x /usr/bin/wmmixer ] && wmmixer &
+	# TODO mail watcher
+	# TODO rss reader
+	# TODO notes
+
+    # gui applications
+    [ -x /usr/bin/skype ] && skype &
+    [ -x /usr/bin/chromium ] && chromium &
+    [ -x /usr/bin/audacious ] && audacious &
+
     #_______ Autostart Home only _______________________________________________
     /sbin/ifconfig|egrep '192.168.85.(10|14|21|22)'
     if [ "${?}" = "0" ]; then
@@ -93,11 +99,7 @@ sleep 4
         [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
     fi
 
-    #_______ Autostart anyway __________________________________________________
-    [ -x /usr/bin/skype ] && skype &
-    [ -x /usr/bin/chromium ] && chromium &
-    [ -x /usr/bin/audacious ] && audacious &
-
+    #_______ Autostart everywhere (final)_______________________________________
     urxvt &
     urxvt &
 
