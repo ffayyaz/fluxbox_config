@@ -340,7 +340,7 @@
 
 # position,dimension icedove mail
 [app] (name=Mail) (class=Icedove)
-    [Workspace]         {0}
+    [Workspace]         {5}
     [Jump]              {yes}
     [Dimensions]        {100% 100%}
     [Minimized]]        {yes}
@@ -353,6 +353,7 @@
 # gedit crashes fluxbox
 # [group] (workspace)
 [app] (name=kate) (class=Kate)
+        [Workspace]         {4}
         [Dimensions]        {50% 50%}
         [Position]          (BOTTOMRIGHT) {0% 0}
         [Sticky]            {yes}
