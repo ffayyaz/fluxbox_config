@@ -71,7 +71,7 @@
 ###############################################################################
 [app] (name=messagesterm)
         [Workspace]     {0}
-        [Dimensions]    {30% 25%}
+        [Dimensions]    {44% 25%}
         [Position]      (TOPLEFT) {0 0}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -83,7 +83,7 @@
 [end]
 [app] (name=syslogterm)
         [Workspace]     {0}
-        [Dimensions]    {30% 25%}
+        [Dimensions]    {44% 25%}
         [Position]      (TOPLEFT) {0% 25%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -95,7 +95,7 @@
 [end]
 [app] (name=debuglogterm)
         [Workspace]     {0}
-        [Dimensions]    {30% 25%}
+        [Dimensions]    {44% 25%}
         [Position]      (TOPLEFT) {0% 50%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -107,7 +107,7 @@
 [end]
 [app] (name=dmesglogterm)
         [Workspace]     {0}
-        [Dimensions]    {30% 25%}
+        [Dimensions]    {44% 25%}
         [Position]      (TOPLEFT) {0% 75%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -119,8 +119,8 @@
 [end]
 [app] (name=authlogterm)
         [Workspace]     {0}
-        [Dimensions]    {30% 34%}
-        [Position]      (TOPLEFT) {30% 0}
+        [Dimensions]    {44% 34%}
+        [Position]      (TOPLEFT) {44% 0}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
         [Head]          {1}
@@ -131,8 +131,8 @@
 [end]
 [app] (name=kernlogterm)
         [Workspace]     {0}
-        [Dimensions]    {30% 33%}
-        [Position]      (TOPLEFT) {30% 34%}
+        [Dimensions]    {44% 33%}
+        [Position]      (TOPLEFT) {44% 34%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
         [Head]          {1}
@@ -143,8 +143,8 @@
 [end]
 [app] (name=diskusageterm)
         [Workspace]     {0}
-        [Dimensions]    {30% 33%}
-        [Position]      (TOPLEFT) {30% 67%}
+        [Dimensions]    {44% 33%}
+        [Position]      (TOPLEFT) {44% 67%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
         [Head]          {1}
