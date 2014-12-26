@@ -356,7 +356,7 @@
         [Workspace]         {4}
         [Dimensions]        {50% 50%}
         [Position]          (BOTTOMRIGHT) {0% 0}
-        [Sticky]            {yes}
+        # [Sticky]            {yes}
         [Head]              {1}
         [FocusNewWindow]    {no}
 [end]
