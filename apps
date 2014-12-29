@@ -274,20 +274,23 @@
 # group,position,dimension urxvt instances (sticky on head 1)
 [group] (workspace)
     [app] (urxvt) 
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {40% 50%}
         [Position]      (TOPLEFT) {0 0}
         [Sticky]        {yes}
         [Head]          {1}
         [FocusNewWindow] {yes}
+        # [Layer]         {7}
 [end]
 
 # group, position,dimension URxvt-remote
 [group] (workspace)
     [app] (URxvt-remote)
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPRIGHT) {0% 0}
+        [Dimensions]    {40% 50%}
+        #[Position]      (TOPRIGHT) {0% 0}
+        [Position]      (TOPLEFT) {0% 50%}
         [Head]          {1}
         [FocusNewWindow] {yes}
+        # [Layer]         {7}
 [end]
 
 # clusterssh urxvt 
@@ -330,9 +333,9 @@
 # group,position,dimension chromium instances in one workspace
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
-        [Dimensions]    {100% 100%}
+        [Dimensions]    {60% 100%}
         [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {40% 0}
         [Head]          {1}
         [FocusNewWindow] {yes}
 [end]
