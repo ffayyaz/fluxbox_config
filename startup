@@ -100,6 +100,11 @@ sleep 4
         # [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
     fi
 
+    #_______ Autostart mobile only _____________________________________________
+    if [ "`hostname`" = "mobile" ]; then
+        cpufreqterm &
+    fi
+
     #_______ Autostart everywhere (final)_______________________________________
     urxvt &
     urxvt &
