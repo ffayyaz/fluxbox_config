@@ -322,7 +322,7 @@
     [app] (Pidgin)
     [app] (xchat)
     [app] (skype)
-        [Dimensions]    {50% 50%}
+        [Dimensions]    {40% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
         [Sticky]        {yes}
         [Head]          {1}
