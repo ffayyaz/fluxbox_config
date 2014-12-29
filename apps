@@ -44,17 +44,6 @@
         [Deco]          {BORDER}
 [end]
 
-[app] (xpad)
-        [Position]      (TOPRIGHT) {0% 40%}
-        [Dimensions]    {12% 17%} 
-        [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-        [Deco]          {TAB}
-[end]
-
 [app] (name=audacious) (class=Audacious) (title=Audacious)
         [Workspace]     {4}
         [Position]      (TOPLEFT) {0 0}
@@ -272,7 +261,7 @@
 # group,position,dimension urxvt instances (sticky on head 1)
 [group] (workspace)
     [app] (urxvt) 
-        [Dimensions]    {50% 50%}
+        [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {0 0}
         [Sticky]        {yes}
         [Head]          {1}
@@ -282,7 +271,7 @@
 # group, position,dimension URxvt-remote
 [group] (workspace)
     [app] (URxvt-remote)
-        [Dimensions]    {50% 50%}
+        [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0}
         [Head]          {1}
         [FocusNewWindow] {yes}

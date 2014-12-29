@@ -74,7 +74,6 @@ sleep 4
 	# TODO rss reader (liferea, yarssr
 	[ -x /usr/bin/liferea ] && liferea &
 	# TODO notes
-	[ -x /usr/bin/xpad ] && xpad &
 
     # gui applications
     [ -x /usr/bin/skype ] && skype &
