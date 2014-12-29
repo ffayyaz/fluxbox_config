@@ -58,22 +58,16 @@
 [app] (name=audacious) (class=Audacious) (title=Audacious)
         [Workspace]     {4}
         [Position]      (TOPLEFT) {0 0}
-        [Dimensions]    {88% 57%}
+        [Dimensions]    {88% 100%}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
         [Deco]          {NONE}
 [end]
 [app] (name=audacious) (class=Audacious) (title!=Audacious)
         [Workspace]     {4}
-        [Position]      (TOPLEFT) {0% 40%}
-        [Dimensions]    {50% 40%}
+        [Position]      (CENTER) {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {yes}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-        [Deco]          {NONE}
 [end]
 
 [app] (liferea)
@@ -385,6 +379,7 @@
     [Dimensions]        {100% 50%}
     [Position]          (TOPLEFT) {0 0}
     [Head]              {1}
+    [Layer]             {12}
 [end]
 # position,dimension icedove new mail window
 [app] (name=Msgcompose) (class=Icedove) 
