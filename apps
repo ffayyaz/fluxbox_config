@@ -362,15 +362,36 @@
         [FocusNewWindow] {yes}
 [end]
 
-# position,dimension icedove mail
-[app] (name=Mail) (class=Icedove)
+# position,dimension icedove main window 
+[app] (name=Mail) (class=Icedove) (role=3pane)
     [Workspace]         {5}
-    # [Jump]              {yes}
     [Dimensions]        {100% 100%}
-    [Minimized]]        {yes}
     [Position]          (TOPLEFT) {0 0}
     [Head]              {1}
     [FocusNewWindow]    {no}
+    [Layer]             {12}
+    [Deco]              {NONE}
+[end]
+# position,dimension icedove mail
+[app] (name=Mail) (class=Icedove) (role=addressbook)
+    [Workspace]         {5}
+    [Dimensions]        {50% 100%}
+    [Position]          (TOPLEFT) {0 0}
+    [Head]              {1}
+[end]
+# position,dimension icedove mail subwindows
+[app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
+    [Workspace]         {5}
+    [Dimensions]        {100% 50%}
+    [Position]          (TOPLEFT) {0 0}
+    [Head]              {1}
+[end]
+# position,dimension icedove new mail window
+[app] (name=Msgcompose) (class=Icedove) 
+    [Workspace]         {5}
+    [Dimensions]        {50% 100%}
+    [Position]          (TOPLEFT) {50% 0}
+    [Head]              {1}
 [end]
 
 # position,dimension kate
