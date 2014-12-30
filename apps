@@ -183,7 +183,7 @@
 [end]
 [app] (name=cpufreqterm)
         [Workspace]     {0}
-        [Dimensions]    {12% 33%}
+        [Dimensions]    {12% 20%}
         [Position]      (TOPRIGHT) {0% 40%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -193,6 +193,19 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
+[app] (name=xpad)
+        [Workspace]     {0}
+        [Dimensions]    {12% 20%}
+        [Position]      (TOPRIGHT) {0% 60%}
+        [Deco]          {TOOL}
+        #[Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+
 
 
 # group,position,dimension *-desktop-top instances (sticky on head 1)
@@ -354,6 +367,7 @@
 # group,position,dimension chromium instances in one workspace
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
+        # [Workspace]     {0}
         [Dimensions]    {50% 100%}
         # [Maximized]]    {yes}
         [Position]      (TOPLEFT) {50% 0}
@@ -368,7 +382,17 @@
         # [Maximized]]    {yes}
         [Position]      (TOPLEFT) {50% 0}
         [Head]          {1}
-        [FocusNewWindow] {yes}
+        [FocusNewWindow] {no}
+[end]
+# group,position,dimension chromium news instances in one workspace
+[group] (workspace)
+    [app] (name=.*music.*) (class=Chromium)
+        [Workspace]     {4}
+        [Dimensions]    {50% 100%}
+        # [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {50% 0}
+        [Head]          {1}
+        [FocusNewWindow] {no}
 [end]
 
 # group,position,dimension iceweasel instances in one workspace

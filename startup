@@ -65,6 +65,7 @@ sleep 4
 	#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 350 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -nokeepsnowonwindows -sc darkcyan -whirl 1 -xspeed 4 -yspeed 7 &
 	
 	# tools / gadgets 
+	[ -x /usr/sbin/thinkfan ] && sudo thinkfan -n&
 	[ -x /usr/bin/unclutter ] && unclutter -idle 2 &
 	[ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
 	[ -x /usr/bin/gdeskcal ] && gdeskcal & 
@@ -79,8 +80,12 @@ sleep 4
     # gui applications
     [ -x /usr/bin/skype ] && skype &
     if [ -x /usr/bin/chromium ]; then
-        chromium &
-        chromium --user-data-dir=/tmp/news www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
+        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumnews/
+        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiummusic/
+        chromium --user-data-dir=/home/fafa/.config/chromiumnews www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
+        chromium --user-data-dir=/home/fafa/.config/chromiummusic www.soundcloud.com&
+        # chromium &
+        chromium www.google.ch&
     fi
 
     [ -x /usr/bin/audacious ] && audacious &
@@ -103,6 +108,9 @@ sleep 4
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/virtualbox ] && virtualbox &
         # [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
+	    if [ -x /usr/bin/chromium ]; then
+            chromium intranet.netstream.ch& # TODO add rest
+	    fi
     fi
 
     #_______ Autostart mobile only _____________________________________________
@@ -112,11 +120,11 @@ sleep 4
 
     #_______ Autostart everywhere (final)_______________________________________
     urxvt &
-    urxvt &
 
     # they need to be started at the end, otherwise 
     # they are not drawn correctly (they overlap the slit)
     # BULLCRAP workaround
+    # maybe this problem is solved using the sleep solution to start fluxbox
     messagesterm &
     syslogterm &
     debuglogterm &
