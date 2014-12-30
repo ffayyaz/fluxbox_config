@@ -66,7 +66,7 @@ sleep 4
 	
 	# tools / gadgets 
 	[ -x /usr/bin/unclutter ] && unclutter -idle 2 &
-	[ -x /usr/bin/xscreensaver ] && xscreensaver &
+	[ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
 	[ -x /usr/bin/gdeskcal ] && gdeskcal & 
 	[ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 	[ -x /usr/bin/wmmixer ] && wmmixer &
