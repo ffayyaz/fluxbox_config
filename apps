@@ -99,7 +99,7 @@
 ###############################################################################
 [app] (name=messagesterm)
         [Workspace]     {0}
-        [Dimensions]    {44% 25%}
+        [Dimensions]    {50% 25%}
         [Position]      (TOPLEFT) {0 0}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -111,7 +111,7 @@
 [end]
 [app] (name=syslogterm)
         [Workspace]     {0}
-        [Dimensions]    {44% 25%}
+        [Dimensions]    {50% 25%}
         [Position]      (TOPLEFT) {0% 25%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -123,7 +123,7 @@
 [end]
 [app] (name=debuglogterm)
         [Workspace]     {0}
-        [Dimensions]    {44% 25%}
+        [Dimensions]    {50% 25%}
         [Position]      (TOPLEFT) {0% 50%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -135,7 +135,7 @@
 [end]
 [app] (name=dmesglogterm)
         [Workspace]     {0}
-        [Dimensions]    {44% 25%}
+        [Dimensions]    {50% 25%}
         [Position]      (TOPLEFT) {0% 75%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
@@ -147,8 +147,8 @@
 [end]
 [app] (name=authlogterm)
         [Workspace]     {0}
-        [Dimensions]    {44% 34%}
-        [Position]      (TOPLEFT) {44% 0}
+        [Dimensions]    {38% 34%}
+        [Position]      (TOPLEFT) {50% 0}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
         [Head]          {1}
@@ -159,8 +159,8 @@
 [end]
 [app] (name=kernlogterm)
         [Workspace]     {0}
-        [Dimensions]    {44% 33%}
-        [Position]      (TOPLEFT) {44% 34%}
+        [Dimensions]    {38% 33%}
+        [Position]      (TOPLEFT) {50% 34%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
         [Head]          {1}
@@ -171,8 +171,8 @@
 [end]
 [app] (name=diskusageterm)
         [Workspace]     {0}
-        [Dimensions]    {44% 33%}
-        [Position]      (TOPLEFT) {44% 67%}
+        [Dimensions]    {38% 33%}
+        [Position]      (TOPLEFT) {50% 67%}
         [Deco]          {TOOL}
         #[Sticky]        {yes}
         [Head]          {1}
@@ -295,7 +295,7 @@
 # group,position,dimension urxvt instances (sticky on head 1)
 [group] (workspace)
     [app] (urxvt) 
-        [Dimensions]    {40% 50%}
+        [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0 0}
         [Sticky]        {yes}
         [Head]          {1}
@@ -306,7 +306,7 @@
 # group, position,dimension URxvt-remote
 [group] (workspace)
     [app] (URxvt-remote)
-        [Dimensions]    {40% 50%}
+        [Dimensions]    {50% 50%}
         #[Position]      (TOPRIGHT) {0% 0}
         [Position]      (TOPLEFT) {0% 50%}
         [Head]          {1}
@@ -354,9 +354,9 @@
 # group,position,dimension chromium instances in one workspace
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
-        [Dimensions]    {60% 100%}
+        [Dimensions]    {50% 100%}
         [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {40% 0}
+        [Position]      (TOPLEFT) {50% 0}
         [Head]          {1}
         [FocusNewWindow] {yes}
 [end]
