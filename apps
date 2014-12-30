@@ -52,11 +52,25 @@
         [FocusNewWindow] {no}
         [Deco]          {NONE}
 [end]
-[app] (name=audacious) (class=Audacious) (title!=Audacious)
+[app] (name=audacious) (class=Audacious) (title!=Audacious) (title!=Spectrum Analyzer) (title!=Blur Scope)
         [Workspace]     {4}
         [Position]      (CENTER) {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {yes}
+[end]
+[app] (name=audacious) (class=Audacious) (title=Spectrum Analyzer)
+        [Workspace]     {4}
+        [Dimensions]    {12% 30%}
+        [Position]      (TOPRIGHT) {0% 40%}
+        [Layer]         {12}
+        [Deco]          {NONE}
+[end]
+[app] (name=audacious) (class=Audacious) (title=Blur Scope)
+        [Workspace]     {4}
+        [Dimensions]    {12% 30%}
+        [Position]      (TOPRIGHT) {0% 70%}
+        [Layer]         {12}
+        [Deco]          {NONE}
 [end]
 
 [app] (liferea)
