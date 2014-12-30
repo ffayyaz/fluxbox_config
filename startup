@@ -78,7 +78,11 @@ sleep 4
 
     # gui applications
     [ -x /usr/bin/skype ] && skype &
-    [ -x /usr/bin/chromium ] && chromium &
+    if [ -x /usr/bin/chromium ]; then
+        chromium &
+        chromium --user-data-dir=/tmp/news www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
+    fi
+
     [ -x /usr/bin/audacious ] && audacious &
 
     #_______ Autostart Home only _______________________________________________

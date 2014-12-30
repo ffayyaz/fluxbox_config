@@ -343,7 +343,7 @@
     [app] (Pidgin)
     [app] (xchat)
     [app] (skype)
-        [Dimensions]    {40% 50%}
+        [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0 0}
         [Sticky]        {yes}
         [Head]          {1}
@@ -355,7 +355,17 @@
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
         [Dimensions]    {50% 100%}
-        [Maximized]]    {yes}
+        # [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {50% 0}
+        [Head]          {1}
+        [FocusNewWindow] {yes}
+[end]
+# group,position,dimension chromium news instances in one workspace
+[group] (workspace)
+    [app] (name=.*news.*) (class=Chromium)
+        [Workspace]     {6}
+        [Dimensions]    {50% 100%}
+        # [Maximized]]    {yes}
         [Position]      (TOPLEFT) {50% 0}
         [Head]          {1}
         [FocusNewWindow] {yes}
