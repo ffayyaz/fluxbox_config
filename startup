@@ -39,7 +39,7 @@ xset b off
 fluxbox &
 fbpid=$!
 
-sleep 4
+sleep 2
 {
 	#source /home/fafa/.bashrc
 	#truecrypt /data/bizz
@@ -80,12 +80,14 @@ sleep 4
     # gui applications
     [ -x /usr/bin/skype ] && skype &
     if [ -x /usr/bin/chromium ]; then
-        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumnews/
-        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiummusic/
-        chromium --user-data-dir=/home/fafa/.config/chromiumnews www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
-        chromium --user-data-dir=/home/fafa/.config/chromiummusic www.soundcloud.com&
         # chromium &
         chromium www.google.ch&
+        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumnews/
+        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiummusic/
+        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumheise/
+# 	    chromium --user-data-dir=/home/fafa/.config/chromiumnews www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
+# 	    chromium --user-data-dir=/home/fafa/.config/chromiumheise www.heise.de&
+# 	    chromium --user-data-dir=/home/fafa/.config/chromiummusic www.soundcloud.com&
     fi
 
     [ -x /usr/bin/audacious ] && audacious &
@@ -119,6 +121,7 @@ sleep 4
     fi
 
     #_______ Autostart everywhere (final)_______________________________________
+
     urxvt &
 
     # they need to be started at the end, otherwise 

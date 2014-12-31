@@ -57,6 +57,8 @@
         [Position]      (CENTER) {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {yes}
+        [FocusHidden]   {yes}
+        [IconHidden]    {yes}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Spectrum Analyzer)
         [Workspace]     {4}
@@ -64,6 +66,9 @@
         [Position]      (TOPRIGHT) {0% 40%}
         [Layer]         {12}
         [Deco]          {NONE}
+        [FocusNewWindow] {yes}
+        [FocusHidden]   {yes}
+        [IconHidden]    {yes}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Blur Scope)
         [Workspace]     {4}
@@ -71,6 +76,9 @@
         [Position]      (TOPRIGHT) {0% 60%}
         [Layer]         {12}
         [Deco]          {NONE}
+        [FocusNewWindow] {yes}
+        [FocusHidden]   {yes}
+        [IconHidden]    {yes}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Album Art)
         [Workspace]     {4}
@@ -78,6 +86,9 @@
         [Position]      (TOPRIGHT) {0% 80%}
         [Layer]         {12}
         [Deco]          {NONE}
+        [FocusNewWindow] {yes}
+        [FocusHidden]   {yes}
+        [IconHidden]    {yes}
 [end]
 
 [app] (liferea)
@@ -367,7 +378,6 @@
 # group,position,dimension chromium instances in one workspace
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
-        # [Workspace]     {0}
         [Dimensions]    {50% 100%}
         # [Maximized]]    {yes}
         [Position]      (TOPLEFT) {50% 0}
@@ -378,6 +388,7 @@
 [group] (workspace)
     [app] (name=.*news.*) (class=Chromium)
         [Workspace]     {6}
+        [Jump]          {no}
         [Dimensions]    {50% 100%}
         # [Maximized]]    {yes}
         [Position]      (TOPLEFT) {50% 0}
@@ -388,9 +399,21 @@
 [group] (workspace)
     [app] (name=.*music.*) (class=Chromium)
         [Workspace]     {4}
+        [Jump]          {no}
         [Dimensions]    {50% 100%}
         # [Maximized]]    {yes}
         [Position]      (TOPLEFT) {50% 0}
+        [Head]          {1}
+        [FocusNewWindow] {no}
+[end]
+# group,position,dimension chromium heise instances in one workspace
+[group] (workspace)
+    [app] (name=.*heise.*) (class=Chromium)
+        [Workspace]     {6}
+        [Jump]          {no}
+        [Dimensions]    {50% 100%}
+        # [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {0 0}
         [Head]          {1}
         [FocusNewWindow] {no}
 [end]
@@ -412,7 +435,7 @@
         [Dimensions]    {100% 100%}
         [Maximized]]    {yes}
         [Position]      (TOPLEFT) {0 0}
-        [Head]          {2}
+        # [Head]          {2}
         [FocusNewWindow] {yes}
 [end]
 
