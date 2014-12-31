@@ -185,3 +185,7 @@ Mod4 r :Raise
 
 # htop terminal (see apps)
 Mod4 t :Exec  urxvt -name htopterm -e htop
+
+# start xcompmgr
+Mod4 x :Exec xcompmgr -fF -I-.004 -O-.004 -D2 -cC -t-4 -l-6 -r6
+Shift Mod4 x :Exec pkill xcompmgr
