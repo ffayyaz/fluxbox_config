@@ -55,7 +55,7 @@ sleep 2
 	# TODO check this in general
 	if [ -x /usr/bin/xcompmgr ]; then
 	    # xcompmgr -c &
-	    xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95
+	    xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95&
 	fi
 
     # eye candies
