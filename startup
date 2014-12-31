@@ -39,7 +39,7 @@ xset b off
 fluxbox &
 fbpid=$!
 
-sleep 2
+sleep 4
 {
 	#source /home/fafa/.bashrc
 	#truecrypt /data/bizz
