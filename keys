@@ -187,5 +187,5 @@ Mod4 r :Raise
 Mod4 t :Exec  urxvt -name htopterm -e htop
 
 # start xcompmgr
-Mod4 x :Exec xcompmgr -fF -I-.004 -O-.004 -D2 -cC -t-4 -l-6 -r6
+Mod4 x :Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95
 Shift Mod4 x :Exec pkill xcompmgr
