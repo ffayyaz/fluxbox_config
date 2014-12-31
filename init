@@ -65,7 +65,7 @@ session.keyFile:	~/.fluxbox/keys
 session.appsFile:	/home/fafa/.fluxbox/apps
 session.styleOverlay:	/home/fafa/.fluxbox/overlay
 session.tabsAttachArea:	Window
-session.forcePseudoTransparency:	false
+session.forcePseudoTransparency:	true
 session.menuFile:	~/.fluxbox/menu
 session.configVersion:	13
 session.colorsPerChannel:	4
