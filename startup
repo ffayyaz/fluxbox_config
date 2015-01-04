@@ -82,9 +82,9 @@ sleep 4
     if [ -x /usr/bin/chromium ]; then
         # chromium &
         chromium www.google.ch&
-        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumnews/
-        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiummusic/
-        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumheise/
+        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumnews/
+        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiummusic/
+        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumheise/
 	    chromium --user-data-dir=/home/fafa/.config/chromiummusic www.soundcloud.com&
     fi
 
