@@ -82,9 +82,9 @@ sleep 4
     if [ -x /usr/bin/chromium ]; then
         # chromium &
         chromium www.google.ch&
-        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumnews/
+        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumnews/
         rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiummusic/
-        rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumheise/
+        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumheise/
 	    chromium --user-data-dir=/home/fafa/.config/chromiummusic www.soundcloud.com&
     fi
 
@@ -95,16 +95,20 @@ sleep 4
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/icedove ] && icedove &
         # [ -x /usr/bin/kate ] && kate /tmp/notesx.y.z.txt &
-        if [ -x /usr/bin/chromium ]; then
-		    chromium --user-data-dir=/home/fafa/.config/chromiumnews www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
-		    chromium --user-data-dir=/home/fafa/.config/chromiumheise www.heise.de&
-        fi
+        # if [ -x /usr/bin/chromium ]; then
+# 		    chromium --user-data-dir=/home/fafa/.config/chromiumnews www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
+# 		    chromium --user-data-dir=/home/fafa/.config/chromiumheise www.heise.de&
+        # fi
     fi
 
     #_______ Autostart Ganja only ______________________________________________
     /sbin/ifconfig|egrep '192.168.85.10'
     if [ "${?}" = "0" ]; then
 	    [ -x /usr/bin/xchat ] && xchat &
+        if [ -x /usr/bin/chromium ]; then
+		    chromium --user-data-dir=/home/fafa/.config/chromiumnews www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
+# 		    chromium --user-data-dir=/home/fafa/.config/chromiumheise www.heise.de&
+        fi
     fi
 
     #_______ Autostart Netstream only __________________________________________
