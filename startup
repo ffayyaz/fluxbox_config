@@ -65,7 +65,7 @@ sleep 4
 	#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 350 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -nokeepsnowonwindows -sc darkcyan -whirl 1 -xspeed 4 -yspeed 7 &
 	
 	# tools / gadgets 
-# 	[ -x /usr/sbin/thinkfan ] && sudo thinkfan -n&
+	[ -x /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b15 -z -n&
 	[ -x /usr/bin/unclutter ] && unclutter -idle 2 &
 	[ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
 	[ -x /usr/bin/gdeskcal ] && gdeskcal & 
