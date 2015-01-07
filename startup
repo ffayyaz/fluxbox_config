@@ -72,7 +72,7 @@ sleep 4
 	[ -x /usr/bin/wmmixer ] && wmmixer &
 	# TODO mail watcher
 	# TODO rss reader (liferea, yarssr
-	[ -x /usr/bin/liferea ] && liferea &
+# 	[ -x /usr/bin/liferea ] && liferea &
 	# TODO notes
 	[ -x /usr/bin/xpad ] && xpad &
 
