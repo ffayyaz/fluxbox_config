@@ -1,18 +1,25 @@
+###############################################################################
+#
+# GLOBALLY AFFECTIVE SETTINGS
+#
+###############################################################################
 # transient windows
 # dialogs like save as or print
 # do not show their icon in toolbar
 [transient] (title=.*)
-        [Position]      (CENTER) {0 0}
-        # [Dimensions]    {50% 50%}
+        [Position]      (CENTER) {0% 0%}
         [IconHidden]    {yes}
 [end]
 
-[app] (name=htopterm)
-        [Fullscreen]    {yes}
-[end]
+###############################################################################
+#
+# ON DESKTOP LAYER
+#
+###############################################################################
 
+#---------------------------------------------------- CALENDAR
 [app] (gdeskcal)
-        [Position]      (TOPRIGHT) {12% 0} 
+        [Position]      (TOPRIGHT) {12% 0%} 
         [Dimensions}    {12% 17%}
         [Sticky]        {yes}
         [Head]          {1}
@@ -23,6 +30,7 @@
         [Deco]          {BORDER}
 [end]
 
+#---------------------------------------------------- CLOCK
 [app] (xclock)
         [Position]      (TOPRIGHT) {0% 17%}
         [Dimensions]    {12% 17%} 
@@ -34,8 +42,10 @@
         [Deco]          {BORDER}
 [end]
 
+#---------------------------------------------------- MIXER
 [app] (wmmixer)
         [Position]      (TOPRIGHT) {0% 34%}
+        # cannot be dimensioned
         [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -44,12 +54,28 @@
         [Deco]          {BORDER}
 [end]
 
+#---------------------------------------------------- NOTES
+[app] (name=xpad)
+        [Workspace]     {0}
+        [Dimensions]    {12% 20%}
+        [Position]      (TOPRIGHT) {0% 60%}
+        [Deco]          {TOOL}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+[end]
+
+#---------------------------------------------------- MUSIC
 [app] (name=audacious) (class=Audacious) (title=Audacious)
         [Workspace]     {4}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Dimensions]    {88% 100%}
         [Layer]         {12}
         [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
         [Deco]          {NONE}
 [end]
 [app] (name=audacious) (class=Audacious) (title!=Audacious) (title!=Spectrum Analyzer) (title!=Blur Scope) (title!=Album Art)
@@ -66,7 +92,7 @@
         [Position]      (TOPRIGHT) {0% 40%}
         [Layer]         {12}
         [Deco]          {NONE}
-        [FocusNewWindow] {yes}
+        [FocusNewWindow] {no}
         [FocusHidden]   {yes}
         [IconHidden]    {yes}
 [end]
@@ -76,7 +102,7 @@
         [Position]      (TOPRIGHT) {0% 60%}
         [Layer]         {12}
         [Deco]          {NONE}
-        [FocusNewWindow] {yes}
+        [FocusNewWindow] {no}
         [FocusHidden]   {yes}
         [IconHidden]    {yes}
 [end]
@@ -86,16 +112,16 @@
         [Position]      (TOPRIGHT) {0% 80%}
         [Layer]         {12}
         [Deco]          {NONE}
-        [FocusNewWindow] {yes}
+        [FocusNewWindow] {no}
         [FocusHidden]   {yes}
         [IconHidden]    {yes}
 [end]
 
+#---------------------------------------------------- NEWS
 [app] (liferea)
         [Workspace]     {6}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Dimensions]    {88% 100%}
-        # [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -103,17 +129,12 @@
         [Deco]          {BORDER}
 [end]
 
-###############################################################################
-#
-# ON DESKTOP LAYER
-#
-###############################################################################
+#---------------------------------------------------- TERMINALS
 [app] (name=messagesterm)
         [Workspace]     {0}
         [Dimensions]    {50% 25%}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Deco]          {TOOL}
-        #[Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -125,7 +146,6 @@
         [Dimensions]    {50% 25%}
         [Position]      (TOPLEFT) {0% 25%}
         [Deco]          {TOOL}
-        #[Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -137,7 +157,6 @@
         [Dimensions]    {50% 25%}
         [Position]      (TOPLEFT) {0% 50%}
         [Deco]          {TOOL}
-        #[Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -149,7 +168,6 @@
         [Dimensions]    {50% 25%}
         [Position]      (TOPLEFT) {0% 75%}
         [Deco]          {TOOL}
-        #[Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -159,9 +177,8 @@
 [app] (name=authlogterm)
         [Workspace]     {0}
         [Dimensions]    {38% 34%}
-        [Position]      (TOPLEFT) {50% 0}
+        [Position]      (TOPLEFT) {50% 0%}
         [Deco]          {TOOL}
-        #[Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -173,7 +190,6 @@
         [Dimensions]    {38% 33%}
         [Position]      (TOPLEFT) {50% 34%}
         [Deco]          {TOOL}
-        #[Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -185,7 +201,6 @@
         [Dimensions]    {38% 33%}
         [Position]      (TOPLEFT) {50% 67%}
         [Deco]          {TOOL}
-        #[Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -197,19 +212,6 @@
         [Dimensions]    {12% 20%}
         [Position]      (TOPRIGHT) {0% 40%}
         [Deco]          {TOOL}
-        #[Sticky]        {yes}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=xpad)
-        [Workspace]     {0}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 60%}
-        [Deco]          {TOOL}
-        #[Sticky]        {yes}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -217,13 +219,42 @@
         [FocusHidden]   {yes}
 [end]
 
+#---------------------------------------------------- VIRTUAL MACHINE
 
+# WM_NAME=Windows 8 [Running] - Oracle VM VirtualBox
+# does not work
+# [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*)
+# [app] (name=Qt-subapplication) (class=VirtualBox) (title=WindowsXP [Running] - Oracle VM VirtualBox)
+[app] (name=Qt-subapplication) (class=VirtualBox) (title!=Oracle\ VM\ VirtualBox\ Manager)
+        [Sticky]            {yes}
+        [Dimensions]        {100% 100%}
+        [Position]          (TOPLEFT) {0% 0%}
+        [Head]              {2}
+        [Layer]             {12}
+        [Deco]              {NONE}
+        [FocusNewWindow]    {no}
+        [IconHidden]        {yes}
+        [FocusHidden]       {yes}
+        [Fullscreen]        {no}
+[end]
+[app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
+        [Dimensions]        {88% 100%}
+        [Position]          (TOPLEFT) {0% 0%}
+        [Head]              {2}
+        [Layer]             {12} 
+        # [Deco]              {NONE}
+        [FocusNewWindow]    {no}
+        [IconHidden]        {yes}
+        [FocusHidden]       {yes}
+[end]
 
-# group,position,dimension *-desktop-top instances (sticky on head 1)
-[group] (workspace)
-    [app] (name=.*-desktop-top)
+#---------------------------------------------------- MISC
+
+# Some app rules for x apps that have been started with
+# -name *desktop* as can be seen below
+[app] (name=.*-desktop-top)
         [Dimensions]    {93% 50%}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -232,11 +263,9 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-# group,position,dimension *-desktop-topleft instances (sticky on head 1)
-[group] (workspace)
-    [app] (name=.*-desktop-topleft)
+[app] (name=.*-desktop-topleft)
         [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -245,11 +274,9 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-# group,position,dimension *-desktop-topright instances (sticky on head 1)
-[group] (workspace)
-    [app] (name=.*-desktop-topright)
+[app] (name=.*-desktop-topright)
         [Dimensions]    {44% 50%}
-        [Position]      (TOPRIGHT) {6% 0}
+        [Position]      (TOPRIGHT) {6% 0%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -258,11 +285,9 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-# group,position,dimension *-desktop-bottomleft instances (sticky on head 1)
-[group] (workspace)
-    [app] (name=.*-desktop-bottomleft)
+[app] (name=.*-desktop-bottomleft)
         [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMLEFT) {0 0}
+        [Position]      (BOTTOMLEFT) {0% 0%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -271,11 +296,9 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-# group,position,dimension *-desktop-bottomright instances (sticky on head 1)
-[group] (workspace)
-    [app] (name=.*-desktop-bottomright)
+[app] (name=.*-desktop-bottomright)
         [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMRIGHT) {0 0}
+        [Position]      (BOTTOMRIGHT) {0% 0%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -284,11 +307,9 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-# group,position,dimension *-desktop-bottomrightleft instances (sticky on head 1)
-[group] (workspace)
-    [app] (name=.*-desktop-bottomrightleft)
+[app] (name=.*-desktop-bottomrightleft)
         [Dimensions]    {24% 50%}
-        [Position]      (BOTTOMRIGHT) {26% 0}
+        [Position]      (BOTTOMRIGHT) {26% 0%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -297,11 +318,9 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-# group,position,dimension *-desktop-bottomrightright instances (sticky on head 1)
-[group] (workspace)
-    [app] (name=urxvt-desktop-bottomrightright)
+[app] (name=urxvt-desktop-bottomrightright)
         [Dimensions]    {19% 50%}
-        [Position]      (BOTTOMRIGHT) {6% 0}
+        [Position]      (BOTTOMRIGHT) {6% 0%}
         [Deco]          {TOOL}
         [Sticky]        {yes}
         [Head]          {1}
@@ -316,35 +335,31 @@
 # TERMINALS
 #
 ###############################################################################
-# group,position,dimension urxvt instances (sticky on head 1)
+
+#---------------------------------------------------- LOCAL
 [group] (workspace)
     [app] (urxvt) 
         [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Sticky]        {yes}
         [Head]          {1}
         [FocusNewWindow] {yes}
-        # [Layer]         {7}
 [end]
 
-# group, position,dimension URxvt-remote
+#---------------------------------------------------- REMOTE
 [group] (workspace)
     [app] (URxvt-remote)
         [Dimensions]    {50% 50%}
-        #[Position]      (TOPRIGHT) {0% 0}
         [Position]      (TOPLEFT) {0% 50%}
         [Head]          {1}
         [FocusNewWindow] {yes}
-        # [Layer]         {7}
 [end]
 
-# clusterssh urxvt 
-# positioning could be better
-# some of the popped up windows overlap 
-# each other about a titlebar height
-# these windows could be tabbed, if you know the name of each one
-# but this requires a rule in here, which is not existant yet
-# therefore disable tabbing for those windows
+#---------------------------------------------------- REMOTE CLUSTERSSH
+# positioning could be better. some of the popped up windows overlap 
+# each other about a titlebar height. these windows could be tabbed, 
+# if you know the name of each one but this requires a rule in here, 
+# which is not existant yet, therefore disable tabbing for those windows
 [app] (name=urxvt-cluster) (class=URxvt)
         [Dimensions]    {50% 50%}
         [Workspace]     {1}
@@ -361,212 +376,173 @@
 # GUI PROGRAMS
 #
 ###############################################################################
-# group/position/dimension chat programs (sticky on head 1)
+
+#---------------------------------------------------- CHAT
 [group] 
     [app] (wync)
     [app] (Pidgin)
     [app] (xchat)
     [app] (skype)
         [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMLEFT) {0 0}
+        [Position]      (BOTTOMLEFT) {0% 0%}
         [Sticky]        {yes}
         [Head]          {1}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
 [end]
 
-# group,position,dimension chromium instances in one workspace
+#---------------------------------------------------- BROWSING
+
+# chromium
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
         [Dimensions]    {50% 100%}
-        # [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {50% 0}
+        [Position]      (TOPLEFT) {50% 0%}
         [Head]          {1}
         [FocusNewWindow] {yes}
 [end]
-# group,position,dimension chromium news instances in one workspace
 [group] (workspace)
     [app] (name=.*news.*) (class=Chromium)
         [Workspace]     {6}
         [Jump]          {no}
         [Dimensions]    {50% 100%}
-        # [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {50% 0}
+        [Position]      (TOPLEFT) {50% 0%}
         [Head]          {1}
         [FocusNewWindow] {no}
 [end]
-# group,position,dimension chromium news instances in one workspace
 [group] (workspace)
     [app] (name=.*music.*) (class=Chromium)
         [Workspace]     {4}
         [Jump]          {no}
         [Dimensions]    {50% 100%}
-        # [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {50% 0}
+        [Position]      (TOPLEFT) {50% 0%}
         [Head]          {1}
         [FocusNewWindow] {no}
 [end]
-# group,position,dimension chromium heise instances in one workspace
 [group] (workspace)
     [app] (name=.*heise.*) (class=Chromium)
         [Workspace]     {6}
         [Jump]          {no}
         [Dimensions]    {50% 100%}
-        # [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Head]          {1}
         [FocusNewWindow] {no}
 [end]
 
-# group,position,dimension iceweasel instances in one workspace
+# iceweasel
 [group] (workspace)
     [app] (name=Navigator) (class=Iceweasel)
         [Dimensions]    {100% 100%}
         [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Head]          {1}
         [FocusNewWindow] {yes}
 [end]
 
-# group,position,dimension opera instances in one workspace
+# opera
 [group] (workspace)
     [app] (name=opera) (class=Opera)
     [app] (name=opera) (class=OperaNext)
         [Dimensions]    {100% 100%}
         [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {0 0}
-        # [Head]          {2}
+        [Position]      (TOPLEFT) {0% 0%}
         [FocusNewWindow] {yes}
 [end]
 
-# position,dimension icedove main window 
+#---------------------------------------------------- MAIL
 [app] (name=Mail) (class=Icedove) (role=3pane)
     [Workspace]         {5}
     [Dimensions]        {100% 100%}
-    [Position]          (TOPLEFT) {0 0}
+    [Position]          (TOPLEFT) {0% 0%}
     [Head]              {1}
     [FocusNewWindow]    {no}
     [Layer]             {12}
     [Deco]              {NONE}
 [end]
-# position,dimension icedove mail
 [app] (name=Mail) (class=Icedove) (role=addressbook)
     [Workspace]         {5}
     [Dimensions]        {50% 100%}
-    [Position]          (TOPLEFT) {0 0}
+    [Position]          (TOPLEFT) {0% 0%}
     [Head]              {1}
 [end]
-# position,dimension icedove mail subwindows
 [app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
     [Workspace]         {5}
     [Dimensions]        {100% 50%}
-    [Position]          (TOPLEFT) {0 0}
+    [Position]          (TOPLEFT) {0% 0%}
     [Head]              {1}
     [Layer]             {12}
 [end]
-# position,dimension icedove new mail window
 [app] (name=Msgcompose) (class=Icedove) 
     [Workspace]         {5}
     [Dimensions]        {50% 100%}
-    [Position]          (TOPLEFT) {50% 0}
+    [Position]          (TOPLEFT) {50% 0%}
     [Head]              {1}
 [end]
 
-# position,dimension kate
-# gedit crashes fluxbox
-# [group] (workspace)
+#---------------------------------------------------- GUI EDITOR
+# gedit often crashes fluxbox, so use kate
 [app] (name=kate) (class=Kate)
-        [Workspace]         {6}
         [Dimensions]        {50% 50%}
-        [Position]          (BOTTOMRIGHT) {0% 0}
-        # [Sticky]            {yes}
+        [Position]          (BOTTOMLEFT) {0% 0%}
+        [Sticky]            {yes}
         [Head]              {1}
         [FocusNewWindow]    {no}
 [end]
 
-# position,dimension virtualbox and place it to desktop
-# WM_NAME=Windows 8 [Running] - Oracle VM VirtualBox
-# does not work
-# [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*)
-# [app] (name=Qt-subapplication) (class=VirtualBox) (title=WindowsXP [Running] - Oracle VM VirtualBox)
-[app] (name=Qt-subapplication) (class=VirtualBox) 
-    [Sticky]            {yes}
-    [Dimensions]        {100% 100%}
-    [Position]          (TOPLEFT) {0 0}
-    [Head]              {2}
-    [Layer]             {12}
-    [Deco]              {NONE}
-    [FocusNewWindow]    {no}
-    [IconHidden]        {yes}
-    [FocusHidden]       {yes}
-[end]
-# position,dimension virtualbox main window 
-[app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
-    [Dimensions]        {44% 50%}
-    [Position]          (TOPRIGHT) {6% 0}
-    [Head]              {1}
-    [Layer]             {12}
-    # [Deco]              {NONE}
-    [FocusNewWindow]    {yes}
-    [IconHidden]        {yes}
-    [FocusHidden]       {yes}
-[end]
-
-# group,position,dimension vncviewer instances in one workspace
+#---------------------------------------------------- REMOTE DESKTOP
+# vncviewer
 # WM_CLASS(STRING) = "VNC: fayyaz:0", "Vncviewer"
 [group] (workspace)
     [app] (class=Vncviewer) 
         [Workspace]         {1}
         [Jump]              {yes}
+        [Position]          (TOPLEFT) {0% 0%}
         [Dimensions]        {100% 100%}
         [Maximized]         {yes}
-        [Position]          (TOPLEFT) {0 0}
         [Head]              {2}
         [FocusNewWindow]    {no}
         [FocusHidden]       {yes}
         [Fullscreen]        {no}
 [end]
 
-# group,position,dimension rdesktop instances in one workspace
+# rdesktop
 [group] (workspace)
     [app] (rdesktop) 
         [Workspace]         {1}
         [Jump]              {yes}
+        [Position]          (TOPLEFT) {0% 0%}
         [Dimensions]        {100% 100%}
         [Maximized]         {yes}
-        [Position]          (TOPLEFT) {0 0}
         [Head]              {2}
         [FocusNewWindow]    {no}
         [FocusHidden]       {yes}
         [Fullscreen]        {no}
 [end]
 
-# group,position,dimension wireshark instances in one workspace
-[group] (workspace)
-    [app] (wireshark) 
-        [Dimensions]    {100% 100%}
-        [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {0 0}
-        [Head]          {2}
-        [FocusNewWindow] {yes}
-[end]
-
-# group, position,dimension any media player instances in one workspace
+#---------------------------------------------------- VIDEO
 [group] (workspace)
     [app] (vlc) (class=Vlc) (title=VLC media player)
     [app] (xv) (class=MPlayer)
     [app] (vdpau) (class=MPlayer)
         [Dimensions]    {100% 100%}
         [Maximized]]    {yes}
-        [Position]      (TOPLEFT) {0 0}
+        [Position]      (TOPLEFT) {0% 0%}
         [Head]          {2}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
         [Fullscreen]    {no} # not usable with yes
 [end]
 
-# position,dimension vlc messages window in one workspac3
-# [app] (vlc) (class=Vlc) (title=Messages)
-        # [Dimensions]    {50% 50%}
-        # [Position]      (TOPLEFT) {0 0}
-# [end]
+#---------------------------------------------------- MISC
+[app] (name=htopterm)
+        [Fullscreen]    {yes}
+[end]
+
+[group] (workspace)
+    [app] (wireshark) 
+        [Dimensions]    {100% 100%}
+        [Maximized]]    {yes}
+        [Position]      (TOPLEFT) {0% 0%}
+        [Head]          {2}
+        [FocusNewWindow] {yes}
+[end]
