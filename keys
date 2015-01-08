@@ -1,3 +1,6 @@
+################################################################################
+# DEFAULT SETTINGS (PARTLY MODIFIED)
+################################################################################
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
 OnDesktop Mouse2 :WorkspaceMenu
@@ -7,53 +10,40 @@ OnDesktop Mouse3 :RootMenu
 OnDesktop Mouse4 :PrevWorkspace
 OnDesktop Mouse5 :NextWorkspace
 
-# scroll on the toolbar to change current window
-# OnToolbar Mouse4 :PrevWindow {static groups} (iconhidden=no)
-# OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
-OnToolbar Mouse4 :PrevWindow {static} (workspace=[current])
-OnToolbar Mouse5 :NextWindow {static} (workspace=[current])
+# TODO check: scroll on the toolbar to change current window
+OnToolbar Mouse4 :PrevWindow {static groups} (workspace=[current]) (iconhidden=no)
+OnToolbar Mouse5 :NextWindow {static groups} (workspace=[current]) (iconhidden=no)
 
-# alt + left/right click to move/resize a window
-OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
-OnWindowBorder Move1 :StartMoving
+# TODO check: alt + left/right click to move/resize a window
+# OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+# OnWindowBorder Move1 :StartMoving
 
-# TODO check these three
-OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
-OnLeftGrip Move1 :StartResizing bottomleft
-OnRightGrip Move1 :StartResizing bottomright
+# OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+# OnLeftGrip Move1 :StartResizing bottomleft
+# OnRightGrip Move1 :StartResizing bottomright
 
-# alt + middle click to lower the window
-OnWindow Mod1 Mouse2 :Lower
+# TODO check: alt + middle click to lower the window
+# OnWindow Mod1 Mouse2 :Lower
 
 # control-click a window's titlebar and drag to attach windows
-# TODO check this
-OnTitlebar Control Mouse1 :StartTabbing
+# OnTitlebar Control Mouse1 :StartTabbing
 
 # double click on the titlebar to shade
 OnTitlebar Double Mouse1 :Shade
 
-# Mod4+s to shade
-Mod4 s :Shade
+# TODO check: left click on the titlebar to move the window
+# OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
+# OnTitlebar Move1  :StartMoving
 
-
-# left click on the titlebar to move the window
-# TODO check these two
-OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
-OnTitlebar Move1  :StartMoving
-
-# middle click on the titlebar to lower
-OnTitlebar Mouse2 :Lower
+# TODO: check middle click on the titlebar to lower
+# OnTitlebar Mouse2 :Lower
 
 # right click on the titlebar for a menu of options
 OnTitlebar Mouse3 :WindowMenu
 
-# alt-tab
+# TODO: test without groups alt-tab
 Mod1 Tab :NextWindow {groups} (workspace=[current])
 Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
-
-# switch windows in order as seen in toolbar
-Mod1 Left :PrevWindow {static} (workspace=[current])
-Mod1 Right :NextWindow {static} (workspace=[current])
 
 # cycle through tabs in the current window
 Mod4 Tab :NextTab
@@ -70,48 +60,24 @@ Mod4 7 :Tab 7
 Mod4 8 :Tab 8
 Mod4 9 :Tab 9
 
-# scroll through tabs
-OnTab Mouse4 :PrevWindow {static} (workspace=[current])
-OnTab Mouse5 :NextWindow {static} (workspace=[current]) 
-
-# 'scroll' through tabs using Mod4+(Left|Right)
-# does work, but not perfectly like the other
-# cycles configured in here
-OnTab Mod4 Left :PrevWindow {static} (workspace=[current])
-OnTab Mod4 Right :NextWindow {static} (workspace=[current]) 
-
-# some shortcuts to start programs
-Mod1 F1 :Exec urxvt 
-#Mod1 F2 :Exec gnome-terminal --tab --tab
-Mod1 F2 :Exec urxvt -name URxvt-remote -tn remoteterm
-Mod1 F3 :Exec chromium
-Mod1 F5 :Exec iceweasel
-Mod1 F6 :Exec opera-next
-Mod1 F7 :Exec opera
-Mod1 F8 :Exec icedove
-Mod1 F9 :Exec kate
-
-# open a dialog to run programs
-#Mod1 F2 :Exec fbrun
+# open a terminal                                                                  
+# Mod1 F1 :Exec x-terminal-emulator                                                  
+                                                                                   
+# open a dialog to run programs                                                    
+# Mod1 F2 :Exec fbrun                                                                
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-#176 :Exec amixer sset Master,0 1+
-Mod1 112 :Exec amixer sset Master 10%+
-#174 :Exec amixer sset Master,0 1-
-Mod1 117 :Exec amixer sset Master 10%-
-#160 :Exec amixer sset Master,0 toggle
-Mod1 115 :Exec amixer sset Master,0 toggle
+Mod1 112 :Exec amixer sset Master 10%+ # Alt+PageUp
+Mod1 117 :Exec amixer sset Master 10%- # Alt+PageDown
+Mod1 115 :Exec amixer sset Master,0 toggle # Alt+End
 
-# lock screen
-Mod4 115 :Exec xscreensaver-command -lock 
-
-# current window commands
-Mod1 F4 :Close
-#Mod1 F5 :Kill
-Mod1 Down :Minimize
-Mod1 Up   :Maximize
-Mod1 F11  :Fullscreen
+# current window commands                                                                                                                             
+Mod1 F4 :Close                                                                  
+# Mod1 F5 :Kill                                                                   
+# Mod1 F9 :Minimize                                                               
+# Mod1 F10 :Maximize                                                              
+Mod1 F11 :Fullscreen 
 
 # open the window menu
 Mod1 space :WindowMenu
@@ -123,14 +89,13 @@ Control Mod1 Delete :Exit
 Control Mod1 Left :PrevWorkspace
 Control Mod1 Right :NextWorkspace
 
-# send the current window to previous/next workspace # never used yet
-# use these keys for 'scrolling' throught tabs keywise
+# TODO: check send the current window to previous/next workspace # never used yet
 # Mod4 Left :SendToPrevWorkspace
 # Mod4 Right :SendToNextWorkspace
 
-# send the current window and follow it to previous/next workspace
-Control Mod4 Left :TakeToPrevWorkspace
-Control Mod4 Right :TakeToNextWorkspace
+# TODO: check send the current window and follow it to previous/next workspace
+# Control Mod4 Left :TakeToPrevWorkspace
+# Control Mod4 Right :TakeToNextWorkspace
 
 # change to a specific workspace
 Control F1 :Workspace 1
@@ -147,45 +112,82 @@ Control F11 :Workspace 11
 Control F12 :Workspace 12
 
 # send the current window to a specific workspace
-#Mod4 F1 :SendToWorkspace 1
-#Mod4 F2 :SendToWorkspace 2
-#Mod4 F3 :SendToWorkspace 3
-#Mod4 F4 :SendToWorkspace 4
-#Mod4 F5 :SendToWorkspace 5
-#Mod4 F6 :SendToWorkspace 6
-#Mod4 F7 :SendToWorkspace 7
-#Mod4 F8 :SendToWorkspace 8
-#Mod4 F9 :SendToWorkspace 9
-#Mod4 F10 :SendToWorkspace 10
-#Mod4 F11 :SendToWorkspace 11
-#Mod4 F12 :SendToWorkspace 12
+Mod4 F1 :SendToWorkspace 1
+Mod4 F2 :SendToWorkspace 2
+Mod4 F3 :SendToWorkspace 3
+Mod4 F4 :SendToWorkspace 4
+Mod4 F5 :SendToWorkspace 5
+Mod4 F6 :SendToWorkspace 6
+Mod4 F7 :SendToWorkspace 7
+Mod4 F8 :SendToWorkspace 8
+Mod4 F9 :SendToWorkspace 9
+Mod4 F10 :SendToWorkspace 10
+Mod4 F11 :SendToWorkspace 11
+Mod4 F12 :SendToWorkspace 12
 
 # send the current window and change to a specific workspace
-# Control Mod4 F1 :TakeToWorkspace 1
-# Control Mod4 F2 :TakeToWorkspace 2
-# Control Mod4 F3 :TakeToWorkspace 3
-# Control Mod4 F4 :TakeToWorkspace 4
-# Control Mod4 F5 :TakeToWorkspace 5
-# Control Mod4 F6 :TakeToWorkspace 6
-# Control Mod4 F7 :TakeToWorkspace 7
-# Control Mod4 F8 :TakeToWorkspace 8
-# Control Mod4 F9 :TakeToWorkspace 9
-# Control Mod4 F10 :TakeToWorkspace 10
-# Control Mod4 F11 :TakeToWorkspace 11
-# Control Mod4 F12 :TakeToWorkspace 12
+Control Mod4 F1 :TakeToWorkspace 1
+Control Mod4 F2 :TakeToWorkspace 2
+Control Mod4 F3 :TakeToWorkspace 3
+Control Mod4 F4 :TakeToWorkspace 4
+Control Mod4 F5 :TakeToWorkspace 5
+Control Mod4 F6 :TakeToWorkspace 6
+Control Mod4 F7 :TakeToWorkspace 7
+Control Mod4 F8 :TakeToWorkspace 8
+Control Mod4 F9 :TakeToWorkspace 9
+Control Mod4 F10 :TakeToWorkspace 10
+Control Mod4 F11 :TakeToWorkspace 11
+Control Mod4 F12 :TakeToWorkspace 12
 
-# show desktop
-#Mod1	m	:ShowDesktop
-Mod4  d	:ShowDesktop
+################################################################################
+# MY SETTINGS
+################################################################################
+
+#------------------------------------------------------- WINDOW
+
+# cycle through windows in order as seen in toolbar ("modified" alt-tab)
+Mod1 Left :PrevWindow {static groups} (workspace=[current])
+Mod1 Right :NextWindow {static groups} (workspace=[current])
+
+# scroll through tabs ("modified" win-tab)
+OnTab Mouse4 :PrevTab
+OnTab Mouse5 :NextTab
+
+# 'scroll' through tabs using Mod4+(Left|Right)
+Mod4 Left :PrevTab
+Mod4 Right :NextTab
 
 # raise focused window to top 
 # this should work with focusnewwindow setting in apps 
 # but seems not to work for tabbed windows, only for new ones
 Mod4 r :Raise
 
-# htop terminal (see apps)
+# Mod4+s to shade (wege chromium)
+Mod4 s :Shade
+
+# show desktop
+Mod1  m	:ShowDesktop
+Mod4  d	:ShowDesktop
+
+#------------------------------------------------------- SHORTCUTS
+
+# programs
+Mod1 F1 :Exec urxvt 
+Mod1 F2 :Exec urxvt -name URxvt-remote -tn remoteterm
+Mod1 F3 :Exec chromium
+Mod1 F5 :Exec iceweasel
+Mod1 F6 :Exec opera-next
+Mod1 F7 :Exec opera
+Mod1 F8 :Exec icedove
+Mod1 F9 :Exec kate
+
+# lock screen
+Mod4 115 :Exec xscreensaver-command -lock  # Windows+End
+
+# TODO: maybe another shortcut htop terminal (see apps)
 Mod4 t :Exec  urxvt -name htopterm -e htop
 
-# start xcompmgr
-Mod4 x :Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95
-Shift Mod4 x :Exec pkill xcompmgr
+# xcompmgr
+# Mod4 x :Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95
+# Shift Mod4 x :Exec pkill xcompmgr
+Mod4 x :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95} {Exec pkill xcompmgr}
