@@ -145,6 +145,7 @@ Control Mod4 F12 :TakeToWorkspace 12
 
 #------------------------------------------------------- WINDOW
 
+# minimize maximize
 Mod1 Down Minimize
 Mod1 Up :MacroCmd {Maximize} {Raise}
 
@@ -160,9 +161,9 @@ OnTab Mouse5 :NextTab
 Mod4 Left :PrevTab
 Mod4 Right :NextTab
 
-# TODO does not work: move tab right / left
-# Mod4  Shift Left :MoveTabLeft
-# Mod4  Shift Right :MoveTabRight
+# move tab right / left
+Shift Mod4 Left :MoveTabLeft
+Shift Mod4 Right :MoveTabRight
 
 # Mod4+s to shade (wege chromium)
 Mod4 s :Shade
@@ -196,7 +197,7 @@ Mod4 a Mod4 g :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desk
 Control Mod1 a :CloseAllWindows
 
 # TODO: does not work detach a window from group
-# OnTab Mod4 a Mod4 d :DetachClient
+Shift Mod4 d :DetachClient
 
 #------------------------------------------------------- SHORTCUTS
 
@@ -209,6 +210,11 @@ Mod1 F6 :Exec opera-next
 Mod1 F7 :Exec opera
 Mod1 F8 :Exec icedove
 Mod1 F9 :Exec kate
+
+# control audio player
+Control Mod1 112 :Exec audacious -f # next track
+Control Mod1 117 :Exec audacious -r # previous track
+Control Mod1 115 :Exec audacious -u # pause / unpause
 
 # lock screen
 Mod4 115 :Exec xscreensaver-command -lock  # Windows+End
