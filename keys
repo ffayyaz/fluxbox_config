@@ -145,8 +145,8 @@ Control Mod4 F12 :TakeToWorkspace 12
 
 #------------------------------------------------------- WINDOW
 
-Mod1 Down :Minimize
-Mod1 Up :Maximize
+Mod1 Down Minimize
+Mod1 Up :MacroCmd {Maximize} {Raise}
 
 # cycle through windows in order as seen in toolbar ("modified" alt-tab)
 Mod1 Left :PrevWindow {static groups} (workspace=[current])
@@ -164,15 +164,12 @@ Mod4 Right :NextTab
 # Mod4  Shift Left :MoveTabLeft
 # Mod4  Shift Right :MoveTabRight
 
-# TODO does not work: detach window from group
-# OnTab Control Mod1 d
-
 # Mod4+s to shade (wege chromium)
 Mod4 s :Shade
 
 # show desktop
-Mod1  m	:ShowDesktop
-Mod4  d	:ShowDesktop
+Mod1 m :ShowDesktop
+Mod4 d :ShowDesktop
 
 # replace windows topleft,topright,bottomright,bottomleft
 Mod4 m :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 TopRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomLeft}{Focus}{Raise}} 
@@ -195,7 +192,11 @@ Mod4 a Mod4 h :ArrangeWindowsHorizontal {static groups} (workspace=[current]) (l
 # arrange windows 
 Mod4 a Mod4 g :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desktop)
 
+# close all windows
 Control Mod1 a :CloseAllWindows
+
+# TODO: does not work detach a window from group
+# OnTab Mod4 a Mod4 d :DetachClient
 
 #------------------------------------------------------- SHORTCUTS
 
