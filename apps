@@ -35,6 +35,7 @@
         [Position]      (TOPRIGHT) {0% 17%}
         [Dimensions]    {12% 17%} 
         [Sticky]        {yes}
+        [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -43,28 +44,29 @@
 [end]
 
 #---------------------------------------------------- MIXER
-[app] (wmmixer)
+[app] (title=ALSA Mixer)
         [Position]      (TOPRIGHT) {0% 34%}
-        # cannot be dimensioned
+        [Dimensions]    {12% 26%}
         [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-        [Deco]          {BORDER}
-[end]
-
-#---------------------------------------------------- NOTES
-[app] (name=xpad)
-        [Workspace]     {0}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 60%}
-        [Deco]          {TOOL}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
+        [Deco]          {NONE}
+[end]
+
+#---------------------------------------------------- NOTES
+[app] (name=xpad)
+        [Dimensions]    {12% 20%}
+        [Position]      (TOPRIGHT) {0% 60%}
+        [Sticky]        {yes}
+        [Head]          {1}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [Deco]          {TOOL}
 [end]
 
 #---------------------------------------------------- MUSIC
@@ -210,7 +212,7 @@
 [app] (name=cpufreqterm)
         [Workspace]     {0}
         [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 40%}
+        [Position]      (TOPRIGHT) {0% 80%}
         [Deco]          {TOOL}
         [Head]          {1}
         [Layer]         {12}

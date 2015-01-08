@@ -69,7 +69,7 @@ sleep 4
 	[ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
 	[ -x /usr/bin/gdeskcal ] && gdeskcal & 
 	[ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
-	[ -x /usr/bin/wmmixer ] && wmmixer &
+	[ -x /usr/bin/alsamixergui ] && alsamixergui &
 	# TODO mail watcher
 	# TODO rss reader (liferea, yarssr
 # 	[ -x /usr/bin/liferea ] && liferea &
