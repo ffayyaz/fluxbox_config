@@ -195,6 +195,8 @@ Mod4 a Mod4 h :ArrangeWindowsHorizontal {static groups} (workspace=[current]) (l
 # arrange windows 
 Mod4 a Mod4 g :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desktop)
 
+Control Mod1 a :CloseAllWindows
+
 #------------------------------------------------------- SHORTCUTS
 
 # programs
