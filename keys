@@ -15,28 +15,28 @@ OnToolbar Mouse4 :PrevWindow {static groups} (workspace=[current]) (iconhidden=n
 OnToolbar Mouse5 :NextWindow {static groups} (workspace=[current]) (iconhidden=no)
 
 # TODO check: alt + left/right click to move/resize a window
-# OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
-# OnWindowBorder Move1 :StartMoving
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindowBorder Move1 :StartMoving
 
-# OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
-# OnLeftGrip Move1 :StartResizing bottomleft
-# OnRightGrip Move1 :StartResizing bottomright
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+OnLeftGrip Move1 :StartResizing bottomleft
+OnRightGrip Move1 :StartResizing bottomright
 
 # TODO check: alt + middle click to lower the window
-# OnWindow Mod1 Mouse2 :Lower
+OnWindow Mod1 Mouse2 :Lower
 
 # control-click a window's titlebar and drag to attach windows
-# OnTitlebar Control Mouse1 :StartTabbing
+OnTitlebar Control Mouse1 :StartTabbing
 
 # double click on the titlebar to shade
 OnTitlebar Double Mouse1 :Shade
 
-# TODO check: left click on the titlebar to move the window
-# OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
-# OnTitlebar Move1  :StartMoving
+# TODO check: left click on the titlebar to move the window (!!!!!!)
+OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
+OnTitlebar Move1  :StartMoving
 
 # TODO: check middle click on the titlebar to lower
-# OnTitlebar Mouse2 :Lower
+OnTitlebar Mouse2 :Lower
 
 # right click on the titlebar for a menu of options
 OnTitlebar Mouse3 :WindowMenu
@@ -145,6 +145,9 @@ Control Mod4 F12 :TakeToWorkspace 12
 
 #------------------------------------------------------- WINDOW
 
+Mod1 Down :Minimize
+Mod1 Up :Maximize
+
 # cycle through windows in order as seen in toolbar ("modified" alt-tab)
 Mod1 Left :PrevWindow {static groups} (workspace=[current])
 Mod1 Right :NextWindow {static groups} (workspace=[current])
@@ -157,10 +160,12 @@ OnTab Mouse5 :NextTab
 Mod4 Left :PrevTab
 Mod4 Right :NextTab
 
-# raise focused window to top 
-# this should work with focusnewwindow setting in apps 
-# but seems not to work for tabbed windows, only for new ones
-Mod4 r :Raise
+# TODO does not work: move tab right / left
+# Mod4  Shift Left :MoveTabLeft
+# Mod4  Shift Right :MoveTabRight
+
+# TODO does not work: detach window from group
+# OnTab Control Mod1 d
 
 # Mod4+s to shade (wege chromium)
 Mod4 s :Shade
@@ -168,6 +173,27 @@ Mod4 s :Shade
 # show desktop
 Mod1  m	:ShowDesktop
 Mod4  d	:ShowDesktop
+
+# replace windows topleft,topright,bottomright,bottomleft
+Mod4 m :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 TopRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomLeft}{Focus}{Raise}} 
+
+# go to a specific window in current workspace
+Control Mod4 1 :GoToWindow 1 {static groups} (workspace=[current])
+Control Mod4 2 :GoToWindow 2 {static groups} (workspace=[current])
+Control Mod4 3 :GoToWindow 3 {static groups} (workspace=[current])
+Control Mod4 4 :GoToWindow 4 {static groups} (workspace=[current])
+Control Mod4 5 :GoToWindow 5 {static groups} (workspace=[current])
+Control Mod4 6 :GoToWindow 6 {static groups} (workspace=[current])
+Control Mod4 7 :GoToWindow 7 {static groups} (workspace=[current])
+Control Mod4 8 :GoToWindow 8 {static groups} (workspace=[current])
+Control Mod4 9 :GoToWindow 9 {static groups} (workspace=[current])
+
+# arrange windows vertically
+Mod4 a Mod4 v :ArrangeWindowsVertical {static groups} (workspace=[current]) (layer!=Desktop)
+# arrange windows horizontally
+Mod4 a Mod4 h :ArrangeWindowsHorizontal {static groups} (workspace=[current]) (layer!=Desktop)
+# arrange windows 
+Mod4 a Mod4 g :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desktop)
 
 #------------------------------------------------------- SHORTCUTS
 
@@ -185,9 +211,20 @@ Mod1 F9 :Exec kate
 Mod4 115 :Exec xscreensaver-command -lock  # Windows+End
 
 # TODO: maybe another shortcut htop terminal (see apps)
-Mod4 t :Exec  urxvt -name htopterm -e htop
+Mod4 t :Exec urxvt -name htopterm -e htop
 
 # xcompmgr
-# Mod4 x :Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95
-# Shift Mod4 x :Exec pkill xcompmgr
 Mod4 x :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95} {Exec pkill xcompmgr}
+
+# could be interesting but doesnt work
+# ChangeWorkspace :ShowDesktop (workspace=0) (layer=Desktop)
+# ChangeWorkspace :ShowDesktop (workspace=1) (layer=Desktop)
+# ChangeWorkspace :ShowDesktop (workspace=2) (layer=Desktop)
+# ChangeWorkspace :ShowDesktop (workspace=3) (layer=Desktop)
+# ChangeWorkspace :ShowDesktop (workspace=4) (layer!=Desktop)
+# ChangeWorkspace :ShowDesktop (workspace=5) (layer!=Desktop)
+# ChangeWorkspace :ShowDesktop (workspace=6) (layer!=Desktop)
+
+# fluxbox related
+Mod4 r :Reconfigure
+
