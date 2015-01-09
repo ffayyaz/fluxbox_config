@@ -1,0 +1,48 @@
+#!/bin/sh
+# fluxbox startup-script:
+#
+
+# repeat rate
+xset r rate 195 35
+xset +fp /home/mathias/.fonts
+
+# loads some nifty modmap :) atm it disables the CapsLock
+xmodmap ~/.Xmodmap
+
+# hides the mousepointer when inactive
+unclutter -idle 2 -jitter 10 -root &
+
+# keeps the different cut-buffers in sync
+autocutsel &
+
+logfile=~/.fluxbox/log`echo $DISPLAY | tr '[.:]' '_'`
+(
+  [ -f ${logfile} ] && root-tail -f -g 800x200+10-10 -font "-*-fixed-*-*-*-*-12-*" \
+    ${logfile},blue \
+    /var/log/emerge.log,magenta \
+    /var/log/everything/current,blue \
+    /var/log/critical/current,red
+) &
+
+
+# connection to mpd
+export MPD_HOST=localhost 
+export MPD_PORT=6600
+
+exec /usr/bin/fluxbox &
+fbpid=$!
+
+sleep 1 
+{ 
+#  oclock &
+  xsetroot -cursor_name left_ptr -fg white -bg black &
+  urxvtd &
+  [ -f ~/.fluxbox/startup.dockapps ] && sh ~/.fluxbox/startup.dockapps &
+} &
+
+wait $fbpid
+
+pkill -TERM xmms
+pkill -TERM torsmo
+
+# vim:ft=sh

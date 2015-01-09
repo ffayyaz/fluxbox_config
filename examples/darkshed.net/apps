@@ -1,0 +1,52 @@
+# 
+# * name -> the name of the window - the first field of WM_CLASS
+# * class -> the class of the window - the second field of
+#   WM_CLASS
+# * title -> the title of the window - the WM_NAME property
+#
+#
+[app] (konqueror|opera|Gecko|Mozilla.*|Netscape)
+  [Workspace]             {4}
+[end]
+[app] (class=xmms)
+  [IconHidden]            {yes}
+  [Layer]                 {ABOVEDOCK}
+  [Sticky]                {yes}
+[end]
+[app] (aterm)
+  [IconHidden]            {yes}
+[end]
+[app] (class=MPlayer|SDL_App|Kdetv|tvtime|Kaffeine)
+  [Deco]                  {BORDER}
+  [Layer]                 {DOCK}
+  [Sticky]                {yes}
+  [Position]              (UPPERRIGHT) {0 0}
+[end]
+[app] (lplayer-bin)
+  [Workspace]             {9}
+  [Jump]                  {yes}
+[end]
+[app] (fbrun)
+  [Position]              (WINCENTER) {0 0}
+  [IconHidden]            {yes}
+  [Deco]                  {BORDER}
+[end]
+[app] (vmware)
+  [Workspace]             {8}
+  [Deco]                  {NONE}
+[app] (xclock)
+  [Deco]                  {NONE}
+  [Sticky]                {yes}
+  [Position]              (UPPERRIGHT) {0 0} 
+  [Layer]                 {13}
+  [IconHidden]            {yes}
+[end]
+[app] (xload)
+  [Deco]                  {NONE}
+  [Sticky]                {yes}
+  [Position] (LOWERRIGHT) {0 0} 
+  [Layer] {13}
+[end]
+[app] (class=Gdesklets)
+  [Layer]                 {DESKTOP}
+[end]

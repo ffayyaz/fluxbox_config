@@ -1,0 +1,50 @@
+[begin] (menu) 
+  [exec] (xterm) {$XTERM} <~/.fluxbox/pixmaps/xterm.xpm> 
+  [exec] (editor) {$EDITOR} <~/.fluxbox/pixmaps/editor.xpm>
+  [exec] (browser) {$BROWSER} <~/.fluxbox/pixmaps/browser.xpm>
+  [separator]
+  [exec] (fbrun) {fbrun -font Verdana} </home/mathias/fluxbox.xpm>
+  [commanddialog] (fbcmnd)
+  [separator]
+##[includeexec] (10) {echo "[nop] (`date`)"}
+#  [submenu] (news) 
+#    [include] (~/.fluxbox/news)
+#  [end]
+  [submenu] (fluxmenu)
+    [config] (configure)
+    [submenu] (misc) {misc...}
+      [exec] (edit keys) {gvim ~/.fluxbox/keys}
+      [exec] (edit menu) {gvim ~/.fluxbox/menu}
+      [exec] (edit init) {gvim ~/.fluxbox/init}
+      [exec] (edit style) {gvim `sed -n /styleFile/p .fluxbox/init | cut -f 2` }
+      [submenu] (system styles) {choose a style...}
+        [stylesdir] (/usr/share/fluxbox/styles)
+      [end]
+      [submenu] (user styles) {choose a style...}
+        [stylesdir] (~/.fluxbox/styles)
+      [end]
+      [submenu] (test styles) {choose a style...}
+        [stylesdir] (~/.fluxbox/styles-test)
+      [end]
+
+      [submenu]   (tools)
+        [exec]    (fluxconf) {fluxconf}
+        [exec]    (fluxkeys) {fluxkeys}
+        [exec]    (fluxmenu) {fluxmenu}
+        [exec]    (windowname) {xprop|grep "WM_CLASS\|WM_NAME" |cut -d \" -f 2|xmessage -file - -center}
+        [exec]    (screenshot) {import screenshot.png && qiv -W 50 screenshot.png}
+      [end]
+    [end]
+    [workspaces]  (workspace list)
+    [reconfig]    (reload config)
+    [submenu]     (restart) {restart...}
+      [restart] (fluxbox)
+      [restart] (aterm) {/usr/bin/aterm}
+      [restart] (pekwm) {/usr/bin/pekwm}
+      [restart] (xfce4) {/usr/bin/startxfce4}
+    [end]
+    [exit]        (exit)
+  [end]
+[end]
+
+# vim:ft=fluxbox:fdm=indent:nofen

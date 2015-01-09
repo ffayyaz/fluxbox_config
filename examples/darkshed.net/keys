@@ -1,0 +1,301 @@
+  1  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  2  !
+  3  ! file   : $HOME/.fluxbox/keys
+  4  ! about  : fluxbox key bindings
+  5  ! author : mathias gumz <akira at fluxbox dot org>
+  6  !          ( ak|ra or akira )
+  7  !
+  8  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  9  !
+ 10  !  hints:
+ 11  !
+ 12  !  o syntax of the fluxbox-keys-file:
+ 13  !
+ 14  !       <mod> [<mod> <mod>] key [key key] :command <commanoptions>
+ 15  !
+ 16  !    so, what is a <mod> ? its called "modifier" and you can use
+ 17  !    'xmodmap -pm' to see, what modifiers are available. if you 
+ 18  !    dont want to press any "modifier" then use 'None'
+ 19  !
+ 20  !  o what are those $XTERM, $EDITOR entries?
+ 21  !
+ 22  !    if you set a variable like XTERM to a sane value like
+ 23  !    "xterm" before fluxbox comes up, fluxbox would use that
+ 24  !    variable in the :ExecCommand. one can use the :Export or 
+ 25  !    :Setenv command to change that variable on the fly... eg to
+ 26  !    "urxvt" or "aterm".
+ 27  !
+ 28  !  o you can find a valid syntaxfile for vim here:
+ 29  !
+ 30  !       http://www.vim.org/scripts/script.php?script_id=882
+ 31  !       http://darkshed.net/files/vim/syntax/fluxkeys.vim
+ 32  !
+ 33  !    if you like it, rate it. (if not too :))
+ 34  !
+ 35  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 36
+ 37  Control Mod4 Delete       :Reconfigure
+ 38  Control Mod4 Shift Delete :Restart
+ 39
+ 40  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 41  !
+ 42  !  menus
+ 43  !
+ 44  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 45  None Menu                 :RootMenu
+ 46  Control Menu              :WorkspaceMenu
+ 47  Control Mod4 Menu         :WindowMenu
+ 48
+ 49  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 50  !
+ 51  !  frame - handling
+ 52  !
+ 53  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 54  Mod4 Left                 :PrevTab
+ 55  Mod4 Right                :NextTab
+ 56  Shift Mod4 d              :DetachClient
+ 57  Shift Mod4 Left           :MoveTabLeft
+ 58  Shift Mod4 Right          :MoveTabRight
+ 59
+ 60  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 61  !
+ 62  !  window - handling
+ 63  !
+ 64  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 65  Mod4 s                    :Stick
+ 66  Mod4 q                    :Minimize
+ 67  Shift Mod4 q              :Deiconify LastWorkspace
+ 68  Control Shift Mod4 q      :Deiconify Last OriginQuiet
+ 69  Control Shift Mod1 Mod4 q :Deiconify All OriginQuiet
+ 70  Mod1 Control q            :Close
+ 71  Mod4 d                    :ToggleDecor
+ 72  Mod4 f                    :Shade
+ 73
+ 74  Mod1 Up                   :RaiseLayer
+ 75  Mod1 Down                 :LowerLayer
+ 76
+ 77  Control Mod4 1            :SetHead 1
+ 78  Control Mod4 2            :SetHead 2
+ 79
+ 80  ! 1 - cycle groups
+ 81  ! 2 - skip stuck
+ 82  ! 4 - skip shaded
+ 83  ! 8 - cycle linear
+ 84  ! 0 - cycle default
+ 85
+ 86  Mod1 Tab                  :NextWindow 1
+ 87  Mod1 Shift Tab            :PrevWindow 1
+ 88
+ 89  Shift Mod1 Mod4 Up        :FocusUp
+ 90  Shift Mod1 Mod4 Down      :FocusDown
+ 91  Shift Mod1 Mod4 Left      :FocusLeft
+ 92  Shift Mod1 Mod4 Right     :FocusRight
+ 93
+ 94  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 95  !
+ 96  ! accessibility + mousehandling
+ 97  !
+ 98  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 99
+100  Control Mod1 a            :ExecCommand accessx
+101  Control Mod1 Mod4 m       :ExecCommand ax +mousekeys
+102  Control Mod1 m            :ExecCommand ax -mousekeys
+103
+104  Control Mod4 KP_Home      :ExecCommand xwit -rwarp  -50 -50
+105  Control Mod4 KP_Up        :ExecCommand xwit -rwarp    0 -50
+106  Control Mod4 KP_Prior     :ExecCommand xwit -rwarp   50 -50
+107  Control Mod4 KP_Left      :ExecCommand xwit -rwarp  -50   0
+108  Control Mod4 KP_Right     :ExecCommand xwit -rwarp   50   0
+109  Control Mod4 KP_End       :ExecCommand xwit -rwarp  -50  50
+110  Control Mod4 KP_Down      :ExecCommand xwit -rwarp    0  50
+111  Control Mod4 KP_Next      :ExecCommand xwit -rwarp   50  50
+112
+113
+114
+115  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+116  !
+117  !  workspace - handling
+118  !
+119  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+120  !Control Mod4 Right        :RightWorkspace
+121  !Control Mod4 Left         :LeftWorkspace
+122  Control Mod4 Right        :NextWorkspace 
+123  Control Mod4 Left         :PrevWorkspace 
+124  Control Mod4 Down         :RightWorkspace 3
+125  Control Mod4 Up           :LeftWorkspace 3
+126
+127  Mod4 KP_Home              :Workspace 1
+128  Mod4 KP_Up                :Workspace 2
+129  Mod4 KP_Prior             :Workspace 3
+130  Mod4 KP_Left              :Workspace 4
+131  Mod4 KP_Begin             :Workspace 5
+132  Mod4 KP_Right             :Workspace 6
+133  Mod4 KP_End               :Workspace 7
+134  Mod4 KP_Down              :Workspace 8
+135  Mod4 KP_Next              :Workspace 9
+136  Mod4 KP_0                 :ExecCommand fbcmd_osd.sh print ws_name
+137
+138  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+139  !
+140  ! resize / movement of window
+141  !
+142  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+143  Control Mod1 Right        :MoveRight 10
+144  Control Mod1 Left         :MoveLeft 10
+145  Control Mod1 Up           :MoveUp 10
+146  Control Mod1 Down         :MoveDown 10
+147
+148  Control Mod1 KP_Home      :Move -50 -50
+149  Control Mod1 KP_Up        :Move   0 -50
+150  Control Mod1 KP_Prior     :Move  50 -50
+151  Control Mod1 KP_Left      :Move -50   0
+152  Control Mod1 KP_Right     :Move  50   0
+153  Control Mod1 KP_End       :Move -50  50
+154  Control Mod1 KP_Down      :Move   0  50
+155  Control Mod1 KP_Next      :Move  50  50
+156
+157  Mod4 Mod1 KP_Home         :Resize -10 -10
+158  Mod4 Mod1 KP_Up           :Resize   0 -10
+159  Mod4 Mod1 KP_Prior        :Resize  10 -10
+160  Mod4 Mod1 KP_Left         :Resize -10   0
+161  Mod4 Mod1 KP_Right        :Resize  10   0
+162  Mod4 Mod1 KP_End          :Resize -10  10
+163  Mod4 Mod1 KP_Down         :Resize   0  10
+164  Mod4 Mod1 KP_Next         :Resize  10  10
+165
+166  Mod4 Mod1 Left            :Resize -1    0
+167  Mod4 Mod1 Right           :Resize  1    0
+168  Mod4 Mod1 Up              :Resize  0   -1
+169  Mod4 Mod1 Down            :Resize  0    1
+170
+171  Shift Mod1 Left           :MoveTo 0 * Left
+172  Shift Mod1 Right          :MoveTo 0 * Right
+173  Shift Mod1 Up             :MoveTo * 0 Upper
+174  Shift Mod1 Down           :MoveTo * 0 Lower
+175
+176  Shift Mod1 KP_Home        :MoveTo 0 0 UpperLeft
+177  Shift Mod1 KP_Up          :MoveTo * 0 Upper
+178  Shift Mod1 KP_Prior       :MoveTo 0 0 UpperRight
+179  Shift Mod1 KP_Left        :MoveTo 0 * Left
+180  Shift Mod1 KP_Right       :MoveTo 0 * Right
+181  Shift Mod1 KP_End         :MoveTo 0 0 LowerLeft
+182  Shift Mod1 KP_Down        :MoveTo * 0 Lower
+183  Shift Mod1 KP_Next        :MoveTo 0 0 LowerRight
+184
+185  Mod1 Return               :MaximizeWindow
+186  Shift Mod4 s              :MaximizeVertical
+187  Control Mod1 s            :MaximizeHorizontal
+188  Control Mod4 f            :Fullscreen
+189  Control Mod4 p            :TakeToNextWorkspace 1
+190  Control Mod4 o            :TakeToPrevWorkspace 1
+191  Control Mod1 p            :SendToNextWorkspace 1
+192  Control Mod1 o            :SendToPrevWorkspace 1
+193
+194
+195  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+196  !
+197  ! execute commands
+198  !
+199  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+200
+201  Control Mod4 KP_Enter     :ExecCommand xcalc
+202  Control Mod4 a            :ExecCommand $XTERM
+203  Control Mod1 1            :ExecCommand urxvt-rc
+204  Control Mod4 c            :ExecCommand $XCALC
+205  Control Mod4 d            :ExecCommand date | osd_cat -c white -f -*-lucida-medium-r-*-*-20-*-*-*-*-*-*-* -o 20 -p top -A center
+206  Control Mod4 e            :ExecCommand licqsh -o
+207  Control Mod4 l            :ExecCommand alock -bg blank -auth sha1:hash=8843d7f92416211de9ebb963ff4ce28125932878
+208  Control Mod4 m            :ExecCommand quax
+209  Control Mod4 q            :ExecCommand $BROWSER
+210  Control Mod4 x            :ExecCommand fbrun -nearmouse -font Matto -w 500 -h 50
+211  Control Shift b           :ExecCommand fbrun -nearmouse -font Matto -title "enter url..." -text "$BROWSER http://www." -w 500 -h 50 -hf ~/.fluxbox/browse_history
+212  !Mod4 colon                :CommandDialog
+213  Control Mod4 y            :ExecCommand $XTERM -name mutt -title "mutt : mails" -e mutt
+214  Control Mod4 s            :ExecCommand $XTERM -name abook -T "addresses" -e abook
+215  Control Shift Mod4 c      :ExecCommand xcalendar
+216  Control Shift Mod4 e      :ExecCommand env | sort | xmessage -file -
+217  Mod4 Mod1 d               :ExecCommand ding
+218  Mod4 c                    :ExecCommand xclipboard
+219  Mod4 g                    :ExecCommand gentoo
+220  Mod4 e                    :ExecCommand $EDITOR
+221  Mod4 n                    :ExecCommand $EDITOR $HOME/.notes
+222  Mod4 t                    :ExecCommand $EDITOR $HOME/.todo/
+223  Mod4 x                    :ExecCommand xmag
+224  Mod1 Mod4 x               :ExecCommand wmagnify
+225
+226  !
+227  ! soundkungfoo - volume control
+228  !
+229
+230  ! sound stuff, basicly control the volume via amixer (alsa)
+231  Mod4 m                    :ExecCommand amixer -a sset Master,0 toggle 2&>1 > /dev/null
+232  Mod4 Shift a              :ExecCommand aprofile_ctl.sh -m set_volume 5%+
+233  Mod4 Shift y              :ExecCommand aprofile_ctl.sh -m set_volume 5%-
+234  Control Shift Mod4 a      :ExecCommand $XTERM -name alsamixer -e alsamixer
+235  Control Shift Mod1 Mod4 a :ExecCommand alsamixergui
+236
+237  ! switch between normal / headphone settings
+238  Control Mod4 n            :ExecCommand aprofile_ctl.sh -m switch -p normal
+239  Control Mod4 h            :ExecCommand aprofile_ctl.sh -m switch -p headphones
+240
+241  !
+242  ! skip bad songs quickly :)
+243  Mod4 Tab                  :ExecCommand MPD_HOST=localhost MPD_PORT=6600 mpc next &> /dev/null
+244  Control Mod4 Tab          :ExecCommand MPD_HOST=localhost MPD_PORT=6600 mpc prev &> /dev/null
+245  Mod4 1                    :ExecCommand MPD_HOST=localhost MPD_PORT=6600 mpc toggle &> /dev/null
+246  Mod1 Shift a              :ExecCommand MPD_HOST=localhost MPD_PORT=6600 mpc volume +10 &> /dev/null
+247  Mod1 Shift y              :ExecCommand MPD_HOST=localhost MPD_PORT=6600 mpc volume -10 &> /dev/null
+248
+249  ! screenshots
+250  ! xmodmap -pke | grep -i print => xmodmap -e "keycode 111 = F13"
+251  ! => i press "Print" and it dumps the screen :)
+252  None F13                  :ExecCommand sleep 1 && scrot -s -q 75 'shot-%Y-%m-%d-%H%M%S-$w-$h.jpg'
+253
+254  !
+255  ! dvd / cdcontrol stuff
+256  !
+257
+258  Mod4 plus                 :ExecCommand cdctrl speed 32 /dev/dvd
+259  Mod4 minus                :ExecCommand cdctrl speed 4 /dev/dvd
+260  Control Mod4 plus         :ExecCommand cdctrl close /dev/dvd
+261  Control Mod4 minus        :ExecCommand cdctrl open /dev/dvd
+262
+263  Shift Mod4 plus           :ExecCommand cdctrl speed 32 /dev/cdrom
+264  Shift Mod4 minus          :ExecCommand cdctrl speed 4 /dev/cdrom
+265  Control Shift Mod4 plus   :ExecCommand cdctrl close /dev/cdrom
+266  Control Shift Mod4 minus  :ExecCommand cdctrl open /dev/cdrom
+267
+268
+269  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+270  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+271  !
+272  ! below this line only experimental stuff is listed. its not supposed to WORK
+273  !
+274  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+275  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+276  !
+277  !Shift Mod4 p :FocusTo (xterm)
+278  !Shift Mod4 o :DumpTheme
+279
+280  !Mod4 p m                  :Place max_space allow_smaller
+281  !Mod4 p v                  :Place expand_vertical allow_smaller
+282  !Mod4 p V                  :Place max_vertical_space allow_smaller
+283  !Mod4 p h                  :Place expand_horizontal allow_smaller
+284  !Mod4 p H                  :Place max_horizontal_space allow_smaller
+285  !Mod4 p g                  :Place draw_grid
+286
+287  Control Mod4 colon :FocusCommandTool
+288
+289  Mod1 x p :ExecCommand urxvt -tint red
+290
+291  ! attention: the next command is just to show that syntax-hl in vim works
+292  Control Mod1 Mod4 x :MacroCmd {Exec xterm} {Move 10 10} {Exec bla} {Move 10 10}
+293
+294  !Mod1 t v :TileVertical 3
+295  !Mod1 t s :TileHorizontal 3
+296  Mod1 t w :ArrangeWindows
+297
+298
+299  Mod4 Mod1 p            :CycleDecor
+300
+301  ! vim:ft=fluxkeys
