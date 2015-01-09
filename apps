@@ -90,8 +90,8 @@
 [end]
 [app] (name=audacious) (class=Audacious) (title=Spectrum Analyzer)
         [Workspace]     {4}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 40%}
+        [Dimensions]    {12% 22%}
+        [Position]      (TOPRIGHT) {0% 34%}
         [Layer]         {12}
         [Deco]          {NONE}
         [FocusNewWindow] {no}
@@ -100,8 +100,8 @@
 [end]
 [app] (name=audacious) (class=Audacious) (title=Blur Scope)
         [Workspace]     {4}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 60%}
+        [Dimensions]    {12% 22%}
+        [Position]      (TOPRIGHT) {0% 56%}
         [Layer]         {12}
         [Deco]          {NONE}
         [FocusNewWindow] {no}
@@ -110,8 +110,8 @@
 [end]
 [app] (name=audacious) (class=Audacious) (title=Album Art)
         [Workspace]     {4}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 80%}
+        [Dimensions]    {12% 22%}
+        [Position]      (TOPRIGHT) {0% 78%}
         [Layer]         {12}
         [Deco]          {NONE}
         [FocusNewWindow] {no}
