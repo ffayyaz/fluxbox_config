@@ -44,8 +44,8 @@
 [end]
 
 #---------------------------------------------------- MIXER
-[app] (title=ALSA Mixer)
-        [Position]      (TOPRIGHT) {0% 34%}
+[app] (name=mixerterm)
+        [Position]      (TOPRIGHT) {0% 35%}
         [Dimensions]    {12% 26%}
         [Sticky]        {yes}
         [Head]          {1}
