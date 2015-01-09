@@ -119,6 +119,13 @@
         [IconHidden]    {yes}
 [end]
 
+[app] (name=Audacity) (class=Audacity) 
+        [Workspace]     {4}
+        [Jump]          {yes}
+        [Position]      (TOPLEFT) {0% 0%}
+        [Dimensions]    {100% 100%}
+        [FocusNewWindow] {yes}
+[end]
 #---------------------------------------------------- NEWS
 [app] (liferea)
         [Workspace]     {6}
