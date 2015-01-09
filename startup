@@ -65,7 +65,7 @@ sleep 4
 	#[ -x /usr/bin/xsnow ] && xsnow -snowflakes 350 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -nokeepsnowonwindows -sc darkcyan -whirl 1 -xspeed 4 -yspeed 7 &
 	
 	# tools / gadgets 
-	[ -x /usr/bin/unclutter ] && unclutter -idle 2 &
+	[ -x /usr/bin/unclutter ] && unclutter -idle 2 -jitter 10 -idle 2 -regex -notclass ".*xvt.*" ".*term.*" ".*log.*" &
 	[ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
 	[ -x /usr/bin/gdeskcal ] && gdeskcal & 
 	[ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
