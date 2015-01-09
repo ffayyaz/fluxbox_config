@@ -71,7 +71,7 @@
 
 #---------------------------------------------------- MUSIC
 [app] (name=audacious) (class=Audacious) (title=Audacious)
-        [Workspace]     {4}
+        [Workspace]     {3}
         [Position]      (TOPLEFT) {0% 0%}
         [Dimensions]    {88% 100%}
         [Layer]         {12}
@@ -81,7 +81,7 @@
         [Deco]          {NONE}
 [end]
 [app] (name=audacious) (class=Audacious) (title!=Audacious) (title!=Spectrum Analyzer) (title!=Blur Scope) (title!=Album Art)
-        [Workspace]     {4}
+        [Workspace]     {3}
         [Position]      (CENTER) {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {yes}
@@ -89,7 +89,7 @@
         [IconHidden]    {yes}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Spectrum Analyzer)
-        [Workspace]     {4}
+        [Workspace]     {3}
         [Dimensions]    {12% 22%}
         [Position]      (TOPRIGHT) {0% 34%}
         [Layer]         {12}
@@ -99,7 +99,7 @@
         [IconHidden]    {yes}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Blur Scope)
-        [Workspace]     {4}
+        [Workspace]     {3}
         [Dimensions]    {12% 22%}
         [Position]      (TOPRIGHT) {0% 56%}
         [Layer]         {12}
@@ -109,7 +109,7 @@
         [IconHidden]    {yes}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Album Art)
-        [Workspace]     {4}
+        [Workspace]     {3}
         [Dimensions]    {12% 22%}
         [Position]      (TOPRIGHT) {0% 78%}
         [Layer]         {12}
@@ -120,23 +120,23 @@
 [end]
 
 [app] (name=Audacity) (class=Audacity) 
-        [Workspace]     {4}
+        [Workspace]     {3}
         [Jump]          {yes}
         [Position]      (TOPLEFT) {0% 0%}
         [Dimensions]    {100% 100%}
         [FocusNewWindow] {yes}
 [end]
 #---------------------------------------------------- NEWS
-[app] (liferea)
-        [Workspace]     {6}
-        [Position]      (TOPLEFT) {0% 0%}
-        [Dimensions]    {88% 100%}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-        [Deco]          {BORDER}
-[end]
+# [app] (liferea)
+        # [Workspace]     {6}
+        # [Position]      (TOPLEFT) {0% 0%}
+        # [Dimensions]    {88% 100%}
+        # [Layer]         {12}
+        # [FocusNewWindow] {no}
+        # [IconHidden]    {yes}
+        # [FocusHidden]   {yes}
+        # [Deco]          {BORDER}
+# [end]
 
 #---------------------------------------------------- TERMINALS
 [app] (name=messagesterm)
@@ -410,33 +410,33 @@
         [Head]          {1}
         [FocusNewWindow] {yes}
 [end]
-[group] (workspace)
-    [app] (name=.*news.*) (class=Chromium)
-        [Workspace]     {6}
-        [Jump]          {no}
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPLEFT) {50% 0%}
-        [Head]          {1}
-        [FocusNewWindow] {no}
-[end]
+# [group] (workspace)
+    # [app] (name=.*news.*) (class=Chromium)
+        # [Workspace]     {6}
+        # [Jump]          {no}
+        # [Dimensions]    {50% 100%}
+        # [Position]      (TOPLEFT) {50% 0%}
+        # [Head]          {1}
+        # [FocusNewWindow] {no}
+# [end]
 [group] (workspace)
     [app] (name=.*music.*) (class=Chromium)
-        [Workspace]     {4}
+        [Workspace]     {3}
         [Jump]          {no}
         [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {50% 0%}
         [Head]          {1}
         [FocusNewWindow] {no}
 [end]
-[group] (workspace)
-    [app] (name=.*heise.*) (class=Chromium)
-        [Workspace]     {6}
-        [Jump]          {no}
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPLEFT) {0% 0%}
-        [Head]          {1}
-        [FocusNewWindow] {no}
-[end]
+# [group] (workspace)
+    # [app] (name=.*heise.*) (class=Chromium)
+        # [Workspace]     {6}
+        # [Jump]          {no}
+        # [Dimensions]    {50% 100%}
+        # [Position]      (TOPLEFT) {0% 0%}
+        # [Head]          {1}
+        # [FocusNewWindow] {no}
+# [end]
 
 # iceweasel
 [group] (workspace)
@@ -460,7 +460,7 @@
 
 #---------------------------------------------------- MAIL
 [app] (name=Mail) (class=Icedove) (role=3pane)
-    [Workspace]         {5}
+    [Workspace]         {4}
     [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0% 0%}
     [Head]              {1}
@@ -470,20 +470,20 @@
     [Deco]              {NONE}
 [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
-    [Workspace]         {5}
+    [Workspace]         {4}
     [Dimensions]        {50% 100%}
     [Position]          (TOPLEFT) {0% 0%}
     [Head]              {1}
 [end]
 [app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
-    [Workspace]         {5}
+    [Workspace]         {4}
     [Dimensions]        {100% 50%}
     [Position]          (TOPLEFT) {0% 0%}
     [Head]              {1}
     [Layer]             {12}
 [end]
 [app] (name=Msgcompose) (class=Icedove) 
-    [Workspace]         {5}
+    [Workspace]         {4}
     [Dimensions]        {50% 100%}
     [Position]          (TOPLEFT) {50% 0%}
     [Head]              {1}
