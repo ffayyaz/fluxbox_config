@@ -141,7 +141,7 @@
 #---------------------------------------------------- TERMINALS
 [app] (name=messagesterm)
         [Workspace]     {0}
-        [Dimensions]    {50% 25%}
+        [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 0%}
         [Deco]          {TOOL}
         [Head]          {1}
@@ -152,18 +152,7 @@
 [end]
 [app] (name=syslogterm)
         [Workspace]     {0}
-        [Dimensions]    {50% 25%}
-        [Position]      (TOPLEFT) {0% 25%}
-        [Deco]          {TOOL}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=debuglogterm)
-        [Workspace]     {0}
-        [Dimensions]    {50% 25%}
+        [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
         [Deco]          {TOOL}
         [Head]          {1}
@@ -172,18 +161,7 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-[app] (name=dmesglogterm)
-        [Workspace]     {0}
-        [Dimensions]    {50% 25%}
-        [Position]      (TOPLEFT) {0% 75%}
-        [Deco]          {TOOL}
-        [Head]          {1}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=authlogterm)
+[app] (name=debuglogterm)
         [Workspace]     {0}
         [Dimensions]    {38% 34%}
         [Position]      (TOPLEFT) {50% 0%}
@@ -194,6 +172,17 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
+# [app] (name=dmesglogterm)
+        # [Workspace]     {0}
+        # [Dimensions]    {50% 25%}
+        # [Position]      (TOPLEFT) {0% 75%}
+        # [Deco]          {TOOL}
+        # [Head]          {1}
+        # [Layer]         {12}
+        # [FocusNewWindow] {no}
+        # [IconHidden]    {yes}
+        # [FocusHidden]   {yes}
+# [end]
 [app] (name=kernlogterm)
         [Workspace]     {0}
         [Dimensions]    {38% 33%}
@@ -205,7 +194,7 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-[app] (name=diskusageterm)
+[app] (name=authlogterm)
         [Workspace]     {0}
         [Dimensions]    {38% 33%}
         [Position]      (TOPLEFT) {50% 67%}
@@ -216,6 +205,17 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
+# [app] (name=diskusageterm)
+        # [Workspace]     {0}
+        # [Dimensions]    {38% 33%}
+        # [Position]      (TOPLEFT) {50% 67%}
+        # [Deco]          {TOOL}
+        # [Head]          {1}
+        # [Layer]         {12}
+        # [FocusNewWindow] {no}
+        # [IconHidden]    {yes}
+        # [FocusHidden]   {yes}
+# [end]
 [app] (name=cpufreqterm)
         [Workspace]     {0}
         [Dimensions]    {12% 20%}

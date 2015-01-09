@@ -138,10 +138,11 @@ sleep 4
     messagesterm &
     syslogterm &
     debuglogterm &
-    dmesglogterm &
+    # dmesglogterm &
     authlogterm &
     kernlogterm &
-    diskusageterm &
+    # diskusageterm &
+    mixerterm&
 
     #
     # Debian-local change:
