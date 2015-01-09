@@ -196,7 +196,7 @@ Mod4 a Mod4 g :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desk
 # close all windows
 Control Mod1 a :CloseAllWindows
 
-# TODO: does not work detach a window from group
+# detach a window from group
 Shift Mod4 d :DetachClient
 
 #------------------------------------------------------- SHORTCUTS
@@ -237,3 +237,5 @@ Mod4 x :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95}
 # fluxbox related
 Mod4 r :Reconfigure
 
+#------------------------------------------------------- TESTING
+Shift Mod4 p :If {Some Matches (Chromium)} { MacroCmd {NextWindow (Chromium) } {Shade} {Shade} }
