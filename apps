@@ -143,7 +143,7 @@
         [Workspace]     {0}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 0%}
-        [Deco]          {TOOL}
+        [Deco]          {10100100101}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -154,7 +154,7 @@
         [Workspace]     {0}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
-        [Deco]          {TOOL}
+        [Deco]          {10100100101}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -165,7 +165,7 @@
         [Workspace]     {0}
         [Dimensions]    {38% 34%}
         [Position]      (TOPLEFT) {50% 0%}
-        [Deco]          {TOOL}
+        [Deco]          {10100100101}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -176,7 +176,7 @@
         # [Workspace]     {0}
         # [Dimensions]    {50% 25%}
         # [Position]      (TOPLEFT) {0% 75%}
-        # [Deco]          {TOOL}
+        # [Deco]          {10100100101}
         # [Head]          {1}
         # [Layer]         {12}
         # [FocusNewWindow] {no}
@@ -187,7 +187,7 @@
         [Workspace]     {0}
         [Dimensions]    {38% 33%}
         [Position]      (TOPLEFT) {50% 34%}
-        [Deco]          {TOOL}
+        [Deco]          {10100100101}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -198,7 +198,7 @@
         [Workspace]     {0}
         [Dimensions]    {38% 33%}
         [Position]      (TOPLEFT) {50% 67%}
-        [Deco]          {TOOL}
+        [Deco]          {10100100101}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -209,7 +209,7 @@
         # [Workspace]     {0}
         # [Dimensions]    {38% 33%}
         # [Position]      (TOPLEFT) {50% 67%}
-        # [Deco]          {TOOL}
+        # [Deco]          {10100100101}
         # [Head]          {1}
         # [Layer]         {12}
         # [FocusNewWindow] {no}
@@ -220,7 +220,7 @@
         [Workspace]     {0}
         [Dimensions]    {12% 20%}
         [Position]      (TOPRIGHT) {0% 80%}
-        [Deco]          {TOOL}
+        [Deco]          {10100100101}
         [Head]          {1}
         [Layer]         {12}
         [FocusNewWindow] {no}
