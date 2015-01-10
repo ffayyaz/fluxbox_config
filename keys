@@ -238,4 +238,4 @@ Mod4 x :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95}
 Mod4 r :Reconfigure
 
 #------------------------------------------------------- TESTING
-Shift Mod4 p :If {Some Matches (Chromium)} { MacroCmd {NextWindow (Chromium) } {Shade} {Shade} }
+Shift Mod4 p :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
