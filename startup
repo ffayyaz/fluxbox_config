@@ -104,10 +104,10 @@ sleep 4
     /sbin/ifconfig|egrep '192.168.85.10'
     if [ "${?}" = "0" ]; then
 	    [ -x /usr/bin/xchat ] && xchat &
-        if [ -x /usr/bin/chromium ]; then
-		    chromium --user-data-dir=/home/fafa/.config/chromiumnews www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
+        # if [ -x /usr/bin/chromium ]; then
+# 		    chromium --user-data-dir=/home/fafa/.config/chromiumnews www.nzz.ch www.tagi.ch www.20min.ch www.blick.ch&
 # 		    chromium --user-data-dir=/home/fafa/.config/chromiumheise www.heise.de&
-        fi
+        # fi
     fi
 
     #_______ Autostart Netstream only __________________________________________
