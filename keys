@@ -239,3 +239,14 @@ Mod4 r :Reconfigure
 
 #------------------------------------------------------- TESTING
 Shift Mod4 p :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
+Mod4 Control Right :MacroCmd {ResizeHorizontal 20} {Raise}
+Mod4 Control Left :MacroCmd {ResizeHorizontal -20} {Raise}
+Mod4 Control Up :MacroCmd {ResizeVertical -20} {Raise}
+Mod4 Control Down :MacroCmd {ResizeVertical 20} {Raise}
+# Mod4 Control Up :MacroCmd {Resize 25% 25%} {Raise}
+# Mod4 Control Down :MacroCmd {Resize -25% -25%} {Raise}
+
+Shift Mod4 Right :MacroCmd {MoveRight 20} {Raise}
+Shift Mod4 Left :MacroCmd {MoveLeft 20} {Raise}
+Shift Mod4 Up :MacroCmd {MoveUp 20} {Raise}
+Shift Mod4 Down :MacroCmd {MoveDown 20} {Raise}
