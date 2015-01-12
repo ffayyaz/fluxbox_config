@@ -543,6 +543,13 @@
         [Fullscreen]    {no} # not usable with yes
 [end]
 
+#---------------------------------------------------- PDFREADER
+[app] (okular)
+        [Dimensions]    {50% 100%} 
+        [Position]      (TOPRIGHT) {0% 0%}
+        [FocusNewWindow] {yes}
+[end]
+
 #---------------------------------------------------- MISC
 [app] (name=htopterm)
         [Fullscreen]    {yes}
