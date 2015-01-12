@@ -72,7 +72,7 @@ session.colorsPerChannel:	4
 session.autoRaiseDelay:	250
 session.cacheMax:	200
 ! session.styleFile:	/usr/share/fluxbox/styles/Bity_fluxbox
-session.styleFile:	/usr/share/fluxbox/styles/green_tea
+! session.styleFile:	/usr/share/fluxbox/styles/green_tea
 ! session.styleFile:	/usr/share/fluxbox/styles/carp
 ! session.styleFile:	/usr/share/fluxbox/styles/bora_green
 ! session.styleFile:	/usr/share/fluxbox/styles/bora_blue
