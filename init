@@ -71,12 +71,12 @@ session.configVersion:	13
 session.colorsPerChannel:	4
 session.autoRaiseDelay:	250
 session.cacheMax:	200
-! session.styleFile:	/usr/share/fluxbox/styles/Bity_fluxbox
-! session.styleFile:	/usr/share/fluxbox/styles/green_tea
-! session.styleFile:	/usr/share/fluxbox/styles/carp
-! session.styleFile:	/usr/share/fluxbox/styles/bora_green
-! session.styleFile:	/usr/share/fluxbox/styles/bora_blue
-! session.styleFile:	/usr/share/fluxbox/styles/bora_black
+! session.styleFile:	/usr/share/fluxbox/styles/Bity_fluxbox ! lag
+! session.styleFile:	/usr/share/fluxbox/styles/green_tea ! lag
+! session.styleFile:	/usr/share/fluxbox/styles/carp ! lag
+! session.styleFile:	/usr/share/fluxbox/styles/bora_green ! (performant)
+! session.styleFile:	/usr/share/fluxbox/styles/bora_blue ! (performant)
+! session.styleFile:	/usr/share/fluxbox/styles/bora_black ! (performant)
 ! session.styleFile:	/usr/share/fluxbox/styles/Twice
 ! session.styleFile:	/usr/share/fluxbox/styles/Squared_green
 ! session.styleFile:	/usr/share/fluxbox/styles/Squared_blue
