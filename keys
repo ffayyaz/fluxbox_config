@@ -140,8 +140,8 @@ OnTab Mouse4                :PrevTab
 OnTab Mouse5                :NextTab
 
 # cycle through tabs  ("modified" win-tab)
-Mod1 Mod4 Left              :PrevTab
-Mod1 Mod4 Right             :NextTab
+Mod4 Left              :PrevTab
+Mod4 Right             :NextTab
 
 # move tab right / left
 Shift Mod4 Left             :MoveTabLeft
