@@ -544,7 +544,10 @@
 [end]
 
 #---------------------------------------------------- PDFREADER
-[app] (okular)
+[group] (workspace)
+	[app] (okular)
+	[app] (name=win) (class=Xpdf)
+	[app] (evince)
         [Dimensions]    {50% 100%} 
         [Position]      (TOPRIGHT) {0% 0%}
         [FocusNewWindow] {yes}
