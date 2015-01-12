@@ -77,7 +77,7 @@ session.cacheMax:	200
 ! session.styleFile:	/usr/share/fluxbox/styles/bora_green ! (performant)
 ! session.styleFile:	/usr/share/fluxbox/styles/bora_blue ! (performant)
 ! session.styleFile:	/usr/share/fluxbox/styles/bora_black ! (performant)
-! session.styleFile:	/usr/share/fluxbox/styles/Twice
+! session.styleFile:	/usr/share/fluxbox/styles/Twice ! (performant)
 ! session.styleFile:	/usr/share/fluxbox/styles/Squared_green
 ! session.styleFile:	/usr/share/fluxbox/styles/Squared_blue
 ! session.styleFile:	/usr/share/fluxbox/styles/Emerge
