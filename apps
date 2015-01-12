@@ -491,10 +491,11 @@
 
 #---------------------------------------------------- GUI EDITOR
 # gedit often crashes fluxbox, so use kate
-[app] (name=kate) (class=Kate)
+[group] (workspace)
+	[app] (name=kate) (class=Kate)
         [Dimensions]        {50% 50%}
         [Position]          (BOTTOMLEFT) {0% 0%}
-        [Sticky]            {yes}
+        # [Sticky]            {yes}
         [Head]              {1}
         [FocusNewWindow]    {no}
 [end]
