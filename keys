@@ -173,14 +173,14 @@ Shift Mod4 d                :DetachClient
 #------------------------------------------------------- SHORTCUTS
 
 # programs
-Mod1 F1                     :Exec urxvt 
-Mod1 F2                     :Exec urxvt -name URxvt-remote -tn remoteterm
-Mod1 F3                     :Exec chromium
-Mod1 F5                     :Exec iceweasel
-Mod1 F6                     :Exec opera-next
-Mod1 F7                     :Exec opera
-Mod1 F8                     :Exec icedove
-Mod1 F9                     :Exec kate
+Mod1 F1                     :MacroCmd {Exec urxvt} {Raise}
+Mod1 F2                     :MacroCmd {Exec urxvt -name URxvt-remote -tn remoteterm} {Raise}
+Mod1 F3                     :MacroCmd {Exec chromium} {Raise}
+Mod1 F5                     :MacroCmd {Exec iceweasel} {Raise}
+Mod1 F6                     :MacroCmd {Exec opera-next} {Raise}
+Mod1 F7                     :MacroCmd {Exec opera} {Raise}
+Mod1 F8                     :MacroCmd {Exec icedove} {Raise}
+Mod1 F9                     :MacroCmd {Exec kate} {Raise}
 
 Mod4 t                      :Exec urxvt -name htopterm -e htop
 
