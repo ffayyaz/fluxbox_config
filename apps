@@ -461,7 +461,9 @@
 [end]
 
 #---------------------------------------------------- MAIL
-[app] (name=Mail) (class=Icedove) (role=3pane)
+[group] (workspace)
+	[app] (name=Mail) (class=Icedove) (role=3pane)
+    [app] (name=.*mail.*) (class=Chromium)
     [Workspace]         {4}
     [Dimensions]        {100% 100%}
     [Position]          (TOPLEFT) {0% 0%}

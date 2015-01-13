@@ -82,13 +82,8 @@ sleep 4
     # gui applications
     [ -x /usr/bin/skype ] && skype &
     if [ -x /usr/bin/chromium ]; then
-        # chromium &
-        chromium www.google.ch&
-        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumnews/
-        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiummusic/
-        # rsync -arptl --delete-before --exclude "*Session*" /home/fafa/.config/chromium/ /home/fafa/.config/chromiumheise/
-# 	    chromium --user-data-dir=/home/fafa/.config/chromiummusic www.soundcloud.com&
-        chromium --app=https://www.soundcloud.com&
+        chromium & 
+        chromium --app=https://www.soundcloud.com &
     fi
 
     [ -x /usr/bin/audacious ] && audacious &
@@ -110,6 +105,9 @@ sleep 4
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/virtualbox ] && virtualbox &
         [ -x /usr/bin/pidgin ] && pidgin &
+	    if [ -x /usr/bin/chromium ]; then
+	        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+	    fi
     fi
 
     #_______ Autostart mobile only _____________________________________________
