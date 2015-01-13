@@ -84,6 +84,7 @@ sleep 4
     if [ -x /usr/bin/chromium ]; then
         chromium & 
         chromium --app=https://www.soundcloud.com &
+        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     fi
 
     [ -x /usr/bin/audacious ] && audacious &
@@ -105,9 +106,6 @@ sleep 4
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/virtualbox ] && virtualbox &
         [ -x /usr/bin/pidgin ] && pidgin &
-	    if [ -x /usr/bin/chromium ]; then
-	        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
-	    fi
     fi
 
     #_______ Autostart mobile only _____________________________________________
