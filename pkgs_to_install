@@ -2,8 +2,8 @@ rxvt
 rxvt-unicode
 htop
 gdeskcal
-# xclock
-# wmmixer
+xclock
+wmmixer
 audacious
 liferea
 pidgin
@@ -26,7 +26,7 @@ xdesktopwaves
 xsnow
 unclutter
 xscreensaver
-# xpad
+xpad
 xfce4-notes
 blackbox-themes
 murrine-themes
