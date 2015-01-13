@@ -234,7 +234,7 @@
 # does not work
 # [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*)
 # [app] (name=Qt-subapplication) (class=VirtualBox) (title=WindowsXP [Running] - Oracle VM VirtualBox)
-[app] (name=Qt-subapplication) (class=VirtualBox) (title!=Oracle\ VM\ VirtualBox\ Manager)
+[app] (name=Qt-subapplication) (class=VirtualBox) (title!=Oracle VM VirtualBox Manager) 
         [Sticky]            {yes}
         [Dimensions]        {100% 100%}
         [Position]          (TOPLEFT) {0% 0%}
@@ -244,17 +244,18 @@
         [FocusNewWindow]    {no}
         [IconHidden]        {yes}
         [FocusHidden]       {yes}
+        [Fullscreen]        {no}
 [end]
-[app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
+[app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
         [Sticky]            {yes}
-        [Dimensions]        {88% 100%}
-        [Position]          (TOPLEFT) {0% 0%}
-        [Head]              {2}
-        [Layer]             {12} 
-        [Deco]              {NONE}
-        [FocusNewWindow]    {no}
-        [IconHidden]        {yes}
-        [FocusHidden]       {yes}
+        [Dimensions]        {50% 50%}
+        [Position]          (TOPLEFT) {0% 50%}
+        [Head]              {1}
+        # [Layer]             {12}
+        # [Deco]              {NONE}
+        # [FocusNewWindow]    {no}
+        # [IconHidden]        {yes}
+        # [FocusHidden]       {yes}
 [end]
 
 #---------------------------------------------------- MISC
