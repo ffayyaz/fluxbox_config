@@ -422,6 +422,7 @@
 # [end]
 [group] (workspace)
     [app] (name=.*music.*) (class=Chromium)
+    [app] (name=.*sound.*) (class=Chromium)
         [Workspace]     {3}
         [Jump]          {no}
         [Dimensions]    {50% 100%}
