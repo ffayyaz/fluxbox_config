@@ -397,7 +397,7 @@
         [Sticky]        {yes}
         [Head]          {1}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
+        # [IconHidden]    {yes}
 [end]
 
 #---------------------------------------------------- BROWSING
