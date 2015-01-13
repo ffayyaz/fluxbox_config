@@ -41,14 +41,6 @@ fbpid=$!
 
 sleep 4
 {
-	#source /home/fafa/.bashrc
-	#truecrypt /data/bizz
-	#lan
-	#/sbin/ifconfig|egrep '192.1'
-	#if [ ${?} -ne 0 ]; then
-	#	dhclient eth0
-	#fi
-	
 	#_______ Autostart everywhere ______________________________________________
 	
 	# visual effects
@@ -80,6 +72,7 @@ sleep 4
 	[ -x /usr/bin/xpad ] && xpad &
 
     # gui applications
+    # ~/.fluxbox/later.sh
     [ -x /usr/bin/skype ] && skype &
     if [ -x /usr/bin/chromium ]; then
         chromium & 
