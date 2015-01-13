@@ -118,9 +118,9 @@ sleep 4
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/virtualbox ] && virtualbox &
         # [ -x /usr/bin/kate ] && kate ~/stuff/notes/notes_`date +"%Y-%m-%d"`.txt&
-	    if [ -x /usr/bin/chromium ]; then
-            chromium intranet.netstream.ch& # TODO add rest
-	    fi
+# 	    if [ -x /usr/bin/chromium ]; then
+            # chromium intranet.netstream.ch& # TODO add rest
+# 	    fi
     fi
 
     #_______ Autostart mobile only _____________________________________________
