@@ -244,14 +244,14 @@
         [FocusNewWindow]    {no}
         [IconHidden]        {yes}
         [FocusHidden]       {yes}
-        [Fullscreen]        {no}
 [end]
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle\ VM\ VirtualBox\ Manager)
+        [Sticky]            {yes}
         [Dimensions]        {88% 100%}
         [Position]          (TOPLEFT) {0% 0%}
         [Head]              {2}
         [Layer]             {12} 
-        # [Deco]              {NONE}
+        [Deco]              {NONE}
         [FocusNewWindow]    {no}
         [IconHidden]        {yes}
         [FocusHidden]       {yes}
