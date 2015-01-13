@@ -196,7 +196,8 @@ Mod4 t                      :Exec urxvt -name htopterm -e htop
 #------------------------------------------------------- TOGGLES
 
 # xcompmgr
-Mod4 x                      :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95} {Exec pkill xcompmgr}
+# Mod4 x                      :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95} {Exec pkill xcompmgr}
+Mod4 x                      :ToggleCmd {Exec compton -r12 -o0.75 -l-15 -t-15 -I0.005 -O0.005 -D1 -m1.0 -cC -z -f -G -b} {Exec pkill compton}
 
 # control audio player
 Control Mod1 112            :Exec audacious -f # next track
