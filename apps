@@ -236,15 +236,15 @@
 # [app] (name=Qt-subapplication) (class=VirtualBox) (title=WindowsXP [Running] - Oracle VM VirtualBox)
 [app] (name=Qt-subapplication) (class=VirtualBox) (title!=Oracle VM VirtualBox Manager) 
         [Sticky]            {yes}
-        [Dimensions]        {100% 100%}
+        # [Dimensions]        {100% 100%}
         [Position]          (TOPLEFT) {0% 0%}
         [Head]              {2}
         [Layer]             {12}
         [Deco]              {NONE}
+        [Maximized]         {yes}
         [FocusNewWindow]    {no}
         [IconHidden]        {yes}
         [FocusHidden]       {yes}
-        [Fullscreen]        {no}
 [end]
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
         [Sticky]            {yes}
