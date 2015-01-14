@@ -1,61 +1,70 @@
 #!/bin/bash
-[ -x /usr/bin/skype ] && skype &
-if [ -x /usr/bin/chromium ]; then
-	chromium &
-    sleep 1
-	chromium --app=https://www.soundcloud.com &
-    sleep 1
-	chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
-fi
+    #_______ Autostart everywhere ______________________________________________
 
-sleep 1
-[ -x /usr/bin/audacious ] && audacious &
+    # tools / gadgets
+    [ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
+    [ -x /usr/bin/gdeskcal ] && gdeskcal &
+    [ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
+    #     [ -x /usr/bin/liferea ] && liferea &
+    [ -x /usr/bin/xpad ] && xpad &
 
-#_______ Autostart Home only _______________________________________________
-/sbin/ifconfig|egrep '192.168.85.(10|14|21|22)'
-if [ "${?}" = "0" ]; then
-    sleep 10
-	[ -x /usr/bin/icedove ] && icedove &
-fi
+    # eye candies
+    #[ -x /usr/bin/xfishtank ] && xfishtank &
+    #[ -x /usr/bin/xdesktopwaves ] && xdesktopwaves -c 5 -vs 5 -li 9 -nwm -si 4 -lal 50 -laz 0 -fr 75 -sf 2 &
+    #[ -x /usr/bin/xsnow ] && xsnow -snowflakes 25 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -sc darkred -whirl 1 -xspeed 4 -yspeed 7 -wsnowdepth 25 &
+    #[ -x /usr/bin/xsnow ] && xsnow -snowflakes 350 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -nokeepsnowonwindows -sc darkcyan -whirl 1 -xspeed 4 -yspeed 7 &
 
-#_______ Autostart Ganja only ______________________________________________
-/sbin/ifconfig|egrep '192.168.85.10'
-if [ "${?}" = "0" ]; then
-    sleep 2
-	[ -x /usr/bin/xchat ] && xchat &
-fi
+    if [ -x /usr/bin/chromium ]; then
+        chromium &
+        chromium --app=https://www.soundcloud.com &
+        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+    fi
 
-#_______ Autostart Netstream only __________________________________________
-/sbin/ifconfig|egrep '192.168.1.116'
-if [ "${?}" = "0" ]; then
-    sleep 1
-	[ -x /usr/bin/virtualbox ] && virtualbox &
-	[ -x /usr/bin/pidgin ] && pidgin &
-fi
+    [ -x /usr/bin/audacious ] && audacious &
 
-#_______ Autostart mobile only _____________________________________________
-if [ "`hostname`" = "mobile" ]; then
-    sleep 1
-	cpufreqterm &
-	[ -x /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b30 -z -n&
-	[ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-fi
+    #_______ Autostart Home only _______________________________________________
 
-#_______ Autostart everywhere (final)_______________________________________
+    /sbin/ifconfig|egrep '192.168.85.(10|14|21|22)'
+    if [ "${?}" = "0" ]; then
+        [ -x /usr/bin/icedove ] && icedove &
+    fi
 
-urxvt &
+    #_______ Autostart Ganja only ______________________________________________
 
-sleep 1
+    /sbin/ifconfig|egrep '192.168.85.10'
+    if [ "${?}" = "0" ]; then
+		[ -x /usr/bin/xchat ] && xchat &
+    fi
 
-# they need to be started at the end, otherwise
-# they are not drawn correctly (they overlap the slit)
-# BULLCRAP workaround
-# maybe this problem is solved using the sleep solution to start fluxbox
-messagesterm &
-syslogterm &
-debuglogterm &
-# dmesglogterm &
-authlogterm &
-kernlogterm &
-# diskusageterm &
-mixerterm&
+    #_______ Autostart Netstream only __________________________________________
+
+    /sbin/ifconfig|egrep '192.168.1.116'
+    if [ "${?}" = "0" ]; then
+        [ -x /usr/bin/virtualbox ] && virtualbox &
+        [ -x /usr/bin/pidgin ] && pidgin &
+    fi
+
+    #_______ Autostart mobile only _____________________________________________
+
+    if [ "`hostname`" = "mobile" ]; then
+        cpufreqterm &
+		[ -x /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b30 -z -n&
+        [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
+    fi
+
+    #_______ Autostart everywhere (final)_______________________________________
+
+    urxvt &
+
+    # they need to be started at the end, otherwise
+    # they are not drawn correctly (they overlap the slit)
+    # BULLCRAP workaround
+    # maybe this problem is solved using the sleep solution to start fluxbox
+    messagesterm &
+    syslogterm &
+    debuglogterm &
+    # dmesglogterm &
+    authlogterm &
+    kernlogterm &
+    # diskusageterm &
+    mixerterm&
