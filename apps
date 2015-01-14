@@ -241,7 +241,7 @@
         [Head]              {2}
         [Layer]             {12}
         [Deco]              {NONE}
-        [Maximized]         {yes}
+        [Maximized]         {yes} # this is important
         [FocusNewWindow]    {no}
         [IconHidden]        {yes}
         [FocusHidden]       {yes}
