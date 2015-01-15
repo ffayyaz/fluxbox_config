@@ -494,7 +494,7 @@
     [Head]              {1}
 [end]
 
-#---------------------------------------------------- GUI EDITOR
+#---------------------------------------------------- EDITOR
 # gedit often crashes fluxbox, so use kate
 [group] (workspace)
 	[app] (name=kate) (class=Kate)
@@ -556,6 +556,16 @@
 	[app] (evince)
         [Dimensions]    {50% 100%} 
         [Position]      (TOPRIGHT) {0% 0%}
+        [FocusNewWindow] {yes}
+[end]
+
+#---------------------------------------------------- IMGVIEWER
+[group] (workspace)
+	[app] (eog)
+	[app] (feh)
+        [Dimensions]    {50% 100%} 
+        [Position]      (TOPLEFT) {0% 0%}
+        [Head]          {2}
         [FocusNewWindow] {yes}
 [end]
 
