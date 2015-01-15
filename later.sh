@@ -42,6 +42,7 @@
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/virtualbox ] && virtualbox &
         [ -x /usr/bin/pidgin ] && pidgin &
+        [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
     fi
 
     #_______ Autostart mobile only _____________________________________________
