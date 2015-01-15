@@ -308,6 +308,7 @@
 [group] (workspace)
     [app] (urxvt) 
         [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {0% 0%}
         [Sticky]        {yes}
 [end]
 
