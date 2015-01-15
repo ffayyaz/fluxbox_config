@@ -245,6 +245,7 @@
         [FocusNewWindow]    {no}
         [IconHidden]        {yes}
         [FocusHidden]       {yes}
+        [Fullscreen]        {yes}
 [end]
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
         [Sticky]            {yes}
