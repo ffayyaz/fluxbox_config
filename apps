@@ -244,11 +244,13 @@
         [Maximized]         {yes} # this is important
         [FocusNewWindow]    {no}
         [IconHidden]        {yes}
-        [FocusHidden]       {yes}
+        [FocusHidden]       {no}
         [Fullscreen]        {no}
 [end]
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
-        [Sticky]            {yes}
+        # [Sticky]            {yes}
+        [Workspace]         {0}
+        [Jump]              {yes}
         [Dimensions]        {50% 50%}
         [Position]          (TOPLEFT) {0% 50%}
         [Head]              {1}
@@ -471,6 +473,7 @@
 	    [Head]              {1}
 	    [FocusNewWindow]    {no}
 	    [IconHidden]        {yes}
+        [FocusHidden]       {yes}
 	    [Layer]             {12}
 	    # [Deco]              {NONE}
 [end]
