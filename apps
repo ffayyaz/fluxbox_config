@@ -84,7 +84,7 @@
         [Workspace]     {3}
         [Position]      (CENTER) {0% 0%}
         [Layer]         {12}
-        [FocusNewWindow] {yes}
+        [FocusNewWindow] {no}
         [FocusHidden]   {yes}
         [IconHidden]    {yes}
 [end]
