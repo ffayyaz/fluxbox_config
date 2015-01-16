@@ -125,6 +125,7 @@
 [app] (name=messagesterm)
         [Workspace]     {0}
         [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {0% 0%}
         [Deco]          {10100100101}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -467,6 +468,7 @@
     [app] (vlc) (class=Vlc) (title=VLC media player)
     [app] (xv) (class=MPlayer)
     [app] (vdpau) (class=MPlayer)
+    [app] (ffplay)
         [Dimensions]    {100% 100%}
         [Head]          {2}
         [FocusNewWindow] {no}
@@ -478,6 +480,7 @@
 [group] (workspace)
 	[app] (okular)
 	[app] (name=win) (class=Xpdf)
+    [app] (vprerex)
 	[app] (evince)
         [Dimensions]    {50% 100%} 
         [Position]      (TOPRIGHT) {0% 0%}
