@@ -49,7 +49,7 @@
 
     if [ "`hostname`" = "mobile" ]; then
         cpufreqterm &
-		[ -x /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b30 -z -n&
+		[ -x /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n&
         [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
     fi
 
