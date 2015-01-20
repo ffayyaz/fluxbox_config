@@ -494,6 +494,13 @@
         [Head]          {2}
 [end]
 
+#---------------------------------------------------- OFFICE
+[group] (workspace)
+	[app] (name=libreoffice)
+        [Dimensions]    {50% 100%} 
+        [Position]      (TOPLEFT) {0% 0%}
+[end]
+
 #---------------------------------------------------- MISC
 [app] (name=htopterm)
         [Fullscreen]    {yes}
