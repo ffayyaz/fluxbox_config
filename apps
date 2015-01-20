@@ -217,7 +217,7 @@
         [Maximized]         {yes} # this is important
         [FocusNewWindow]    {no}
         [IconHidden]        {yes}
-        [FocusHidden]       {no}
+        [FocusHidden]       {yes}
 [end]
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
         [Workspace]         {0}
