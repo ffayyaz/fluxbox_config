@@ -2,6 +2,11 @@
 # fluxbox keys
 ################################################################################
 
+# try to make a logic to differ between window and app shortcuts
+# Control: control / modify 
+# Shift: moving
+# Mod1 Mod4 
+
 Control Mod4 22             :Exit # ctrl+mod4+backspace
 Control Mod4 r              :Reconfigure
 Control Mod4 115            :CloseAllWindows # ctrl+mod4+end
@@ -21,13 +26,14 @@ OnToolbar Mouse5            :NextWindow {static groups} (workspace=[current]) (i
 
 #------------------------------------------------------- WINDOW
 
-# alt + left/right click to move/resize a window
+# alt + left/right click to movea window
 OnWindow Mod1 Mouse1        :MacroCmd {Raise} {Focus} {StartMoving}
-# OnWindowBorder Move1      :StartMoving
+# OnWindowBorder Move1      :StartMoving # not in manpage ??
 
+# resize window
 OnWindow Mod1 Mouse3        :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
-# OnLeftGrip Move1          :StartResizing bottomleft
-# OnRightGrip Move1         :StartResizing bottomright
+# OnLeftGrip Move1          :StartResizing bottomleft # not in manpage ??
+# OnRightGrip Move1         :StartResizing bottomright # not in manpage ??
 
 # TODO check: alt + middle click to lower the window
 # OnWindow Mod1 Mouse2      :Lower
@@ -38,8 +44,9 @@ OnTitlebar Control Mouse1   :StartTabbing
 # double click on the titlebar to shade
 OnTitlebar Double Mouse1    :Shade
 
-# left click on the titlebar to move the window (!!!!!!)
+# activate a tab
 OnTitlebar Mouse1           :MacroCmd {Raise} {Focus} {ActivateTab}
+# left click on the titlebar to move the window (!!!!!!)
 # OnTitlebar Move1          :StartMoving
 
 # TODO: check middle click on the titlebar to lower
@@ -208,25 +215,25 @@ Control Mod1 115            :Exec audacious -u # pause / unpause
 Mod4 115                    :Exec xscreensaver-command -lock  # Windows+End
 
 #------------------------------------------------------- TESTING
-Shift Mod4 p                :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
+#Shift Mod4 p                :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
 
 # resize windows
-Mod4 Control Right          :MacroCmd {ResizeHorizontal 20} {Raise}
-Mod4 Control Left           :MacroCmd {ResizeHorizontal -20} {Raise}
-Mod4 Control Up             :MacroCmd {ResizeVertical -20} {Raise}
-Mod4 Control Down           :MacroCmd {ResizeVertical 20} {Raise}
-# Mod4 Control Up           :MacroCmd {Resize 25% 25%} {Raise}
-# Mod4 Control Down         :MacroCmd {Resize -25% -25%} {Raise}
+#Mod4 Control Right          :MacroCmd {ResizeHorizontal 20} {Raise}
+#Mod4 Control Left           :MacroCmd {ResizeHorizontal -20} {Raise}
+#Mod4 Control Up             :MacroCmd {ResizeVertical -20} {Raise}
+#Mod4 Control Down           :MacroCmd {ResizeVertical 20} {Raise}
+## Mod4 Control Up           :MacroCmd {Resize 25% 25%} {Raise}
+## Mod4 Control Down         :MacroCmd {Resize -25% -25%} {Raise}
 
 # move windows
-Shift Mod4 Right            :MacroCmd {MoveRight 20} {Raise}
-Shift Mod4 Left             :MacroCmd {MoveLeft 20} {Raise}
-Shift Mod4 Up               :MacroCmd {MoveUp 20} {Raise}
-Shift Mod4 Down             :MacroCmd {MoveDown 20} {Raise}
+#Shift Mod4 Right            :MacroCmd {MoveRight 20} {Raise}
+#Shift Mod4 Left             :MacroCmd {MoveLeft 20} {Raise}
+#Shift Mod4 Up               :MacroCmd {MoveUp 20} {Raise}
+#Shift Mod4 Down             :MacroCmd {MoveDown 20} {Raise}
 
 # arrange windows vertically
-Mod4 a Mod4 v               :ArrangeWindowsVertical {static groups} (workspace=[current]) (layer!=Desktop)
+#Mod4 a Mod4 v               :ArrangeWindowsVertical {static groups} (workspace=[current]) (layer!=Desktop)
 # arrange windows horizontally
-Mod4 a Mod4 h               :ArrangeWindowsHorizontal {static groups} (workspace=[current]) (layer!=Desktop)
+#Mod4 a Mod4 h               :ArrangeWindowsHorizontal {static groups} (workspace=[current]) (layer!=Desktop)
 # arrange windows 
-Mod4 a Mod4 g               :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desktop)
+#Mod4 a Mod4 g               :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desktop)
