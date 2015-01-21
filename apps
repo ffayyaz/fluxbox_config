@@ -448,6 +448,7 @@
         [Workspace]         {0}
         [Dimensions]        {50% 50%}
         [Position]          (BOTTOMLEFT) {0% 0%}
+        [FocusNewWindow]    {no}
 [end]
 
 #---------------------------------------------------- REMOTE DESKTOP
