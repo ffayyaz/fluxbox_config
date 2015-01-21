@@ -438,7 +438,14 @@
 #---------------------------------------------------- EDITOR
 # gedit often crashes fluxbox, so use kate
 [group] (workspace)
-	[app] (name=kate) (class=Kate)
+	[app] (name=kate) (class=Kate) (title!=.*notes.*)
+        [Dimensions]        {50% 50%}
+        [Position]          (BOTTOMLEFT) {0% 0%}
+[end]
+# kate for notes in workspace 0
+[group] (workspace)
+	[app] (name=kate) (class=Kate) (title=.*notes.*)
+        [Workspace]         {0}
         [Dimensions]        {50% 50%}
         [Position]          (BOTTOMLEFT) {0% 0%}
 [end]

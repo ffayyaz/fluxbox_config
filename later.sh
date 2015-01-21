@@ -43,6 +43,7 @@
         [ -x /usr/bin/virtualbox ] && virtualbox &
         [ -x /usr/bin/pidgin ] && pidgin &
         [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
+        [ -x /usr/bin/kate ] && kate -s netstream_notes ~/stuff/notes/`date +"%Y%m%d"`_netstream_notes.txt &
     fi
 
     #_______ Autostart mobile only _____________________________________________
