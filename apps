@@ -405,6 +405,7 @@
     [app] (name=opera) (class=Opera)
     [app] (name=opera) (class=OperaNext)
         [Dimensions]        {100% 100%}
+        [Maximized]         {yes}
         [Head]              {2}
 [end]
 
