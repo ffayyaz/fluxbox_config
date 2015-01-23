@@ -36,5 +36,5 @@ compton
 xpdf
 vprerex
 evince
-kpdf
+# kpdf
 #acroread
