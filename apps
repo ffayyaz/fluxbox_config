@@ -491,6 +491,8 @@
 	[app] (name=win) (class=Xpdf)
     [app] (vprerex)
 	[app] (evince)
+    [app] (kpdf)
+    [app] (acroread)
         [Dimensions]    {50% 100%} 
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
