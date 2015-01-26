@@ -372,28 +372,22 @@
         [Position]      (TOPLEFT) {50% 0%}
 [end]
 [group] (workspace)
-    [app] (name=www.tagi.ch) #(class=Chromium)
-    [app] (name=www.20min.ch) #(class=Chromium)
+    [app] (name=www.tagi.ch) (class=Chromium)
+    [app] (name=www.20min.ch) (class=Chromium)
         [Workspace]     {5}
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [FocusNewWindow] {no}
-        [Layer]         {12}
+        [Fullscreen]    {yes}
 [end]
 [group] (workspace)
-    [app] (name=.*music.*) (class=Chromium)
     [app] (name=.*sound.*) (class=Chromium)
         [Workspace]     {3}
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPLEFT) {50% 0%}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
         [FocusNewWindow] {no}
+        [Fullscreen]    {yes}
 [end]
-# [group] (workspace)
-    # [app] (name=.*heise.*) (class=Chromium)
-        # [Workspace]     {6}
-        # [Dimensions]    {50% 100%}
-        # [FocusNewWindow] {no}
-# [end]
 
 # iceweasel
 [group] (workspace)
@@ -414,14 +408,20 @@
 #---------------------------------------------------- MAIL
 [group] (workspace)
 	[app] (name=Mail) (class=Icedove) (role=3pane)
-    [app] (name=.*mail.*) (class=Chromium)
 	    [Workspace]         {4}
 	    [Dimensions]        {100% 100%}
 	    [FocusNewWindow]    {no}
 	    [IconHidden]        {yes}
         [FocusHidden]       {yes}
 	    [Layer]             {12}
-	    # [Deco]              {NONE}
+[end]
+[group] (workspace)
+    [app] (name=.*mail.*) (class=Chromium)
+	    [Workspace]         {4}
+	    [Dimensions]        {100% 100%}
+        [Maximized]         {yes}
+	    [FocusNewWindow]    {no}
+        [Fullscreen]        {yes}
 [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
 	    [Workspace]         {4}
