@@ -18,6 +18,8 @@
         chromium &
         chromium --app=https://www.soundcloud.com &
         chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+        chromium --app=http://www.tagi.ch &
+        chromium --app=http://www.20min.ch &
     fi
 
     [ -x /usr/bin/audacious ] && audacious &

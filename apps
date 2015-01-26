@@ -371,13 +371,15 @@
         [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {50% 0%}
 [end]
-# [group] (workspace)
-    # [app] (name=.*news.*) (class=Chromium)
-        # [Workspace]     {6}
-        # [Dimensions]    {50% 100%}
-        # [Position]      (TOPLEFT) {50% 0%}
-        # [FocusNewWindow] {no}
-# [end]
+[group] (workspace)
+    [app] (name=www.tagi.ch) #(class=Chromium)
+    [app] (name=www.20min.ch) #(class=Chromium)
+        [Workspace]     {5}
+        [Dimensions]    {50% 100%}
+        [Maximized]     {yes}
+        [FocusNewWindow] {no}
+        [Layer]         {12}
+[end]
 [group] (workspace)
     [app] (name=.*music.*) (class=Chromium)
     [app] (name=.*sound.*) (class=Chromium)
