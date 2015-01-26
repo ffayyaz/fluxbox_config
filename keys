@@ -242,6 +242,8 @@ Mod4 t                      :Exec urxvt -name htopterm -e htop
 # ChangeWorkspace           :ShowDesktop (workspace=4) (layer!=Desktop)
 # ChangeWorkspace           :ShowDesktop (workspace=5) (layer!=Desktop)
 # ChangeWorkspace           :ShowDesktop (workspace=6) (layer!=Desktop)
+# ChangeWorkspace             :If {Every Matches (Sticky=yes)} {Minimize}
+ChangeWorkspace             :Minimize
 
 #------------------------------------------------------- TOGGLES
 
