@@ -210,20 +210,20 @@
 # [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*)
 # [app] (name=Qt-subapplication) (class=VirtualBox) (title=WindowsXP [Running] - Oracle VM VirtualBox)
 [app] (name=Qt-subapplication) (class=VirtualBox) (title!=Oracle VM VirtualBox Manager) 
-        [Sticky]            {yes}
-        [Head]              {2}
-        [Layer]             {12}
-        [Deco]              {NONE}
-        [Maximized]         {yes} # this is important
-        [FocusNewWindow]    {no}
-        [IconHidden]        {yes}
-        [FocusHidden]       {yes}
+        [Sticky]        {yes}
+        [Head]          {2}
+        [Layer]         {12}
+        [Deco]          {NONE}
+        [Maximized]     {yes} # this is important
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
-        [Workspace]         {0}
-        [Jump]              {yes}
-        [Dimensions]        {50% 50%}
-        [Position]          (TOPLEFT) {0% 50%}
+        [Workspace]     {0}
+        [Jump]          {yes}
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {0% 50%}
 [end]
 
 #---------------------------------------------------- MISC
@@ -374,7 +374,10 @@
 [group] (workspace)
     [app] (name=www.tagi.ch) (class=Chromium)
     [app] (name=www.20min.ch) (class=Chromium)
+    [app] (name=www.tagi.ch) (class=Chrome)
+    [app] (name=www.20min.ch) (class=Chrome)
         [Workspace]     {5}
+        [Jump]          {no}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [FocusNewWindow] {no}
@@ -382,7 +385,9 @@
 [end]
 [group] (workspace)
     [app] (name=.*sound.*) (class=Chromium)
+    [app] (name=.*sound.*) (class=Chrome)
         [Workspace]     {3}
+        [Jump]          {no}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [FocusNewWindow] {no}
@@ -400,58 +405,60 @@
 [group] (workspace)
     [app] (name=opera) (class=Opera)
     [app] (name=opera) (class=OperaNext)
-        [Dimensions]        {100% 100%}
-        [Maximized]         {yes}
-        [Head]              {2}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Head]          {2}
 [end]
 
 #---------------------------------------------------- MAIL
 [group] (workspace)
 	[app] (name=Mail) (class=Icedove) (role=3pane)
-	    [Workspace]         {4}
-	    [Dimensions]        {100% 100%}
-	    [FocusNewWindow]    {no}
-	    [IconHidden]        {yes}
-        [FocusHidden]       {yes}
-	    [Layer]             {12}
+	    [Workspace]     {4}
+	    [Dimensions]    {100% 100%}
+	    [FocusNewWindow] {no}
+	    [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+	    [Layer]         {12}
 [end]
 [group] (workspace)
     [app] (name=.*mail.*) (class=Chromium)
-	    [Workspace]         {4}
-	    [Dimensions]        {100% 100%}
-        [Maximized]         {yes}
-	    [FocusNewWindow]    {no}
+    [app] (name=.*mail.*) (class=Chrome)
+	    [Workspace]     {4}
+        [Jump]          {no}
+	    [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+	    [FocusNewWindow] {no}
         [Fullscreen]        {yes}
 [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
-	    [Workspace]         {4}
-	    [Dimensions]        {50% 100%}
-	    [Position]          (TOPLEFT) {0% 0%} 
+	    [Workspace]     {4}
+	    [Dimensions]    {50% 100%}
+	    [Position]      (TOPLEFT) {0% 0%} 
 [end]
 [app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
-	    [Workspace]         {4}
-	    [Layer]             {12}
+	    [Workspace]     {4}
+	    [Layer]         {12}
 [end]
 [app] (name=Msgcompose) (class=Icedove) 
-	    [Workspace]         {4}
-	    [Dimensions]        {50% 100%}
-	    [Position]          (TOPLEFT) {50% 0%}
+	    [Workspace]     {4}
+	    [Dimensions]    {50% 100%}
+	    [Position]      (TOPLEFT) {50% 0%}
 [end]
 
 #---------------------------------------------------- EDITOR
 # gedit often crashes fluxbox, so use kate
 [group] (workspace)
 	[app] (name=kate) (class=Kate) (title!=.*notes.*)
-        [Dimensions]        {50% 50%}
-        [Position]          (BOTTOMLEFT) {0% 0%}
+        [Dimensions]    {50% 50%}
+        [Position]      (BOTTOMLEFT) {0% 0%}
 [end]
 # kate for notes in workspace 0
 [group] (workspace)
 	[app] (name=kate) (class=Kate) (title=.*notes.*)
-        [Workspace]         {0}
-        [Dimensions]        {50% 50%}
-        [Position]          (BOTTOMLEFT) {0% 0%}
-        [FocusNewWindow]    {no}
+        [Workspace]     {0}
+        [Dimensions]    {50% 50%}
+        [Position]      (BOTTOMLEFT) {0% 0%}
+        [FocusNewWindow] {no}
 [end]
 
 #---------------------------------------------------- REMOTE DESKTOP
@@ -459,19 +466,19 @@
 # WM_CLASS(STRING) = "VNC: fayyaz:0", "Vncviewer"
 [group] (workspace)
     [app] (class=Vncviewer) 
-        [Workspace]         {1}
-        [Jump]              {yes}
-        [Dimensions]        {100% 100%}
-        [FocusHidden]       {yes}
+        [Workspace]     {1}
+        [Jump]          {yes}
+        [Dimensions]    {100% 100%}
+        [FocusHidden]   {yes}
 [end]
 
 # rdesktop
 [group] (workspace)
     [app] (rdesktop) 
-        [Workspace]         {1}
-        [Jump]              {yes}
-        [Dimensions]        {100% 100%}
-        [FocusHidden]       {yes}
+        [Workspace]     {1}
+        [Jump]          {yes}
+        [Dimensions]    {100% 100%}
+        [FocusHidden]   {yes}
 [end]
 
 #---------------------------------------------------- VIDEO
