@@ -531,3 +531,7 @@
         [Dimensions]    {100% 100%}
         [Head]          {2}
 [end]
+[app] (easytag) (title!=Tag and Filename Scan)
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+[end]
