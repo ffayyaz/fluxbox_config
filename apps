@@ -71,7 +71,7 @@
         [Dimensions]    {88% 100%}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
+        # [IconHidden]    {yes}
         [FocusHidden]   {yes}
         [Deco]          {NONE}
 [end]
@@ -102,7 +102,7 @@
         [Layer]         {12}
         [FocusNewWindow] {yes}
         [FocusHidden]   {yes}
-        [IconHidden]    {yes}
+        # [IconHidden]    {yes}
 [end]
 
 [app] (name=Audacity) (class=Audacity) 
