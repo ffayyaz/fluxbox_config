@@ -484,7 +484,7 @@
 
 #---------------------------------------------------- VIDEO
 [group] (workspace)
-    [app] (vlc) (class=Vlc) (title=VLC media player)
+    [app] (vlc) (class=Vlc) 
     [app] (xv) (class=MPlayer)
     [app] (vdpau) (class=MPlayer)
     [app] (ffplay)
