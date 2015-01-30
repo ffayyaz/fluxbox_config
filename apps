@@ -430,6 +430,7 @@
         [Maximized]     {yes}
 	    [FocusNewWindow] {no}
         # [Fullscreen]        {yes}
+        [Layer]         {12}
 [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
 	    [Workspace]     {4}
