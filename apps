@@ -392,7 +392,7 @@
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [FocusNewWindow] {no}
-        [Fullscreen]    {yes}
+        # [Fullscreen]    {yes}
 [end]
 
 # iceweasel
