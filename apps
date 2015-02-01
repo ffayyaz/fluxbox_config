@@ -392,7 +392,7 @@
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [FocusNewWindow] {no}
-        # [Fullscreen]    {yes}
+        [Fullscreen]    {yes}
 [end]
 
 # iceweasel
@@ -414,24 +414,26 @@
 #---------------------------------------------------- MAIL
 [group] (workspace)
 	[app] (name=Mail) (class=Icedove) (role=3pane)
-	    [Workspace]     {4}
-	    [Dimensions]    {100% 100%}
-	    [FocusNewWindow] {no}
-	    [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-	    [Layer]         {12}
-[end]
-[group] (workspace)
     [app] (name=.*mail.*) (class=Chromium)
     [app] (name=.*mail.*) (class=Chrome)
 	    [Workspace]     {4}
-        [Jump]          {no}
 	    [Dimensions]    {100% 100%}
         [Maximized]     {yes}
 	    [FocusNewWindow] {no}
-        # [Fullscreen]        {yes}
-        [Layer]         {12}
+        [FocusHidden]   {yes}
+	    [Layer]         {12}
 [end]
+# [group] (workspace)
+    # [app] (name=.*mail.*) (class=Chromium)
+    # [app] (name=.*mail.*) (class=Chrome)
+# 	    [Workspace]     {4}
+        # [Jump]          {no}
+# 	    [Dimensions]    {100% 100%}
+        # [Maximized]     {yes}
+# 	    [FocusNewWindow] {no}
+        # [FocusHidden]   {yes}
+        # [Layer]         {12}
+# [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
 	    [Workspace]     {4}
 	    [Dimensions]    {50% 100%}
