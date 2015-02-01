@@ -71,7 +71,7 @@
         [Dimensions]    {88% 100%}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        # [IconHidden]    {yes}
+        [IconHidden]    {yes}
         [FocusHidden]   {yes}
         [Deco]          {NONE}
 [end]
