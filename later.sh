@@ -16,10 +16,8 @@
 
     if [ -x /usr/bin/chromium ]; then
         chromium &
-        # chromium --app=https://www.soundcloud.com &
-        # chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
-        # chromium --app=http://www.tagi.ch &
-        # chromium --app=http://www.20min.ch &
+        chromium --app=https://www.soundcloud.com &
+        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     fi
 
     [ -x /usr/bin/audacious ] && audacious &
@@ -72,12 +70,3 @@
     kernlogterm &
     # diskusageterm &
     mixerterm&
-
-    sleep 1
-        chromium --app=https://www.soundcloud.com &
-    sleep 1
-        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
-    sleep 1
-        chromium --app=http://www.tagi.ch &
-    sleep 1
-        chromium --app=http://www.20min.ch &
