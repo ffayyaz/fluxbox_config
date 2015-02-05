@@ -328,6 +328,12 @@
         [Jump]          {yes}
         [Position]      (BOTTOMRIGHT) {0% 0%}
 [end]
+[app] (name=dialogbox1) (class=Cssh)
+        [Dimensions]    {12% 10%}
+        [Workspace]     {1}
+        [Jump]          {yes}
+        [Position]      (BOTTOMRIGHT) {12% 0%}
+[end]
 
 # the actual terminals
 # positioning could be better. some of the popped up windows overlap 
