@@ -334,6 +334,9 @@
         [Jump]          {yes}
         [Position]      (BOTTOMRIGHT) {12% 0%}
 [end]
+[app] (title=CLUSTERSSH.*) (class=URxvt)
+        [Dimensions]    {25% 25%}
+[end]
 
 # the actual terminals
 # positioning could be better. some of the popped up windows overlap 
