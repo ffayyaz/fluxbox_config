@@ -323,16 +323,16 @@
 #---------------------------------------------------- REMOTE CLUSTERSSH
 # clusterssh
 [app] (clusterssh)
-        [Dimensions]    {12% 10%}
+        [Dimensions]    {12% 12%}
         [Workspace]     {1}
         [Jump]          {yes}
-        [Position]      (BOTTOMRIGHT) {0% 0%}
+        [Position]      (BOTTOMRIGHT) {-7% 0%}
 [end]
 [app] (name=dialogbox1) (class=Cssh)
-        [Dimensions]    {12% 10%}
+        [Dimensions]    {12% 12%}
         [Workspace]     {1}
         [Jump]          {yes}
-        [Position]      (BOTTOMRIGHT) {12% 0%}
+        [Position]      (BOTTOMRIGHT) {5% 0%}
 [end]
 [app] (title=CLUSTERSSH.*) (class=URxvt)
         [Dimensions]    {25% 25%}
