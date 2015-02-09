@@ -24,9 +24,11 @@
 
     #_______ Autostart Home only _______________________________________________
 
-    /sbin/ifconfig|egrep '192.168.85.(10|14|21|22)'
+    /sbin/ifconfig|egrep '192.168.85.'
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/icedove ] && icedove &
+        [ -x /usr/bin/wync ] && wync &
+        [ -x /usr/bin/skype ] && skype &
     fi
 
     #_______ Autostart Ganja only ______________________________________________
