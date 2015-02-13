@@ -4,7 +4,7 @@
 
 Control Mod1 22             :Exit # ctrl+mod4+backspace
 Control Mod1 r              :Reconfigure
-Control Mod1 115            :CloseAllWindows # ctrl+mod4+end
+#Control Mod1 115            :CloseAllWindows # ctrl+mod4+end # dangerous
 
 # lock screen
 Mod1 115                    :Exec xscreensaver-command -lock  # Alt+End
