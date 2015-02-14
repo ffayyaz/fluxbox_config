@@ -378,7 +378,7 @@
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
         [Dimensions]    {50% 100%}
-        [Position]      (TOPLEFT) {50% 0%}
+        [Position]      (TOPRIGHT) {0% 0%}
 [end]
 [group] (workspace)
     [app] (name=www.tagi.ch) (class=Chromium)
