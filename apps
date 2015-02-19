@@ -501,6 +501,7 @@
     [app] (vdpau) (class=MPlayer)
     [app] (ffplay)
         [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
         [Head]          {2}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
