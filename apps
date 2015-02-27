@@ -505,7 +505,7 @@
         [Head]          {2}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
-        [Fullscreen]    {no} # not usable with yes
+        [Fullscreen]    {yes} # not usable with yes
 [end]
 
 #---------------------------------------------------- PDFREADER
