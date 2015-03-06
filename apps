@@ -336,6 +336,7 @@
 [end]
 [app] (title=CLUSTERSSH.*) (class=URxvt)
         [Dimensions]    {25% 25%}
+        [Workspace]     {1}
 [end]
 
 # the actual terminals
@@ -549,4 +550,10 @@
 [app] (easytag) (title!=Tag and Filename Scan)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
+[end]
+
+[app] (name=sun-awt-X11-XFramePeer) (class=com-eviware-soapui-SoapUI)
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Head]          {2}
 [end]
