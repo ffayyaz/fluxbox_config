@@ -336,7 +336,7 @@
         [Position]      (BOTTOMRIGHT) {5% 0%}
 [end]
 [app] (title=CLUSTERSSH.*) (class=URxvt)
-        [Dimensions]    {25% 25%}
+        # [Dimensions]    {25% 25%}
         [Workspace]     {1}
 [end]
 
