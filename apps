@@ -108,6 +108,7 @@
 [app] (name=Audacity) (class=Audacity) 
         [Workspace]     {3}
         [Jump]          {yes}
+        [Position]      (TOPLEFT) {0% 0%}
         [Dimensions]    {88% 100%}
 [end]
 #---------------------------------------------------- NEWS
