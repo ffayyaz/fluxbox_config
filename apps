@@ -66,9 +66,10 @@
 [end]
 
 #---------------------------------------------------- MUSIC
-[app] (name=audacious) (class=Audacious) (title=Audacious)
+[app] (name=audacious) (class=Audacious) (title=.*Audacious)
         [Workspace]     {3}
         [Dimensions]    {88% 100%}
+        [Position]      (TOPLEFT)   {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
