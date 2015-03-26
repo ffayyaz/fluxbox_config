@@ -559,3 +559,10 @@
         [Maximized]     {yes}
         [Head]          {2}
 [end]
+
+[app] (name=sun-awt-X11-XFramePeer) (class=com-install4j-runtime-launcher-Launcher)  #(title=.*ptax.*)
+        [Head]          {2}
+        [Jump]          {yes}
+        [Position]      (TOPLEFT) {0% 0%}
+        [Dimensions]    {88% 100%}
+[end]
