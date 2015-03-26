@@ -16,18 +16,16 @@
 
     if [ -x /usr/bin/chromium ]; then
         chromium &
-        chromium --app=https://www.soundcloud.com &
-        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     fi
 
-    [ -x /usr/bin/audacious ] && audacious &
 
     #_______ Autostart Home only _______________________________________________
 
     /sbin/ifconfig|egrep '192.168.85.'
     if [ "${?}" = "0" ]; then
         [ -x /usr/bin/icedove ] && icedove &
-        [ -x /usr/bin/wync ] && wync &
+        # [ -x /usr/bin/wync ] && wync &
+        [ -x /usr/bin/pidgin ] && pidgin &
         [ -x /usr/bin/skype ] && skype &
     fi
 
@@ -36,6 +34,9 @@
     /sbin/ifconfig|egrep '192.168.85.10'
     if [ "${?}" = "0" ]; then
 		[ -x /usr/bin/xchat ] && xchat &
+        [ -x /usr/bin/audacious ] && audacious &
+        chromium --app=https://www.soundcloud.com &
+        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     fi
 
     #_______ Autostart Netstream only __________________________________________
@@ -46,6 +47,9 @@
         [ -x /usr/bin/pidgin ] && pidgin &
         [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
         [ -x /usr/bin/kate ] && kate -s netstream_notes ~/stuff/notes/`date +"%Y%m%d"`_netstream_notes.txt &
+        [ -x /usr/bin/audacious ] && audacious &
+        chromium --app=https://www.soundcloud.com &
+        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     fi
 
     #_______ Autostart mobile only _____________________________________________
