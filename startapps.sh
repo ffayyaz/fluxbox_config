@@ -18,7 +18,7 @@ fi
 /sbin/ifconfig|egrep '192.168.85.'
 if [ "${?}" = "0" ]; then
     [ -x /usr/bin/icedove ] && icedove &
-    [ -x /usr/bin/pidgin ] && pidgin &
+    # [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/skype ] && skype &
     (sleep 10;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
     (sleep 10;chromium --app=https://www.soundcloud.com) &
