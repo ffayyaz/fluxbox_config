@@ -7,6 +7,12 @@
 [ -x /usr/bin/gdeskcal ] && gdeskcal &
 [ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 [ -x /usr/bin/xpad ] && xpad &
+[ -x /usr/bin/skype ] && skype &
+
+# always start a browser
+if [ -x /usr/bin/chromium ]; then
+    chromium www.heise.de &
+fi
 
 #_______ Autostart Home only _______________________________________________
 
@@ -14,10 +20,8 @@
 if [ "${?}" = "0" ]; then
     [ -x /usr/bin/icedove ] && icedove &
     # [ -x /usr/bin/pidgin ] && pidgin &
-    [ -x /usr/bin/skype ] && skype &
-    chromium www.heise.de &
-    (sleep 10;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
-    (sleep 10;chromium --app=https://www.soundcloud.com) &
+    (sleep 20;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+    (sleep 20;chromium --app=https://www.soundcloud.com) &
 fi
 
 #_______ Autostart Ganja only ______________________________________________
@@ -38,14 +42,14 @@ if [ "${?}" = "0" ]; then
     [ -x /usr/bin/kate ] && kate -s netstream_notes ~/stuff/notes/`date +"%Y%m%d"`_netstream_notes.txt &
     [ -x /usr/bin/audacious ] && audacious &
     chromium intranet.netstream.ch &
-    (sleep 10;chromium --app=https://www.soundcloud.com) &
-    (sleep 10;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+    (sleep 20;chromium --app=https://www.soundcloud.com) &
+    (sleep 20;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
 fi
 
 #____ Netstream notebook
 if [ "`hostname`" = "nacho" ]; then
     [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-    (sleep 10;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+    (sleep 20;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
 fi
 
 #_______ Autostart mobile only _____________________________________________
