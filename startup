@@ -46,7 +46,7 @@ fi
 fluxbox &
 fbpid=$!
 
-sleep 4
+sleep 1
 {
 	~/.fluxbox/startapps.sh
 

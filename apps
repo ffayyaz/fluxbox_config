@@ -359,7 +359,8 @@
         [Workspace]     {3}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        # [Fullscreen]    {yes}
+        [Fullscreen]    {yes}
+        [FocusNewWindow] {no}
 [end]
 
 # iceweasel
@@ -386,9 +387,8 @@
         [Workspace]     {4}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
+        [Fullscreen]    {yes}
         [FocusNewWindow] {no}
-        # [FocusHidden]   {yes}
-        # [Layer]         {12}
 [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
         [Workspace]     {4}
