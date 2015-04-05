@@ -567,3 +567,8 @@
         [Position]      (TOPLEFT) {0% 0%}
         [Dimensions]    {88% 100%}
 [end]
+
+[app] (name=deluge)
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+[end]
