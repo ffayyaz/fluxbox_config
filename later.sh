@@ -1,78 +1,75 @@
 #!/bin/bash
-    #_______ Autostart everywhere ______________________________________________
+#
+#_______ Autostart everywhere ______________________________________________
 
-    # tools / gadgets
-    [ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
-    [ -x /usr/bin/gdeskcal ] && gdeskcal &
-    [ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
-    #     [ -x /usr/bin/liferea ] && liferea &
-    [ -x /usr/bin/xpad ] && xpad &
+# tools / gadgets
+[ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
+[ -x /usr/bin/gdeskcal ] && gdeskcal &
+[ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
+[ -x /usr/bin/xpad ] && xpad &
 
-    # eye candies
-    #[ -x /usr/bin/xfishtank ] && xfishtank &
-    #[ -x /usr/bin/xdesktopwaves ] && xdesktopwaves -c 5 -vs 5 -li 9 -nwm -si 4 -lal 50 -laz 0 -fr 75 -sf 2 &
-    #[ -x /usr/bin/xsnow ] && xsnow -snowflakes 25 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -sc darkred -whirl 1 -xspeed 4 -yspeed 7 -wsnowdepth 25 &
-    #[ -x /usr/bin/xsnow ] && xsnow -snowflakes 350 -windtimer 20 -nosanta -notrees -nokeepsnowonscreen -nokeepsnowonwindows -sc darkcyan -whirl 1 -xspeed 4 -yspeed 7 &
+# always start a browser instance
+if [ -x /usr/bin/chromium ]; then
+    chromium &
+fi
 
-    if [ -x /usr/bin/chromium ]; then
-        chromium &
-    fi
+#_______ Autostart Home only _______________________________________________
 
+/sbin/ifconfig|egrep '192.168.85.'
+if [ "${?}" = "0" ]; then
+    [ -x /usr/bin/icedove ] && icedove &
+    [ -x /usr/bin/pidgin ] && pidgin &
+    [ -x /usr/bin/skype ] && skype &
+    (sleep 10;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+    (sleep 10;chromium --app=https://www.soundcloud.com) &
+fi
 
-    #_______ Autostart Home only _______________________________________________
+#_______ Autostart Ganja only ______________________________________________
 
-    /sbin/ifconfig|egrep '192.168.85.'
-    if [ "${?}" = "0" ]; then
-        [ -x /usr/bin/icedove ] && icedove &
-        # [ -x /usr/bin/wync ] && wync &
-        [ -x /usr/bin/pidgin ] && pidgin &
-        [ -x /usr/bin/skype ] && skype &
-    fi
+/sbin/ifconfig|egrep '192.168.85.10'
+if [ "${?}" = "0" ]; then
+[ -x /usr/bin/xchat ] && xchat &
+    [ -x /usr/bin/audacious ] && audacious &
+fi
 
-    #_______ Autostart Ganja only ______________________________________________
+#_______ Autostart Netstream only __________________________________________
 
-    /sbin/ifconfig|egrep '192.168.85.10'
-    if [ "${?}" = "0" ]; then
-		[ -x /usr/bin/xchat ] && xchat &
-        [ -x /usr/bin/audacious ] && audacious &
-        chromium --app=https://www.soundcloud.com &
-        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
-    fi
+/sbin/ifconfig|egrep '192.168.1.116'
+if [ "${?}" = "0" ]; then
+    [ -x /usr/bin/virtualbox ] && virtualbox &
+    [ -x /usr/bin/pidgin ] && pidgin &
+    [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
+    [ -x /usr/bin/kate ] && kate -s netstream_notes ~/stuff/notes/`date +"%Y%m%d"`_netstream_notes.txt &
+    [ -x /usr/bin/audacious ] && audacious &
+    (sleep 10;chromium --app=https://www.soundcloud.com) &
+    (sleep 10;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+fi
 
-    #_______ Autostart Netstream only __________________________________________
+#____ Netstream notebook
+if [ "`hostname`" = "nacho" ]; then
+    [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
+    (sleep 10;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+fi
 
-    /sbin/ifconfig|egrep '192.168.1.116'
-    if [ "${?}" = "0" ]; then
-        [ -x /usr/bin/virtualbox ] && virtualbox &
-        [ -x /usr/bin/pidgin ] && pidgin &
-        [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
-        [ -x /usr/bin/kate ] && kate -s netstream_notes ~/stuff/notes/`date +"%Y%m%d"`_netstream_notes.txt &
-        [ -x /usr/bin/audacious ] && audacious &
-        chromium --app=https://www.soundcloud.com &
-        chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
-    fi
+#_______ Autostart mobile only _____________________________________________
 
-    #_______ Autostart mobile only _____________________________________________
+if [ "`hostname`" = "mobile" ]; then
+    cpufreqterm &
+    [ -x /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n 2>&1 &> /tmp/thinkfan.log&
+    [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
+fi
 
-    if [ "`hostname`" = "mobile" ]; then
-        cpufreqterm &
-		[ -x /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n 2>&1 &> /tmp/thinkfan.log&
-        [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-    fi
+#_______ Autostart everywhere (final)_______________________________________
 
-    #_______ Autostart everywhere (final)_______________________________________
+urxvt &
 
-    urxvt &
-
-    # they need to be started at the end, otherwise
-    # they are not drawn correctly (they overlap the slit)
-    # BULLCRAP workaround
-    # maybe this problem is solved using the sleep solution to start fluxbox
-    messagesterm &
-    syslogterm &
-    debuglogterm &
-    # dmesglogterm &
-    authlogterm &
-    kernlogterm &
-    # diskusageterm &
-    mixerterm&
+# they need to be started at the end, otherwise
+# they are not drawn correctly (they overlap the slit)
+# BULLCRAP workaround
+# maybe this problem is solved using the sleep solution to start fluxbox
+messagesterm &
+syslogterm &
+debuglogterm &
+authlogterm &
+kernlogterm &
+mixerterm&
