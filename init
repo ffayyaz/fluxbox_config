@@ -97,6 +97,6 @@ session.screen0.opaqueMove:	false
 session.screen0.maxDisableResize:	false
 
 !-------------------------------------------------------- WORKSPACE
-session.screen0.workspaces:	6
-session.screen0.workspaceNames:	Local,Remote,Work,Music,Mail,News
+session.screen0.workspaces:	5
+session.screen0.workspaceNames:	Local,Remote,Work,Music,Mail
 session.screen0.workspacewarping:	true

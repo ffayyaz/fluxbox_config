@@ -112,16 +112,6 @@
         [Position]      (TOPLEFT) {0% 0%}
         [Dimensions]    {88% 100%}
 [end]
-#---------------------------------------------------- NEWS
-# [app] (liferea)
-        # [Workspace]     {6}
-        # [Dimensions]    {88% 100%}
-        # [Layer]         {12}
-        # [FocusNewWindow] {no}
-        # [IconHidden]    {yes}
-        # [FocusHidden]   {yes}
-        # [Deco]          {BORDER}
-# [end]
 
 #---------------------------------------------------- TERMINALS
 [app] (name=messagesterm)
@@ -154,16 +144,6 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-# [app] (name=dmesglogterm)
-        # [Workspace]     {0}
-        # [Dimensions]    {50% 25%}
-        # [Position]      (TOPLEFT) {0% 75%}
-        # [Deco]          {10100100101}
-        # [Layer]         {12}
-        # [FocusNewWindow] {no}
-        # [IconHidden]    {yes}
-        # [FocusHidden]   {yes}
-# [end]
 [app] (name=kernlogterm)
         [Workspace]     {0}
         [Dimensions]    {38% 33%}
@@ -184,16 +164,6 @@
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
 [end]
-# [app] (name=diskusageterm)
-        # [Workspace]     {0}
-        # [Dimensions]    {38% 33%}
-        # [Position]      (TOPLEFT) {50% 67%}
-        # [Deco]          {10100100101}
-        # [Layer]         {12}
-        # [FocusNewWindow] {no}
-        # [IconHidden]    {yes}
-        # [FocusHidden]   {yes}
-# [end]
 [app] (name=cpufreqterm)
         [Workspace]     {0}
         [Dimensions]    {12% 20%}
@@ -384,19 +354,6 @@
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 [group] (workspace)
-    [app] (name=www.tagi.ch) (class=Chromium)
-    [app] (name=www.20min.ch) (class=Chromium)
-    [app] (name=www.tagi.ch) (class=Chrome)
-    [app] (name=www.20min.ch) (class=Chrome)
-        [Workspace]     {5}
-        [Jump]          {no}
-        [Layer]         {12}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [FocusNewWindow] {no}
-        [Fullscreen]    {yes}
-[end]
-[group] (workspace)
     [app] (name=.*sound.*) (class=Chromium)
     [app] (name=.*sound.*) (class=Chrome)
         [Workspace]     {3}
@@ -435,17 +392,6 @@
         [FocusHidden]   {yes}
 	    [Layer]         {12}
 [end]
-# [group] (workspace)
-    # [app] (name=.*mail.*) (class=Chromium)
-    # [app] (name=.*mail.*) (class=Chrome)
-# 	    [Workspace]     {4}
-        # [Jump]          {no}
-# 	    [Dimensions]    {100% 100%}
-        # [Maximized]     {yes}
-# 	    [FocusNewWindow] {no}
-        # [FocusHidden]   {yes}
-        # [Layer]         {12}
-# [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
 	    [Workspace]     {4}
 	    [Dimensions]    {50% 100%}
