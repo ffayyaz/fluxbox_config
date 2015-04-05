@@ -502,6 +502,7 @@
     [app] (vlc) (class=Vlc) 
     [app] (xv) (class=MPlayer)
     [app] (vdpau) (class=MPlayer)
+    [app] (vdpau) (class=mplayer2)
     [app] (ffplay)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
