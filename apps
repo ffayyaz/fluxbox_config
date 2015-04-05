@@ -357,11 +357,9 @@
     [app] (name=.*sound.*) (class=Chromium)
     [app] (name=.*sound.*) (class=Chrome)
         [Workspace]     {3}
-        [Jump]          {no}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [FocusNewWindow] {no}
-        [Fullscreen]    {yes}
+        # [Fullscreen]    {yes}
 [end]
 
 # iceweasel
@@ -382,41 +380,41 @@
 
 #---------------------------------------------------- MAIL
 [group] (workspace)
-	[app] (name=Mail) (class=Icedove) (role=3pane)
+    [app] (name=Mail) (class=Icedove) (role=3pane)
     [app] (name=.*mail.*) (class=Chromium)
     [app] (name=.*mail.*) (class=Chrome)
-	    [Workspace]     {4}
-	    [Dimensions]    {100% 100%}
+        [Workspace]     {4}
+        [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-	    [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-	    [Layer]         {12}
+        [FocusNewWindow] {no}
+        # [FocusHidden]   {yes}
+        # [Layer]         {12}
 [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
-	    [Workspace]     {4}
-	    [Dimensions]    {50% 100%}
-	    [Position]      (TOPLEFT) {0% 0%} 
+        [Workspace]     {4}
+        [Dimensions]    {50% 100%}
+        [Position]      (TOPLEFT) {0% 0%} 
 [end]
 [app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
-	    [Workspace]     {4}
-	    [Layer]         {12}
+        [Workspace]     {4}
+        [Layer]         {12}
 [end]
 [app] (name=Msgcompose) (class=Icedove) 
-	    [Workspace]     {4}
-	    [Dimensions]    {50% 100%}
-	    [Position]      (TOPLEFT) {50% 0%}
+        [Workspace]     {4}
+        [Dimensions]    {50% 100%}
+        [Position]      (TOPLEFT) {50% 0%}
 [end]
 
 #---------------------------------------------------- EDITOR
 # gedit often crashes fluxbox, so use kate
 [group] (workspace)
-	[app] (name=kate) (class=Kate) (title!=.*notes.*)
+    [app] (name=kate) (class=Kate) (title!=.*notes.*)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0% 0%}
 [end]
 # kate for notes in workspace 0
 [group] (workspace)
-	[app] (name=kate) (class=Kate) (title=.*notes.*)
+    [app] (name=kate) (class=Kate) (title=.*notes.*)
         [Workspace]     {0}
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0% 0%}
@@ -460,10 +458,10 @@
 
 #---------------------------------------------------- PDFREADER
 [group] (workspace)
-	[app] (okular)
-	[app] (name=win) (class=Xpdf)
+    [app] (okular)
+    [app] (name=win) (class=Xpdf)
     [app] (vprerex)
-	[app] (evince)
+    [app] (evince)
     [app] (kpdf)
     [app] (acroread)
         [Dimensions]    {50% 100%} 
@@ -472,8 +470,8 @@
 
 #---------------------------------------------------- IMGVIEWER
 [group] (workspace)
-	[app] (eog)
-	[app] (feh)
+    [app] (eog)
+    [app] (feh)
         [Dimensions]    {50% 100%} 
         [Position]      (TOPLEFT) {0% 0%}
         [Head]          {1}
@@ -481,7 +479,7 @@
 
 #---------------------------------------------------- OFFICE
 [group] (workspace)
-	[app] (name=libreoffice)
+    [app] (name=libreoffice)
         [Dimensions]    {50% 100%} 
         [Position]      (TOPLEFT) {0% 0%}
 [end]
