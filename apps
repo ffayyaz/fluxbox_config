@@ -387,7 +387,7 @@
         [Workspace]     {4}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Fullscreen]    {yes}
+        [Fullscreen]    {no}
         [FocusNewWindow] {no}
 [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
