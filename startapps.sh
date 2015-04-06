@@ -28,8 +28,12 @@ fi
 
 /sbin/ifconfig|egrep '192.168.85.10'
 if [ "${?}" = "0" ]; then
-[ -x /usr/bin/xchat ] && xchat &
-    [ -x /usr/bin/audacious ] && audacious &
+	[ -x /usr/bin/xchat ] && xchat &
+    if [ -f /media/stuff/mp3/playlists/recreate.sh ]; then
+        /media/stuff/mp3/playlists/recreate.sh && [ -x /usr/bin/audacious ] && audacious &
+    else
+        [ -x /usr/bin/audacious ] && audacious &
+    fi
 fi
 
 #_______ Autostart Netstream only __________________________________________
