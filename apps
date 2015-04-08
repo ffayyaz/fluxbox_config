@@ -385,6 +385,7 @@
     [app] (name=.*mail.*) (class=Chromium)
     [app] (name=.*mail.*) (class=Chrome)
         [Workspace]     {4}
+        [Layer]         {12}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Fullscreen]    {no}
