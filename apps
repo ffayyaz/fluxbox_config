@@ -294,7 +294,8 @@
 
 #---------------------------------------------------- REMOTE CLUSTERSSH
 # clusterssh
-[app] (clusterssh)
+[group] (workspace)
+    [app] (name=clusterssh.*)
         [Dimensions]    {12% 12%}
         [Workspace]     {1}
         [Jump]          {yes}
