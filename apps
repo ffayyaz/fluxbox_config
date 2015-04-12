@@ -296,16 +296,16 @@
 # clusterssh
 [group] (workspace)
     [app] (name=clusterssh.*)
-        [Dimensions]    {12% 12%}
+        [Dimensions]    {15% 15%}
         [Workspace]     {1}
         [Jump]          {yes}
-        [Position]      (BOTTOMRIGHT) {-7% 0%}
+        [Position]      (BOTTOMRIGHT) {-6% 0%}
 [end]
 [app] (name=dialogbox1) (class=Cssh)
-        [Dimensions]    {12% 12%}
+        [Dimensions]    {15% 15%}
         [Workspace]     {1}
         [Jump]          {yes}
-        [Position]      (BOTTOMRIGHT) {5% 0%}
+        [Position]      (BOTTOMRIGHT) {9% 0%}
 [end]
 [app] (title=CLUSTERSSH.*) (class=URxvt)
         # [Dimensions]    {25% 25%}
