@@ -511,7 +511,16 @@
         [Head]          {2}
         [Jump]          {yes}
         [Position]      (TOPLEFT) {0% 0%}
-        [Dimensions]    {88% 100%}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+[end]
+
+[app] (title=Cisco Unified Computing System Manager.*)
+        [Head]          {2}
+        [Jump]          {yes}
+        [Position]      (TOPLEFT) {0% 0%}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
 [end]
 
 [app] (name=deluge)
