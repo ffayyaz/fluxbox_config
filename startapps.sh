@@ -11,7 +11,10 @@
 
 # always start a browser
 if [ -x /usr/bin/chromium ]; then
-    chromium www.heise.de &
+    chromium &
+fi
+if [ -x /usr/bin/vivaldi ]; then
+    vivaldi &
 fi
 
 #_______ Autostart Home only _______________________________________________

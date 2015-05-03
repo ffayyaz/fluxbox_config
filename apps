@@ -364,6 +364,17 @@
         [FocusNewWindow] {no}
 [end]
 
+# vivaldi
+[group] (workspace)
+    [app] (class=Vivaldi)
+        [Workspace]     {5}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Fullscreen]    {yes}
+        [Position]      (TOPLEFT) {0% 0%}
+        [FocusNewWindow] {no}
+[end]
+
 # iceweasel
 [group] (workspace)
     [app] (name=Navigator) (class=Iceweasel)
