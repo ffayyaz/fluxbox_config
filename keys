@@ -91,7 +91,6 @@ Mod1 Right                  :NextWindow {static groups} (workspace=[current])
 Mod1 F4                     :Close                                                                  
 
 # fullscreen mode
-Mod4 F11                    :Fullscreen 
 Mod1 F11                    :Fullscreen 
 
 # minimize maximize
@@ -103,6 +102,9 @@ Mod1 space                  :WindowMenu
 
 # replace windows topleft,topright,bottomright,bottomleft
 Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 TopRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomLeft}{Focus}{Raise}} 
+
+Mod1 112                    :SendToPrevHead 1 # alt+page up
+Mod1 117                    :SendToPrevHead 1 # alt+page down
 
 #------------------------------------------------------- TABS
 
