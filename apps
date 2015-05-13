@@ -391,6 +391,21 @@
         [Head]          {2}
 [end]
 
+# ns jira
+[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=Chromium)
+        [Head]          {2}
+        [Dimensions]    {50% 100%}
+        [Position]      (TOPLEFT)   {0% 0%}
+[end]
+
+# ns kayako
+[group]
+    [app] (name=support.netstream.ch__staff_index.php) (class=Chromium)
+        [Head]          {2}
+        [Dimensions]    {50% 100%}
+        [Position]      (TOPRIGHT)   {0% 0%}
+[end]
+
 #---------------------------------------------------- MAIL
 [group] (workspace)
     [app] (name=Mail) (class=Icedove) (role=3pane)

@@ -50,6 +50,10 @@ if [ "${?}" = "0" ]; then
     chromium intranet.netstream.ch &
     (sleep 20;chromium --app=https://www.soundcloud.com) &
     (sleep 20;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+    chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
+    chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/MyTickets &
+    chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/16/-1/-1 &
+    chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/27/-1/-1 &
 fi
 
 #____ Netstream notebook
