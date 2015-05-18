@@ -113,6 +113,11 @@
         [Dimensions]    {88% 100%}
 [end]
 
+#---------------------------------------------------- GKRELLM
+[app] (name=Gkrellm_conf) (class=Gkrellm) 
+        [Position]      (TOPRIGHT) {0% 0%}
+[end]
+
 #---------------------------------------------------- TERMINALS
 [app] (name=messagesterm)
         [Workspace]     {0}
