@@ -1,7 +1,9 @@
 ! The following line will prevent styles from setting the background.
 background: none
-menu.title.font: sans-6:bold
-menu.frame.font: sans-6:bold
-toolbar.clock.font: sans-6:bold
-toolbar.workspace.font: sans-6:bold
-*font: sans-7
+menu.title.font: sans-5:bold
+menu.frame.font: sans-5:bold
+toolbar.clock.font: sans-5:bold
+toolbar.workspace.font: sans-4:bold
+toolbar.iconbar.focused.font: sans-5:bold
+toolbar.iconbar.unfocused.font: sans-5:bold
+window.font: sans-5:bold
