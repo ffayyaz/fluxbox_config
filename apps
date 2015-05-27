@@ -399,7 +399,7 @@
 # ns jira
 [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=Chromium)
         [Head]          {2}
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {45% 100%}
         [Position]      (TOPLEFT)   {0% 0%}
 [end]
 
@@ -407,7 +407,7 @@
 [group]
     [app] (name=support.netstream.ch__staff_index.php) (class=Chromium)
         [Head]          {2}
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {55% 100%}
         [Position]      (TOPRIGHT)   {0% 0%}
 [end]
 
