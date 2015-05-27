@@ -13,9 +13,9 @@
 if [ -x /usr/bin/chromium ]; then
     chromium &
 fi
-if [ -x /usr/bin/vivaldi ]; then
-    vivaldi &
-fi
+# if [ -x /usr/bin/vivaldi ]; then
+    # vivaldi &
+# fi
 
 #_______ Autostart Home only _______________________________________________
 
