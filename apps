@@ -372,6 +372,8 @@
 # vivaldi
 [group] (workspace)
     [app] (class=Vivaldi)
+    [app] (class=Vivaldi-preview)
+        [Head]          {1}
         [Workspace]     {5}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
