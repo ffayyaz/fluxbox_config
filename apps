@@ -496,7 +496,7 @@
     [app] (okular)
     [app] (name=win) (class=Xpdf)
     [app] (vprerex)
-    [app] (name=evince) (class=Evince)
+    [app] (evince) 
     [app] (kpdf)
     [app] (acroread)
         [Dimensions]    {50% 100%} 
