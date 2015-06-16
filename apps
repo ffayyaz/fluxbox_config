@@ -576,7 +576,9 @@
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 
-[app] (filezilla)
+[group] (workspace)
+    [app] (filezilla)
+    [app] (main) (class=gFTP)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
