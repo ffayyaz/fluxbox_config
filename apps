@@ -356,6 +356,7 @@
 # chromium
 [group] (workspace)
     [app] (name=Chromium) (class=Chromium)
+    [app] (name=Google-chrome) (class=Google-chrome)
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
