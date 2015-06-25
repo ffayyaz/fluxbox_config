@@ -54,6 +54,7 @@ if [ "${?}" = "0" ]; then
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/MyTickets &
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/16/-1/-1 &
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/27/-1/-1 &
+    chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/dashboard &
 fi
 
 #____ Netstream notebook
