@@ -415,7 +415,11 @@
 [end]
 
 # ns agama
-[app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=Chromium)
+[group]
+    [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=Chromium) # dashboard
+    [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=Chromium) # real-time matrix
+    [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=Chromium) # embedded probe
+    [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=Chromium) # secondlevel link lookup
         [Head]          {2}
         [Dimensions]    {55% 100%}
         [Position]      (TOPRIGHT)   {0% 0%}
