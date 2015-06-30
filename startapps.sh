@@ -50,13 +50,22 @@ if [ "${?}" = "0" ]; then
     chromium intranet.netstream.ch &
     (sleep 20;chromium --app=https://www.soundcloud.com) &
     (sleep 20;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+    # jira
     chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
+    # kayako
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/MyTickets &
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/16/-1/-1 &
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/27/-1/-1 &
+    # agama
     chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/dashboard &
     chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/tablestatus &
     chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/empprobegraph &
+    # mdw
+    chromium --app=http://admin.mdw01.iptv.ch:8080/itvadmin/ &
+    chromium --app=http://mdw-preprod.iptv.ch:8080/itvadmin/ &
+    chromium --app=http://mdw-preview.iptv.ch:8080/itvadmin/ &
+    chromium --app=http://mdw-preview02.iptv.ch:8080/itvadmin/ &
+    chromium --app=http://mdw-dev.iptv.ch:8080/itvadmin/ &
 fi
 
 #____ Netstream notebook

@@ -425,6 +425,18 @@
         [Position]      (TOPRIGHT)   {0% 0%}
 [end]
 
+# ns mdw
+[group]
+    [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=Chromium) # mdw live
+    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=Chromium) # mdw preprod
+    [app] (name=mdw-preview.iptv.ch__itvadmin) (class=Chromium) # mdw preview
+    [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=Chromium) # mdw preview02
+    [app] (name=mdw-dev.iptv.ch__itvadmin) (class=Chromium) # mdw dev
+        [Head]          {2}
+        [Dimensions]    {55% 100%}
+        [Position]      (TOPRIGHT)   {0% 0%}
+[end]
+
 #---------------------------------------------------- MAIL
 [group] (workspace)
     [app] (name=Mail) (class=Icedove) (role=3pane)
