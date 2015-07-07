@@ -19,13 +19,13 @@ fi
 
 #_______ Autostart Home only _______________________________________________
 
-/sbin/ifconfig|egrep '192.168.85.'
-if [ "${?}" = "0" ]; then
-    [ -x /usr/bin/icedove ] && icedove &
-    # [ -x /usr/bin/pidgin ] && pidgin &
-    (sleep 20;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
-    (sleep 20;chromium --app=https://www.soundcloud.com) &
-fi
+# /sbin/ifconfig|egrep '192.168.85.'
+# if [ "${?}" = "0" ]; then
+    # [ -x /usr/bin/icedove ] && icedove &
+    # # [ -x /usr/bin/pidgin ] && pidgin &
+    # chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+    # chromium --app=https://www.soundcloud.com &
+# fi
 
 #_______ Autostart Ganja only ______________________________________________
 
@@ -36,6 +36,10 @@ if [ "${?}" = "0" ]; then
         /media/stuff/mp3/playlists/recreate.sh &
     fi
     [ -x /usr/bin/audacious ] && audacious &
+    [ -x /usr/bin/icedove ] && icedove &
+    # [ -x /usr/bin/pidgin ] && pidgin &
+    chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+    chromium --app=https://www.soundcloud.com &
 fi
 
 #_______ Autostart Netstream only __________________________________________
@@ -48,8 +52,8 @@ if [ "${?}" = "0" ]; then
     # [ -x /usr/bin/kate ] && kate -s netstream_notes ~/stuff/notes/`date +"%Y%m%d"`_netstream_notes.txt &
     [ -x /usr/bin/audacious ] && audacious &
     chromium intranet.netstream.ch &
-    (sleep 20;chromium --app=https://www.soundcloud.com) &
-    (sleep 20;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+    chromium --app=https://www.soundcloud.com &
+    chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     # jira
     chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
     # kayako
@@ -71,7 +75,7 @@ fi
 #____ Netstream notebook
 if [ "`hostname`" = "nacho" ]; then
     [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-    (sleep 20;chromium --app=https://mail.business-exchange.ch/owa/?modurl=0) &
+    chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
 fi
 
 #_______ Autostart mobile only _____________________________________________
