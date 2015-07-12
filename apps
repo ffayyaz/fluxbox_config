@@ -103,7 +103,6 @@
         [Layer]         {12}
         [FocusNewWindow] {yes}
         [FocusHidden]   {yes}
-        # [IconHidden]    {yes}
 [end]
 
 [app] (name=Audacity) (class=Audacity) 
@@ -302,18 +301,20 @@
 [group] (workspace)
     [app] (name=clusterssh.*)
         [Dimensions]    {15% 15%}
+        [Layer]         {12}
         [Workspace]     {1}
         [Jump]          {yes}
         [Position]      (BOTTOMRIGHT) {-6% 0%}
 [end]
 [app] (name=dialogbox1) (class=Cssh)
         [Dimensions]    {15% 15%}
+        [Layer]         {12}
         [Workspace]     {1}
         [Jump]          {yes}
         [Position]      (BOTTOMRIGHT) {9% 0%}
 [end]
 [app] (title=CLUSTERSSH.*) (class=URxvt)
-        # [Dimensions]    {25% 25%}
+        [Layer]         {12}
         [Workspace]     {1}
 [end]
 
@@ -323,12 +324,11 @@
 # if you know the name of each one but this requires a rule in here, 
 # which is not existant yet, therefore disable tabbing for those windows
 [app] (name=urxvt-cluster) (class=URxvt)
-        # [Dimensions]    {50% 50%}
         [Workspace]     {1}
+        [Layer]         {12}
         [Jump]          {yes}
         [Tab]           {no}    
         [FocusNewWindow] {no}
-        # [IconHidden]    {yes} # maybe not good
         [FocusHidden]   {yes}
 [end]
 
@@ -348,7 +348,6 @@
         [Position]      (BOTTOMLEFT) {0% 0%}
         [Sticky]        {yes}
         [FocusNewWindow] {no}
-        # [IconHidden]    {yes}
 [end]
 
 #---------------------------------------------------- BROWSING
@@ -476,17 +475,9 @@
 #---------------------------------------------------- EDITOR
 # gedit often crashes fluxbox, so use kate
 [group] (workspace)
-    [app] (name=kate) (class=Kate) (title!=.*notes.*)
+    [app] (name=kate) (class=Kate) 
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0% 0%}
-[end]
-# kate for notes in workspace 0
-[group] (workspace)
-    [app] (name=kate) (class=Kate) (title=.*notes.*)
-        [Workspace]     {0}
-        [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMLEFT) {0% 0%}
-        [FocusNewWindow] {no}
 [end]
 
 #---------------------------------------------------- REMOTE DESKTOP
@@ -585,7 +576,7 @@
         [Head]          {2}
 [end]
 
-[app] (name=sun-awt-X11-XFramePeer) (class=com-install4j-runtime-launcher-Launcher)  #(title=.*ptax.*)
+[app] (name=sun-awt-X11-XFramePeer) (class=com-install4j-runtime-launcher-Launcher)
         [Head]          {2}
         [Jump]          {yes}
         [Position]      (TOPLEFT) {0% 0%}
