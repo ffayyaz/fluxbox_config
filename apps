@@ -476,6 +476,7 @@
 # gedit often crashes fluxbox, so use kate
 [group] (workspace)
     [app] (name=kate) (class=Kate) 
+    [app] (name=textShell) (class=NEdit)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0% 0%}
 [end]
