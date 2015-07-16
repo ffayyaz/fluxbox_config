@@ -439,7 +439,7 @@
 # ns postman
 [app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=Chromium)
         [Head]          {2}
-        [Workspace]     {3}
+        [Workspace]     {2}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
