@@ -70,6 +70,8 @@ if [ "${?}" = "0" ]; then
     chromium --app=http://mdw-preview.iptv.ch:8080/itvadmin/ &
     chromium --app=http://mdw-preview02.iptv.ch:8080/itvadmin/ &
     chromium --app=http://mdw-dev.iptv.ch:8080/itvadmin/ &
+    # postman
+    chromium --app-id=fdmmgilgnpjigdojojpjoooidkmcomcm &
 fi
 
 #____ Netstream notebook
