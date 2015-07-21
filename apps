@@ -415,9 +415,14 @@
 
 # ns agama
 [group]
+    # agama iptv
     [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=Chromium) # dashboard
     [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=Chromium) # real-time matrix
     [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=Chromium) # embedded probe
+    # agama ott
+    [app] (name=u0494__ria_dashboard) (class=Chromium) # dashboard
+    [app] (name=u0494__ria_httpstreamingrunning) (class=Chromium) # running stream tests
+    [app] (name=u0494__ria_httpstreamingresultsearch) (class=Chromium) # stream test results
     [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=Chromium) # secondlevel link lookup
         [Head]          {2}
         [Dimensions]    {55% 100%}
@@ -443,6 +448,17 @@
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
+[end]
+
+# ns zabbix / nagios
+[group]
+    [app] (name=zabbix.netstream.ch__zabbix_dashboard.php) (class=Chromium)
+    [app] (name=nagios.netstream.ch__nagios3) (class=Chromium)
+        [Head]          {2}
+        [Workspace]     {2}
+        [Dimensions]    {55% 100%}
+        [Maximized]     {yes}
+        [Position]      (TOPRIGHT)   {0% 0%}
 [end]
 
 #---------------------------------------------------- MAIL

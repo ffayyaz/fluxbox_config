@@ -60,10 +60,16 @@ if [ "${?}" = "0" ]; then
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/MyTickets &
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/16/-1/-1 &
     chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/27/-1/-1 &
-    # agama
+    # agama iptv
     chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/dashboard &
     chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/tablestatus &
     chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/empprobegraph &
+    # agama ott
+    chromium --app=http://u0494:8880/ria/dashboard &
+    chromium --app=http://u0494:8880/ria/httpstreamingrunning &
+    chromium --app=http://u0494:8880/ria/httpstreamingresultsearch &
+    # secondlevel link lookup
+    chromium --app=https://intranet.netstream.ch/display/op/Secondlevel+Link+Lookup &
     # mdw
     chromium --app=http://admin.mdw01.iptv.ch:8080/itvadmin/ &
     chromium --app=http://mdw-preprod.iptv.ch:8080/itvadmin/ &
@@ -72,6 +78,13 @@ if [ "${?}" = "0" ]; then
     chromium --app=http://mdw-dev.iptv.ch:8080/itvadmin/ &
     # postman
     chromium --app-id=fdmmgilgnpjigdojojpjoooidkmcomcm &
+
+    lynx --dump pikett.netstream.ch|grep Farhan|awk '{print $1" "$2" "$3}'|grep -q "$(date +"%a, %d. %b")"
+    if [ $? -eq 0 ]; then
+	    # zabbix & nagios
+	    chromium --app=http://zabbix.netstream.ch/zabbix/dashboard.php &
+	    chromium --app=http://nagios.netstream.ch/nagios3/ &
+	fi
 fi
 
 #____ Netstream notebook
