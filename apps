@@ -456,9 +456,9 @@
     [app] (name=nagios.netstream.ch__nagios3) (class=Chromium)
         [Head]          {2}
         [Workspace]     {2}
-        [Dimensions]    {55% 100%}
+        [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Position]      (TOPRIGHT)   {0% 0%}
+        [Position]      (TOPLEFT)   {0% 0%}
 [end]
 
 #---------------------------------------------------- MAIL
