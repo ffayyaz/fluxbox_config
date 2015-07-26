@@ -248,6 +248,7 @@ Mod4 t                      :Exec urxvt -name htopterm -e htop
 # ChangeWorkspace           :ShowDesktop (workspace=6) (layer!=Desktop)
 # ChangeWorkspace             :If {Every Matches (Sticky=yes)} {Minimize}
 #ChangeWorkspace             :Minimize
+ChangeWorkspace             :Exec fbsetbg -f ~/.fluxbox/wallpaper/$(ls ~/.fluxbox/wallpaper/|sort -R|tail -1)
 
 #------------------------------------------------------- TOGGLES
 
