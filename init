@@ -33,7 +33,7 @@ session.screen0.slit.alpha:	255
 session.screen0.slit.onhead:	1
 session.screen0.slit.autoHide:	true
 session.screen0.slit.maxOver:	true
-session.screen0.slit.layer:	Desktop
+session.screen0.slit.layer:	Bottom
 session.screen0.slit.placement:	RightCenter
 session.screen0.slit.acceptKdeDockapps:	true
 
