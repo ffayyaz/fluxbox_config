@@ -6,7 +6,7 @@
 [ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
 [ -x /usr/bin/gdeskcal ] && gdeskcal &
 [ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
-[ -x /usr/bin/xpad ] && xpad &
+# [ -x /usr/bin/xpad ] && xpad &
 [ -x /usr/bin/skype ] && skype &
 
 # always start a browser
