@@ -19,9 +19,10 @@
 
 #---------------------------------------------------- CALENDAR
 [app] (gdeskcal)
-        [Position]      (TOPRIGHT) {13% 0%} 
+        [Workspace]     {0}
+        [Position]      (TOPRIGHT) {11% 0%}
         [Dimensions}    {12% 17%}
-        [Sticky]        {yes}
+        # [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -32,10 +33,9 @@
 #---------------------------------------------------- CLOCK
 [app] (xclock)
         #[Position]      (TOPRIGHT) {0% 17%}
-        [Position]      (BOTTOMRIGHT) {0% 0%}
-        # [Dimensions]    {12% 17%} 
-        [Dimensions]    {6% 8%} 
-        [Sticky]        {yes}
+        [Position]      (TOPRIGHT) {0% 17%}
+        [Dimensions]    {11% 17%}
+        # [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -45,11 +45,11 @@
 
 #---------------------------------------------------- MIXER
 [app] (name=mixerterm)
-        [Position]      (TOPRIGHT) {0% 17%}
+        [Workspace]     {0}
+        [Position]      (TOPRIGHT) {0% 34%}
         # [Position]      (BOTTOMRIGHT) {0% 0%}
-        # [Dimensions]    {12% 25%}
-        [Dimensions]    {5% 18%}
-        [Sticky]        {yes}
+        [Dimensions]    {11% 33%}
+        # [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -109,7 +109,7 @@
         [FocusHidden]   {yes}
 [end]
 
-[app] (name=Audacity) (class=Audacity) 
+[app] (name=Audacity) (class=Audacity)
         [Workspace]     {3}
         [Jump]          {yes}
         [Position]      (TOPLEFT) {0% 0%}
@@ -117,7 +117,7 @@
 [end]
 
 #---------------------------------------------------- GKRELLM
-[app] (name=Gkrellm_conf) (class=Gkrellm) 
+[app] (name=Gkrellm_conf) (class=Gkrellm)
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 
@@ -144,7 +144,7 @@
 [end]
 [app] (name=debuglogterm)
         [Workspace]     {0}
-        [Dimensions]    {38% 34%}
+        [Dimensions]    {39% 34%}
         [Position]      (TOPLEFT) {50% 0%}
         [Deco]          {10100100101}
         [Layer]         {12}
@@ -154,7 +154,7 @@
 [end]
 [app] (name=kernlogterm)
         [Workspace]     {0}
-        [Dimensions]    {38% 33%}
+        [Dimensions]    {39% 33%}
         [Position]      (TOPLEFT) {50% 34%}
         [Deco]          {10100100101}
         [Layer]         {12}
@@ -164,7 +164,7 @@
 [end]
 [app] (name=authlogterm)
         [Workspace]     {0}
-        [Dimensions]    {38% 33%}
+        [Dimensions]    {39% 33%}
         [Position]      (TOPLEFT) {50% 67%}
         [Deco]          {10100100101}
         [Layer]         {12}
@@ -174,8 +174,8 @@
 [end]
 [app] (name=cpufreqterm)
         [Workspace]     {0}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 80%}
+        [Dimensions]    {11% 21%}
+        [Position]      (TOPRIGHT) {0% 78%}
         [Deco]          {10100100101}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -189,7 +189,7 @@
 # does not work
 # [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*)
 # [app] (name=Qt-subapplication) (class=VirtualBox) (title=WindowsXP [Running] - Oracle VM VirtualBox)
-[app] (name=Qt-subapplication) (class=VirtualBox) (title!=Oracle VM VirtualBox Manager) 
+[app] (name=Qt-subapplication) (class=VirtualBox) (title!=Oracle VM VirtualBox Manager)
         [Sticky]        {yes}
         [Head]          {2}
         [Layer]         {12}
@@ -287,7 +287,7 @@
 
 #---------------------------------------------------- LOCAL
 [group] (workspace)
-    [app] (urxvt) 
+    [app] (urxvt)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 0%}
         [Sticky]        {yes}
@@ -323,15 +323,15 @@
 [end]
 
 # the actual terminals
-# positioning could be better. some of the popped up windows overlap 
-# each other about a titlebar height. these windows could be tabbed, 
-# if you know the name of each one but this requires a rule in here, 
+# positioning could be better. some of the popped up windows overlap
+# each other about a titlebar height. these windows could be tabbed,
+# if you know the name of each one but this requires a rule in here,
 # which is not existant yet, therefore disable tabbing for those windows
 [app] (name=urxvt-cluster) (class=URxvt)
         [Workspace]     {1}
         [Layer]         {12}
         [Jump]          {yes}
-        [Tab]           {no}    
+        [Tab]           {no}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
 [end]
@@ -343,7 +343,7 @@
 ###############################################################################
 
 #---------------------------------------------------- CHAT
-[group] 
+[group]
     [app] (wync)
     [app] (Pidgin)
     [app] (xchat)
@@ -480,13 +480,13 @@
 [app] (name=Mail) (class=Icedove) (role=addressbook)
         [Workspace]     {4}
         [Dimensions]    {50% 100%}
-        [Position]      (TOPLEFT) {0% 0%} 
+        [Position]      (TOPLEFT) {0% 0%}
 [end]
 [app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
         [Workspace]     {4}
         [Layer]         {12}
 [end]
-[app] (name=Msgcompose) (class=Icedove) 
+[app] (name=Msgcompose) (class=Icedove)
         [Workspace]     {4}
         [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {50% 0%}
@@ -495,7 +495,7 @@
 #---------------------------------------------------- EDITOR
 # gedit often crashes fluxbox, so use kate
 [group] (workspace)
-    [app] (name=kate) (class=Kate) 
+    [app] (name=kate) (class=Kate)
     [app] (name=textShell) (class=NEdit)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0% 0%}
@@ -505,7 +505,7 @@
 # vncviewer
 # WM_CLASS(STRING) = "VNC: fayyaz:0", "Vncviewer"
 [group] (workspace)
-    [app] (class=Vncviewer) 
+    [app] (class=Vncviewer)
         [Workspace]     {1}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
@@ -514,7 +514,7 @@
 
 # rdesktop
 [group] (workspace)
-    [app] (rdesktop) 
+    [app] (rdesktop)
         [Workspace]     {1}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
@@ -523,7 +523,7 @@
 
 #---------------------------------------------------- VIDEO
 [group] (workspace)
-    [app] (vlc) (class=Vlc) 
+    [app] (vlc) (class=Vlc)
     [app] (xv) (class=MPlayer)
     [app] (vdpau) (class=MPlayer)
     [app] (vdpau) (class=mplayer2)
@@ -543,10 +543,10 @@
     [app] (okular)
     [app] (name=win) (class=Xpdf)
     [app] (vprerex)
-    [app] (evince) 
+    [app] (evince)
     [app] (kpdf)
     [app] (acroread)
-        [Dimensions]    {50% 100%} 
+        [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 
@@ -554,7 +554,7 @@
 [group] (workspace)
     [app] (eog)
     [app] (feh)
-        [Dimensions]    {50% 100%} 
+        [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Head]          {1}
 [end]
@@ -562,7 +562,7 @@
 #---------------------------------------------------- OFFICE
 [group] (workspace)
     [app] (name=libreoffice)
-        [Dimensions]    {50% 100%} 
+        [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
 
@@ -572,7 +572,7 @@
 [end]
 
 [group] (workspace)
-    [app] (wireshark) 
+    [app] (wireshark)
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}

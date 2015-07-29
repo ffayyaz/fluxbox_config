@@ -26,7 +26,7 @@ session.doubleClickInterval:	250
 
 !-------------------------------------------------------- TITLEBAR
 session.screen0.titlebar.left:	MenuIcon LHalf RHalf
-session.screen0.titlebar.right:	Minimize Maximize Close 
+session.screen0.titlebar.right:	Minimize Maximize Close
 
 !-------------------------------------------------------- SLIT
 session.screen0.slit.alpha:	255
@@ -61,7 +61,7 @@ session.screen0.toolbar.layer:	Dock
 session.screen0.strftimeFormat:	%a %d. %b %Y, %02k:%M:%S
 
 !-------------------------------------------------------- ICONBAR
-session.screen0.iconbar.mode:	{static groups} (workspace) 
+session.screen0.iconbar.mode:	{static groups} (workspace)
 session.screen0.iconbar.usePixmap:	true
 session.screen0.iconbar.iconWidth:	70
 session.screen0.iconbar.iconTextPadding:	0
@@ -85,7 +85,7 @@ session.screen0.rowPlacementDirection:	LeftToRight
 session.screen0.clickRaises:	true
 session.screen0.maxIgnoreIncrement:	false
 session.screen0.maxDisableMove:	false
-session.screen0.edgeSnapThreshold:  15	
+session.screen0.edgeSnapThreshold:  15
 session.screen0.noFocusWhileTypingDelay:	0
 session.screen0.fullMaximization:	false
 session.screen0.demandsAttentionTimeout:	500

@@ -88,10 +88,10 @@ Mod1 Left                   :PrevWindow {static groups} (workspace=[current])
 Mod1 Right                  :NextWindow {static groups} (workspace=[current])
 
 # close window
-Mod1 F4                     :Close                                                                  
+Mod1 F4                     :Close
 
 # fullscreen mode
-Mod1 F11                    :Fullscreen 
+Mod1 F11                    :Fullscreen
 
 # minimize maximize
 Mod1 Down                   :Minimize
@@ -101,7 +101,7 @@ Mod1 Up                     :MacroCmd {Maximize} {Raise}
 Mod1 space                  :WindowMenu
 
 # replace windows topleft,topright,bottomright,bottomleft
-Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 TopRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomLeft}{Focus}{Raise}} 
+Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 TopRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomRight}{Focus}{Raise}}{MacroCmd {MoveTo 0 0 BottomLeft}{Focus}{Raise}}
 
 Mod1 112                    :SendToPrevHead 1 # alt+page up
 Mod1 117                    :SendToPrevHead 1 # alt+page down
@@ -289,5 +289,5 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 #Mod4 a Mod4 v               :ArrangeWindowsVertical {static groups} (workspace=[current]) (layer!=Desktop)
 # arrange windows horizontally
 #Mod4 a Mod4 h               :ArrangeWindowsHorizontal {static groups} (workspace=[current]) (layer!=Desktop)
-# arrange windows 
+# arrange windows
 #Mod4 a Mod4 g               :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desktop)
