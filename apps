@@ -19,7 +19,7 @@
 
 #---------------------------------------------------- CALENDAR
 [app] (gdeskcal)
-        [Position]      (TOPRIGHT) {12% 0%} 
+        [Position]      (TOPRIGHT) {13% 0%} 
         [Dimensions}    {12% 17%}
         [Sticky]        {yes}
         [Layer]         {12}
@@ -32,7 +32,7 @@
 #---------------------------------------------------- CLOCK
 [app] (xclock)
         #[Position]      (TOPRIGHT) {0% 17%}
-        [Position]      (BOTTOMRIGHT) {-6% 0%}
+        [Position]      (BOTTOMRIGHT) {0% 0%}
         # [Dimensions]    {12% 17%} 
         [Dimensions]    {6% 8%} 
         [Sticky]        {yes}
@@ -45,8 +45,8 @@
 
 #---------------------------------------------------- MIXER
 [app] (name=mixerterm)
-        #[Position]      (TOPRIGHT) {0% 35%}
-        [Position]      (BOTTOMRIGHT) {0% -1%}
+        [Position]      (TOPRIGHT) {0% 17%}
+        # [Position]      (BOTTOMRIGHT) {0% 0%}
         # [Dimensions]    {12% 25%}
         [Dimensions]    {5% 18%}
         [Sticky]        {yes}
