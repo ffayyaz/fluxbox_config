@@ -33,7 +33,7 @@
 #---------------------------------------------------- CLOCK
 [app] (xclock)
         #[Position]      (TOPRIGHT) {0% 17%}
-        [Position]      (TOPRIGHT) {0% 17%}
+        [Position]      (TOPRIGHT) {0% 0%}
         [Dimensions]    {11% 17%}
         # [Sticky]        {yes}
         [Layer]         {12}
@@ -45,10 +45,11 @@
 
 #---------------------------------------------------- MIXER
 [app] (name=mixerterm)
-        [Workspace]     {0}
-        [Position]      (TOPRIGHT) {0% 34%}
+        [Workspace]     {3}
+        #[Position]      (TOPRIGHT) {0% 34%}
+        [Position]      (TOPRIGHT) {0% 0%}
         # [Position]      (BOTTOMRIGHT) {0% 0%}
-        [Dimensions]    {11% 33%}
+        [Dimensions]    {12% 80%}
         # [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -72,18 +73,19 @@
 #---------------------------------------------------- MUSIC
 [app] (name=audacious) (class=Audacious) (title=.*Audacious)
         [Workspace]     {3}
-        [Dimensions]    {88% 100%}
+        [Dimensions]    {88% 80%}
         [Position]      (TOPLEFT)   {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
         [Deco]          {NONE}
+        [Jump]          {no}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Blur Scope)
         [Workspace]     {3}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 60%}
+        [Dimensions]    {88% 20%}
+        [Position]      (BOTTOMLEFT) {0% 0%}
         [Layer]         {12}
         [Deco]          {NONE}
         [FocusNewWindow] {no}
@@ -116,9 +118,9 @@
         [Dimensions]    {88% 100%}
 [end]
 
-#---------------------------------------------------- GKRELLM
+#---------------------------------------------------- GKRELLM_CONF
 [app] (name=Gkrellm_conf) (class=Gkrellm)
-        [Position]      (TOPRIGHT) {0% 0%}
+        [Position]      (TOPLEFT) {0% 30%}
 [end]
 
 #---------------------------------------------------- TERMINALS
@@ -201,7 +203,7 @@
 [end]
 [app] (name=Qt-subapplication) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
         [Workspace]     {0}
-        [Jump]          {yes}
+        [Jump]          {no}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
 [end]
@@ -308,29 +310,23 @@
         [Layer]         {12}
         [Workspace]     {1}
         [Jump]          {yes}
-        [Position]      (BOTTOMRIGHT) {-6% 0%}
+        [Position]      (BOTTOMRIGHT) {0% 0%}
 [end]
 [app] (name=dialogbox1) (class=Cssh)
         [Dimensions]    {15% 15%}
         [Layer]         {12}
         [Workspace]     {1}
         [Jump]          {yes}
-        [Position]      (BOTTOMRIGHT) {9% 0%}
+        [Position]      (BOTTOMRIGHT) {0% 0%}
 [end]
 [app] (title=CLUSTERSSH.*) (class=URxvt)
         [Layer]         {12}
         [Workspace]     {1}
 [end]
-
-# the actual terminals
-# positioning could be better. some of the popped up windows overlap
-# each other about a titlebar height. these windows could be tabbed,
-# if you know the name of each one but this requires a rule in here,
-# which is not existant yet, therefore disable tabbing for those windows
 [app] (name=urxvt-cluster) (class=URxvt)
         [Workspace]     {1}
         [Layer]         {12}
-        [Jump]          {yes}
+        # [Jump]          {yes}
         [Tab]           {no}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
@@ -407,6 +403,7 @@
         [Head]          {2}
         [Dimensions]    {45% 100%}
         [Position]      (TOPLEFT)   {0% 0%}
+        [FocusNewWindow]    {no}
 [end]
 
 # ns kayako
@@ -415,6 +412,7 @@
         [Head]          {2}
         [Dimensions]    {55% 100%}
         [Position]      (TOPRIGHT)   {0% 0%}
+        [FocusNewWindow]    {no}
 [end]
 
 # ns agama
@@ -431,6 +429,7 @@
         [Head]          {2}
         [Dimensions]    {55% 100%}
         [Position]      (TOPRIGHT)   {0% 0%}
+        [FocusNewWindow]    {no}
 [end]
 
 # ns mdw
@@ -443,10 +442,13 @@
         [Head]          {2}
         [Dimensions]    {55% 100%}
         [Position]      (TOPRIGHT)   {0% 0%}
+        [FocusNewWindow]    {no}
 [end]
 
 # ns postman
-[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=Chromium)
+[group]
+	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=Chromium)
+    [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=Chromium)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
@@ -463,6 +465,7 @@
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
+        [FocusNewWindow]    {no}
 [end]
 
 #---------------------------------------------------- MAIL
@@ -493,7 +496,6 @@
 [end]
 
 #---------------------------------------------------- EDITOR
-# gedit often crashes fluxbox, so use kate
 [group] (workspace)
     [app] (name=kate) (class=Kate)
     [app] (name=textShell) (class=NEdit)
@@ -509,7 +511,9 @@
         [Workspace]     {1}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
         [FocusHidden]   {yes}
+        # [Fullscreen]    {yes}
 [end]
 
 # rdesktop
@@ -518,7 +522,9 @@
         [Workspace]     {1}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
         [FocusHidden]   {yes}
+        # [Fullscreen]    {yes}
 [end]
 
 #---------------------------------------------------- VIDEO

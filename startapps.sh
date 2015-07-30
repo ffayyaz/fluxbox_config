@@ -4,15 +4,15 @@
 
 # tools / gadgets
 [ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
-[ -x /usr/bin/gdeskcal ] && gdeskcal &
+# [ -x /usr/bin/gdeskcal ] && gdeskcal &
 [ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 # [ -x /usr/bin/xpad ] && xpad &
 [ -x /usr/bin/skype ] && skype &
 
 # always start a browser
-# if [ -x /usr/bin/chromium ]; then
-    # chromium &
-# fi
+if [ -x /usr/bin/chromium ]; then
+    chromium &
+fi
 # if [ -x /usr/bin/vivaldi ]; then
     # vivaldi &
 # fi
@@ -23,36 +23,28 @@
 # if [ "${?}" = "0" ]; then
     # [ -x /usr/bin/icedove ] && icedove &
     # # [ -x /usr/bin/pidgin ] && pidgin &
-    # chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
-    # chromium --app=https://www.soundcloud.com &
 # fi
 
 #_______ Autostart Ganja only ______________________________________________
 
-/sbin/ifconfig|egrep '192.168.85.10'
-if [ "${?}" = "0" ]; then
+if [ "`hostname`" = "ganja" ]; then
     [ -x /usr/bin/xchat ] && xchat &
-    if [ -f /media/stuff/mp3/playlists/recreate.sh ]; then
-        /media/stuff/mp3/playlists/recreate.sh &
+    if [ -f /media/stuff/music/playlists/recreate.sh ]; then
+        /media/stuff/music/playlists/recreate.sh &
     fi
     [ -x /usr/bin/audacious ] && audacious &
     [ -x /usr/bin/icedove ] && icedove &
     # [ -x /usr/bin/pidgin ] && pidgin &
-    chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     chromium --app=https://www.soundcloud.com &
 fi
 
 #_______ Autostart Netstream only __________________________________________
 
-/sbin/ifconfig|egrep '192.168.1.116'
-if [ "${?}" = "0" ]; then
+if [ "`hostname`" = "fayyaz" ]; then
     [ -x /usr/bin/virtualbox ] && virtualbox &
     [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
-    # [ -x /usr/bin/kate ] && kate -s netstream_notes ~/stuff/notes/`date +"%Y%m%d"`_netstream_notes.txt &
     [ -x /usr/bin/audacious ] && audacious &
-    #chromium intranet.netstream.ch &
-    chromium --app=https://www.soundcloud.com &
     chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     # jira
     #chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
@@ -114,4 +106,4 @@ syslogterm &
 debuglogterm &
 authlogterm &
 kernlogterm &
-mixerterm&
+mixerterm &
