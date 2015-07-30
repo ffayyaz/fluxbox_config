@@ -10,9 +10,9 @@
 [ -x /usr/bin/skype ] && skype &
 
 # always start a browser
-if [ -x /usr/bin/chromium ]; then
-    chromium &
-fi
+# if [ -x /usr/bin/chromium ]; then
+    # chromium &
+# fi
 # if [ -x /usr/bin/vivaldi ]; then
     # vivaldi &
 # fi
@@ -51,40 +51,40 @@ if [ "${?}" = "0" ]; then
     [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
     # [ -x /usr/bin/kate ] && kate -s netstream_notes ~/stuff/notes/`date +"%Y%m%d"`_netstream_notes.txt &
     [ -x /usr/bin/audacious ] && audacious &
-    chromium intranet.netstream.ch &
+    #chromium intranet.netstream.ch &
     chromium --app=https://www.soundcloud.com &
     chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     # jira
-    chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
+    #chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
     # kayako
-    chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/MyTickets &
-    chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/16/-1/-1 &
-    chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/27/-1/-1 &
+    # chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/MyTickets &
+    # chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/16/-1/-1 &
+    # chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/27/-1/-1 &
     # agama iptv
-    chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/dashboard &
-    chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/tablestatus &
-    chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/empprobegraph &
+    # chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/dashboard &
+    # chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/tablestatus &
+    # chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/empprobegraph &
     # agama ott
-    chromium --app=http://u0494:8880/ria/dashboard &
-    chromium --app=http://u0494:8880/ria/httpstreamingrunning &
-    chromium --app=http://u0494:8880/ria/httpstreamingresultsearch &
+    # chromium --app=http://u0494:8880/ria/dashboard &
+    # chromium --app=http://u0494:8880/ria/httpstreamingrunning &
+    # chromium --app=http://u0494:8880/ria/httpstreamingresultsearch &
     # secondlevel link lookup
     # chromium --app=https://intranet.netstream.ch/display/op/Secondlevel+Link+Lookup &
     # mdw
-    chromium --app=http://admin.mdw01.iptv.ch:8080/itvadmin/ &
-    chromium --app=http://mdw-preprod.iptv.ch:8080/itvadmin/ &
-    #chromium --app=http://mdw-preview.iptv.ch:8080/itvadmin/ &
-    #chromium --app=http://mdw-preview02.iptv.ch:8080/itvadmin/ &
-    #chromium --app=http://mdw-dev.iptv.ch:8080/itvadmin/ &
+    # chromium --app=http://admin.mdw01.iptv.ch:8080/itvadmin/ &
+    # chromium --app=http://mdw-preprod.iptv.ch:8080/itvadmin/ &
+    # #chromium --app=http://mdw-preview.iptv.ch:8080/itvadmin/ &
+    # #chromium --app=http://mdw-preview02.iptv.ch:8080/itvadmin/ &
+    # #chromium --app=http://mdw-dev.iptv.ch:8080/itvadmin/ &
     # postman
     # chromium --app-id=fdmmgilgnpjigdojojpjoooidkmcomcm &
 
-    lynx --dump pikett.netstream.ch|grep Farhan|awk '{print $1" "$2" "$3}'|grep -q "$(date +"%a, %d. %b")"
-    if [ $? -eq 0 ]; then
-	    # zabbix & nagios
-	    chromium --app=http://zabbix.netstream.ch/zabbix/dashboard.php &
-	    chromium --app=http://nagios.netstream.ch/nagios3/ &
-	fi
+    # lynx --dump pikett.netstream.ch|grep Farhan|awk '{print $1" "$2" "$3}'|grep -q "$(date +"%a, %d. %b")"
+    # if [ $? -eq 0 ]; then
+# 	    # zabbix & nagios
+# 	    chromium --app=http://zabbix.netstream.ch/zabbix/dashboard.php &
+# 	    chromium --app=http://nagios.netstream.ch/nagios3/ &
+# 	fi
 fi
 
 #____ Netstream notebook
