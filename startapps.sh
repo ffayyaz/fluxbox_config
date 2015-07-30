@@ -69,15 +69,15 @@ if [ "${?}" = "0" ]; then
     chromium --app=http://u0494:8880/ria/httpstreamingrunning &
     chromium --app=http://u0494:8880/ria/httpstreamingresultsearch &
     # secondlevel link lookup
-    chromium --app=https://intranet.netstream.ch/display/op/Secondlevel+Link+Lookup &
+    # chromium --app=https://intranet.netstream.ch/display/op/Secondlevel+Link+Lookup &
     # mdw
     chromium --app=http://admin.mdw01.iptv.ch:8080/itvadmin/ &
     chromium --app=http://mdw-preprod.iptv.ch:8080/itvadmin/ &
-    chromium --app=http://mdw-preview.iptv.ch:8080/itvadmin/ &
-    chromium --app=http://mdw-preview02.iptv.ch:8080/itvadmin/ &
-    chromium --app=http://mdw-dev.iptv.ch:8080/itvadmin/ &
+    #chromium --app=http://mdw-preview.iptv.ch:8080/itvadmin/ &
+    #chromium --app=http://mdw-preview02.iptv.ch:8080/itvadmin/ &
+    #chromium --app=http://mdw-dev.iptv.ch:8080/itvadmin/ &
     # postman
-    chromium --app-id=fdmmgilgnpjigdojojpjoooidkmcomcm &
+    # chromium --app-id=fdmmgilgnpjigdojojpjoooidkmcomcm &
 
     lynx --dump pikett.netstream.ch|grep Farhan|awk '{print $1" "$2" "$3}'|grep -q "$(date +"%a, %d. %b")"
     if [ $? -eq 0 ]; then
