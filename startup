@@ -5,11 +5,11 @@
 # Lines starting with a '#' are ignored.
 
 # set black background forcibly (maybe overlay is not needed anymore)
-# /usr/bin/fbsetroot -solid black
+/usr/bin/fbsetroot -solid black
 
 # or set a background image
 #fbsetbg -f /path/to/image.jpg
-fbsetbg -f ~/.fluxbox/wallpaper/green-frequency-wavy-lines-26422.jpg
+#fbsetbg -f ~/.fluxbox/wallpaper/green-frequency-wavy-lines-26422.jpg
 
 # show fluxbox splash screen
 #fbsetbg -C /usr/share/fluxbox/splash.jpg
