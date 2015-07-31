@@ -401,6 +401,7 @@
 # ns jira
 [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=Chromium)
         [Head]          {2}
+        [Workspace]     {2}
         [Dimensions]    {45% 100%}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
@@ -410,6 +411,7 @@
 [group]
     [app] (name=support.netstream.ch__staff_index.php) (class=Chromium)
         [Head]          {2}
+        [Workspace]     {2}
         [Dimensions]    {55% 100%}
         [Position]      (TOPRIGHT)   {0% 0%}
         [FocusNewWindow]    {no}
@@ -427,6 +429,7 @@
     [app] (name=u0494__ria_httpstreamingresultsearch) (class=Chromium) # stream test results
     [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=Chromium) # secondlevel link lookup
         [Head]          {2}
+        [Workspace]     {2}
         [Dimensions]    {55% 100%}
         [Position]      (TOPRIGHT)   {0% 0%}
         [FocusNewWindow]    {no}
@@ -440,6 +443,7 @@
     [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=Chromium) # mdw preview02
     [app] (name=mdw-dev.iptv.ch__itvadmin) (class=Chromium) # mdw dev
         [Head]          {2}
+        [Workspace]     {2}
         [Dimensions]    {55% 100%}
         [Position]      (TOPRIGHT)   {0% 0%}
         [FocusNewWindow]    {no}
