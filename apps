@@ -306,6 +306,11 @@
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
 [end]
+[group] (workspace)
+    [app] (URxvt-remote-orbits)
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {0% 50%}
+[end]
 
 #---------------------------------------------------- REMOTE CLUSTERSSH
 # clusterssh
