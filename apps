@@ -305,31 +305,37 @@
     [app] (URxvt-remote-convoy)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
+        [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-orbits)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
+        [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-vod)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
+        [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-verimatrix)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
+        [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-manhattan-live)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
+        [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-manhattan-preprod)
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
+        [FocusNewWindow]    {no}
 [end]
 
 #---------------------------------------------------- REMOTE CLUSTERSSH
