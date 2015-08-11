@@ -438,7 +438,9 @@
 [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=Chromium)
         [Head]          {2}
         [Workspace]     {2}
-        [Dimensions]    {45% 100%}
+        # [Dimensions]    {45% 100%}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
 [end]
@@ -448,7 +450,9 @@
     [app] (name=support.netstream.ch__staff_index.php) (class=Chromium)
         [Head]          {2}
         [Workspace]     {2}
-        [Dimensions]    {55% 100%}
+        # [Dimensions]    {55% 100%}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
         [Position]      (TOPRIGHT)   {0% 0%}
         [FocusNewWindow]    {no}
 [end]
