@@ -483,7 +483,7 @@
         # [Dimensions]    {55% 100%}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Fullscreen]    {yes}
+        # [Fullscreen]    {yes}
         [Position]      (TOPRIGHT)   {0% 0%}
         [FocusNewWindow]    {no}
 [end]
@@ -518,7 +518,7 @@
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Fullscreen]    {yes}
+        # [Fullscreen]    {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
 [end]
@@ -532,7 +532,8 @@
         [Layer]         {12}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Fullscreen]    {no}
+        # [Fullscreen]    {no}
+        [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
 [app] (name=Mail) (class=Icedove) (role=addressbook)
@@ -592,7 +593,6 @@
     [app] (tsMuxerGUI)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Fullscreen     {yes}
         [Head]          {2}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
