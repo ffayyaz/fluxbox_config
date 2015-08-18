@@ -603,6 +603,10 @@
         [Fullscreen]    {yes} # not usable with yes
 [end]
 
+[app] (vlc) (class=Vlc) (title=Advanced Preferences)
+        [Head]          {2}
+[end]
+
 #---------------------------------------------------- PDFREADER
 [group] (workspace)
     [app] (okular)
