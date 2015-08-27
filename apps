@@ -79,7 +79,7 @@
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
         [FocusHidden]   {yes}
-        [Deco]          {NONE}
+        # [Deco]          {NONE}
         [Jump]          {no}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Blur Scope)
