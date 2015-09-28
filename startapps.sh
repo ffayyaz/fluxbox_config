@@ -41,10 +41,10 @@ fi
 #_______ Autostart Netstream only __________________________________________
 
 if [ "`hostname`" = "fayyaz" ]; then
-    [ -x /usr/bin/virtualbox ] && virtualbox &
+    # [ -x /usr/bin/virtualbox ] && virtualbox &
     [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
-    [ -x /usr/bin/audacious ] && audacious &
+    # [ -x /usr/bin/audacious ] && audacious &
     chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     # jira
     #chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
