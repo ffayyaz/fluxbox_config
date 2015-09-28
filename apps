@@ -502,6 +502,7 @@
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
+        [FocusNewWindow]    {no}
 [end]
 
 # ns zabbix / nagios
