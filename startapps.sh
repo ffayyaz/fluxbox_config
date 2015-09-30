@@ -52,6 +52,7 @@ if [ "`hostname`" = "fayyaz" ]; then
     # chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/MyTickets &
     # chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/16/-1/-1 &
     # chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/27/-1/-1 &
+    # chromium --app=https://support.netstream.ch/staff/index.php?/Tickets/Manage/Filter/31/-1/-1 &
     # agama iptv
     # chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/dashboard &
     # chromium --app=http://admin.qoe.iptv.ch:8800/enterprise/tablestatus &
