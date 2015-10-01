@@ -399,6 +399,8 @@
 [group] (workspace)
     [app] (name=.*sound.*) (class=Chromium)
     [app] (name=.*sound.*) (class=Chrome)
+    [app] (name=.*mixcloud.*) (class=Chromium)
+    [app] (name=.*mixcloud.*) (class=Chrome)
         [Workspace]     {3}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
