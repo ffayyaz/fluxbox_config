@@ -532,6 +532,7 @@
 #---------------------------------------------------- MAIL
 [group] (workspace)
     [app] (name=Mail) (class=Icedove) (role=3pane)
+    [app] (name=Msgcompose) (class=Icedove)
     [app] (name=.*mail.*) (class=Chromium)
     [app] (name=.*mail.*) (class=Chrome)
         [Workspace]     {4}
@@ -542,20 +543,20 @@
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
-[app] (name=Mail) (class=Icedove) (role=addressbook)
-        [Workspace]     {4}
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPLEFT) {0% 0%}
-[end]
-[app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
-        [Workspace]     {4}
-        [Layer]         {12}
-[end]
-[app] (name=Msgcompose) (class=Icedove)
-        [Workspace]     {4}
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPLEFT) {50% 0%}
-[end]
+# [app] (name=Mail) (class=Icedove) (role=addressbook)
+        # [Workspace]     {4}
+        # [Dimensions]    {50% 100%}
+        # [Position]      (TOPLEFT) {0% 0%}
+# [end]
+# [app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
+        # [Workspace]     {4}
+        # [Layer]         {12}
+# [end]
+# [app] (name=Msgcompose) (class=Icedove)
+        # [Workspace]     {4}
+        # [Dimensions]    {50% 100%}
+        # [Position]      (TOPLEFT) {50% 0%}
+# [end]
 
 #---------------------------------------------------- EDITOR
 [group] (workspace)
