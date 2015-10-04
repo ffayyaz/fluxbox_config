@@ -47,7 +47,8 @@ if [ "`hostname`" = "fayyaz" ]; then
     [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
     # [ -x /usr/bin/audacious ] && audacious &
-    chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+    # chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+    icedove &
     # jira
     #chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
     # kayako
@@ -85,7 +86,8 @@ fi
 #____ Netstream notebook
 if [ "`hostname`" = "nacho" ]; then
     [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-    chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+    # chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
+    icedove&
 fi
 
 #_______ Autostart mobile only _____________________________________________
