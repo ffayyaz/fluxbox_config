@@ -36,7 +36,7 @@ if [ "`hostname`" = "ganja" ]; then
     [ -x /usr/bin/icedove ] && icedove &
     # [ -x /usr/bin/pidgin ] && pidgin &
     chromium --app=https://www.soundcloud.com &
-    chromium --app=https://www.mixcloud &
+    chromium --app=https://www.mixcloud.com &
 fi
 
 #_______ Autostart Netstream only __________________________________________
