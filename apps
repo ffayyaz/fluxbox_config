@@ -533,8 +533,7 @@
 
 #---------------------------------------------------- MAIL
 [group] (workspace)
-    [app] (name=Mail) (class=Icedove) 
-    [app] (name=Msgcompose) (class=Icedove)
+    [app] (class=Icedove) 
     [app] (name=.*mail.*) (class=Chromium)
     [app] (name=.*mail.*) (class=Chrome)
         [Workspace]     {4}
