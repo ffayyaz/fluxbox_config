@@ -36,6 +36,7 @@ if [ "`hostname`" = "ganja" ]; then
     [ -x /usr/bin/icedove ] && icedove &
     # [ -x /usr/bin/pidgin ] && pidgin &
     chromium --app=https://www.soundcloud.com &
+    sleep 2
     chromium --app=https://www.mixcloud.com &
 fi
 
