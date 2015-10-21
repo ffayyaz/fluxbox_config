@@ -45,7 +45,9 @@ fi
 if [ "`hostname`" = "fayyaz" ]; then
     # [ -x /usr/bin/virtualbox ] && virtualbox &
     [ -x /usr/bin/pidgin ] && pidgin &
-    [ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
+    #[ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
+    # start firstclass
+    wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
     # [ -x /usr/bin/audacious ] && audacious &
     # chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     icedove &
