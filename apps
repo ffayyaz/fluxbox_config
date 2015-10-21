@@ -519,6 +519,20 @@
         [FocusNewWindow]    {no}
 [end]
 
+# ns firstclass
+[group]
+    [app] (name=fcc32.exe) (class=Wine)
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [Head]          {2}
+        [Workspace]     {2}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Fullscreen]    {yes}
+        [Position]      (TOPLEFT)   {0% 0%}
+        [FocusNewWindow]    {no}
+[end]
+
 # edgeware gui
 [group]
     [app] (name=u8483.vdc.netstream.com) (class=Chromium)
