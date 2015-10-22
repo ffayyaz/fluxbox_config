@@ -525,12 +525,13 @@
         [Sticky]        {yes}
         [Layer]         {12}
         [Head]          {2}
-        [Workspace]     {2}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Fullscreen]    {yes}
+        [Fullscreen]    {no}
         [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {no}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
 
 # edgeware gui
