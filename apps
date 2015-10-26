@@ -438,8 +438,9 @@
 [end]
 
 # ns jira
-[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=chromium-browser)
-[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=google-chrome)
+[group]
+	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=chromium-browser)
+	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=google-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {45% 100%}
@@ -492,13 +493,18 @@
 # ns mdw
 [group]
     [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=chromium-browser) # mdw live
+    [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=chromium-browser) # mdw live pricing
+    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=chromium-browser) # mdw preprod
+    [app] (name=mdw-preprod.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=chromium-browser) # mdw preprod pricing
     [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=chromium-browser) # mdw preprod
     [app] (name=mdw-preview.iptv.ch__itvadmin) (class=chromium-browser) # mdw preview
     [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=chromium-browser) # mdw preview02
     [app] (name=mdw-dev.iptv.ch__itvadmin) (class=chromium-browser) # mdw dev
 
     [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=google-chrome) # mdw live
+    [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=google-chrome) # mdw live pricing
     [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=google-chrome) # mdw preprod
+    [app] (name=mdw-preprod.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=google-chrome) # mdw preprod pricing
     [app] (name=mdw-preview.iptv.ch__itvadmin) (class=google-chrome) # mdw preview
     [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=google-chrome) # mdw preview02
     [app] (name=mdw-dev.iptv.ch__itvadmin) (class=google-chrome) # mdw dev
