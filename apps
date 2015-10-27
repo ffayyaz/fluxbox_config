@@ -35,7 +35,7 @@
         #[Position]      (TOPRIGHT) {0% 17%}
         [Position]      (TOPRIGHT) {0% 0%}
         [Dimensions]    {11% 17%}
-        # [Sticky]        {yes}
+        [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
