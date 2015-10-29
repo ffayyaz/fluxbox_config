@@ -296,6 +296,12 @@
         [Sticky]        {yes}
 [end]
 
+[group] (workspace)
+    [app] (xterm)
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPRIGHT) {0% 0%}
+[end]
+
 #---------------------------------------------------- REMOTE
 [group] (workspace)
     [app] (URxvt-remote)
