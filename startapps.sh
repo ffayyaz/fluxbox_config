@@ -51,7 +51,7 @@ if [ "`hostname`" = "fayyaz" ]; then
     wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
     # [ -x /usr/bin/audacious ] && audacious &
     # chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
-    #icedove &
+    [ -x /usr/bin/icedove ] && icedove &
     # jira
     #chromium --app=https://jira.netstream.ch/secure/Dashboard.jspa &
     # kayako
