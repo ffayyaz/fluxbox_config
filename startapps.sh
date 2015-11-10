@@ -43,6 +43,7 @@ fi
 #_______ Autostart Netstream only __________________________________________
 
 if [ "`hostname`" = "fayyaz" ]; then
+    echo "" > /home/fafa/.xsession-errors
     rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
     # [ -x /usr/bin/virtualbox ] && virtualbox &
     [ -x /usr/bin/pidgin ] && pidgin &
