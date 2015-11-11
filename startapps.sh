@@ -92,6 +92,7 @@ if [ "`hostname`" = "nacho" ]; then
     [ -x /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
     # chromium --app=https://mail.business-exchange.ch/owa/?modurl=0 &
     #icedove&
+    pkill skype
 fi
 
 #_______ Autostart mobile only _____________________________________________
