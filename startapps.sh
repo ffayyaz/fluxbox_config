@@ -47,6 +47,7 @@ if [ "`hostname`" = "fayyaz" ]; then
     rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium --high-dpi-support --force-device-scale=1 --proxy-server=localhost:3128/ ~/.config/google-chrome/
     # [ -x /usr/bin/virtualbox ] && virtualbox &
     [ -x /usr/bin/pidgin ] && pidgin &
+    [ -x /usr/bin/hipchat ] && hipchat &
     #[ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
     # start firstclass
     wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
