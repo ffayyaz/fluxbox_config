@@ -387,6 +387,7 @@
     [app] (Pidgin)
     [app] (xchat)
     [app] (skype)
+    [app] (hipchat)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0% 0%}
         [Sticky]        {yes}
