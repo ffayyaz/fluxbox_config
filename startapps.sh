@@ -10,12 +10,9 @@
 [ -x /usr/bin/skype ] && skype &
 
 # always start a browser
-if [ -x /usr/bin/chromium --high-dpi-support --force-device-scale=1 --proxy-server=localhost:3128 ]; then
-    chromium --high-dpi-support --force-device-scale=1 --proxy-server=localhost:3128 &
+if [ -x /usr/bin/chromium --high-dpi-support --force-device-scale=1 ]; then
+    chromium --high-dpi-support --force-device-scale=1 &
 fi
-# if [ -x /usr/bin/vivaldi ]; then
-    # vivaldi &
-# fi
 
 #_______ Autostart Home only _______________________________________________
 
@@ -35,16 +32,16 @@ if [ "`hostname`" = "ganja" ]; then
     [ -x /usr/bin/audacious ] && audacious &
     [ -x /usr/bin/icedove ] && icedove &
     # [ -x /usr/bin/pidgin ] && pidgin &
-    chromium --high-dpi-support --force-device-scale=1 --proxy-server=localhost:3128 --app=https://www.soundcloud.com &
+    chromium --high-dpi-support --force-device-scale=1 --app=https://www.soundcloud.com &
     sleep 2
-    chromium --high-dpi-support --force-device-scale=1 --proxy-server=localhost:3128 --app=https://www.mixcloud.com &
+    chromium --high-dpi-support --force-device-scale=1 --app=https://www.mixcloud.com &
 fi
 
 #_______ Autostart Netstream only __________________________________________
 
 if [ "`hostname`" = "fayyaz" ]; then
     echo "" > /home/fafa/.xsession-errors
-    rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium --high-dpi-support --force-device-scale=1 --proxy-server=localhost:3128/ ~/.config/google-chrome/
+    rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
     # [ -x /usr/bin/virtualbox ] && virtualbox &
     [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/hipchat ] && hipchat &
@@ -75,9 +72,9 @@ urxvt &
 # they are not drawn correctly (they overlap the slit)
 # BULLCRAP workaround
 # maybe this problem is solved using the sleep solution to start fluxbox
-messagesterm &
-syslogterm &
-debuglogterm &
-authlogterm &
-kernlogterm &
+#messagesterm &
+#syslogterm &
+#debuglogterm &
+#authlogterm &
+#kernlogterm &
 mixerterm &

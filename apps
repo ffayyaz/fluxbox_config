@@ -211,76 +211,6 @@
 
 #---------------------------------------------------- MISC
 
-# Some app rules for x apps that have been started with
-# -name *desktop* as can be seen below
-[app] (name=.*-desktop-top)
-        [Dimensions]    {93% 50%}
-        [Deco]          {10100100101}
-        [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=.*-desktop-topleft)
-        [Dimensions]    {50% 50%}
-        [Deco]          {10100100101}
-        [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=.*-desktop-topright)
-        [Dimensions]    {44% 50%}
-        [Position]      (TOPRIGHT) {6% 0%}
-        [Deco]          {10100100101}
-        [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=.*-desktop-bottomleft)
-        [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMLEFT) {0% 0%}
-        [Deco]          {10100100101}
-        [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=.*-desktop-bottomright)
-        [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMRIGHT) {0% 0%}
-        [Deco]          {10100100101}
-        [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=.*-desktop-bottomrightleft)
-        [Dimensions]    {24% 50%}
-        [Position]      (BOTTOMRIGHT) {26% 0%}
-        [Deco]          {10100100101}
-        [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
-[app] (name=urxvt-desktop-bottomrightright)
-        [Dimensions]    {19% 50%}
-        [Position]      (BOTTOMRIGHT) {6% 0%}
-        [Deco]          {10100100101}
-        [Sticky]        {yes}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-[end]
 
 ###############################################################################
 #
@@ -578,7 +508,6 @@
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        # [Fullscreen]    {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
 [end]
@@ -592,7 +521,6 @@
         [Layer]         {12}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        # [Fullscreen]    {no}
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
