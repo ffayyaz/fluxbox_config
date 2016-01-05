@@ -619,6 +619,16 @@
         [Position]      (TOPLEFT) {0% 0%}
 [end]
 
+#---------------------------------------------------- DEVELOPMENT
+[group] (workspace)
+    [app] (name=sun-awt-X11-XFramePeer) (class=NetBeans IDE.*)
+    [app] (name=Eclipse) (class=Eclipse)
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0% 0%}
+        [Maximized]     {yes}
+[end]
+
+
 #---------------------------------------------------- MISC
 [app] (name=htopterm)
         [Fullscreen]    {yes}
