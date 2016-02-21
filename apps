@@ -72,6 +72,7 @@
 
 #---------------------------------------------------- MUSIC
 [app] (name=audacious) (class=Audacious) (title=.*Audacious)
+        [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {88% 80%}
         [Position]      (TOPLEFT)   {0% 0%}
@@ -83,6 +84,7 @@
         [Jump]          {no}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Blur Scope)
+        [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {88% 20%}
         [Position]      (BOTTOMLEFT) {0% 0%}
@@ -93,6 +95,7 @@
         [IconHidden]    {yes}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Album Art)
+        [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {12% 20%}
         [Position]      (TOPRIGHT) {0% 80%}
@@ -104,6 +107,7 @@
 [end]
 # audacious fallback
 [app] (name=audacious) (class=Audacious) (title!=Audacious) (title!=Blur Scope) (title!=Album Art)
+        [Head]          {2}
         [Workspace]     {3}
         [Position]      (CENTER) {0% 0%}
         [Layer]         {12}
@@ -112,6 +116,7 @@
 [end]
 
 [app] (name=Audacity) (class=Audacity)
+        [Head]          {2}
         [Workspace]     {3}
         [Jump]          {yes}
         [Position]      (TOPLEFT) {0% 0%}
@@ -338,6 +343,7 @@
     [app] (name=.*sound.*) (class=google-chrome)
     [app] (name=.*mixcloud.*) (class=chromium-browser)
     [app] (name=.*mixcloud.*) (class=google-chrome)
+        [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
