@@ -9,7 +9,6 @@
 
 # or set a background image
 #fbsetbg -f /path/to/image.jpg
-#fbsetbg -f ~/.fluxbox/wallpaper/green-frequency-wavy-lines-26422.jpg
 
 # show fluxbox splash screen
 #fbsetbg -C /usr/share/fluxbox/splash.jpg
