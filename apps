@@ -45,6 +45,7 @@
 
 #---------------------------------------------------- MIXER
 [app] (name=mixerterm)
+        [Head]          {2}
         [Workspace]     {3}
         #[Position]      (TOPRIGHT) {0% 34%}
         [Position]      (TOPRIGHT) {0% 0%}
@@ -724,6 +725,17 @@
 
 [group] (workspace)
     [app] (name=gnuplot) (class=Gnuplot)
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Head]          {2}
+[end]
+
+# steam
+[group]
+	[app] (title=Steam)
+	[app] (name=Steam)
+        [Workspace]     {0}
+        [Jump]          {yes}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
