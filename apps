@@ -79,8 +79,8 @@
         [Position]      (TOPLEFT)   {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        # [IconHidden]    {yes}
+        # [FocusHidden]   {yes}
         # [Deco]          {NONE}
         [Jump]          {no}
 [end]
@@ -209,10 +209,12 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=VirtualBox) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
-        [Workspace]     {0}
+        # [Workspace]     {0}
+        [Sticky]        {yes}
+        [Layer]         {12}
         [Jump]          {no}
         [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
+        [Position]      (TOPLEFT) {0% 0%}
 [end]
 
 #---------------------------------------------------- MISC
@@ -497,14 +499,14 @@
     [app] (name=fcc32.exe) (class=Wine)
         [Sticky]        {yes}
         [Layer]         {12}
-        [Head]          {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
+        [Head]          {1}
+        [Dimensions]    {50% 50%}
+        [Maximized]     {no}
         [Fullscreen]    {no}
-        [Position]      (TOPLEFT)   {0% 0%}
+        [Position]      (BOTTOMLEFT)   {0% 0%}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        # [IconHidden]    {yes}
+        # [FocusHidden]   {yes}
 [end]
 
 # edgeware gui
