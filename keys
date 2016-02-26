@@ -236,7 +236,7 @@ Mod1 F9                     :MacroCmd {Exec nedit} {Raise}
 Mod1 F10                    :MacroCmd {Exec skype} {Raise}
 # Mod1 F11                    :MacroCmd {Exec vivaldi-preview} {Raise}
 
-Mod4 t                      :Exec urxvt -name htopterm -e htop
+Mod4 t                      :Exec urxvt -name topterm -e top
 
 # could be interesting but doesnt work
 # ChangeWorkspace           :ShowDesktop (workspace=0) (layer=Desktop)

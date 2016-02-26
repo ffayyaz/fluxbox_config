@@ -639,8 +639,13 @@
 
 
 #---------------------------------------------------- MISC
-[app] (name=htopterm)
-        [Fullscreen]    {yes}
+[group]
+	[app] (name=htopterm)
+	[app] (name=topterm)
+	        [Fullscreen]    {yes}
+            [Sticky]        {yes}
+            [Layer]         {12}
+	        [Head]          {2}
 [end]
 
 # google earth
