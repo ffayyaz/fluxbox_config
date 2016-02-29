@@ -641,8 +641,9 @@
 #---------------------------------------------------- MISC
 [group]
 	[app] (name=htopterm)
-	[app] (name=topterm)
-	        [Fullscreen]    {yes}
+	[app] (title=top)
+            [Dimensions]    {100% 100%}
+            [Maximized]     {yes}
             [Sticky]        {yes}
             [Layer]         {12}
 	        [Head]          {2}
