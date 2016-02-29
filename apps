@@ -657,6 +657,7 @@
         [Fullscreen]    {yes}
 [end]
 
+# wireshark
 [group] (workspace)
     [app] (wireshark)
         [Dimensions]    {100% 100%}
@@ -672,6 +673,7 @@
 [end]
 
 
+# easytag
 [app] (easytag) (title!=Tag and Filename Scan)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
@@ -705,6 +707,7 @@
         [Maximized]     {yes}
 [end]
 
+# cisco ucs
 [app] (title=Cisco Unified Computing System Manager.*)
         [Head]          {2}
         [Jump]          {yes}
@@ -713,6 +716,7 @@
         [Maximized]     {yes}
 [end]
 
+# deluge
 [app] (name=deluge)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
@@ -723,6 +727,7 @@
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 
+# ftp clients
 [group] (workspace)
     [app] (filezilla)
     [app] (main) (class=gFTP)
@@ -731,6 +736,7 @@
         [Head]          {2}
 [end]
 
+# gnuplot
 [group] (workspace)
     [app] (name=gnuplot) (class=Gnuplot)
         [Dimensions]    {100% 100%}
@@ -747,4 +753,12 @@
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
+[end]
+
+# graphic tools
+[group]
+	[app] (name=inkscape)
+        [Workspace]     {0}
+        [Jump]          {yes}
+        [Dimensions]    {100% 100%}
 [end]
