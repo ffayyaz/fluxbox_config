@@ -551,6 +551,7 @@
 #---------------------------------------------------- EDITOR
 [group] (workspace)
     [app] (name=kate) (class=Kate)
+    [app] (name=gedit) (class=Gedit)
     [app] (name=textShell) (class=NEdit)
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0% 0%}
