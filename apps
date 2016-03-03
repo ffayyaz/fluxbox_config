@@ -544,6 +544,17 @@
         [FocusNewWindow]    {yes}
 [end]
 
+# teleboy
+[group]
+	[app] (name=www.teleboy.ch)
+        [Head]          {2}
+        [Workspace]     {2}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Position]      (TOPLEFT)   {0% 0%}
+        [FocusNewWindow]    {yes}
+[end]
+
 #---------------------------------------------------- MAIL
 [group] (workspace)
     [app] (class=Icedove) 
