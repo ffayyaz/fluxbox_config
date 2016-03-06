@@ -641,8 +641,9 @@
     [app] (kpdf)
     [app] (acroread)
         [Head]          {2}
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPRIGHT) {0% 0%}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Position]      (TOPLEFT) {0% 0%}
 [end]
 
 #---------------------------------------------------- IMGVIEWER
