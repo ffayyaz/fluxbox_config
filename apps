@@ -814,8 +814,3 @@
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
 [end]
-
-# unreal tournament
-[app] (name=UnrealTournament.exe)
-    [Fullscreen]        {yes}
-[end]
