@@ -790,6 +790,16 @@
         [Head]          {2}
 [end]
 
+# play on linux
+[group]
+	[app] (title=PlayOnLinux)
+        [Workspace]     {0}
+        [Jump]          {yes}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Head]          {2}
+[end]
+
 # graphic tools
 [group]
 	[app] (name=inkscape)
