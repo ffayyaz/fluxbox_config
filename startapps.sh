@@ -35,9 +35,11 @@ if [ "`hostname`" = "ganja" ]; then
     chromium --high-dpi-support --force-device-scale=1 --app=https://www.soundcloud.com &
     sleep 2
     chromium --high-dpi-support --force-device-scale=1 --app=https://www.mixcloud.com &
-    # decelerate mouse speed 1/2
-    xinput --set-prop 13 273 2
-    xinput --set-prop 13 274 2
+    # mouse speed
+    xinput --set-prop 9  275 0.5
+    xinput --set-prop 9  276 1
+    xinput --set-prop 10 275 0.5
+    xinput --set-prop 10 276 1
 fi
 
 #_______ Autostart Netstream only __________________________________________
