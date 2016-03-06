@@ -20,9 +20,9 @@
 #---------------------------------------------------- CALENDAR
 [app] (gdeskcal)
         [Workspace]     {0}
+        [Head]          {1}
         [Position]      (TOPRIGHT) {11% 0%}
         [Dimensions}    {12% 17%}
-        # [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -32,8 +32,8 @@
 
 #---------------------------------------------------- CLOCK
 [app] (xclock)
-        #[Position]      (TOPRIGHT) {0% 17%}
         [Position]      (TOPRIGHT) {0% 0%}
+        [Head]          {1}
         [Dimensions]    {11% 17%}
         [Sticky]        {yes}
         [Layer]         {12}
@@ -47,11 +47,8 @@
 [app] (name=mixerterm)
         [Head]          {2}
         [Workspace]     {3}
-        #[Position]      (TOPRIGHT) {0% 34%}
         [Position]      (TOPRIGHT) {0% 0%}
-        # [Position]      (BOTTOMRIGHT) {0% 0%}
         [Dimensions]    {12% 80%}
-        # [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -61,6 +58,7 @@
 
 #---------------------------------------------------- NOTES
 [app] (name=xpad)
+        [Head]          {1}
         [Dimensions]    {12% 20%}
         [Position]      (TOPRIGHT) {0% 60%}
         [Sticky]        {yes}
@@ -79,9 +77,6 @@
         [Position]      (TOPLEFT)   {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        # [IconHidden]    {yes}
-        # [FocusHidden]   {yes}
-        # [Deco]          {NONE}
         [Jump]          {no}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Blur Scope)
@@ -126,11 +121,13 @@
 
 #---------------------------------------------------- GKRELLM_CONF
 [app] (name=Gkrellm_conf) (class=Gkrellm)
+        [Head]          {1}
         [Position]      (TOPLEFT) {0% 30%}
 [end]
 
 #---------------------------------------------------- TERMINALS
 [app] (name=messagesterm)
+        [Head]          {1}
         [Workspace]     {0}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 0%}
@@ -141,6 +138,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=syslogterm)
+        [Head]          {1}
         [Workspace]     {0}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
@@ -151,6 +149,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=debuglogterm)
+        [Head]          {1}
         [Workspace]     {0}
         [Dimensions]    {39% 34%}
         [Position]      (TOPLEFT) {50% 0%}
@@ -161,6 +160,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=kernlogterm)
+        [Head]          {1}
         [Workspace]     {0}
         [Dimensions]    {39% 33%}
         [Position]      (TOPLEFT) {50% 34%}
@@ -171,6 +171,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=authlogterm)
+        [Head]          {1}
         [Workspace]     {0}
         [Dimensions]    {39% 33%}
         [Position]      (TOPLEFT) {50% 67%}
@@ -181,6 +182,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=cpufreqterm)
+        [Head]          {1}
         [Workspace]     {0}
         [Dimensions]    {11% 21%}
         [Position]      (TOPRIGHT) {0% 78%}
@@ -209,7 +211,7 @@
         [FocusHidden]   {yes}
 [end]
 [app] (name=VirtualBox) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
-        # [Workspace]     {0}
+        [Head]          {1}
         [Sticky]        {yes}
         [Layer]         {12}
         [Jump]          {no}
@@ -229,6 +231,7 @@
 #---------------------------------------------------- LOCAL
 [group] (workspace)
     [app] (urxvt)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 0%}
         [Sticky]        {yes}
@@ -236,6 +239,7 @@
 
 [group] (workspace)
     [app] (xterm)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
@@ -243,41 +247,48 @@
 #---------------------------------------------------- REMOTE
 [group] (workspace)
     [app] (URxvt-remote)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-convoy)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
         [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-orbits)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
         [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-vod)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
         [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-verimatrix)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
         [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-manhattan-live)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
         [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-manhattan-preprod)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
         [FocusNewWindow]    {no}
@@ -287,6 +298,7 @@
 # clusterssh
 [group] (workspace)
     [app] (name=clusterssh.*)
+        [Head]          {1}
         [Dimensions]    {15% 15%}
         [Layer]         {12}
         [Workspace]     {1}
@@ -294,6 +306,7 @@
         [Position]      (BOTTOMRIGHT) {0% 0%}
 [end]
 [app] (name=dialogbox1) (class=Cssh)
+        [Head]          {1}
         [Dimensions]    {15% 15%}
         [Layer]         {12}
         [Workspace]     {1}
@@ -301,13 +314,14 @@
         [Position]      (BOTTOMRIGHT) {0% 0%}
 [end]
 [app] (title=CLUSTERSSH.*) (class=URxvt)
+        [Head]          {1}
         [Layer]         {12}
         [Workspace]     {1}
 [end]
 [app] (name=urxvt-cluster) (class=URxvt)
+        [Head]          {1}
         [Workspace]     {1}
         [Layer]         {12}
-        # [Jump]          {yes}
         [Tab]           {no}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
@@ -327,6 +341,7 @@
     [app] (skype)
     [app] (hipchat)
         [Dimensions]    {50% 50%}
+        [Head]          {1}
         [Position]      (BOTTOMLEFT) {0% 0%}
         [Sticky]        {yes}
         [FocusNewWindow] {no}
@@ -338,6 +353,7 @@
 [group] (workspace)
     [app] (name=chromium) (class=chromium)
     [app] (name=google-chrome) (class=google-chrome)
+        [Head]          {1}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
@@ -370,6 +386,7 @@
 # iceweasel
 [group] (workspace)
     [app] (name=Navigator) (class=Iceweasel)
+        [Head]          {1}
         [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {50% 0%}
 [end]
@@ -390,8 +407,6 @@
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {45% 100%}
-        # [Dimensions]    {100% 100%}
-        # [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
 [end]
@@ -403,8 +418,6 @@
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {55% 100%}
-        # [Dimensions]    {100% 100%}
-        # [Maximized]     {yes}
         [Position]      (TOPRIGHT)   {0% 0%}
         [FocusNewWindow]    {no}
 [end]
@@ -456,10 +469,8 @@
     [app] (name=mdw-dev.iptv.ch__itvadmin) (class=google-chrome) # mdw dev
         [Head]          {2}
         [Workspace]     {2}
-        # [Dimensions]    {55% 100%}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        # [Fullscreen]    {yes}
         [Position]      (TOPRIGHT)   {0% 0%}
         [FocusNewWindow]    {no}
 [end]
@@ -505,8 +516,6 @@
         [Fullscreen]    {no}
         [Position]      (BOTTOMLEFT)   {0% 0%}
         [FocusNewWindow] {no}
-        # [IconHidden]    {yes}
-        # [FocusHidden]   {yes}
 [end]
 
 # edgeware gui
@@ -560,6 +569,7 @@
     [app] (class=Icedove) 
     [app] (name=.*mail.*) (class=chromium)
     [app] (name=.*mail.*) (class=google-chrome)
+        [Head]          {1}
         [Workspace]     {4}
         [Layer]         {12}
         [Dimensions]    {100% 100%}
@@ -567,26 +577,13 @@
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
-# [app] (name=Mail) (class=Icedove) (role=addressbook)
-        # [Workspace]     {4}
-        # [Dimensions]    {50% 100%}
-        # [Position]      (TOPLEFT) {0% 0%}
-# [end]
-# [app] (name=Mail) (class=Icedove) (role!=3pane) (role!=addressbook)
-        # [Workspace]     {4}
-        # [Layer]         {12}
-# [end]
-# [app] (name=Msgcompose) (class=Icedove)
-        # [Workspace]     {4}
-        # [Dimensions]    {50% 100%}
-        # [Position]      (TOPLEFT) {50% 0%}
-# [end]
 
 #---------------------------------------------------- EDITOR
 [group] (workspace)
     [app] (name=kate) (class=Kate)
     [app] (name=gedit) (class=Gedit)
     [app] (name=textShell) (class=NEdit)
+        [Head]          {1}
         [Dimensions]    {50% 50%}
         [Position]      (BOTTOMLEFT) {0% 0%}
 [end]
@@ -596,23 +593,23 @@
 # WM_CLASS(STRING) = "VNC: fayyaz:0", "Vncviewer"
 [group] (workspace)
     [app] (class=Vncviewer)
+        [Head]          {1}
         [Workspace]     {1}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [FocusHidden]   {yes}
-        # [Fullscreen]    {yes}
 [end]
 
 # rdesktop
 [group] (workspace)
     [app] (rdesktop)
+        [Head]          {1}
         [Workspace]     {1}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [FocusHidden]   {yes}
-        # [Fullscreen]    {yes}
 [end]
 
 #---------------------------------------------------- VIDEO
@@ -628,7 +625,7 @@
         [Head]          {2}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
-        [Fullscreen]    {yes} # not usable with yes
+        [Fullscreen]    {yes} 
 [end]
 
 [app] (vlc) (class=Vlc) (title=Advanced Preferences)
@@ -643,6 +640,7 @@
     [app] (evince)
     [app] (kpdf)
     [app] (acroread)
+        [Head]          {2}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
@@ -659,6 +657,7 @@
 #---------------------------------------------------- OFFICE
 [group] (workspace)
     [app] (name=libreoffice)
+        [Head]          {2}
         [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
@@ -667,6 +666,7 @@
 [group] (workspace)
     [app] (name=sun-awt-X11-XFramePeer) (class=NetBeans IDE.*)
     [app] (name=Eclipse) (class=Eclipse)
+        [Head]          {2}
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
@@ -686,6 +686,7 @@
 
 # google earth
 [app] (name=googleearth-bin) (class=Googleearth-bin)
+        [Head]          {1}
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
@@ -710,6 +711,7 @@
 
 # easytag
 [app] (easytag) (title!=Tag and Filename Scan)
+        [Head]          {2}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
 [end]
@@ -717,6 +719,7 @@
 # java control panel (jcontrol)
 [app] (name=sun-awt-X11-XFramePeer) (class=ccom-sun-deploy-panel-ControlPanel)
         [Position]      (TOPRIGHT)  {0% 0%}
+        [Head]          {1}
 [end]
 
 # iDRAC gui
@@ -753,11 +756,14 @@
 
 # deluge
 [app] (name=deluge)
+        [Head]          {1}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
 [end]
 
+# wicd client
 [app] (name=wicd-client.py)
+        [Head]          {1}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
@@ -803,6 +809,7 @@
 # graphic tools
 [group]
 	[app] (name=inkscape)
+        [Head]          {1}
         [Workspace]     {0}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
