@@ -340,6 +340,7 @@
     [app] (xchat)
     [app] (skype)
     [app] (hipchat)
+    [app] (Telegram)
         [Dimensions]    {50% 50%}
         [Head]          {1}
         [Position]      (BOTTOMLEFT) {0% 0%}
