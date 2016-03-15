@@ -724,8 +724,11 @@
         [Head]          {1}
 [end]
 
-# iDRAC gui
-[app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
+# iDRAC gui + admin
+[group]
+    [app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
+    [app] (name=.*.ndzs.ch.netstream.com) (class=google-chrome)
+    [app] (name=.*.ndzs.ch.netstream.com) (class=chromium)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
