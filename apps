@@ -719,12 +719,6 @@
         [Maximized]     {yes}
 [end]
 
-# java control panel (jcontrol)
-[app] (name=sun-awt-X11-XFramePeer) (class=ccom-sun-deploy-panel-ControlPanel)
-        [Position]      (TOPRIGHT)  {0% 0%}
-        [Head]          {1}
-[end]
-
 # iDRAC gui + admin
 [group]
     [app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
