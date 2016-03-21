@@ -684,6 +684,7 @@
             [Sticky]        {yes}
             [Layer]         {12}
 	        [Head]          {2}
+            [Deco]          {none}
 [end]
 
 # google earth
