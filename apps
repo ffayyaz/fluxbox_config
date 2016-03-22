@@ -565,6 +565,27 @@
         [FocusNewWindow]    {yes}
 [end]
 
+# iDRAC gui + admin
+[group]
+    [app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
+    [app] (name=.*.ndzs.ch.netstream.com) (class=google-chrome)
+    [app] (name=.*.ndzs.ch.netstream.com) (class=chromium)
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Head]          {2}
+        [FocusNewWindow] {no}
+[end]
+
+# splunk
+[group]
+	[app] (name=u0735) (class=google-chrome)
+	[app] (name=u0735) (class=chromium)
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Head]          {2}
+        [FocusNewWindow] {no}
+[end]
+
 #---------------------------------------------------- MAIL
 [group] (workspace)
     [app] (class=Icedove) 
@@ -717,17 +738,6 @@
         [Head]          {2}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-[end]
-
-# iDRAC gui + admin
-[group]
-    [app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
-    [app] (name=.*.ndzs.ch.netstream.com) (class=google-chrome)
-    [app] (name=.*.ndzs.ch.netstream.com) (class=chromium)
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Head]          {2}
-        [FocusNewWindow] {no}
 [end]
 
 # soap ui
