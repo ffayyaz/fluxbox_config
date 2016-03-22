@@ -517,6 +517,7 @@
         [Fullscreen]    {no}
         [Position]      (BOTTOMLEFT)   {0% 0%}
         [FocusNewWindow] {no}
+        [IconHidden]    {yes}
 [end]
 
 # edgeware gui
