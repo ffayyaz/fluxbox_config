@@ -707,6 +707,7 @@
             [Layer]         {12}
 	        [Head]          {2}
             [Deco]          {none}
+            [IconHidden]    {yes}
 [end]
 
 # google earth
