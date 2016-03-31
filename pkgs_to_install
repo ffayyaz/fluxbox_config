@@ -6,6 +6,7 @@ wmmixer
 audacious
 liferea
 pidgin
+pidgin-sipe
 xchat
 chromium
 iceweasel
@@ -36,7 +37,7 @@ compton
 xpdf
 vprerex
 evince
-# kpdf
+kpdf
 #acroread
 nedit
 tea
