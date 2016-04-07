@@ -643,6 +643,7 @@
     [app] (vdpau) (class=mplayer2)
     [app] (ffplay)
     [app] (tsMuxerGUI)
+    [app] (class=xine)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
