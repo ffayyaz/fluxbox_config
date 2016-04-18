@@ -386,7 +386,7 @@
 
 # iceweasel
 [group] (workspace)
-    [app] (name=Navigator) (class=Iceweasel)
+    [app] (name=Navigator) (class=Firefox)
         [Head]          {1}
         [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {50% 0%}
