@@ -493,10 +493,10 @@
 
 # ns zabbix / nagios
 [group]
-    [app] (name=zabbix.netstream.ch__zabbix_dashboard.php) (class=chromium)
+    [app] (name=zabbix.netstream.ch) (class=chromium)
     [app] (name=nagios.netstream.ch__nagios3) (class=chromium)
 
-    [app] (name=zabbix.netstream.ch__zabbix_dashboard.php) (class=google-chrome)
+    [app] (name=zabbix.netstream.ch) (class=google-chrome)
     [app] (name=nagios.netstream.ch__nagios3) (class=google-chrome)
         [Head]          {2}
         [Workspace]     {2}
