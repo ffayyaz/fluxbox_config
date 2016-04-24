@@ -36,9 +36,9 @@ if [ "`hostname`" = "ganja" ]; then
     sleep 2
     chromium --high-dpi-support --force-device-scale=1 --app=https://www.mixcloud.com &
     # mouse speed
-    xinput --set-prop 9  275 0.5
+    xinput --set-prop 9  275 2
     xinput --set-prop 9  276 1
-    xinput --set-prop 10 275 0.5
+    xinput --set-prop 10 275 2
     xinput --set-prop 10 276 1
 fi
 
