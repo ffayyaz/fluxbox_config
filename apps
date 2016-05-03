@@ -841,3 +841,13 @@
         [Maximized]     {yes}
         [Head]          {1}
 [end]
+
+# gimp
+[app] (name=gimp) (class=Gimp)
+        [Workspace]     {0}
+        [Position]      (TOPLEFT) {0% 0%}
+        [Jump]          {yes}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Head]          {1}
+[end]
