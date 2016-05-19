@@ -647,6 +647,7 @@
     [app] (ffplay)
     [app] (tsMuxerGUI)
     [app] (class=xine)
+    [app] (class=smplayer) (name=smplayer)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
