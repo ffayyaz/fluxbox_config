@@ -49,7 +49,7 @@ session.screen0.tabFocusModel:	ClickToTabFocus
 
 !-------------------------------------------------------- TOOLBAR
 session.screen0.toolbar.autoHide:	false
-session.screen0.toolbar.widthPercent:	100
+session.screen0.toolbar.widthPercent:	200
 session.screen0.toolbar.visible:	true
 session.screen0.toolbar.placement:	TopLeft
 session.screen0.toolbar.height:	0
