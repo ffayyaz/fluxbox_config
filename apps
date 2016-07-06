@@ -523,6 +523,18 @@
         [IconHidden]    {yes}
 [end]
 
+# ns mio
+[group]
+    [app] (name=live.mlp.iptv.ch) (class=google-chrome)
+    [app] (name=live.mlp.iptv.ch) (class=chromium)
+        [Head]          {2}
+        [Workspace]     {2}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Position]      (TOPLEFT)   {0% 0%}
+        [FocusNewWindow]    {no}
+[end]
+
 # edgeware gui
 [group]
     [app] (name=u8483.vdc.netstream.com) (class=chromium)
