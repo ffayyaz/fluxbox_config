@@ -571,8 +571,8 @@
 [end]
 # f5 big-ip staging
 [group]
-	[app] (name=s8366.ndzs.ch.netstream.com__xui)
-	[app] (name=s8367.ndzs.ch.netstream.com__xui)
+	[app] (name=s8366.vdc.netstream.com__xui)
+	[app] (name=s8367.vdc.netstream.com__xui)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
