@@ -558,19 +558,10 @@
         [FocusNewWindow]    {yes}
 [end]
 
-# f5 big-ip live
+# f5 big-ip live + staging
 [group]
 	[app] (name=s0698.ndzs.ch.netstream.com__xui)
 	[app] (name=s0699.ndzs.ch.netstream.com__xui)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {yes}
-[end]
-# f5 big-ip staging
-[group]
 	[app] (name=s8366.vdc.netstream.com__xui)
 	[app] (name=s8367.vdc.netstream.com__xui)
         [Head]          {2}
