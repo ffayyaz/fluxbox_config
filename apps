@@ -463,6 +463,7 @@
     [app] (name=mdw-preview.iptv.ch__itvadmin) (class=chromium) # mdw preview
     [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=chromium) # mdw preview02
     [app] (name=mdw-dev.iptv.ch__itvadmin) (class=chromium) # mdw dev
+    [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=chromium) # mdw hbbtv live
 
     [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=google-chrome) # mdw live
     [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=google-chrome) # mdw live pricing
@@ -471,6 +472,7 @@
     [app] (name=mdw-preview.iptv.ch__itvadmin) (class=google-chrome) # mdw preview
     [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=google-chrome) # mdw preview02
     [app] (name=mdw-dev.iptv.ch__itvadmin) (class=google-chrome) # mdw dev
+    [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=google-chrome) # mdw hbbtv live
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
