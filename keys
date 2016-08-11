@@ -258,8 +258,8 @@ Mod4 x                      :ToggleCmd {Exec compton -r12 -o0.75 -l-15 -t-15 -I0
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-Mod4 112                    :Exec amixer sset Master 10%+       # Super+PageUp
-Mod4 117                    :Exec amixer sset Master 10%-       # Super+PageDown
+Mod4 112                    :Exec amixer sset Master 5%+       # Super+PageUp
+Mod4 117                    :Exec amixer sset Master 5%-       # Super+PageDown
 Mod4 115                    :Exec amixer sset Master,0 toggle   # Super+End
 
 # control audio player
