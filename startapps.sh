@@ -82,5 +82,5 @@ urxvt &
 #debuglogterm &
 #authlogterm &
 #kernlogterm &
-topterm &
+#topterm &
 mixerterm &
