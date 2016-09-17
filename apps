@@ -864,9 +864,18 @@
 # gimp
 [app] (name=gimp) (class=Gimp)
         [Workspace]     {0}
+        [Position]      (TOPRIGHT) {0% 0%}
+        [Jump]          {yes}
+        [Dimensions]    {75% 100%}
+        # [Maximized]     {yes}
+        [Head]          {1}
+[end]
+# gimp toolbox
+[app]  (role=gimp-toolbox) #(name=gimp) (class=Gimp)
+        [Workspace]     {0}
         [Position]      (TOPLEFT) {0% 0%}
         [Jump]          {yes}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
+        [Dimensions]    {25% 100%}
+        # [Maximized]     {yes}
         [Head]          {1}
 [end]
