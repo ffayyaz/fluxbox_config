@@ -621,6 +621,16 @@
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
+[app] (class=Icedove) (name=Calendar)
+        [Sticky]        {yes}
+        [Head]          {2}
+        [Workspace]     {4}
+        [Layer]         {12}
+        [Dimensions]    {50% 50%}
+        [Maximized]     {no}
+        [Fullscreen]    {no}
+        [FocusNewWindow] {no}
+[end]
 
 #---------------------------------------------------- EDITOR
 [group] (workspace)
