@@ -16,11 +16,12 @@ fi
 
 #_______ Autostart Home only _______________________________________________
 
-# /sbin/ifconfig|egrep '192.168.85.'
-# if [ "${?}" = "0" ]; then
-    # [ -x /usr/bin/icedove ] && icedove &
-    # # [ -x /usr/bin/pidgin ] && pidgin &
-# fi
+/sbin/ifconfig|egrep '192.168.85.'
+if [ "${?}" = "0" ]; then
+    #[ -x /usr/bin/icedove ] && icedove &
+    # [ -x /usr/bin/pidgin ] && pidgin &
+    [ -x /usr/bin/telegram ] && telegram &
+fi
 
 #_______ Autostart Ganja only ______________________________________________
 
