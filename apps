@@ -481,6 +481,17 @@
         [FocusNewWindow]    {no}
 [end]
 
+[group]
+    [app] (name=intranet.netstream.ch__display_ops_MDW+Environment+Overview) (class=chromium) # mdv environment overview
+    [app] (name=intranet.netstream.ch__display_ops_MDW+Environment+Overview) (class=google-chrome) # mdv environment overview
+        [Head]          {2}
+        [Workspace]     {2}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Position]      (TOPRIGHT)   {0% 0%}
+        [FocusNewWindow]    {yes}
+[end]
+
 # ns postman
 [group]
 	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=chromium)
