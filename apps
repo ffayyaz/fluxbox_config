@@ -484,6 +484,7 @@
 [group]
     [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=chromium) # mdv environment overview
     [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=google-chrome) # mdv environment overview
+    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=chromium) # manhattan server overview
     [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=google-chrome) # manhattan server overview
         [Head]          {2}
         [Workspace]     {2}
