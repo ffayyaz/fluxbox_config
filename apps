@@ -336,8 +336,8 @@
 #
 ###############################################################################
 
-#---------------------------------------------------- CHAT
-[group]
+#---------------------------------------------------- CHAT 
+[group] (workspace)
     [app] (wync)
     [app] (Pidgin)
     [app] (xchat)
@@ -405,7 +405,7 @@
 [end]
 
 # ns jira
-[group]
+[group] (workspace)
 	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=chromium)
 	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=Google-chrome)
         [Head]          {2}
@@ -416,7 +416,7 @@
 [end]
 
 # ns kayako
-[group]
+[group] (workspace)
     [app] (name=support.netstream.ch__staff_index.php) (class=chromium)
     [app] (name=support.netstream.ch__staff_index.php) (class=Google-chrome)
         [Head]          {2}
@@ -427,7 +427,7 @@
 [end]
 
 # ns agama
-[group]
+[group] (workspace)
     # agama iptv
     [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=chromium) # dashboard
     [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=chromium) # real-time matrix
@@ -454,7 +454,7 @@
 [end]
 
 # ns mdw
-[group]
+[group] (workspace)
     [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=chromium) # mdw live
     [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=chromium) # mdw live pricing
     [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=chromium) # mdw preprod
@@ -481,7 +481,7 @@
         [FocusNewWindow]    {no}
 [end]
 
-[group]
+[group] (workspace)
     [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=chromium) # mdv environment overview
     [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Google-chrome) # mdv environment overview
     [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=chromium) # manhattan server overview
@@ -495,7 +495,7 @@
 [end]
 
 # ns postman
-[group]
+[group] (workspace)
 	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=chromium)
     [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=chromium)
 
@@ -510,7 +510,7 @@
 [end]
 
 # ns zabbix / nagios
-[group]
+[group] (workspace)
     [app] (name=zabbix.netstream.ch) (class=chromium)
     [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=chromium)
     [app] (name=nagios.netstream.ch__nagios3) (class=chromium)
@@ -527,7 +527,7 @@
 [end]
 
 # ns firstclass
-[group]
+[group] (workspace)
     [app] (name=fcc32.exe) (class=Wine)
         [Sticky]        {yes}
         [Layer]         {12}
@@ -541,7 +541,7 @@
 [end]
 
 # ns mio
-[group]
+[group] (workspace)
     [app] (name=live.mlp.iptv.ch) (class=Google-chrome)
     [app] (name=live.mlp.iptv.ch) (class=chromium)
         [Head]          {2}
@@ -553,7 +553,7 @@
 [end]
 
 # edgeware gui
-[group]
+[group] (workspace)
     [app] (name=u8483.vdc.netstream.com) (class=chromium)
     [app] (name=u8483.vdc.netstream.com) (class=Google-chrome)
         [Head]          {2}
@@ -565,7 +565,7 @@
 [end]
 
 # vsphere web client
-[group]
+[group] (workspace)
 	[app] (name=vsphere__vsphere-client)
         [Head]          {2}
         [Workspace]     {2}
@@ -576,7 +576,7 @@
 [end]
 
 # f5 big-ip live + staging
-[group]
+[group] (workspace)
 	[app] (name=s0698.ndzs.ch.netstream.com__xui)
 	[app] (name=s0699.ndzs.ch.netstream.com__xui)
 	[app] (name=s8366.vdc.netstream.com__xui)
@@ -590,7 +590,7 @@
 [end]
 
 # teleboy
-[group]
+[group] (workspace)
 	[app] (name=www.teleboy.ch)
         [Head]          {2}
         #[Workspace]     {0}
@@ -601,7 +601,7 @@
 [end]
 
 # iDRAC gui + admin
-[group]
+[group] (workspace)
     [app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
     [app] (name=.*.ndzs.ch.netstream.com) (class=Google-chrome)
     [app] (name=.*.ndzs.ch.netstream.com) (class=chromium)
@@ -612,7 +612,7 @@
 [end]
 
 # splunk
-[group]
+[group] (workspace)
 	[app] (name=u0735) (class=Google-chrome)
 	[app] (name=u0735) (class=chromium)
         [Dimensions]    {100% 100%}
@@ -734,6 +734,8 @@
 [end]
 
 #---------------------------------------------------- DEVELOPMENT
+
+# eclipse
 [group] (workspace)
     [app] (name=sun-awt-X11-XFramePeer) (class=NetBeans IDE.*)
     [app] (name=Eclipse) (class=Eclipse)
@@ -743,9 +745,16 @@
         [Maximized]     {yes}
 [end]
 
+# visualvm
+[group] (workspace)
+        [app] (name=sun-awt-X11-XFramePeer) (class=VisualVM.*)
+        [Head]          {2}
+        [Dimensions]    {100% 100%}
+        [Position]      (TOPLEFT) {0% 0%}
+[end]
 
 #---------------------------------------------------- MISC
-[group]
+[group] (workspace)
 	[app] (name=htopterm)
 	[app] (title=top)
             [Dimensions]    {100% 100%}
@@ -846,7 +855,7 @@
 [end]
 
 # steam
-[group]
+[group] (workspace)
 	[app] (title=Steam)
 	[app] (name=Steam)
         [Workspace]     {0}
@@ -857,7 +866,7 @@
 [end]
 
 # play on linux
-[group]
+[group] (workspace)
 	[app] (title=PlayOnLinux)
         [Workspace]     {0}
         [Jump]          {yes}
@@ -867,7 +876,7 @@
 [end]
 
 # graphic tools
-[group]
+[group] (workspace)
 	[app] (name=inkscape)
         [Head]          {1}
         [Workspace]     {0}
