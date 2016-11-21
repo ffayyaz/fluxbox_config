@@ -55,6 +55,8 @@ if [ "`hostname`" = "fayyaz" ]; then
     # start firstclass
     wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
     [ -x /usr/bin/icedove ] && icedove &
+    #chromium --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
+    google-chrome --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
 fi
 
 #____ Netstream notebook
