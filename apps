@@ -526,6 +526,7 @@
         [FocusNewWindow]    {no}
         [Layer]         {12}
         [Deco]          {NONE}
+        [Fullscreen]    {no}
 [end]
 
 # ns firstclass
