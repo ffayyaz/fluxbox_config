@@ -528,6 +528,7 @@
         [Layer]         {12}
         [Deco]          {NONE}
         [Fullscreen]    {no}
+        [IconHidden]    {yes}
 [end]
 
 # ns firstclass
