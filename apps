@@ -482,18 +482,24 @@
         [FocusNewWindow]    {no}
 [end]
 
-[group] (workspace)
-    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=chromium) # mdv environment overview
-    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Google-chrome) # mdv environment overview
-    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=chromium) # manhattan server overview
-    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=Google-chrome) # manhattan server overview
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPRIGHT)   {0% 0%}
-        [FocusNewWindow]    {yes}
-[end]
+# # ns mdw environment overview 
+# # ns manhattan overview
+# [group] (workspace)
+    # [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=chromium) # mdv environment overview
+    # [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Google-chrome) # mdv environment overview
+    # [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=chromium) # manhattan server overview
+    # [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=Google-chrome) # manhattan server overview
+        # [Head]          {1}
+        # [Workspace]     {2}
+        # [Dimensions]    {100% 100%}
+        # [Maximized]     {yes}
+        # [Position]      (TOPLEFT)   {0% 0%}
+        # [FocusNewWindow]    {no}
+        # [Layer]         {12}
+        # [Deco]          {NONE}
+        # [Fullscreen]    {no}
+        # [IconHidden]    {yes}
+# [end]
 
 # ns postman
 [group] (workspace)
@@ -510,8 +516,9 @@
         [FocusNewWindow]    {no}
 [end]
 
-# ns zabbix / nagios
+# ns some desktop layered windows
 [group] (workspace)
+    # zabbix
     [app] (name=zabbix.netstream.ch) (class=chromium)
     [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=chromium)
     [app] (name=nagios.netstream.ch__nagios3) (class=chromium)
@@ -519,6 +526,14 @@
     [app] (name=zabbix.netstream.ch) (class=Google-chrome)
     [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=Google-chrome)
     [app] (name=nagios.netstream.ch__nagios3) (class=Google-chrome)
+
+    # mdw environment overview
+    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=chromium) 
+    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Google-chrome) 
+
+    # manhattan servers
+    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=chromium) 
+    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=Google-chrome) 
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
