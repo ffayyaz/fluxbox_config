@@ -342,7 +342,7 @@
     [app] (Pidgin)
     [app] (xchat)
     [app] (skype)
-    [app] (hipchat)
+    [app] (hipchat.*)
     [app] (telegram)
     [app] (wire)
         [Dimensions]    {50% 50%}
