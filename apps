@@ -343,6 +343,7 @@
     [app] (xchat)
     [app] (skype)
     [app] (hipchat.*)
+    [app] (netstream.hipchat.com__chat.*)
     [app] (telegram)
     [app] (wire)
         [Dimensions]    {50% 50%}
