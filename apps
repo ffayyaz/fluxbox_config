@@ -644,7 +644,7 @@
 
 #---------------------------------------------------- MAIL
 [group] (workspace)
-    [app] (name=Mail) (class=Icedove) 
+    [app] (class=Icedove) 
     [app] (name=.*mail.*) (class=chromium)
     [app] (name=.*mail.*) (class=Google-chrome)
         [Head]          {1}
@@ -665,13 +665,13 @@
         [Fullscreen]    {no}
         [FocusNewWindow] {no}
 [end]
-[app] (name=Mailnews) (class=Icedove) (title=Subscribe) 
-        [Head]          {1}
-        [Workspace]     {4}
-        [Layer]         {12}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-[end]
+# [app] (name=Mailnews) (class=Icedove) (title=Subscribe) 
+        # [Head]          {1}
+        # [Workspace]     {4}
+        # [Layer]         {12}
+        # [Dimensions]    {100% 100%}
+        # [Maximized]     {yes}
+# [end]
 
 #---------------------------------------------------- EDITOR
 [group] (workspace)
