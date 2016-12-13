@@ -666,7 +666,7 @@
         [FocusNewWindow] {no}
 [end]
 [app] (name=Mailnews) (class=Icedove) (title=Subscribe) 
-        [Head]          {2}
+        [Head]          {1}
         [Workspace]     {4}
         [Layer]         {12}
         [Dimensions]    {100% 100%}
