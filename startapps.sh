@@ -2,40 +2,41 @@
 #
 #_______ Autostart everywhere ______________________________________________
 
-# tools / gadgets
-[ -x /usr/bin/xscreensaver ] && xscreensaver -no-splash&
-# [ -x /usr/bin/gdeskcal ] && gdeskcal &
-[ -x /usr/bin/xclock ] && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
-# [ -x /usr/bin/xpad ] && xpad &
-[ -x /usr/bin/skype ] && skype &
+[ -x /usr/bin/xscreensaver ]    && xscreensaver -no-splash&
+[ -x /usr/bin/xclock ]          && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
+[ -x /usr/bin/skype ]           && skype &
 
 # always start a browser
-if [ -x /usr/bin/chromium --high-dpi-support --force-device-scale=1 ]; then
+if [ -x /usr/bin/chromium ]; then
     chromium --high-dpi-support --force-device-scale=1 &
 fi
 
 #_______ Autostart Home only _______________________________________________
 
 /sbin/ifconfig|egrep '192.168.85.'
-if [ "${?}" = "0" ]; then
-    #[ -x /usr/bin/icedove ] && icedove &
-    # [ -x /usr/bin/pidgin ] && pidgin &
+if [ ${?} -eq 0 ]; then
+    [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/telegram ] && telegram &
+    [ -x /usr/bin/hipchat ] && hipchat &
 fi
 
 #_______ Autostart Ganja only ______________________________________________
 
 if [ "`hostname`" = "ganja" ]; then
     [ -x /usr/bin/xchat ] && xchat &
+    [ -x /usr/bin/icedove ] && icedove &
+
+    # recreate playlists
     if [ -f /media/stuff/music/playlists/recreate.sh ]; then
         /media/stuff/music/playlists/recreate.sh &
     fi
-    [ -x /usr/bin/audacious ] && audacious &
-    [ -x /usr/bin/icedove ] && icedove &
-    # [ -x /usr/bin/pidgin ] && pidgin &
+
+    # sound
     chromium --high-dpi-support --force-device-scale=1 --app=https://www.soundcloud.com &
     sleep 2
     chromium --high-dpi-support --force-device-scale=1 --app=https://www.mixcloud.com &
+    [ -x /usr/bin/audacious ] && audacious &
+
     # mouse speed
     xinput --set-prop 9  275 2
     xinput --set-prop 9  276 1
@@ -46,20 +47,29 @@ fi
 #_______ Autostart Netstream only __________________________________________
 
 if [ "`hostname`" = "fayyaz" ]; then
-    echo "" > /home/fafa/.xsession-errors
-    rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
-    # [ -x /usr/bin/virtualbox ] && virtualbox &
     [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/hipchat ] && hipchat &
+    [ -x /usr/bin/icedove ] && icedove &
+
+    echo "" > /home/fafa/.xsession-errors
+
+    # sync chromium to google-chrome
+    rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
+
+
+    # sound
     chromium --high-dpi-support --force-device-scale=1 --app=https://www.soundcloud.com &
     sleep 2
     chromium --high-dpi-support --force-device-scale=1 --app=https://www.mixcloud.com &
     [ -x /usr/bin/audacious ] && audacious &
 
+    # startup windows
     #[ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
+
     # start firstclass
     #wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
-    [ -x /usr/bin/icedove ] && icedove &
+
+    # start some desktop windows (zabbix, ...)
     #chromium --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
     #google-chrome --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
     #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
