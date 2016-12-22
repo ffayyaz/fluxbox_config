@@ -9,6 +9,7 @@
 # always start a browser
 if [ -x /usr/bin/chromium ]; then
     chromium --high-dpi-support --force-device-scale=1 &
+    sleep 5
 fi
 
 #_______ Autostart Home only _______________________________________________
@@ -18,6 +19,8 @@ if [ ${?} -eq 0 ]; then
     [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/telegram ] && telegram &
     [ -x /usr/bin/hipchat ] && hipchat &
+    #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://netstream.hipchat.com/chat &
+    google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://netstream.hipchat.com/chat &
 fi
 
 #_______ Autostart Ganja only ______________________________________________
@@ -50,6 +53,8 @@ if [ "`hostname`" = "fayyaz" ]; then
     [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/hipchat ] && hipchat &
     [ -x /usr/bin/icedove ] && icedove &
+    #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://netstream.hipchat.com/chat &
+    google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://netstream.hipchat.com/chat &
 
     echo "" > /home/fafa/.xsession-errors
 
