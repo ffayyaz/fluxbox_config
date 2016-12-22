@@ -9,7 +9,7 @@
 # always start a browser
 if [ -x /usr/bin/chromium ]; then
     chromium --high-dpi-support --force-device-scale=1 &
-    sleep 5
+    sleep 10
 fi
 
 #_______ Autostart Home only _______________________________________________
@@ -77,10 +77,10 @@ if [ "`hostname`" = "fayyaz" ]; then
     # start some desktop windows (zabbix, ...)
     #chromium --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
     google-chrome --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
-    sleep 10
+    sleep 15
     #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
     google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
-    sleep 10
+    sleep 15
     #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
     google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
 fi
