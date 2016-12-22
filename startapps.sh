@@ -75,14 +75,14 @@ if [ "`hostname`" = "fayyaz" ]; then
     #wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
 
     # start some desktop windows (zabbix, ...)
-    chromium --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
-    #google-chrome --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
+    #chromium --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
+    google-chrome --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
     sleep 10
-    chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
-    #google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
+    #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
+    google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
     sleep 10
-    chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
-    #google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
+    #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
+    google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
 fi
 
 #____ Netstream notebook
