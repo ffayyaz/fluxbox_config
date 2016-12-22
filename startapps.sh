@@ -51,6 +51,11 @@ if [ "`hostname`" = "fayyaz" ]; then
     # [ -x /usr/bin/virtualbox ] && virtualbox &
     [ -x /usr/bin/pidgin ] && pidgin &
     [ -x /usr/bin/hipchat ] && hipchat &
+    chromium --high-dpi-support --force-device-scale=1 --app=https://www.soundcloud.com &
+    sleep 2
+    chromium --high-dpi-support --force-device-scale=1 --app=https://www.mixcloud.com &
+    [ -x /usr/bin/audacious ] && audacious &
+
     #[ -x /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
     # start firstclass
     wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
