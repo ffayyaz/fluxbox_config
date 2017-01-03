@@ -357,16 +357,16 @@
 
 # chromium
 [group] (workspace)
-    [app] (name=chromium) (class=chromium)
+    [app] (name=chromium) (class=Chromium)
     [app] (name=google-chrome) (class=Google-chrome)
         [Head]          {1}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 [group] (workspace)
-    [app] (name=.*sound.*) (class=chromium)
+    [app] (name=.*sound.*) (class=Chromium)
     [app] (name=.*sound.*) (class=Google-chrome)
-    [app] (name=.*mixcloud.*) (class=chromium)
+    [app] (name=.*mixcloud.*) (class=Chromium)
     [app] (name=.*mixcloud.*) (class=Google-chrome)
         [Head]          {2}
         [Workspace]     {3}
@@ -408,7 +408,7 @@
 
 # ns jira
 [group] (workspace)
-	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=chromium)
+	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=Chromium)
 	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=Google-chrome)
         [Head]          {2}
         [Workspace]     {2}
@@ -419,7 +419,7 @@
 
 # ns kayako
 [group] (workspace)
-    [app] (name=support.netstream.ch__staff_index.php) (class=chromium)
+    [app] (name=support.netstream.ch__staff_index.php) (class=Chromium)
     [app] (name=support.netstream.ch__staff_index.php) (class=Google-chrome)
         [Head]          {2}
         [Workspace]     {2}
@@ -431,18 +431,18 @@
 # ns agama
 [group] (workspace)
     # agama iptv
-    [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=chromium) # dashboard
-    [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=chromium) # real-time matrix
-    [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=chromium) # embedded probe
+    [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=Chromium) # dashboard
+    [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=Chromium) # real-time matrix
+    [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=Chromium) # embedded probe
 
     [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=Google-chrome) # dashboard
     [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=Google-chrome) # real-time matrix
     [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=Google-chrome) # embedded probe
     # agama ott
-    [app] (name=u0494__ria_dashboard) (class=chromium) # dashboard
-    [app] (name=u0494__ria_httpstreamingrunning) (class=chromium) # running stream tests
-    [app] (name=u0494__ria_httpstreamingresultsearch) (class=chromium) # stream test results
-    [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=chromium) # secondlevel link lookup
+    [app] (name=u0494__ria_dashboard) (class=Chromium) # dashboard
+    [app] (name=u0494__ria_httpstreamingrunning) (class=Chromium) # running stream tests
+    [app] (name=u0494__ria_httpstreamingresultsearch) (class=Chromium) # stream test results
+    [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=Chromium) # secondlevel link lookup
 
     [app] (name=u0494__ria_dashboard) (class=Google-chrome) # dashboard
     [app] (name=u0494__ria_httpstreamingrunning) (class=Google-chrome) # running stream tests
@@ -457,15 +457,15 @@
 
 # ns mdw
 [group] (workspace)
-    [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=chromium) # mdw live
-    [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=chromium) # mdw live pricing
-    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=chromium) # mdw preprod
-    [app] (name=mdw-preprod.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=chromium) # mdw preprod pricing
-    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=chromium) # mdw preprod
-    [app] (name=mdw-preview.iptv.ch__itvadmin) (class=chromium) # mdw preview
-    [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=chromium) # mdw preview02
-    [app] (name=mdw-dev.iptv.ch__itvadmin) (class=chromium) # mdw dev
-    [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=chromium) # mdw hbbtv live
+    [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=Chromium) # mdw live
+    [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=Chromium) # mdw live pricing
+    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=Chromium) # mdw preprod
+    [app] (name=mdw-preprod.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=Chromium) # mdw preprod pricing
+    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=Chromium) # mdw preprod
+    [app] (name=mdw-preview.iptv.ch__itvadmin) (class=Chromium) # mdw preview
+    [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=Chromium) # mdw preview02
+    [app] (name=mdw-dev.iptv.ch__itvadmin) (class=Chromium) # mdw dev
+    [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=Chromium) # mdw hbbtv live
 
     [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=Google-chrome) # mdw live
     [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=Google-chrome) # mdw live pricing
@@ -486,9 +486,9 @@
 # # ns mdw environment overview 
 # # ns manhattan overview
 # [group] (workspace)
-    # [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=chromium) # mdv environment overview
+    # [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Chromium) # mdv environment overview
     # [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Google-chrome) # mdv environment overview
-    # [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=chromium) # manhattan server overview
+    # [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=Chromium) # manhattan server overview
     # [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=Google-chrome) # manhattan server overview
         # [Head]          {1}
         # [Workspace]     {2}
@@ -504,8 +504,8 @@
 
 # ns postman
 [group] (workspace)
-	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=chromium)
-    [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=chromium)
+	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=Chromium)
+    [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=Chromium)
 
 	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=Google-chrome)
     [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=Google-chrome)
@@ -520,20 +520,20 @@
 # ns some desktop layered windows
 [group] (workspace)
     # zabbix
-    [app] (name=zabbix.netstream.ch) (class=chromium)
-    [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=chromium)
-    [app] (name=nagios.netstream.ch__nagios3) (class=chromium)
+    [app] (name=zabbix.netstream.ch) (class=Chromium)
+    [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=Chromium)
+    [app] (name=nagios.netstream.ch__nagios3) (class=Chromium)
 
     [app] (name=zabbix.netstream.ch) (class=Google-chrome)
     [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=Google-chrome)
     [app] (name=nagios.netstream.ch__nagios3) (class=Google-chrome)
 
     # mdw environment overview
-    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=chromium) 
+    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Chromium) 
     [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Google-chrome) 
 
     # manhattan servers
-    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=chromium) 
+    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=Chromium) 
     [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=Google-chrome) 
         [Head]          {2}
         [Workspace]     {2}
@@ -564,7 +564,7 @@
 # ns mio
 [group] (workspace)
     [app] (name=live.mlp.iptv.ch) (class=Google-chrome)
-    [app] (name=live.mlp.iptv.ch) (class=chromium)
+    [app] (name=live.mlp.iptv.ch) (class=Chromium)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
@@ -575,7 +575,7 @@
 
 # edgeware gui
 [group] (workspace)
-    [app] (name=u8483.vdc.netstream.com) (class=chromium)
+    [app] (name=u8483.vdc.netstream.com) (class=Chromium)
     [app] (name=u8483.vdc.netstream.com) (class=Google-chrome)
         [Head]          {2}
         [Workspace]     {2}
@@ -625,7 +625,7 @@
 [group] (workspace)
     [app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
     [app] (name=.*.ndzs.ch.netstream.com) (class=Google-chrome)
-    [app] (name=.*.ndzs.ch.netstream.com) (class=chromium)
+    [app] (name=.*.ndzs.ch.netstream.com) (class=Chromium)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
@@ -635,7 +635,7 @@
 # splunk
 [group] (workspace)
 	[app] (name=u0735) (class=Google-chrome)
-	[app] (name=u0735) (class=chromium)
+	[app] (name=u0735) (class=Chromium)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
@@ -645,7 +645,7 @@
 #---------------------------------------------------- MAIL
 [group] (workspace)
     [app] (class=Icedove) 
-    [app] (name=.*mail.*) (class=chromium)
+    [app] (name=.*mail.*) (class=Chromium)
     [app] (name=.*mail.*) (class=Google-chrome)
         [Head]          {1}
         [Workspace]     {4}
