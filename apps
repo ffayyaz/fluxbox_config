@@ -70,7 +70,12 @@
 [end]
 
 #---------------------------------------------------- MUSIC
-[app] (name=audacious) (class=Audacious) (title=.*Audacious)
+[group]
+    [app] (name=audacious) (class=Audacious) (title=.*Audacious)
+    [app] (name=.*sound.*) (class=.*hromium)
+    [app] (name=.*sound.*) (class=Google-chrome)
+    [app] (name=.*mixcloud.*) (class=.*hromium)
+    [app] (name=.*mixcloud.*) (class=Google-chrome)
         [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {88% 80%}
@@ -364,10 +369,10 @@
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 [group] (workspace)
-    [app] (name=.*sound.*) (class=.*hromium)
-    [app] (name=.*sound.*) (class=Google-chrome)
-    [app] (name=.*mixcloud.*) (class=.*hromium)
-    [app] (name=.*mixcloud.*) (class=Google-chrome)
+    # [app] (name=.*sound.*) (class=.*hromium)
+    # [app] (name=.*sound.*) (class=Google-chrome)
+    # [app] (name=.*mixcloud.*) (class=.*hromium)
+    # [app] (name=.*mixcloud.*) (class=Google-chrome)
         [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {100% 100%}
