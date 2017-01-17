@@ -83,6 +83,7 @@
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Jump]          {no}
+        [Deco]          {TOOL}
 [end]
 [app] (name=audacious) (class=Audacious) (title=Blur Scope)
         [Head]          {2}
