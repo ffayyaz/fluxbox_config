@@ -487,6 +487,7 @@
         [Maximized]     {yes}
         [Position]      (TOPRIGHT)   {0% 0%}
         [FocusNewWindow]    {no}
+        [Deco]          {NONE}
 [end]
 
 # ns postman
@@ -502,6 +503,7 @@
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
+        [Deco]          {NONE}
 [end]
 
 # ns some desktop layered windows
@@ -558,6 +560,7 @@
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
+        [Deco]          {NONE}
 [end]
 
 # edgeware gui
@@ -570,6 +573,7 @@
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
+        [Deco]          {NONE}
 [end]
 
 # vsphere web client
@@ -581,6 +585,7 @@
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {yes}
+        [Deco]          {NONE}
 [end]
 
 # f5 big-ip live + staging
@@ -595,6 +600,7 @@
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {yes}
+        [Deco]          {NONE}
 [end]
 
 # teleboy
@@ -618,6 +624,7 @@
         [Maximized]     {yes}
         [Head]          {2}
         [FocusNewWindow] {no}
+        [Deco]          {NONE}
 [end]
 
 # splunk
@@ -628,6 +635,7 @@
         [Maximized]     {yes}
         [Head]          {2}
         [FocusNewWindow] {no}
+        [Deco]          {NONE}
 [end]
 
 #---------------------------------------------------- MAIL
