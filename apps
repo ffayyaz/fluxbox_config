@@ -606,6 +606,7 @@
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {yes}
+        [Deco]          {NONE}
 [end]
 
 # iDRAC gui + admin
