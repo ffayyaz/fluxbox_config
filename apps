@@ -827,6 +827,7 @@
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
+        [Deco]          {none}
 [end]
 
 # what was that??
