@@ -73,9 +73,9 @@
 [group]
     [app] (name=audacious) (class=Audacious) (title=.*Audacious)
     [app] (name=.*sound.*) (class=.*hromium)
-    [app] (name=.*sound.*) (class=Google-chrome)
+    [app] (name=.*sound.*) (class=.*oogle-chrome)
     [app] (name=.*mixcloud.*) (class=.*hromium)
-    [app] (name=.*mixcloud.*) (class=Google-chrome)
+    [app] (name=.*mixcloud.*) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {88% 80%}
@@ -364,16 +364,16 @@
 # chromium
 [group] (workspace)
     [app] (name=chromium) (class=.*hromium)
-    [app] (name=google-chrome) (class=Google-chrome)
+    [app] (name=google-chrome) (class=.*oogle-chrome)
         [Head]          {1}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 [group] (workspace)
     # [app] (name=.*sound.*) (class=.*hromium)
-    # [app] (name=.*sound.*) (class=Google-chrome)
+    # [app] (name=.*sound.*) (class=.*oogle-chrome)
     # [app] (name=.*mixcloud.*) (class=.*hromium)
-    # [app] (name=.*mixcloud.*) (class=Google-chrome)
+    # [app] (name=.*mixcloud.*) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {100% 100%}
@@ -415,7 +415,7 @@
 # ns jira
 [group] (workspace)
 	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*hromium)
-	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=Google-chrome)
+	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {45% 100%}
@@ -426,7 +426,7 @@
 # ns kayako
 [group] (workspace)
     [app] (name=support.netstream.ch__staff_index.php) (class=.*hromium)
-    [app] (name=support.netstream.ch__staff_index.php) (class=Google-chrome)
+    [app] (name=support.netstream.ch__staff_index.php) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {55% 100%}
@@ -441,19 +441,19 @@
     [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=.*hromium) # real-time matrix
     [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=.*hromium) # embedded probe
 
-    [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=Google-chrome) # dashboard
-    [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=Google-chrome) # real-time matrix
-    [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=Google-chrome) # embedded probe
+    [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=.*oogle-chrome) # dashboard
+    [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=.*oogle-chrome) # real-time matrix
+    [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=.*oogle-chrome) # embedded probe
     # agama ott
     [app] (name=u0494__ria_dashboard) (class=.*hromium) # dashboard
     [app] (name=u0494__ria_httpstreamingrunning) (class=.*hromium) # running stream tests
     [app] (name=u0494__ria_httpstreamingresultsearch) (class=.*hromium) # stream test results
     [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=.*hromium) # secondlevel link lookup
 
-    [app] (name=u0494__ria_dashboard) (class=Google-chrome) # dashboard
-    [app] (name=u0494__ria_httpstreamingrunning) (class=Google-chrome) # running stream tests
-    [app] (name=u0494__ria_httpstreamingresultsearch) (class=Google-chrome) # stream test results
-    [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=Google-chrome) # secondlevel link lookup
+    [app] (name=u0494__ria_dashboard) (class=.*oogle-chrome) # dashboard
+    [app] (name=u0494__ria_httpstreamingrunning) (class=.*oogle-chrome) # running stream tests
+    [app] (name=u0494__ria_httpstreamingresultsearch) (class=.*oogle-chrome) # stream test results
+    [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=.*oogle-chrome) # secondlevel link lookup
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {55% 100%}
@@ -473,14 +473,14 @@
     [app] (name=mdw-dev.iptv.ch__itvadmin) (class=.*hromium) # mdw dev
     [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=.*hromium) # mdw hbbtv live
 
-    [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=Google-chrome) # mdw live
-    [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=Google-chrome) # mdw live pricing
-    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=Google-chrome) # mdw preprod
-    [app] (name=mdw-preprod.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=Google-chrome) # mdw preprod pricing
-    [app] (name=mdw-preview.iptv.ch__itvadmin) (class=Google-chrome) # mdw preview
-    [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=Google-chrome) # mdw preview02
-    [app] (name=mdw-dev.iptv.ch__itvadmin) (class=Google-chrome) # mdw dev
-    [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=Google-chrome) # mdw hbbtv live
+    [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw live
+    [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=.*oogle-chrome) # mdw live pricing
+    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw preprod
+    [app] (name=mdw-preprod.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=.*oogle-chrome) # mdw preprod pricing
+    [app] (name=mdw-preview.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw preview
+    [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw preview02
+    [app] (name=mdw-dev.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw dev
+    [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw hbbtv live
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
@@ -495,8 +495,8 @@
 	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*hromium)
     [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=.*hromium)
 
-	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=Google-chrome)
-    [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=Google-chrome)
+	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*oogle-chrome)
+    [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
@@ -513,17 +513,21 @@
     [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=.*hromium)
     [app] (name=nagios.netstream.ch__nagios3) (class=.*hromium)
 
-    [app] (name=zabbix.netstream.ch) (class=Google-chrome)
-    [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=Google-chrome)
-    [app] (name=nagios.netstream.ch__nagios3) (class=Google-chrome)
+    [app] (name=zabbix.netstream.ch) (class=.*oogle-chrome)
+    [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=.*oogle-chrome)
+    [app] (name=nagios.netstream.ch__nagios3) (class=.*oogle-chrome)
 
     # mdw environment overview
     [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=.*hromium) 
-    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=Google-chrome) 
+    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=.*oogle-chrome) 
+
+    # mdw own documentation
+    [app] (name=intranet.netstream.ch__display__chdfafa0_MDW) (class=.*hromium) 
+    [app] (name=intranet.netstream.ch__display__chdfafa0_MDW) (class=.*oogle-chrome) 
 
     # manhattan servers
     [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=.*hromium) 
-    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=Google-chrome) 
+    [app] (name=intranet.netstream.ch__display_ops_Manhattan.*servers) (class=.*oogle-chrome) 
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
@@ -552,7 +556,7 @@
 
 # ns mio
 [group] (workspace)
-    [app] (name=live.mlp.iptv.ch) (class=Google-chrome)
+    [app] (name=live.mlp.iptv.ch) (class=.*oogle-chrome)
     [app] (name=live.mlp.iptv.ch) (class=.*hromium)
         [Head]          {2}
         [Workspace]     {2}
@@ -566,7 +570,7 @@
 # edgeware gui
 [group] (workspace)
     [app] (name=u8483.vdc.netstream.com) (class=.*hromium)
-    [app] (name=u8483.vdc.netstream.com) (class=Google-chrome)
+    [app] (name=u8483.vdc.netstream.com) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
@@ -618,7 +622,7 @@
 # iDRAC gui + admin
 [group] (workspace)
     [app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
-    [app] (name=.*.ndzs.ch.netstream.com) (class=Google-chrome)
+    [app] (name=.*.ndzs.ch.netstream.com) (class=.*oogle-chrome)
     [app] (name=.*.ndzs.ch.netstream.com) (class=.*hromium)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
@@ -629,7 +633,7 @@
 
 # splunk
 [group] (workspace)
-	[app] (name=u0735) (class=Google-chrome)
+	[app] (name=u0735) (class=.*oogle-chrome)
 	[app] (name=u0735) (class=.*hromium)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
@@ -642,7 +646,7 @@
 [group] (workspace)
     [app] (class=Icedove) 
     [app] (name=.*mail.*) (class=.*hromium)
-    [app] (name=.*mail.*) (class=Google-chrome)
+    [app] (name=.*mail.*) (class=.*oogle-chrome)
         [Head]          {1}
         [Workspace]     {4}
         [Layer]         {12}
