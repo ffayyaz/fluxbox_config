@@ -232,7 +232,7 @@ Mod1 F5                     :MacroCmd {Exec iceweasel} {Raise}
 Mod1 F6                     :MacroCmd {Exec opera-next} {Raise}
 Mod1 F7                     :MacroCmd {Exec opera} {Raise}
 Mod1 F8                     :MacroCmd {Exec icedove} {Raise}
-Mod1 F9                     :MacroCmd {Exec gedit} {Raise}
+Mod1 F9                     :MacroCmd {Exec kate} {Raise}
 Mod1 F10                    :MacroCmd {Exec skype} {Raise}
 # Mod1 F11                    :MacroCmd {Exec vivaldi-preview} {Raise}
 
