@@ -543,7 +543,8 @@
 # ns firstclass
 [group] (workspace)
     [app] (name=fcc32.exe) (class=Wine)
-        [Sticky]        {yes}
+        [Sticky]        {no}
+        [Workspace]     {0}
         [Layer]         {12}
         [Head]          {1}
         [Dimensions]    {50% 50%}
