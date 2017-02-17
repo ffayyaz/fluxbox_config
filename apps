@@ -944,3 +944,11 @@
         # [Maximized]     {yes}
         [Head]          {1}
 [end]
+
+# octave
+[app] (name=octave-gui) (class=Octave-gui)
+        [Head]          {2}
+        [Position]      (TOPLEFT) {0% 0%}
+        [Maximized]     {yes}
+        [Jump]          {yes}
+[end]
