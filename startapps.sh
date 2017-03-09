@@ -23,9 +23,9 @@ fi
 if [ ${?} -eq 0 ]; then
     [ -f /usr/bin/pidgin ] && pidgin &
     [ -f /usr/bin/telegram ] && telegram &
-    #[ -f /usr/bin/hipchat ] && hipchat &
-    #chromium --app=https://netstream.hipchat.com/chat &
-    google-chrome --app=https://netstream.hipchat.com/chat &
+    [ -f /usr/bin/hipchat ] && hipchat &
+    # #chromium --app=https://netstream.hipchat.com/chat &
+    # google-chrome --app=https://netstream.hipchat.com/chat &
 fi
 
 #_______ Autostart Ganja only ______________________________________________
