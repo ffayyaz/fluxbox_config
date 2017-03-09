@@ -568,6 +568,20 @@
         [Deco]          {NONE}
 [end]
 
+# ns elemental encoder
+[group] (workspace)
+    [app] (name=172.25.1.30__jobs) (class=.*oogle-chrome)
+    [app] (name=172.25.1.30__jobs) (class=.*hromium)
+        [Head]          {2}
+        [Workspace]     {2}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
+        [Position]      (TOPLEFT)   {0% 0%}
+        [FocusNewWindow]    {no}
+        [Deco]          {NONE}
+        [Fullscreen]    {yes}
+[end]
+
 # edgeware gui
 [group] (workspace)
     [app] (name=u8483.vdc.netstream.com) (class=.*hromium)
