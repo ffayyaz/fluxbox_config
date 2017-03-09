@@ -7,10 +7,13 @@
 [ -f /usr/bin/skype ]           && skype &
 # [ -f /usr/bin/vlc ]             && vlc --avcodec-hw=vaapi --video-wallpaper --zoom 2 --no-osd --qt-start-minimized --qt-notification 0 --qt-system-tray http://iphone-streaming.ustream.tv/uhls/17074538/streams/live/iphone/playlist.m3u8 &
 
+# --enable-remote-extensions is a dirty hack, because all extensions were "lost"
+# after reboot, this flag makes them visible/usable again
+export CHROMIUM_FLAGS='--enable-remote-extensions --high-dpi-support --force-device-scale-factor=1'
 
 # always start a browser
 if [ -f /usr/bin/chromium ]; then
-    chromium --high-dpi-support --force-device-scale=1 &
+    chromium &
     sleep 10
 fi
 
@@ -21,8 +24,8 @@ if [ ${?} -eq 0 ]; then
     [ -f /usr/bin/pidgin ] && pidgin &
     [ -f /usr/bin/telegram ] && telegram &
     #[ -f /usr/bin/hipchat ] && hipchat &
-    #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://netstream.hipchat.com/chat &
-    google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://netstream.hipchat.com/chat &
+    #chromium --app=https://netstream.hipchat.com/chat &
+    google-chrome --app=https://netstream.hipchat.com/chat &
 fi
 
 #_______ Autostart Ganja only ______________________________________________
@@ -37,9 +40,9 @@ if [ "`hostname`" = "ganja" ]; then
     fi
 
     # sound
-    chromium --high-dpi-support --force-device-scale=1 --app=https://www.soundcloud.com &
+    chromium --app=https://www.soundcloud.com &
     sleep 2
-    chromium --high-dpi-support --force-device-scale=1 --app=https://www.mixcloud.com &
+    chromium --app=https://www.mixcloud.com &
     [ -f /usr/bin/audacious ] && audacious &
 
     # mouse speed
@@ -55,8 +58,8 @@ if [ "`hostname`" = "fayyaz" ]; then
     [ -f /usr/bin/pidgin ] && pidgin &
     #[ -f /usr/bin/hipchat ] && hipchat &
     [ -f /usr/bin/icedove ] && icedove &
-    #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://netstream.hipchat.com/chat &
-    google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://netstream.hipchat.com/chat &
+    #chromium  --app=https://netstream.hipchat.com/chat &
+    google-chrome  --app=https://netstream.hipchat.com/chat &
 
     echo "" > /home/fafa/.xsession-errors
 
@@ -64,9 +67,9 @@ if [ "`hostname`" = "fayyaz" ]; then
     rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
 
     # sound
-    chromium --high-dpi-support --force-device-scale=1 --app=https://www.soundcloud.com &
+    chromium --app=https://www.soundcloud.com &
     sleep 2
-    chromium --high-dpi-support --force-device-scale=1 --app=https://www.mixcloud.com &
+    chromium --app=https://www.mixcloud.com &
     [ -f /usr/bin/audacious ] && audacious &
 
     # startup windows
@@ -76,14 +79,14 @@ if [ "`hostname`" = "fayyaz" ]; then
     wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
 
     # start some desktop windows (zabbix, ...)
-    #chromium --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
-    google-chrome --high-dpi-support -force-device-scale-factor=1  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
+    #chromium  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
+    google-chrome  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
     # sleep 15
-    # #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
-    # google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
+    # #chromium  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
+    # google-chrome  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
     # sleep 15
-    # #chromium --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
-    # google-chrome --high-dpi-support --force-device-scale-factor=1  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
+    # #chromium  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
+    # google-chrome  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
 fi
 
 #____ Netstream notebook
