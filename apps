@@ -544,7 +544,7 @@
 [group] (workspace)
     [app] (name=fcc32.exe) (class=Wine)
         [Sticky]        {no}
-        [Workspace]     {0}
+        [Workspace]     {2}
         [Layer]         {12}
         [Head]          {1}
         [Dimensions]    {50% 50%}
