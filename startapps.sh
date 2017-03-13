@@ -56,10 +56,10 @@ fi
 
 if [ "`hostname`" = "fayyaz" ]; then
     [ -f /usr/bin/pidgin ] && pidgin &
-    #[ -f /usr/bin/hipchat ] && hipchat &
+    [ -f /usr/bin/hipchat ] && hipchat &
     [ -f /usr/bin/icedove ] && icedove &
     #chromium  --app=https://netstream.hipchat.com/chat &
-    google-chrome  --app=https://netstream.hipchat.com/chat &
+    #google-chrome  --app=https://netstream.hipchat.com/chat &
 
     echo "" > /home/fafa/.xsession-errors
 
