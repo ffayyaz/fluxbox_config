@@ -551,7 +551,7 @@
         [Maximized]     {no}
         [Fullscreen]    {no}
         [Position]      (BOTTOMLEFT)   {0% 0%}
-        [FocusNewWindow] {no}
+        [FocusNewWindow] {yes}
         [IconHidden]    {yes}
 [end]
 
