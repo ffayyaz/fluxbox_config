@@ -14,7 +14,6 @@ export CHROMIUM_FLAGS='--enable-remote-extensions --high-dpi-support --force-dev
 # always start a browser
 if [ -f /usr/bin/chromium ]; then
     chromium &
-    sleep 10
 fi
 
 #_______ Autostart Home only _______________________________________________
@@ -81,12 +80,6 @@ if [ "`hostname`" = "fayyaz" ]; then
     # start some desktop windows (zabbix, ...)
     #chromium  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
     google-chrome  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
-    # sleep 15
-    # #chromium  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
-    # google-chrome  --app=https://intranet.netstream.ch/display/ops/MDW+Environment+Overview#MDWEnvironmentOverview-Live &
-    # sleep 15
-    # #chromium  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
-    # google-chrome  --app=https://intranet.netstream.ch/display/ops/Manhattan+servers &
 fi
 
 #____ Netstream notebook
