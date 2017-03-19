@@ -21,7 +21,7 @@ fi
 
 /sbin/ifconfig|egrep '192.168.85.'
 if [ ${?} -eq 0 ]; then
-    [ -f /usr/bin/pidgin ] && pidgin &
+    # [ -f /usr/bin/pidgin ] && pidgin &
     [ -f /usr/bin/telegram ] && telegram &
     [ -f /usr/bin/hipchat ] && hipchat &
     # #chromium --app=https://netstream.hipchat.com/chat &
