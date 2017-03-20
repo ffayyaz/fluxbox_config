@@ -37,7 +37,7 @@ compton
 xpdf
 vprerex
 evince
-kpdf
+#kpdf
 #acroread
 nedit
 tea
