@@ -1,4 +1,6 @@
 #!/bin/bash
 if [ "`whoami`" = "root" ]; then
-    aptitude install `grep -v ^# /home/fafa/.fluxbox/pkgs_to_install |tr '\n' ' '`
+    grep -v '^#' /home/fafa/.fluxbox/pkgs_to_install|while read PKG; do
+        dpkg -l|awk '/^ii/ {print $2}'|grep -q "^${PKG}$" && echo "${PKG} already installed" || apt-get install -y ${PKG}
+    done
 fi

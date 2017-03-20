@@ -7,12 +7,12 @@ audacious
 liferea
 pidgin
 pidgin-sipe
-xchat
+#xchat
 chromium
 iceweasel
 icedove
-opera
-opera-next
+#opera
+#opera-next
 kate
 virtualbox
 xvnc4viewer
