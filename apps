@@ -659,7 +659,7 @@
 
 #---------------------------------------------------- MAIL
 [group] (workspace)
-    [app] (class=Icedove) 
+    [app] (class=Thunderbird) 
     [app] (name=.*mail.*) (class=.*hromium)
     [app] (name=.*mail.*) (class=.*oogle-chrome)
         [Head]          {1}
@@ -670,7 +670,7 @@
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
-[app] (class=Icedove) (name=Calendar)
+[app] (class=Thunderbird) (name=Calendar)
         [Sticky]        {yes}
         [Head]          {2}
         [Workspace]     {4}
@@ -680,7 +680,7 @@
         [Fullscreen]    {no}
         [FocusNewWindow] {no}
 [end]
-# [app] (name=Mailnews) (class=Icedove) (title=Subscribe) 
+# [app] (name=Mailnews) (class=Thunderbird) (title=Subscribe) 
         # [Head]          {1}
         # [Workspace]     {4}
         # [Layer]         {12}
