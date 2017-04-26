@@ -381,6 +381,14 @@
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
+# chromium open file dialog. does not work
+[group]
+    [app] (name=chromium) (class=.*hromium) (title=Open File)
+    [app] (name=google-chrome) (class=.*oogle-chrome) (title=Open File)
+        [Head]          {1}
+        [Dimensions]    {50% 100%}
+        [Position]      (TOPRIGHT) {0% 0%}
+[end]
 
 # vivaldi
 [group] (workspace)
