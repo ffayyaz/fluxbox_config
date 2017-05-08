@@ -268,6 +268,13 @@
         [FocusNewWindow]    {no}
 [end]
 [group] (workspace)
+    [app] (URxvt-remote-convoy-new)
+        [Head]          {1}
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {0% 50%}
+        [FocusNewWindow]    {no}
+[end]
+[group] (workspace)
     [app] (URxvt-remote-orbits)
         [Head]          {1}
         [Dimensions]    {50% 50%}
