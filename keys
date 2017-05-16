@@ -233,8 +233,7 @@ Mod1 F6                     :MacroCmd {Exec opera-next} {Raise}
 Mod1 F7                     :MacroCmd {Exec opera} {Raise}
 Mod1 F8                     :MacroCmd {Exec icedove} {Raise}
 Mod1 F9                     :MacroCmd {Exec kate} {Raise}
-Mod1 F10                    :MacroCmd {Exec skype} {Raise}
-# Mod1 F11                    :MacroCmd {Exec vivaldi-preview} {Raise}
+Mod1 F10                    :MacroCmd {Exec urxvt -name URxvt-remote2 -tn remoteterm} {Raise}
 
 Mod4 t                      :Exec urxvt -name topterm -e top
 

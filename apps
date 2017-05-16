@@ -261,6 +261,12 @@
         [Position]      (TOPLEFT) {0% 50%}
 [end]
 [group] (workspace)
+    [app] (URxvt-remote2)
+        [Head]          {1}
+        [Dimensions]    {50% 50%}
+        [Position]      (TOPLEFT) {50% 50%}
+[end]
+[group] (workspace)
     [app] (URxvt-remote-convoy)
         [Head]          {1}
         [Dimensions]    {50% 50%}
