@@ -693,9 +693,10 @@
         [FocusNewWindow] {no}
 [end]
 [group]
-[app] (name=Calendar) (class=Thunderbird) (title=.*Reminder)
-[app] (name=Calendar) (class=.*hromium)
-[app] (name=Calendar) (class=.*oogle-chrome)
+    [app] (name=Calendar) (class=Thunderbird) 
+    [app] (title=.*Reminder) (class=Thunderbird) 
+    [app] (name=Calendar) (class=.*hromium)
+    [app] (name=Calendar) (class=.*oogle-chrome)
         [Sticky]        {yes}
         [Head]          {2}
         [Workspace]     {4}
