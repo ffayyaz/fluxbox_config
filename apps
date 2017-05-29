@@ -697,13 +697,13 @@
     [app] (title=.*Reminder) (class=Thunderbird) 
     [app] (name=Calendar) (class=.*hromium)
     [app] (name=Calendar) (class=.*oogle-chrome)
-        [Sticky]        {yes}
-        [Head]          {2}
+        #[Sticky]        {yes}
+        [Head]          {1}
         [Workspace]     {4}
         [Layer]         {12}
         [Dimensions]    {50% 50%}
         [Maximized]     {no}
-        [Fullscreen]    {no}
+        [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
 
