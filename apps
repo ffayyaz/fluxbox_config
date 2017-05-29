@@ -680,7 +680,8 @@
 
 #---------------------------------------------------- MAIL
 [group] (workspace)
-    [app] (class=Thunderbird) 
+    [app] (name=Mail) (class=Thunderbird) 
+    [app] (name=Activity) (class=Thunderbird) 
     [app] (name=.*mail.*) (class=.*hromium)
     [app] (name=.*mail.*) (class=.*oogle-chrome)
         [Head]          {1}
@@ -691,7 +692,10 @@
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
+[group]
 [app] (class=Thunderbird) (name=Calendar)
+[app] (name=Calendar) (class=.*hromium)
+[app] (name=Calendar) (class=.*oogle-chrome)
         [Sticky]        {yes}
         [Head]          {2}
         [Workspace]     {4}
@@ -701,13 +705,6 @@
         [Fullscreen]    {no}
         [FocusNewWindow] {no}
 [end]
-# [app] (name=Mailnews) (class=Thunderbird) (title=Subscribe) 
-        # [Head]          {1}
-        # [Workspace]     {4}
-        # [Layer]         {12}
-        # [Dimensions]    {100% 100%}
-        # [Maximized]     {yes}
-# [end]
 
 #---------------------------------------------------- EDITOR
 [group] (workspace)
