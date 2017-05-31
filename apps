@@ -692,16 +692,14 @@
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
-[group]
-    [app] (name=Calendar) (class=Thunderbird) (title=.*Reminder)
-    [app] (title=.*Reminder) (class=Thunderbird) 
+[group] (workspace)
+    [app] (name=Calendar) (class=Thunderbird)
+    [app] (title=.*Reminder.*) (class=Thunderbird) 
     [app] (name=Calendar) (class=.*hromium)
     [app] (name=Calendar) (class=.*oogle-chrome)
-        #[Sticky]        {yes}
         [Head]          {1}
         [Workspace]     {4}
         [Layer]         {12}
-        #[Dimensions]    {50% 50%}
         [Maximized]     {yes}
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
