@@ -704,6 +704,11 @@
         [Fullscreen]    {yes}
         [FocusNewWindow] {no}
 [end]
+[app] (name=Dialog) (class=Thunderbird)
+        [Head]          {1}
+        [Workspace]     {4}
+        [Layer]         {12}
+[end]
 
 #---------------------------------------------------- EDITOR
 [group] (workspace)
