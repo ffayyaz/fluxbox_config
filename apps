@@ -682,6 +682,7 @@
 [group] (workspace)
     [app] (name=Mail) (class=Thunderbird) 
     [app] (name=Activity) (class=Thunderbird) 
+    [app] (name=Global) (class=Thunderbird) 
     [app] (name=.*mail.*) (class=.*hromium)
     [app] (name=.*mail.*) (class=.*oogle-chrome)
         [Head]          {1}
