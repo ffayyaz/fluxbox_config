@@ -290,3 +290,6 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 #Mod4 a Mod4 h               :ArrangeWindowsHorizontal {static groups} (workspace=[current]) (layer!=Desktop)
 # arrange windows
 #Mod4 a Mod4 g               :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desktop)
+
+#Mod4 p :If {Some Matches (name=*xvt*)} {ForEach {Minimize} {Some Matches (name=*xvt*)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
+#Mod4 p :ForEach {Minimize} {Some Matches (class=URxvt)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
