@@ -112,3 +112,4 @@ urxvt &
 #kernlogterm &
 #topterm &
 mixerterm &
+calterm &
