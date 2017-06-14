@@ -200,10 +200,9 @@
 [end]
 [app] (name=calterm)
         [Head]          {1}
-        #[Workspace]     {0}
+        [Sticky]        {yes}
         [Dimensions]    {21% 48%}
         [Position]      (TOPRIGHT) {0% 18%}
-        #[Deco]          {10100100101}
         [Deco]          {NONE}
         [Layer]         {12}
         [FocusNewWindow] {no}
