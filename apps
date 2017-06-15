@@ -993,10 +993,10 @@
 
 # meteosearch
 [group]
-    [app] (name=*meteo*search*) (class=.*hromium)
+    [app] (name=*eteo*earch*) (class=.*hromium)
         [Head]      {1}
         [Sticky]        {yes}
-        [Dimensions]    {25% 15%}
+        [Dimensions]    {22% 15%}
         [Position]      (BOTTOMRIGHT) {0% 0%}
         [Deco]          {NONE}
         [Layer]         {12}
