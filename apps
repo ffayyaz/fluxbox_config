@@ -446,8 +446,8 @@
 
 # ns jira
 [group] (workspace)
-	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*hromium)
-	[app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*oogle-chrome)
+    [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*hromium)
+    [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {45% 100%}
@@ -524,10 +524,10 @@
 
 # ns postman
 [group] (workspace)
-	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*hromium)
+    [app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*hromium)
     [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=.*hromium)
 
-	[app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*oogle-chrome)
+    [app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*oogle-chrome)
     [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
@@ -629,7 +629,7 @@
 
 # vsphere web client
 [group] (workspace)
-	[app] (name=vsphere__vsphere-client)
+    [app] (name=vsphere__vsphere-client)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
@@ -641,10 +641,10 @@
 
 # f5 big-ip live + staging
 [group] (workspace)
-	[app] (name=s0698.ndzs.ch.netstream.com__xui)
-	[app] (name=s0699.ndzs.ch.netstream.com__xui)
-	[app] (name=s8366.vdc.netstream.com__xui)
-	[app] (name=s8367.vdc.netstream.com__xui)
+    [app] (name=s0698.ndzs.ch.netstream.com__xui)
+    [app] (name=s0699.ndzs.ch.netstream.com__xui)
+    [app] (name=s8366.vdc.netstream.com__xui)
+    [app] (name=s8367.vdc.netstream.com__xui)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
@@ -656,7 +656,7 @@
 
 # teleboy
 [group] (workspace)
-	[app] (name=www.teleboy.ch)
+    [app] (name=www.teleboy.ch)
         [Head]          {2}
         #[Workspace]     {0}
         [Dimensions]    {100% 100%}
@@ -680,8 +680,8 @@
 
 # splunk
 [group] (workspace)
-	[app] (name=u0735) (class=.*oogle-chrome)
-	[app] (name=u0735) (class=.*hromium)
+    [app] (name=u0735) (class=.*oogle-chrome)
+    [app] (name=u0735) (class=.*hromium)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {2}
@@ -696,8 +696,8 @@
     [app] (name=Global) (class=Thunderbird) 
     [app] (name=Msgcompose) (class=Thunderbird) 
     [app] (name=Calendar) (class=Thunderbird) 
-	[app] (name=.*mail.*) (class=.*hromium)
-	[app] (name=.*mail.*) (class=.*oogle-chrome)
+    [app] (name=.*mail.*) (class=.*hromium)
+    [app] (name=.*mail.*) (class=.*oogle-chrome)
         [Head]          {1}
         [Workspace]     {4}
         [Layer]         {12}
@@ -822,13 +822,13 @@
 
 #---------------------------------------------------- MISC
 [group] (workspace)
-	[app] (name=htopterm)
-	[app] (title=top)
+    [app] (name=htopterm)
+    [app] (title=top)
             [Dimensions]    {100% 100%}
             [Maximized]     {yes}
             [Sticky]        {yes}
             [Layer]         {12}
-	        [Head]          {2}
+            [Head]          {2}
             [Deco]          {none}
             [IconHidden]    {yes}
 [end]
@@ -926,8 +926,8 @@
 
 # steam
 [group] (workspace)
-	[app] (title=Steam)
-	[app] (name=Steam)
+    [app] (title=Steam)
+    [app] (name=Steam)
         [Workspace]     {0}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
@@ -937,7 +937,7 @@
 
 # play on linux
 [group] (workspace)
-	[app] (title=PlayOnLinux)
+    [app] (title=PlayOnLinux)
         [Workspace]     {0}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
@@ -947,7 +947,7 @@
 
 # graphic tools
 [group] (workspace)
-	[app] (name=inkscape)
+    [app] (name=inkscape)
         [Head]          {1}
         [Workspace]     {0}
         [Jump]          {yes}
@@ -989,4 +989,18 @@
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
         [Jump]          {yes}
+[end]
+
+# meteosearch
+[group]
+    [app] (name=*meteo*search*) (class=.*hromium)
+        [Head]      {1}
+        [Sticky]        {yes}
+        [Dimensions]    {40% 24%}
+        [Position]      (BOTTOMRIGHT) {0% 0%}
+        [Deco]          {NONE}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
 [end]
