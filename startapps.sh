@@ -14,6 +14,9 @@ export CHROMIUM_FLAGS='--enable-remote-extensions --high-dpi-support --force-dev
 # always start a browser
 if [ -f /usr/bin/chromium ]; then
     chromium &
+
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=420&height=150&harmonize=1"&
 fi
 
 #_______ Autostart Home only _______________________________________________

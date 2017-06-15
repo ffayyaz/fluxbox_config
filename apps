@@ -201,7 +201,7 @@
 [app] (name=calterm)
         [Head]          {1}
         [Sticky]        {yes}
-        [Dimensions]    {21% 48%}
+        [Dimensions]    {25% 50%}
         [Position]      (TOPRIGHT) {0% 18%}
         [Deco]          {NONE}
         [Layer]         {12}
@@ -996,8 +996,8 @@
     [app] (name=*meteo*search*) (class=.*hromium)
         [Head]      {1}
         [Sticky]        {yes}
-        [Dimensions]    {40% 24%}
-        [Position]      (BOTTOMRIGHT) {0% 0%}
+        [Dimensions]    {25% 15%}
+        [Position]      (BOTTOMRIGHT) {0% 22%}
         [Deco]          {NONE}
         [Layer]         {12}
         [FocusNewWindow] {no}
