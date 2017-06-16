@@ -15,8 +15,6 @@ export CHROMIUM_FLAGS='--enable-remote-extensions --high-dpi-support --force-dev
 if [ -f /usr/bin/chromium ]; then
     chromium &
 
-    # start meteo "app"
-    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=420&height=150&harmonize=1"&
 fi
 
 #_______ Autostart Home only _______________________________________________
@@ -52,6 +50,10 @@ if [ "`hostname`" = "ganja" ]; then
     xinput --set-prop 9  276 1
     xinput --set-prop 10 275 2
     xinput --set-prop 10 276 1
+
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=420&height=150&harmonize=1"&
+    calterm &
 fi
 
 #_______ Autostart Netstream only __________________________________________
@@ -115,4 +117,3 @@ urxvt &
 #kernlogterm &
 #topterm &
 mixerterm &
-#calterm &
