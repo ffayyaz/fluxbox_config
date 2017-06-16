@@ -16,7 +16,7 @@ if [ -f /usr/bin/chromium ]; then
     chromium &
 
     # start meteo "app"
-    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=420&height=150&harmonize=1"&
+    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=420&height=150&harmonize=1"&
 fi
 
 #_______ Autostart Home only _______________________________________________
@@ -115,4 +115,4 @@ urxvt &
 #kernlogterm &
 #topterm &
 mixerterm &
-calterm &
+#calterm &
