@@ -372,6 +372,7 @@
     [app] (Pidgin)
     [app] (xchat)
     [app] (skype)
+    [app] (skypeforlinux)
     [app] (hipchat.*)
     [app] (netstream.hipchat.com__chat.*)
     [app] (telegram)

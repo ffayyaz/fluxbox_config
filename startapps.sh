@@ -4,7 +4,8 @@
 
 [ -f /usr/bin/xscreensaver ]    && xscreensaver -no-splash&
 [ -f /usr/bin/xclock ]          && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
-[ -f /usr/bin/skype ]           && skype &
+[ -f /usr/bin/skypeforlinux ]   && skypeforlinux &
+#[ -f /usr/bin/skype ]           && skype &
 # [ -f /usr/bin/vlc ]             && vlc --avcodec-hw=vaapi --video-wallpaper --zoom 2 --no-osd --qt-start-minimized --qt-notification 0 --qt-system-tray http://iphone-streaming.ustream.tv/uhls/17074538/streams/live/iphone/playlist.m3u8 &
 
 # --enable-remote-extensions is a dirty hack, because all extensions were "lost"
