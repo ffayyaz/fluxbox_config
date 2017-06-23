@@ -201,8 +201,8 @@
 [app] (name=calterm)
         [Head]          {1}
         [Sticky]        {yes}
-        [Dimensions]    {22% 50%}
-        [Position]      (TOPRIGHT) {0% 18%}
+        [Dimensions]    {25% 50%}
+        [Position]      (BOTTOMRIGHT) {0% 30%}
         [Deco]          {NONE}
         [Layer]         {12}
         [FocusNewWindow] {no}
