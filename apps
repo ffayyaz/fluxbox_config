@@ -997,7 +997,7 @@
     [app] (name=*eteo*earch*) (class=.*hromium)
         [Head]      {1}
         [Sticky]        {yes}
-        [Dimensions]    {22% 15%}
+        [Dimensions]    {48% 30%}
         [Position]      (BOTTOMRIGHT) {0% 0%}
         [Deco]          {NONE}
         [Layer]         {12}
