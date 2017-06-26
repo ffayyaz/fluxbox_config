@@ -15,8 +15,6 @@ export CHROMIUM_FLAGS='--enable-remote-extensions --high-dpi-support --force-dev
 # always start a browser
 if [ -f /usr/bin/chromium ]; then
     chromium &
-    # start meteo "app"
-    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=420&height=150&harmonize=1"&
 fi
 
 #_______ Autostart Home only _______________________________________________
@@ -53,6 +51,8 @@ if [ "`hostname`" = "ganja" ]; then
     xinput --set-prop 10 275 2
     xinput --set-prop 10 276 1
 
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
 fi
 
 #_______ Autostart Netstream only __________________________________________
@@ -80,6 +80,9 @@ if [ "`hostname`" = "fayyaz" ]; then
 
     # start firstclass
     wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
+
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=420&height=150&harmonize=1"&
 
     # start some desktop windows (zabbix, ...)
     #chromium  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
