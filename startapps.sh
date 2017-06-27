@@ -82,7 +82,7 @@ if [ "`hostname`" = "fayyaz" ]; then
     wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
 
     # start meteo "app"
-    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=420&height=150&harmonize=1"&
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=800&height=300&harmonize=1"&
 
     # start some desktop windows (zabbix, ...)
     #chromium  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
