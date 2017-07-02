@@ -984,23 +984,23 @@
         [Head]          {1}
 [end]
 
+# meteosearch
+[app] (name=meteo.search.ch) (class=*hromium)
+        [Head]              {1}
+        [Sticky]            {yes}
+        [Dimensions]        {48% 30%}
+        [Position]          (BOTTOMRIGHT) {0% 0%}
+        [Deco]              {NONE}
+        [Layer]             {12}
+        [FocusNewWindow]    {no}
+        [IconHidden]        {yes}
+        [FocusHidden]       {yes}
+[end]
+
 # octave
 [app] (name=octave-gui) (class=Octave-gui)
         [Head]          {2}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
         [Jump]          {yes}
-[end]
-
-# meteosearch
-[app] (name=meteo.search.ch) (class=*hromium)
-        [Head]      {1}
-        [Sticky]        {yes}
-        [Dimensions]    {48% 30%}
-        [Position]      (BOTTOMRIGHT) {0% 0%}
-        [Deco]          {NONE}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
 [end]
