@@ -102,6 +102,9 @@ if [ "`hostname`" = "mobile" ]; then
     #cpufreqterm &
     [ -f /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n 2>&1 &> /tmp/thinkfan.log&
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
+
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
 fi
 
 #_______ Autostart everywhere (final)_______________________________________
