@@ -993,7 +993,7 @@
 [end]
 
 # meteosearch
-[app] (name=*eteo*earch*) (class=.*hromium)
+[app] (name=*eteo*earch*) (class=*hromium)
         [Head]      {1}
         [Sticky]        {yes}
         [Dimensions]    {48% 30%}
