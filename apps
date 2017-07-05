@@ -999,5 +999,8 @@
         [Dimensions]    {48% 32%}
         [Layer]         {12}
         [Deco]          {NONE}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
         [Sticky]        {yes}
 [end]
