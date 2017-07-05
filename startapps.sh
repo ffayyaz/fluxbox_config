@@ -51,8 +51,8 @@ if [ "`hostname`" = "ganja" ]; then
     xinput --set-prop 10 275 2
     xinput --set-prop 10 276 1
 
-    # # start meteo "app"
-    # chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
 fi
 
 #_______ Autostart Netstream only __________________________________________
@@ -81,8 +81,8 @@ if [ "`hostname`" = "fayyaz" ]; then
     # start firstclass
     wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
 
-    # # start meteo "app"
-    # chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=800&height=300&harmonize=1"&
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=800&height=300&harmonize=1"&
 
     # start some desktop windows (zabbix, ...)
     #chromium  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
@@ -103,8 +103,8 @@ if [ "`hostname`" = "mobile" ]; then
     [ -f /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n 2>&1 &> /tmp/thinkfan.log&
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
 
-    # # start meteo "app"
-    # chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
 fi
 
 #_______ Autostart everywhere (final)_______________________________________
