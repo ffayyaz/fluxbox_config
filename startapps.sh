@@ -86,7 +86,7 @@ if [ "`hostname`" = "fayyaz" ]; then
 
     # start some desktop windows (zabbix, ...)
     #chromium  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
-    google-chrome  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
+    #google-chrome  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
 fi
 
 #____ Netstream notebook
