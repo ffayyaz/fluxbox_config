@@ -996,7 +996,7 @@
 [app] (name=.*meteo.search.ch.*) (class=.*hromium)
         [Head]          {1}
         [Position]      (BOTTOMRIGHT) {0% 0%}
-        [Dimensions]    {48% 32%}
+        [Dimensions]    {50% 32%}
         [Layer]         {12}
         [Deco]          {NONE}
         [FocusNewWindow] {no}
