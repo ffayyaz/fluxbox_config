@@ -45,9 +45,10 @@ xset b off
 
 fluxbox &
 fbpid=$!
-~/.fluxbox/startapps.sh &
  
 wait $fbpid
+
+~/.fluxbox/startapps.sh & # TODO CHECK THIS
 
 
 # END AUTOSTART -----------------------------------------------------------

@@ -79,7 +79,7 @@ if [ "`hostname`" = "fayyaz" ]; then
     #[ -f /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
 
     # start firstclass
-    wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
+    #wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
 
     # start meteo "app"
     chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=800&height=300&harmonize=1"&
@@ -122,4 +122,5 @@ urxvt &
 #kernlogterm &
 #topterm &
 mixerterm &
+sleep 1
 calterm &
