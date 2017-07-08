@@ -52,7 +52,7 @@ if [ "`hostname`" = "ganja" ]; then
     xinput --set-prop 10 276 1
 
     # start meteo "app"
-    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=955&height=330&harmonize=1"&
 fi
 
 #_______ Autostart Netstream only __________________________________________
