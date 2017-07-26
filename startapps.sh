@@ -94,6 +94,8 @@ fi
 if [ "`hostname`" = "nacho" ]; then
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
     pkill -9 -f skype # do not start skype on this machine
+    # start meteo "app"
+    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=670&height=230&harmonize=1"&
 fi
 
 #_______ Autostart mobile only _____________________________________________
