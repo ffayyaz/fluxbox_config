@@ -123,6 +123,5 @@ urxvt &
 #authlogterm &
 #kernlogterm &
 #topterm &
-mixerterm &
-sleep 1
-calterm &
+mixerterm
+calterm
