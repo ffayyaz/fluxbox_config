@@ -1,29 +1,29 @@
 #!/bin/bash
-#
+
+# bullshit sleep, otherwise everything gui-wise does not start
+# because some issue with DISPLAY
+sleep 10
+
 #_______ Autostart everywhere ______________________________________________
 
 [ -f /usr/bin/xscreensaver ]    && xscreensaver -no-splash&
 [ -f /usr/bin/xclock ]          && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 [ -f /usr/bin/skypeforlinux ]   && skypeforlinux &
-#[ -f /usr/bin/skype ]           && skype &
-# [ -f /usr/bin/vlc ]             && vlc --avcodec-hw=vaapi --video-wallpaper --zoom 2 --no-osd --qt-start-minimized --qt-notification 0 --qt-system-tray http://iphone-streaming.ustream.tv/uhls/17074538/streams/live/iphone/playlist.m3u8 &
 
 # --enable-remote-extensions is a dirty hack, because all extensions were "lost"
 # after reboot, this flag makes them visible/usable again
-export CHROMIUM_FLAGS='--enable-remote-extensions --high-dpi-support --force-device-scale-factor=1'
+export CHROMIUM_FLAGS="--enable-remote-extensions --high-dpi-support --force-device-scale-factor=1"
 
 # always start a browser
-if [ -f /usr/bin/chromium ]; then
-    chromium &
-fi
+[ -f /usr/bin/chromium ]        && chromium &
 
 #_______ Autostart Home only _______________________________________________
 
 /sbin/ifconfig|egrep '192.168.85.'
 if [ ${?} -eq 0 ]; then
-    # [ -f /usr/bin/pidgin ] && pidgin &
-    [ -f /usr/bin/telegram ] && telegram &
-    [ -f /usr/bin/hipchat ] && hipchat &
+    [ -f /usr/bin/pidgin ]      && pidgin &
+    [ -f /usr/bin/telegram ]    && telegram &
+    #[ -f /usr/bin/hipchat ]     && hipchat &
     # #chromium --app="https://netstream.hipchat.com/chat" &
     # google-chrome --app="https://netstream.hipchat.com/chat" &
 fi
@@ -31,19 +31,14 @@ fi
 #_______ Autostart Ganja only ______________________________________________
 
 if [ "`hostname`" = "ganja" ]; then
-    [ -f /usr/bin/xchat ] && xchat &
+    #[ -f /usr/bin/xchat ] && xchat &
     [ -f /usr/bin/thunderbird ] && thunderbird &
-
-    # recreate playlists
-    if [ -f /media/stuff/music/playlists/recreate.sh ]; then
-        /media/stuff/music/playlists/recreate.sh &
-    fi
 
     # sound
     chromium --app="https://www.soundcloud.com" &
     sleep 2
     chromium --app="https://www.mixcloud.com" &
-    [ -f /usr/bin/audacious ] && audacious &
+    [ -f /usr/bin/audacious ]   && audacious &
 
     # mouse speed
     xinput --set-prop 9  275 2
@@ -58,13 +53,11 @@ fi
 #_______ Autostart Netstream only __________________________________________
 
 if [ "`hostname`" = "fayyaz" ]; then
-    [ -f /usr/bin/pidgin ] && pidgin &
-    [ -f /usr/bin/hipchat ] && hipchat &
+    [ -f /usr/bin/pidgin ]      && pidgin &
+    #[ -f /usr/bin/hipchat ]     && hipchat &
     [ -f /usr/bin/thunderbird ] && thunderbird &
     #chromium  --app="https://netstream.hipchat.com/chat" &
     #google-chrome  --app="https://netstream.hipchat.com/chat" &
-
-    echo "" > /home/fafa/.xsession-errors
 
     # sync chromium to google-chrome
     rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
@@ -73,7 +66,7 @@ if [ "`hostname`" = "fayyaz" ]; then
     chromium --app="https://www.soundcloud.com" &
     sleep 2
     chromium --app="https://www.mixcloud.com" &
-    [ -f /usr/bin/audacious ] && audacious &
+    [ -f /usr/bin/audacious ]   && audacious &
 
     # startup windows
     #[ -f /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &

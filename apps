@@ -975,12 +975,11 @@
         [Head]          {1}
 [end]
 # gimp toolbox
-[app]  (role=gimp-toolbox) #(name=gimp) (class=Gimp)
+[app]  (role=gimp-toolbox)
         [Workspace]     {0}
         [Position]      (TOPLEFT) {0% 0%}
         [Jump]          {yes}
         [Dimensions]    {25% 100%}
-        # [Maximized]     {yes}
         [Head]          {1}
 [end]
 

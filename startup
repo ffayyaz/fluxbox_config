@@ -43,12 +43,11 @@ fi
 # NOTE: gui apps need to be started delayed
 #       otherwise all windows are messed up 
 
-fluxbox &
+fluxbox -log "/home/fafa/.fluxbox/log" &
 fbpid=$!
- 
 wait $fbpid
 
-~/.fluxbox/startapps.sh & # TODO CHECK THIS
+~/.fluxbox/startapps.sh &
 
 
 # END AUTOSTART -----------------------------------------------------------
