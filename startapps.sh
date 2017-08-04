@@ -23,7 +23,7 @@ export CHROMIUM_FLAGS="--enable-remote-extensions --high-dpi-support --force-dev
 if [ ${?} -eq 0 ]; then
     [ -f /usr/bin/pidgin ]      && pidgin &
     [ -f /usr/bin/telegram ]    && telegram &
-    #[ -f /usr/bin/hipchat ]     && hipchat &
+    [ -f /usr/bin/hipchat ]     && hipchat &
     # #chromium --app="https://netstream.hipchat.com/chat" &
     # google-chrome --app="https://netstream.hipchat.com/chat" &
 fi
@@ -54,7 +54,7 @@ fi
 
 if [ "`hostname`" = "fayyaz" ]; then
     [ -f /usr/bin/pidgin ]      && pidgin &
-    #[ -f /usr/bin/hipchat ]     && hipchat &
+    [ -f /usr/bin/hipchat ]     && hipchat &
     [ -f /usr/bin/thunderbird ] && thunderbird &
     #chromium  --app="https://netstream.hipchat.com/chat" &
     #google-chrome  --app="https://netstream.hipchat.com/chat" &
