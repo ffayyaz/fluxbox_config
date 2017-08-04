@@ -52,7 +52,7 @@ if [ "`hostname`" = "ganja" ]; then
     xinput --set-prop 10 276 1
 
     # start meteo "app"
-    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=955&height=330&harmonize=1"&
+    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=955&height=330&harmonize=1"&
 fi
 
 #_______ Autostart Netstream only __________________________________________
@@ -82,7 +82,7 @@ if [ "`hostname`" = "fayyaz" ]; then
     #wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
 
     # start meteo "app"
-    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=835&height=300&harmonize=1"&
+    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=835&height=300&harmonize=1"&
 
     # start some desktop windows (zabbix, ...)
     #chromium  --app="http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde" &
@@ -95,7 +95,7 @@ if [ "`hostname`" = "nacho" ]; then
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
     pkill -9 -f skype # do not start skype on this machine
     # start meteo "app"
-    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=670&height=230&harmonize=1"&
+    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=670&height=230&harmonize=1"&
 fi
 
 #_______ Autostart mobile only _____________________________________________
@@ -106,7 +106,7 @@ if [ "`hostname`" = "mobile" ]; then
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
 
     # start meteo "app"
-    chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
+    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
 fi
 
 #_______ Autostart everywhere (final)_______________________________________
