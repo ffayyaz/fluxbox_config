@@ -32,7 +32,7 @@ fi
 
 if [ "`hostname`" = "ganja" ]; then
     [ -f /usr/bin/xchat ] && xchat &
-    [ -f /usr/bin/icedove ] && icedove &
+    [ -f /usr/bin/thunderbird ] && thunderbird &
 
     # recreate playlists
     if [ -f /media/stuff/music/playlists/recreate.sh ]; then
@@ -60,7 +60,7 @@ fi
 if [ "`hostname`" = "fayyaz" ]; then
     [ -f /usr/bin/pidgin ] && pidgin &
     [ -f /usr/bin/hipchat ] && hipchat &
-    [ -f /usr/bin/icedove ] && icedove &
+    [ -f /usr/bin/thunderbird ] && thunderbird &
     #chromium  --app="https://netstream.hipchat.com/chat" &
     #google-chrome  --app="https://netstream.hipchat.com/chat" &
 
