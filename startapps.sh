@@ -24,8 +24,8 @@ if [ ${?} -eq 0 ]; then
     # [ -f /usr/bin/pidgin ] && pidgin &
     [ -f /usr/bin/telegram ] && telegram &
     [ -f /usr/bin/hipchat ] && hipchat &
-    # #chromium --app=https://netstream.hipchat.com/chat &
-    # google-chrome --app=https://netstream.hipchat.com/chat &
+    # #chromium --app="https://netstream.hipchat.com/chat" &
+    # google-chrome --app="https://netstream.hipchat.com/chat" &
 fi
 
 #_______ Autostart Ganja only ______________________________________________
@@ -40,9 +40,9 @@ if [ "`hostname`" = "ganja" ]; then
     fi
 
     # sound
-    chromium --app=https://www.soundcloud.com &
+    chromium --app="https://www.soundcloud.com" &
     sleep 2
-    chromium --app=https://www.mixcloud.com &
+    chromium --app="https://www.mixcloud.com" &
     [ -f /usr/bin/audacious ] && audacious &
 
     # mouse speed
@@ -61,8 +61,8 @@ if [ "`hostname`" = "fayyaz" ]; then
     [ -f /usr/bin/pidgin ] && pidgin &
     [ -f /usr/bin/hipchat ] && hipchat &
     [ -f /usr/bin/icedove ] && icedove &
-    #chromium  --app=https://netstream.hipchat.com/chat &
-    #google-chrome  --app=https://netstream.hipchat.com/chat &
+    #chromium  --app="https://netstream.hipchat.com/chat" &
+    #google-chrome  --app="https://netstream.hipchat.com/chat" &
 
     echo "" > /home/fafa/.xsession-errors
 
@@ -70,9 +70,9 @@ if [ "`hostname`" = "fayyaz" ]; then
     rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
 
     # sound
-    chromium --app=https://www.soundcloud.com &
+    chromium --app="https://www.soundcloud.com" &
     sleep 2
-    chromium --app=https://www.mixcloud.com &
+    chromium --app="https://www.mixcloud.com" &
     [ -f /usr/bin/audacious ] && audacious &
 
     # startup windows
@@ -85,8 +85,8 @@ if [ "`hostname`" = "fayyaz" ]; then
     chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=835&height=300&harmonize=1"&
 
     # start some desktop windows (zabbix, ...)
-    #chromium  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
-    #google-chrome  --app=http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde &
+    #chromium  --app="http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde" &
+    #google-chrome  --app="http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde" &
 fi
 
 #____ Netstream notebook
@@ -123,5 +123,5 @@ urxvt &
 #authlogterm &
 #kernlogterm &
 #topterm &
-mixerterm
-calterm
+mixerterm &
+calterm &
