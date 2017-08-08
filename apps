@@ -1003,3 +1003,12 @@
         [FocusHidden]   {yes}
         [Sticky]        {yes}
 [end]
+
+# robo3t / robomongo
+[app] (name=robo3t) (class=robo3t)
+        [Head]          {2}
+        [Position]      (TOPLEFT) {0% 0%}
+        [Maximized]     {yes}
+        [Jump]          {yes}
+        [Fullscreen]    {yes}
+[end]
