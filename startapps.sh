@@ -118,3 +118,8 @@ urxvt &
 #topterm &
 mixerterm &
 #calterm &
+
+#_______ random crap________________________________________________________
+
+# ensure ~/.ssh/sockets exists (for multiplexing)
+[ ! -d ~/.ssh/sockets ] && mkdir ~/.ssh/sockets && chmod 600 ~/.ssh/sockets
