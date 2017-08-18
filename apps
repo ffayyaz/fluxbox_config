@@ -655,10 +655,11 @@
         [Deco]          {NONE}
 [end]
 
-# teleboy / wilmaa
+# teleboy / wilmaa / ewl
 [group] (workspace)
     [app] (name=www.teleboy.ch)
     [app] (name=.*wilmaa.com.*)
+    [app] (name=.*mobiletv.ewl-internet.ch.*)
         [Head]          {2}
         #[Workspace]     {0}
         [Dimensions]    {100% 100%}
