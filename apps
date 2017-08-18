@@ -655,9 +655,10 @@
         [Deco]          {NONE}
 [end]
 
-# teleboy
+# teleboy / wilmaa
 [group] (workspace)
     [app] (name=www.teleboy.ch)
+    [app] (name=www.wilmaa.com.*)
         [Head]          {2}
         #[Workspace]     {0}
         [Dimensions]    {100% 100%}
