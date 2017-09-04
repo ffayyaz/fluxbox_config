@@ -562,6 +562,10 @@
     # manhattan servers
     [app] (name=intranet.netstream.ch__display_ops_TVaaS.*servers) (class=.*hromium) 
     [app] (name=intranet.netstream.ch__display_ops_TVaaS.*servers) (class=.*oogle-chrome) 
+
+    # trello
+    [app] (name=trello.com.*) (class=.*hromium)
+    [app] (name=trello.com.*) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
