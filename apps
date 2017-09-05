@@ -446,10 +446,12 @@
         [Head]          {2}
 [end]
 
-# ns jira
+# ns jira / jira opt
 [group] (workspace)
     [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*hromium)
     [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*oogle-chrome)
+    [app] (name=jira.netstream.ch.*OPT.*) (class=.*hromium)
+    [app] (name=jira.netstream.ch.*OPT.*) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {45% 100%}
