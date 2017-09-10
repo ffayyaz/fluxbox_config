@@ -664,7 +664,7 @@
 
 # teleboy / wilmaa / ewl
 [group] (workspace)
-    [app] (name=www.teleboy.ch)
+    [app] (name=www.teleboy.ch.*)
     [app] (name=.*wilmaa.com.*)
     [app] (name=.*mobiletv.ewl-internet.ch.*)
     [app] (name=.*webtv.thurcom.ch.*)
