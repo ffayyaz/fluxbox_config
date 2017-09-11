@@ -22,8 +22,11 @@ export CHROMIUM_FLAGS="--enable-remote-extensions --high-dpi-support --force-dev
 /sbin/ifconfig|egrep '192.168.85.'
 if [ ${?} -eq 0 ]; then
     [ -f /usr/bin/pidgin ]      && pidgin &
+    sleep 0.5
     [ -f /usr/bin/telegram ]    && telegram &
+    sleep 0.5
     [ -f /usr/bin/hipchat ]     && hipchat &
+    sleep 0.5
     # #chromium --app="https://netstream.hipchat.com/chat" &
     # google-chrome --app="https://netstream.hipchat.com/chat" &
 fi
@@ -54,13 +57,18 @@ fi
 
 if [ "`hostname`" = "fayyaz" ]; then
     [ -f /usr/bin/pidgin ]      && pidgin &
+    sleep 0.5
     [ -f /usr/bin/hipchat ]     && hipchat &
+    sleep 0.5
     [ -f /usr/bin/thunderbird ] && thunderbird &
+    sleep 0.5
     #chromium  --app="https://netstream.hipchat.com/chat" &
     #google-chrome  --app="https://netstream.hipchat.com/chat" &
 
     # sync chromium to google-chrome
     rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
+
+    sleep 0.5
 
     # sound
     chromium --app="https://www.soundcloud.com" &
