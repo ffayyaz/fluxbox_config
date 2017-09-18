@@ -62,13 +62,13 @@ if [ "`hostname`" = "fayyaz" ]; then
     sleep 0.5
     [ -f /usr/bin/thunderbird ] && thunderbird &
     sleep 0.5
-    #chromium  --app="https://netstream.hipchat.com/chat" &
-    #google-chrome  --app="https://netstream.hipchat.com/chat" &
 
     # sync chromium to google-chrome
     rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
 
     sleep 0.5
+
+    google-chrome --app="https://mail.business-exchange.ch/owa/?modurl=0" &
 
     # sound
     chromium --app="https://www.soundcloud.com" &
