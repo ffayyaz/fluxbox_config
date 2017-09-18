@@ -27,14 +27,11 @@ if [ ${?} -eq 0 ]; then
     sleep 0.5
     [ -f /usr/bin/hipchat ]     && hipchat &
     sleep 0.5
-    # #chromium --app="https://netstream.hipchat.com/chat" &
-    # google-chrome --app="https://netstream.hipchat.com/chat" &
 fi
 
 #_______ Autostart Ganja only ______________________________________________
 
 if [ "`hostname`" = "ganja" ]; then
-    #[ -f /usr/bin/xchat ] && xchat &
     [ -f /usr/bin/thunderbird ] && thunderbird &
 
     # sound
@@ -48,9 +45,6 @@ if [ "`hostname`" = "ganja" ]; then
     xinput --set-prop 9  276 1
     xinput --set-prop 10 275 2
     xinput --set-prop 10 276 1
-
-    # start meteo "app"
-    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=955&height=330&harmonize=1"&
 fi
 
 #_______ Autostart Netstream only __________________________________________
@@ -78,36 +72,20 @@ if [ "`hostname`" = "fayyaz" ]; then
 
     # startup windows
     #[ -f /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
-
-    # start firstclass
-    #wine /home/fafa/.wine/drive_c/Program\ Files/FirstClass/fcc32.exe &
-
-    # start meteo "app"
-    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=835&height=300&harmonize=1"&
-
-    # start some desktop windows (zabbix, ...)
-    #chromium  --app="http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde" &
-    #google-chrome  --app="http://zabbix.netstream.ch/zabbix/tr_status.php?ddreset=1&sid=c5e867e180599fde" &
 fi
 
 #____ Netstream notebook
 
 if [ "`hostname`" = "nacho" ]; then
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-    pkill -9 -f skype # do not start skype on this machine
-    # start meteo "app"
-    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=670&height=230&harmonize=1"&
 fi
 
 #_______ Autostart mobile only _____________________________________________
 
 if [ "`hostname`" = "mobile" ]; then
-    #cpufreqterm &
+    cpufreqterm &
     [ -f /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n 2>&1 &> /tmp/thinkfan.log&
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-
-    # start meteo "app"
-    #chromium --app="https://meteo.search.ch/images/chart/duebendorf.svg?width=915&height=315&harmonize=1"&
 fi
 
 #_______ Autostart everywhere (final)_______________________________________
