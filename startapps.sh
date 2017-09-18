@@ -78,6 +78,8 @@ fi
 
 if [ "`hostname`" = "nacho" ]; then
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
+    # kill skype, which was started above
+    pkill -9 -f skype
 fi
 
 #_______ Autostart mobile only _____________________________________________
