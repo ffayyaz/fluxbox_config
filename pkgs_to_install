@@ -12,8 +12,11 @@ chromium
 iceweasel
 icedove
 thunderbird
-#opera
-#opera-next
+opera
+opera-beta
+opera-developer
+opera-next
+opera-stable
 kate
 virtualbox
 xvnc4viewer
