@@ -797,7 +797,7 @@
     [app] (vprerex)
     [app] (evince)
     [app] (kpdf)
-    [app] (acroread)
+    [app] (.croread.*)
         [Head]          {2}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
