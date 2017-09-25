@@ -12,7 +12,7 @@ chromium
 iceweasel
 icedove
 thunderbird
-opera
+#opera
 opera-beta
 opera-developer
 opera-next
@@ -41,13 +41,13 @@ compton
 xpdf
 vprerex
 evince
-acroread
-acroread-debian-files
+acroread:i386
+acroread-debian-files:i386
 acroread-data
 acroread-dictionary-en
 acroread-l10n-en
-acroread-escript
-acroread-plugins
+acroread-escript:i386
+acroread-plugins:i386
 acroread-plugin-speech
 nedit
 tea
