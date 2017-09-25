@@ -41,8 +41,15 @@ compton
 xpdf
 vprerex
 evince
-#kpdf
-#acroread
+kpdf
+acroread
+acroread-debian-files
+acroread-data
+acroread-dictionary-en
+acroread-l10n-en
+acroread-escript
+acroread-plugins
+acroread-plugin-speech
 nedit
 tea
 okular
