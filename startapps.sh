@@ -52,6 +52,8 @@ fi
 if [ "`hostname`" = "fayyaz" ]; then
     [ -f /usr/bin/pidgin ]      && pidgin &
     sleep 0.5
+    [ -f /usr/bin/telegram ]      && telegram &
+    sleep 0.5
     [ -f /usr/bin/hipchat ]     && hipchat &
     sleep 0.5
     [ -f /usr/bin/thunderbird ] && thunderbird &
