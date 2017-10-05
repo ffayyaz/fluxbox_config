@@ -60,7 +60,9 @@ if [ "`hostname`" = "fayyaz" ]; then
     sleep 0.5
 
     # sync chromium to google-chrome
-    rsync -arptl --exclude "Singleton*" --delete-before ~/.config/chromium/ ~/.config/google-chrome/
+    # fucking google chrome settings are not used after copying
+    # therefore leave out the delete-before, to keep settings
+    rsync -arptl --exclude "Singleton*" ~/.config/chromium/ ~/.config/google-chrome/
 
     sleep 0.5
 
