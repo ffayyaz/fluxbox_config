@@ -533,6 +533,8 @@
 
     [app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*oogle-chrome)
     [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=.*oogle-chrome)
+
+    [app] (name=postman) (class=Postman)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
