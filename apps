@@ -630,6 +630,8 @@
     [app] (name=u8483.vdc.netstream.com) (class=.*oogle-chrome)
     [app] (name=u8644.vdc.netstream.com) (class=.*hromium)
     [app] (name=u8644.vdc.netstream.com) (class=.*oogle-chrome)
+    [app] (name=u8648.vdc.netstream.com) (class=.*hromium)
+    [app] (name=u8648.vdc.netstream.com) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {2}
         [Dimensions]    {100% 100%}
