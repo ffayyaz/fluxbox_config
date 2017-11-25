@@ -776,7 +776,7 @@
 
 #---------------------------------------------------- VIDEO
 [group] (workspace)
-    [app] (vlc) (class=Vlc)
+    [app] (vlc) (class=vlc)
     [app] (xv) (class=MPlayer)
     [app] (vdpau) (class=MPlayer)
     [app] (vdpau) (class=mplayer2)
@@ -992,14 +992,14 @@
 [end]
 
 # gimp
-[app] (name=gimp) (class=Gimp)
-        [Workspace]     {0}
-        [Position]      (TOPRIGHT) {0% 0%}
-        [Jump]          {yes}
-        [Dimensions]    {75% 100%}
-        # [Maximized]     {yes}
-        [Head]          {1}
-[end]
+# [app] (name=gimp) (class=Gimp)
+        # [Workspace]     {0}
+        # [Position]      (TOPRIGHT) {0% 0%}
+        # [Jump]          {yes}
+        # [Dimensions]    {75% 100%}
+        # # [Maximized]     {yes}
+        # [Head]          {1}
+# [end]
 # gimp toolbox
 [app]  (role=gimp-toolbox)
         [Workspace]     {0}

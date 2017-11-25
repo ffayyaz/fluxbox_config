@@ -25,8 +25,6 @@ if [ ${?} -eq 0 ]; then
     sleep 0.5
     [ -f /usr/bin/telegram ]    && telegram &
     sleep 0.5
-    [ -f /usr/bin/hipchat ]     && hipchat &
-    sleep 0.5
 fi
 
 #_______ Autostart Ganja only ______________________________________________
