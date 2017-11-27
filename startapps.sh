@@ -14,6 +14,8 @@ sleep 10
 # after reboot, this flag makes them visible/usable again
 export CHROMIUM_FLAGS="--enable-remote-extensions --high-dpi-support --force-device-scale-factor=1"
 
+export MY_IP=`/usr/bin/curl -s ipinfo.io/ip`
+
 # always start a browser
 [ -f /usr/bin/chromium ]        && chromium &
 
