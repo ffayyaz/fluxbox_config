@@ -374,7 +374,7 @@
     [app] (skype)
     [app] (skypeforlinux)
     [app] (hipchat.*)
-    [app] (netstream.hipchat.com__chat.*)
+    [app] (.*.hipchat.com__chat.*)
     [app] (telegram)
     [app] (wire)
         [Dimensions]    {50% 50%}
