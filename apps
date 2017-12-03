@@ -714,6 +714,7 @@
     [app] (name=Global) (class=Thunderbird) 
     [app] (name=Msgcompose) (class=Thunderbird) 
     [app] (name=Calendar) (class=Thunderbird) 
+    [app] (name=Preferences) (class=Thunderbird) 
         [Head]          {1}
         [Workspace]     {4}
         [Layer]         {12}

@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# bullshit sleep, otherwise everything gui-wise does not start
-# because some issue with DISPLAY
-sleep 10
-
 #_______ Autostart everywhere ______________________________________________
 
 [ -f /usr/bin/xscreensaver ]    && xscreensaver -no-splash&
 [ -f /usr/bin/xclock ]          && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 [ -f /usr/bin/skypeforlinux ]   && skypeforlinux &
+[ -f /usr/bin/telegram ]        && telegram &
 
 # --enable-remote-extensions is a dirty hack, because all extensions were "lost"
 # after reboot, this flag makes them visible/usable again
@@ -21,13 +18,7 @@ export MY_IP=`/usr/bin/curl -s ipinfo.io/ip`
 
 #_______ Autostart Home only _______________________________________________
 
-/sbin/ifconfig|egrep '192.168.85.'
-if [ ${?} -eq 0 ]; then
-    [ -f /usr/bin/pidgin ]      && pidgin &
-    sleep 0.5
-    [ -f /usr/bin/telegram ]    && telegram &
-    sleep 0.5
-fi
+# currently nothing
 
 #_______ Autostart Ganja only ______________________________________________
 
@@ -36,7 +27,7 @@ if [ "`hostname`" = "ganja" ]; then
 
     # sound
     chromium --app="https://www.soundcloud.com" &
-    sleep 2
+    #sleep 2
     chromium --app="https://www.mixcloud.com" &
     [ -f /usr/bin/audacious ]   && audacious &
 
@@ -45,45 +36,6 @@ if [ "`hostname`" = "ganja" ]; then
     xinput --set-prop 9  276 1
     xinput --set-prop 10 275 2
     xinput --set-prop 10 276 1
-fi
-
-#_______ Autostart Netstream only __________________________________________
-
-if [ "`hostname`" = "fayyaz" ]; then
-    [ -f /usr/bin/pidgin ]      && pidgin &
-    sleep 0.5
-    [ -f /usr/bin/telegram ]      && telegram &
-    sleep 0.5
-    [ -f /usr/bin/hipchat ]     && hipchat &
-    sleep 0.5
-    [ -f /usr/bin/thunderbird ] && thunderbird &
-    sleep 0.5
-
-    # sync chromium to google-chrome
-    # fucking google chrome settings are not used after copying
-    # therefore leave out the delete-before, to keep settings
-    rsync -arptl --exclude "Singleton*" ~/.config/chromium/ ~/.config/google-chrome/
-
-    sleep 0.5
-
-    google-chrome --app="https://mail.business-exchange.ch/owa/?modurl=0" &
-
-    # sound
-    chromium --app="https://www.soundcloud.com" &
-    sleep 2
-    chromium --app="https://www.mixcloud.com" &
-    [ -f /usr/bin/audacious ]   && audacious &
-
-    # startup windows
-    #[ -f /usr/bin/VBoxManage ] && VBoxManage startvm "Windows 8" &
-fi
-
-#____ Netstream notebook
-
-if [ "`hostname`" = "nacho" ]; then
-    [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-    # kill skype, which was started above
-    pkill -9 -f skype
 fi
 
 #_______ Autostart mobile only _____________________________________________
@@ -96,12 +48,13 @@ fi
 
 #_______ Autostart everywhere (final)_______________________________________
 
-urxvt &
+# start 2 terminals
+urxvt -hold -e bash -c "screen -dR root" &
+urxvt -hold -e bash -c "screen -dR fafa" &
 
 # they need to be started at the end, otherwise
 # they are not drawn correctly (they overlap the slit)
 # BULLCRAP workaround
-# maybe this problem is solved using the sleep solution to start fluxbox
 #messagesterm &
 #syslogterm &
 #debuglogterm &

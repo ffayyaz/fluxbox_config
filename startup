@@ -1,8 +1,5 @@
 #!/bin/sh
-#
 # fluxbox startup-script:
-#
-# Lines starting with a '#' are ignored.
 
 # set black background forcibly (maybe overlay is not needed anymore)
 /usr/bin/fbsetroot -solid black
@@ -23,39 +20,31 @@ xset b off
 #xmodmap "~/.Xmodmap" # TODO check this
 [ -f /usr/bin/setxkbmap ] && /usr/bin/setxkbmap ch
 
+################### GUI APPLICATIONS ###########################################
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
-#
 
 # slit
 [ -x /usr/bin/gkrellm ] && gkrellm -w &
 [ -x /usr/bin/wmmoonclock ] && wmmoonclock &
 
 # visual effects
-if [ -x /usr/bin/compton ]; then                                               
-    compton -r12 -o0.75 -l-15 -t-15 -I0.005 -O0.005 -D1 -m1.0 -cC -z -f -G -b                                                                     
+if [ -x /usr/bin/compton ]; then
+    compton -r12 -o0.75 -l-15 -t-15 -I0.005 -O0.005 -D1 -m1.0 -cC -z -f -G -b &
 fi
 
 # make mouse pointer invisible
-[ -x /usr/bin/unclutter ] && unclutter -idle 10 -jitter 10 -regex -notclass ".*xvt.*" ".*term.*" ".*log.*" &
+if [ -x /usr/bin/unclutter ]; then
+    unclutter -idle 10 -jitter 10 -regex -notclass ".*xvt.*" ".*term.*" ".*log.*" &
+fi
 
-################### GUI APPLICATIONS ###########################################
-# NOTE: gui apps need to be started delayed
-#       otherwise all windows are messed up 
-
-fluxbox -log "/home/fafa/.fluxbox/log" &
-fbpid=$!
-wait $fbpid
-
-~/.fluxbox/startapps.sh &
-
-
-# END AUTOSTART -----------------------------------------------------------
-
+# separate startup script
+ ~/.fluxbox/startapps.sh &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
+exec fluxbox -log "/home/fafa/.fluxbox/log" &
+fbpid=$!
+wait $fbpid
 
-#exec fluxbox
-# or if you want to keep a log:
-# exec fluxbox -log "/home/fafa/.fluxbox/log"
+# END AUTOSTART -----------------------------------------------------------
