@@ -2,6 +2,10 @@
 
 #_______ Autostart everywhere ______________________________________________
 
+# start 2 terminals
+urxvt -hold -e bash -c "screen -dR root" &
+urxvt -hold -e bash -c "screen -dR fafa" &
+
 [ -f /usr/bin/xscreensaver ]    && xscreensaver -no-splash&
 [ -f /usr/bin/xclock ]          && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 [ -f /usr/bin/skypeforlinux ]   && skypeforlinux &
@@ -23,6 +27,10 @@ export MY_IP=`/usr/bin/curl -s ipinfo.io/ip`
 #_______ Autostart Ganja only ______________________________________________
 
 if [ "`hostname`" = "ganja" ]; then
+    # remote terminals
+    urxvt -hold -name URxvt-remote -tn remoteterm -e bash -c "ssh mobile" &
+    urxvt -hold -name URxvt-remote -tn remoteterm -e bash -c "ssh mobile-old" &
+
     [ -f /usr/bin/thunderbird ] && thunderbird &
 
     # sound
@@ -48,9 +56,6 @@ fi
 
 #_______ Autostart everywhere (final)_______________________________________
 
-# start 2 terminals
-urxvt -hold -e bash -c "screen -dR root" &
-urxvt -hold -e bash -c "screen -dR fafa" &
 
 # they need to be started at the end, otherwise
 # they are not drawn correctly (they overlap the slit)
