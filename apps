@@ -372,9 +372,11 @@
     [app] (Pidgin)
     [app] (xchat)
     [app] (skype)
+    [app] (Skype)
     [app] (skypeforlinux)
     [app] (hipchat.*)
     [app] (.*.hipchat.com__chat.*)
+    [app] (Telegram)
     [app] (telegram)
     [app] (wire)
         [Dimensions]    {50% 50%}
