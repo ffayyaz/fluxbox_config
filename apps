@@ -132,6 +132,7 @@
         [Workspace]     {3}
         [Position]      (BOTTOMRIGHT) {0% 0%}
         [Dimensions]    {50% 50%}
+        [FocusNewWindow] {no}
 [end]
 
 #---------------------------------------------------- GKRELLM_CONF
