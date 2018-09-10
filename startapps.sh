@@ -38,6 +38,7 @@ if [ "`hostname`" = "ganja" ]; then
     #sleep 2
     chromium --app="https://www.mixcloud.com" &
     [ -f /usr/bin/audacious ]   && audacious &
+    [ -f /usr/bin/pavucontrol ]   && pavucontrol &
 
     # mouse speed
     xinput --set-prop 9  275 2

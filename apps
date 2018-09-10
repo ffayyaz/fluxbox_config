@@ -123,6 +123,15 @@
         [Jump]          {yes}
         [Position]      (TOPLEFT) {0% 0%}
         [Dimensions]    {88% 100%}
+        [Layer]         {11}
+        [FocusNewWindow] {no}
+[end]
+
+[app] (name=pavucontrol)
+        [Head]          {1}
+        [Workspace]     {3}
+        [Position]      (BOTTOMRIGHT) {0% 0%}
+        [Dimensions]    {50% 50%}
 [end]
 
 #---------------------------------------------------- GKRELLM_CONF
