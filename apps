@@ -132,6 +132,7 @@
         [Workspace]     {3}
         [Position]      (BOTTOMRIGHT) {0% 0%}
         [Dimensions]    {50% 50%}
+        [Layer]         {12}
         [FocusNewWindow] {no}
 [end]
 
@@ -389,6 +390,7 @@
     [app] (Telegram)
     [app] (telegram)
     [app] (wire)
+    [app] (slack)
         [Dimensions]    {50% 50%}
         [Head]          {1}
         [Position]      (BOTTOMLEFT) {0% 0%}

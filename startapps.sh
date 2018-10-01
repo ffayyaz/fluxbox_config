@@ -10,6 +10,7 @@ urxvt -hold -e bash -c "screen -dR fafa" &
 [ -f /usr/bin/xclock ]          && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 [ -f /usr/bin/skypeforlinux ]   && skypeforlinux &
 [ -f /usr/bin/telegram ]        && telegram &
+[ -f /usr/bin/slack ]           && slack &
 
 # --enable-remote-extensions is a dirty hack, because all extensions were "lost"
 # after reboot, this flag makes them visible/usable again
