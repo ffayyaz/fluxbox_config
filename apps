@@ -393,6 +393,7 @@
     [app] (telegram)
     [app] (wire)
     [app] (slack)
+    [app] (web.whatsapp.com)
         [Dimensions]    {50% 50%}
         [Head]          {1}
         [Position]      (BOTTOMLEFT) {0% 0%}
