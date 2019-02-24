@@ -412,10 +412,10 @@
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 [group] (workspace)
-    # [app] (name=.*sound.*) (class=.*hromium)
-    # [app] (name=.*sound.*) (class=.*oogle-chrome)
-    # [app] (name=.*mixcloud.*) (class=.*hromium)
-    # [app] (name=.*mixcloud.*) (class=.*oogle-chrome)
+    [app] (name=.*sound.*) (class=.*hromium)
+    [app] (name=.*sound.*) (class=.*oogle-chrome)
+    [app] (name=.*mixcloud.*) (class=.*hromium)
+    [app] (name=.*mixcloud.*) (class=.*oogle-chrome)
         [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {100% 100%}
