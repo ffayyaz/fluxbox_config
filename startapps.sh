@@ -20,6 +20,7 @@ export MY_IP=`/usr/bin/curl -s ipinfo.io/ip`
 
 # always start a browser
 [ -f /usr/bin/chromium ]        && chromium &
+[ -f /usr/bin/chromium ]        && chromium --app=https://web.whatsapp.com/ &
 
 #_______ Autostart Home only _______________________________________________
 
