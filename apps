@@ -43,6 +43,18 @@
         [Deco]          {NONE}
 [end]
 
+[app] (name=clockterm)
+        [Position]      (TOPRIGHT) {11% 0%}
+        [Head]          {1}
+        [Dimensions]    {30% 17%}
+        [Sticky]        {yes}
+        [Layer]         {12}
+        [FocusNewWindow] {no}
+        [IconHidden]    {yes}
+        [FocusHidden]   {yes}
+        [Deco]          {NONE}
+[end]
+
 #---------------------------------------------------- MIXER
 [app] (name=mixerterm)
         [Head]          {2}
@@ -453,15 +465,15 @@
         [Position]      (TOPLEFT) {50% 0%}
 [end]
 
-# opera / vivaldi
-[group] (workspace)
-    [app] (name=Opera) (class=Opera)
-    [app] (name=Opera) (class=OperaNext)
-    [app] (class=Vivaldi.*)
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Head]          {2}
-[end]
+## opera / vivaldi
+#[group] (workspace)
+#    [app] (name=Opera) (class=Opera)
+#    [app] (name=Opera) (class=OperaNext)
+#    [app] (class=Vivaldi.*)
+#        [Dimensions]    {100% 100%}
+#        [Maximized]     {yes}
+#        [Head]          {2}
+#[end]
 
 # ns jira / jira opt
 [group] (workspace)
