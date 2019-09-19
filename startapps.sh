@@ -16,7 +16,8 @@ urxvt -hold -e bash -c "screen -dR fafa" &
 # after reboot, this flag makes them visible/usable again
 export CHROMIUM_FLAGS="--enable-remote-extensions --high-dpi-support --force-device-scale-factor=1"
 
-export MY_IP=`/usr/bin/curl -s ipinfo.io/ip`
+MY_IP=$(/usr/bin/curl -s ipinfo.io/ip)
+export MY_IP
 
 # always start a browser
 [ -f /usr/bin/chromium ]        && chromium &
@@ -28,10 +29,10 @@ export MY_IP=`/usr/bin/curl -s ipinfo.io/ip`
 
 #_______ Autostart Ganja only ______________________________________________
 
-if [ "`hostname`" = "ganja" ]; then
+if [ "$(hostname)" = "ganja" ]; then
     # remote terminals
-    urxvt -hold -name URxvt-remote -tn remoteterm -e bash -c "ssh mobile" &
-    urxvt -hold -name URxvt-remote -tn remoteterm -e bash -c "ssh mobile-old" &
+    urxvt -hold -name URxvt-remote -tn remoteterm #-e bash -c "ssh mobile" &
+    urxvt -hold -name URxvt-remote -tn remoteterm #-e bash -c "ssh mobile-old" &
 
     [ -f /usr/bin/thunderbird ] && thunderbird &
 
@@ -51,9 +52,9 @@ fi
 
 #_______ Autostart mobile only _____________________________________________
 
-if [ "`hostname`" = "mobile" ]; then
+if [ "$(hostname)" = "mobile" ]; then
     cpufreqterm &
-    [ -f /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n 2>&1 &> /tmp/thinkfan.log&
+    [ -f /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n|tee /tmp/thinkfan.log&
     [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
 fi
 
