@@ -71,6 +71,7 @@ fi
 #kernlogterm &
 #topterm &
 mixerterm &
+clockterm &
 #calterm &
 
 #_______ random crap________________________________________________________
