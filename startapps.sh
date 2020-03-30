@@ -6,11 +6,11 @@
 urxvt -hold -e bash -c "screen -dR root" &
 urxvt -hold -e bash -c "screen -dR fafa" &
 
-[ -f /usr/bin/xscreensaver ]    && xscreensaver -no-splash&
-[ -f /usr/bin/xclock ]          && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
-[ -f /usr/bin/skypeforlinux ]   && skypeforlinux &
-[ -f /usr/bin/telegram ]        && telegram &
-[ -f /usr/bin/slack ]           && slack &
+[ -f /usr/bin/xscreensaver ]        && xscreensaver -no-splash&
+[ -f /usr/bin/xclock ]              && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
+[ -f /usr/bin/skypeforlinux ]       && skypeforlinux &
+[ -f /usr/bin/telegram-desktop ]    && telegram-desktop &
+[ -f /usr/bin/slack ]               && slack &
 
 # --enable-remote-extensions is a dirty hack, because all extensions were "lost"
 # after reboot, this flag makes them visible/usable again
@@ -20,8 +20,8 @@ MY_IP=$(/usr/bin/curl -s ipinfo.io/ip)
 export MY_IP
 
 # always start a browser
-[ -f /usr/bin/chromium ]        && chromium &
-[ -f /usr/bin/chromium ]        && chromium --app=https://web.whatsapp.com/ &
+[ -f /usr/bin/chromium ]    && chromium &
+[ -f /usr/bin/chromium ]    && chromium --app=https://web.whatsapp.com/ &
 
 #_______ Autostart Home only _______________________________________________
 
