@@ -31,8 +31,8 @@ export MY_IP
 
 if [ "$(hostname)" = "ganja" ]; then
     # remote terminals
-    urxvt -hold -name URxvt-remote -tn remoteterm #-e bash -c "ssh mobile" &
-    urxvt -hold -name URxvt-remote -tn remoteterm #-e bash -c "ssh mobile-old" &
+    urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile" &
+    urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile-old" &
 
     [ -f /usr/bin/thunderbird ] && thunderbird &
 
