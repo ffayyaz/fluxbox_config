@@ -228,11 +228,12 @@ Mod4 l                      :MacroCmd {Shade} {Shade}
 Mod1 F1                     :MacroCmd {Exec urxvt} {Raise}
 Mod1 F2                     :MacroCmd {Exec urxvt -name URxvt-remote -tn remoteterm} {Raise}
 Mod1 F3                     :MacroCmd {Exec chromium} {Raise}
-Mod1 F5                     :MacroCmd {Exec iceweasel} {Raise}
-Mod1 F6                     :MacroCmd {Exec opera-next} {Raise}
-Mod1 F7                     :MacroCmd {Exec opera} {Raise}
-Mod1 F8                     :MacroCmd {Exec icedove} {Raise}
-Mod1 F9                     :MacroCmd {Exec kate} {Raise}
+Mod1 F5                     :MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Raise}
+#Mod1 F5                     :MacroCmd {Exec iceweasel} {Raise}
+#Mod1 F6                     :MacroCmd {Exec opera-next} {Raise}
+#Mod1 F7                     :MacroCmd {Exec opera} {Raise}
+#Mod1 F8                     :MacroCmd {Exec icedove} {Raise}
+#Mod1 F9                     :MacroCmd {Exec kate} {Raise}
 Mod1 F10                    :MacroCmd {Exec urxvt -name URxvt-remote2 -tn remoteterm} {Raise}
 
 Mod4 t                      :Exec urxvt -name topterm -e top
