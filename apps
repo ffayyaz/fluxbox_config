@@ -739,12 +739,12 @@
 
 #---------------------------------------------------- MAIL
 [group] (workspace)
-    [app] (name=Mail) (class=Thunderbird) 
-    [app] (name=Activity) (class=Thunderbird) 
-    [app] (name=Global) (class=Thunderbird) 
-    [app] (name=Msgcompose) (class=Thunderbird) 
-    [app] (name=Calendar) (class=Thunderbird) 
-    [app] (name=Preferences) (class=Thunderbird) 
+    [app] (name=Mail) (class=thunderbird) 
+    [app] (name=Activity) (class=thunderbird) 
+    [app] (name=Global) (class=thunderbird) 
+    [app] (name=Msgcompose) (class=thunderbird) 
+    [app] (name=Calendar) (class=thunderbird) 
+    [app] (name=Preferences) (class=thunderbird) 
         [Head]          {1}
         [Workspace]     {4}
         [Layer]         {12}
