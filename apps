@@ -473,7 +473,7 @@
     [app] (class=Vivaldi.*)
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Head]          {2}
+        [Head]          {1}
 [end]
 
 # ns jira / jira opt
