@@ -5,7 +5,7 @@ if [ "`whoami`" = "root" ]; then
         if dpkg -l|awk '/^ii/ {print $2}'|grep -q "^${PKG}$"; then
             echo "${PKG} already installed"
         else
-             aptitude install ${PKG}
+             aptitude install -y ${PKG}
         fi
         echo ""
     done
