@@ -68,3 +68,4 @@ sox
 screen
 sysvbanner
 vim
+rsync
