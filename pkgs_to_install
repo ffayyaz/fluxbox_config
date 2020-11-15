@@ -7,11 +7,11 @@ pidgin
 pidgin-sipe
 #xchat
 chromium
-google-chrome-stable
-google-chrome-beta
-google-chrome-unstable
+#google-chrome-stable
+#google-chrome-beta
+#google-chrome-unstable
 iceweasel
-icedove
+#icedove
 thunderbird
 opera-beta
 opera-developer
