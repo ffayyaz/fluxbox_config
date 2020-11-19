@@ -76,3 +76,4 @@ vlc
 bind9-dnsutils
 strace
 ntpdate
+locate
