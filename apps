@@ -129,7 +129,7 @@
         [FocusHidden]   {yes}
 [end]
 
-[app] (name=Audacity) (class=Audacity)
+[app] (name=audacity) (class=Audacity)
         [Head]          {2}
         [Workspace]     {3}
         [Jump]          {yes}
