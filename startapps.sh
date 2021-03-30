@@ -11,6 +11,7 @@ urxvt -hold -e bash -c "screen -dR fafa" &
 [ -f /usr/bin/skypeforlinux ]       && skypeforlinux &
 [ -f /usr/bin/telegram-desktop ]    && telegram-desktop &
 [ -f /usr/bin/slack ]               && slack &
+[ -f /usr/bin/signal-desktop ]      && signal-desktop &
 
 # --enable-remote-extensions is a dirty hack, because all extensions were "lost"
 # after reboot, this flag makes them visible/usable again

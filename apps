@@ -406,6 +406,7 @@
     [app] (wire)
     [app] (slack)
     [app] (web.whatsapp.com)
+    [app] (signal)
         [Layer]         {8}
         [Dimensions]    {50% 50%}
         [Head]          {1}
