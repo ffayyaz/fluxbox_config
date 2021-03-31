@@ -10,8 +10,8 @@ urxvt -hold -e bash -c "screen -dR fafa" &
 [ -f /usr/bin/xclock ]              && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
 [ -f /usr/bin/skypeforlinux ]       && skypeforlinux &
 [ -f /usr/bin/telegram-desktop ]    && telegram-desktop &
-[ -f /usr/bin/slack ]               && slack &
-[ -f /usr/bin/signal-desktop ]      && signal-desktop &
+[ -f /usr/bin/slack ]               && (slack &) # needs to be started in subshell
+[ -f /usr/bin/signal-desktop ]      && (signal-desktop &) # needs to be started in subshell
 
 # --enable-remote-extensions is a dirty hack, because all extensions were "lost"
 # after reboot, this flag makes them visible/usable again
