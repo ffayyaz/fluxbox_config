@@ -393,25 +393,20 @@
 
 #---------------------------------------------------- CHAT 
 [group] (workspace)
-    [app] (wync)
-    [app] (Pidgin)
     [app] (xchat)
     [app] (skype)
     [app] (Skype)
     [app] (skypeforlinux)
-    [app] (hipchat.*)
-    [app] (.*.hipchat.com__chat.*)
     [app] (TelegramDesktop)
     [app] (telegram-desktop)
-    [app] (wire)
     [app] (slack)
     [app] (web.whatsapp.com)
     [app] (signal)
+        [Sticky]        {yes}
         [Layer]         {8}
         [Dimensions]    {50% 50%}
         [Head]          {1}
         [Position]      (BOTTOMLEFT) {0% 0%}
-        [Sticky]        {yes}
         [FocusNewWindow] {no}
 [end]
 
