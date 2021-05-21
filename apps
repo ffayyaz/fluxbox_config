@@ -394,17 +394,14 @@
 #---------------------------------------------------- CHAT 
 [group] (workspace)
     [app] (xchat)
-    [app] (skype)
-    [app] (Skype)
-    [app] (skypeforlinux)
-    [app] (TelegramDesktop)
-    [app] (telegram-desktop)
-    [app] (slack)
-    [app] (web.whatsapp.com)
-    [app] (signal)
+    [app] (name=skype)
+    [app] (name=telegram-desktop)
+    [app] (name=slack)
+    [app] (name=web.whatsapp.com)
+    [app] (name=signal)
         [Sticky]        {yes}
-        [Layer]         {8}
-        [Dimensions]    {50% 50%}
+        #[Layer]         {8}
+        [Dimensions]    {50% 100%}
         [Head]          {1}
         [Position]      (BOTTOMLEFT) {0% 0%}
         [FocusNewWindow] {no}
