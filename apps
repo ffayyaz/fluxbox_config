@@ -277,7 +277,7 @@
 [group] (workspace)
     [app] (urxvt)
         [Head]          {1}
-        [Dimensions]    {50% 50%}
+        [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Sticky]        {yes}
 [end]
@@ -293,14 +293,14 @@
 [group] (workspace)
     [app] (URxvt-remote)
         [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
+        [Dimensions]    {50% 100%}
+        [Position]      (TOPLEFT) {0% 0%}
 [end]
 [group] (workspace)
     [app] (URxvt-remote2)
         [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {50% 50%}
+        [Dimensions]    {50% 100%}
+        [Position]      (TOPRIGHT) {0% 0%}
 [end]
 [group] (workspace)
     [app] (URxvt-remote-convoy)
