@@ -88,6 +88,7 @@
     [app] (name=.*sound.*) (class=.*oogle-chrome)
     [app] (name=.*mixcloud.*) (class=.*hromium)
     [app] (name=.*mixcloud.*) (class=.*oogle-chrome)
+    [app] (easytag) (title!=Tag and Filename Scan)
         [Head]          {2}
         [Workspace]     {3}
         [Dimensions]    {88% 80%}
@@ -912,12 +913,12 @@
 [end]
 
 
-# easytag
-[app] (easytag) (title!=Tag and Filename Scan)
-        [Head]          {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-[end]
+## easytag -> moved to audacious/soundcloud
+#[app] (easytag) (title!=Tag and Filename Scan)
+#        [Head]          {2}
+#        [Dimensions]    {100% 100%}
+#        [Maximized]     {yes}
+#[end]
 
 # soap ui
 [app] (name=sun-awt-X11-XFramePeer) (class=com-eviware-soapui-SoapUI)
