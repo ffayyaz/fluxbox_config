@@ -2,27 +2,29 @@
 
 #_______ Autostart everywhere ______________________________________________
 
+# start desktop apps
+{
+    xscreensaver -no-splash &
+    xclock -analog -twentyfour -update 1 -padding 1 -render -sharp &
+}
+
 # start 2 terminals
-urxvt -hold -e bash -c "screen -dR root" &
-urxvt -hold -e bash -c "screen -dR fafa" &
+{
+    urxvt -hold -e bash -c "screen -dR root" &
+    urxvt -hold -e bash -c "screen -dR fafa" &
+}
 
-[ -f /usr/bin/xscreensaver ]        && xscreensaver -no-splash&
-[ -f /usr/bin/xclock ]              && xclock -analog -twentyfour -update 1 -padding 1 -render -sharp&
-[ -f /usr/bin/skypeforlinux ]       && skypeforlinux &
-[ -f /usr/bin/telegram-desktop ]    && telegram-desktop &
-[ -f /usr/bin/slack ]               && (slack > /dev/null 2>&1 &) # needs to be started in subshell
-[ -f /usr/bin/signal-desktop ]      && (signal-desktop > /dev/null 2>&1 &) # needs to be started in subshell
-
-# --enable-remote-extensions is a dirty hack, because all extensions were "lost"
-# after reboot, this flag makes them visible/usable again
-export CHROMIUM_FLAGS="--enable-remote-extensions --high-dpi-support --force-device-scale-factor=1"
-
-MY_IP=$(/usr/bin/curl -s ipinfo.io/ip)
-export MY_IP
+# start chats
+{
+    skypeforlinux &
+    (telegram-desktop 2>&1>/dev/null &)
+    (slack 2>&1>/dev/null &)
+    (signal-desktop 2>&1>/dev/null &)
+    chromium --app=https://web.whatsapp.com/ &
+}
 
 # always start a browser
-[ -f /usr/bin/chromium ]    && chromium &
-[ -f /usr/bin/chromium ]    && chromium --app=https://web.whatsapp.com/ &
+chromium &
 
 #_______ Autostart Home only _______________________________________________
 
@@ -32,17 +34,16 @@ export MY_IP
 
 if [ "$(hostname)" = "ganja" ]; then
     # remote terminals
-    urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile" &
-    urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile-old" &
+    #urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile" &
+    #urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile-old" &
 
-    [ -f /usr/bin/thunderbird ] && thunderbird &
+    thunderbird &
 
     # sound
     chromium --app="https://www.soundcloud.com" &
-    #sleep 2
     chromium --app="https://www.mixcloud.com" &
-    [ -f /usr/bin/audacious ]   && audacious &
-    [ -f /usr/bin/pavucontrol ]   && pavucontrol &
+    audacious &
+    pavucontrol &
 
     # mouse speed
     xinput --set-prop 9  275 2
@@ -51,16 +52,7 @@ if [ "$(hostname)" = "ganja" ]; then
     xinput --set-prop 10 276 1
 fi
 
-#_______ Autostart mobile only _____________________________________________
-
-if [ "$(hostname)" = "mobile" ]; then
-    cpufreqterm &
-    [ -f /usr/sbin/thinkfan ] && sudo thinkfan -s1 -b0 -z -n|tee /tmp/thinkfan.log&
-    [ -f /usr/bin/syndaemon ] && syndaemon -k -i 0.5&
-fi
-
 #_______ Autostart everywhere (final)_______________________________________
-
 
 # they need to be started at the end, otherwise
 # they are not drawn correctly (they overlap the slit)
