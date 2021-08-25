@@ -3,18 +3,8 @@ session.appsFile:	~/.fluxbox/apps
 session.keyFile:	~/.fluxbox/keys
 session.menuFile:	~/.fluxbox/menu
 session.slitlistFile:	~/.fluxbox/slitlist
-! session.styleFile:	/usr/share/fluxbox/styles/Bity_fluxbox ! lag
-session.styleFile:	/usr/share/fluxbox/styles/green_tea
-! session.styleFile:	/usr/share/fluxbox/styles/carp ! lag
-! session.styleFile:	/usr/share/fluxbox/styles/bora_green ! (performant)
-! session.styleFile:	/usr/share/fluxbox/styles/bora_blue ! (performant)
-! session.styleFile:	/usr/share/fluxbox/styles/bora_black ! (performant)
-! session.styleFile:	/usr/share/fluxbox/styles/Twice ! (performant)
-! session.styleFile:	/usr/share/fluxbox/styles/Squared_green
-! session.styleFile:	/usr/share/fluxbox/styles/Squared_blue
-! session.styleFile:	/usr/share/fluxbox/styles/Emerge
+session.styleFile:	/usr/share/fluxbox/styles/debian-blue
 session.styleOverlay:	~/.fluxbox/overlay
-session.screen0.windowMenu:	~/.fluxbox/windowmenu
 session.forcePseudoTransparency:	false
 session.configVersion:	13
 session.colorsPerChannel:	4
@@ -73,6 +63,7 @@ session.screen0.clientMenu.usePixmap:	true
 session.screen0.menuDelay:	0
 
 !-------------------------------------------------------- WINDOW
+session.screen0.windowMenu:	~/.fluxbox/windowmenu
 session.screen0.window.focus.alpha:	255
 session.screen0.window.unfocus.alpha:	255
 session.screen0.windowPlacement:	RowSmartPlacement
