@@ -34,6 +34,12 @@ wmmoonclock &
 # make mouse pointer invisible
 unclutter -timeout 10 -jitter 10 -exclude-root -ignore-scrolling -b
 
+# mouse speed
+xinput --set-prop 9  275 2
+xinput --set-prop 9  276 1
+xinput --set-prop 10 275 2
+xinput --set-prop 10 276 1
+
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 exec fluxbox -log "/home/fafa/.fluxbox/log" &
