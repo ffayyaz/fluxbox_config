@@ -144,7 +144,7 @@
         [Head]          {1}
         [Workspace]     {3}
         [Position]      (BOTTOMRIGHT) {0% 0%}
-        [Dimensions]    {50% 50%}
+        [Dimensions]    {60% 50%}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -412,7 +412,7 @@
 
 # chromium
 [group] (workspace)
-    [app] (name=chromium) (class=.*hromium)
+    [app] (name=.*hromium) (class=.*hromium)
     [app] (name=google-chrome) (class=.*oogle-chrome)
         [Head]          {1}
         [Dimensions]    {60% 100%}
