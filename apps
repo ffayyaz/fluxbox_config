@@ -278,7 +278,7 @@
 [group] (workspace)
     [app] (urxvt)
         [Head]          {1}
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {40% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Sticky]        {yes}
 [end]
@@ -402,7 +402,7 @@
     [app] (name=signal)
         [Sticky]        {yes}
         #[Layer]         {8}
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {40% 100%}
         [Head]          {1}
         [Position]      (BOTTOMLEFT) {0% 0%}
         [FocusNewWindow] {no}
@@ -415,7 +415,7 @@
     [app] (name=chromium) (class=.*hromium)
     [app] (name=google-chrome) (class=.*oogle-chrome)
         [Head]          {1}
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {60% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
 [group] (workspace)
