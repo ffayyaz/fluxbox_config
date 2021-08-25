@@ -44,12 +44,6 @@ if [ "$(hostname)" = "ganja" ]; then
     chromium --app="https://www.mixcloud.com" &
     audacious &
     pavucontrol &
-
-    # mouse speed
-    xinput --set-prop 9  275 2
-    xinput --set-prop 9  276 1
-    xinput --set-prop 10 275 2
-    xinput --set-prop 10 276 1
 fi
 
 #_______ Autostart everywhere (final)_______________________________________
