@@ -1,10 +1,10 @@
 [begin] (fluxbox)
-[exec] (Clone Monitor) {xrandr --output DP1 --auto --output DP2 --auto --same-as DP1}
-[exec] (External Left Of) {xrandr --output DP1 --auto --output DP2 --auto --left-of DP1}
-[exec] (External Right Of) {xrandr --output DP1 --auto --output DP2 --auto --right-of DP1}
-[exec] (External Right Of) {xrandr --output DP1 --auto --output DP2 --auto --right-of DP1}
-[include] (/etc/X11/fluxbox/fluxbox-menu)
-[submenu](Wallpapers)
-[wallpapers] (/usr/share/wallpapers)
-[end]
+    ! [exec] (Clone Monitor) {xrandr --output DP1 --auto --output DP2 --auto --same-as DP1}
+    ! [exec] (External Left Of) {xrandr --output DP1 --auto --output DP2 --auto --left-of DP1}
+    ! [exec] (External Right Of) {xrandr --output DP1 --auto --output DP2 --auto --right-of DP1}
+    ! [exec] (External Right Of) {xrandr --output DP1 --auto --output DP2 --auto --right-of DP1}
+    [include] (/etc/X11/fluxbox/fluxbox-menu)
+    ! [submenu](Wallpapers)
+       !  [wallpapers] (/usr/share/wallpapers)
+    ! [end]
 [end]
