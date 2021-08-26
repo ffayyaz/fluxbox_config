@@ -351,7 +351,7 @@
     [app] (name=web.whatsapp.com)
     [app] (name=signal)
         [Sticky]        {yes}
-        #[Layer]         {8}
+        [Layer]         {8}
         [Dimensions]    {40% 100%}
         [Head]          {1}
         [Position]      (TOPLEFT) {0% 0%}
