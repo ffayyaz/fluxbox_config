@@ -5,20 +5,36 @@
 # start desktop apps
 xscreensaver -no-splash &
 xclock -analog -twentyfour -update 1 -padding 1 -render -sharp &
+#urxvt -name messagesterm -title messages -tn messagesterm&
+#urxvt -name syslogterm -title syslog -tn syslogterm&
+#urxvt -name debuglogterm -title debug -tn debuglogterm&
+#urxvt -name authlogterm -title auth -tn authlogterm&
+#urxvt -name kernlogterm -title kern -tn kernlogterm&
+#urxvt -name topterm -title top -tn topterm&
+urxvt -name mixerterm -title mixer -tn mixerterm&
+urxvt -name clockterm -title clock -tn clockterm&
+urxvt -name calterm -title cal -tn calterm&
 
 # start 2 terminals
 urxvt -hold -e bash -c "screen -dR root" &
+sleep 1
 urxvt -hold -e bash -c "screen -dR fafa" &
 
 # start chats
-#skypeforlinux &
-#(telegram-desktop 2>&1>/dev/null &)
-#(slack 2>&1>/dev/null &)
-#(signal-desktop 2>&1>/dev/null &)
-#chromium --app=https://web.whatsapp.com/ &
+(telegram-desktop 2>&1>/dev/null &)
+sleep 1
+skypeforlinux &
+sleep 1
+(slack 2>&1>/dev/null &)
+sleep 1
+(signal-desktop 2>&1>/dev/null &)
+sleep 3
+chromium --app=https://web.whatsapp.com/ &
+sleep 1
 
 # always start a browser
-#chromium &
+chromium &
+sleep 1
 
 #_______ Autostart Home only _______________________________________________
 
@@ -26,36 +42,19 @@ urxvt -hold -e bash -c "screen -dR fafa" &
 
 #_______ Autostart Ganja only ______________________________________________
 
-#if [ "$(hostname)" = "ganja" ]; then
-#    # remote terminals
-#    #urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile" &
-#    #urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile-old" &
-#
-#    thunderbird &
-#
-#    # sound
-#    chromium --app="https://www.soundcloud.com" &
-#    chromium --app="https://www.mixcloud.com" &
-#    audacious &
-#    pavucontrol &
-#fi
+if [ "$(hostname)" = "ganja" ]; then
+    # remote terminals
+    #urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile" &
+    #urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile-old" &
 
-#_______ Autostart everywhere (final)_______________________________________
+    thunderbird &
 
-## they need to be started at the end, otherwise
-## they are not drawn correctly (they overlap the slit)
-## BULLCRAP workaround
-##messagesterm &
-##syslogterm &
-##debuglogterm &
-##authlogterm &
-##kernlogterm &
-##topterm &
-#mixerterm &
-#clockterm &
-##calterm &
-
-#_______ random crap________________________________________________________
-
-# ensure ~/.ssh/sockets exists (for multiplexing)
-[ ! -d ~/.ssh/sockets ] && mkdir ~/.ssh/sockets && chmod 700 ~/.ssh/sockets
+    # sound
+    audacious &
+    sleep 1
+    chromium --app="https://www.soundcloud.com" &
+    sleep 1
+    chromium --app="https://www.mixcloud.com" &
+    sleep 1
+    pavucontrol &
+fi
