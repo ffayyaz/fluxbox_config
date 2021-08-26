@@ -424,7 +424,7 @@
     [app] (name=Preferences) (class=thunderbird) 
         [Head]          {1}
         [Workspace]     {4}
-        [Layer]         {12}
+        [Layer]         {8}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Fullscreen]    {yes}
@@ -433,19 +433,7 @@
 [app] (name=Dialog) (class=Thunderbird)
         [Head]          {1}
         [Workspace]     {4}
-        [Layer]         {12}
-[end]
-
-[group] (workspace)
-    [app] (name=.*mail.*) (class=.*hromium)
-    [app] (name=.*mail.*) (class=.*oogle-chrome)
-        [Head]          {2}
-        [Workspace]     {4}
-        [Layer]         {12}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Fullscreen]    {yes}
-        [FocusNewWindow] {no}
+        [Layer]         {8}
 [end]
 
 #---------------------------------------------------- EDITOR
