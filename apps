@@ -60,7 +60,7 @@
         [Head]          {2}
         [Workspace]     {3}
         [Position]      (TOPRIGHT) {0% 0%}
-        [Dimensions]    {12% 80%}
+        [Dimensions]    {12% 100%}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [IconHidden]    {yes}
@@ -84,71 +84,21 @@
 #---------------------------------------------------- MUSIC
 [group]
     [app] (name=audacious) (class=Audacious) (title=.*Audacious)
-    [app] (name=.*sound.*) (class=.*hromium)
-    [app] (name=.*sound.*) (class=.*oogle-chrome)
+    [app] (name=www.soundcloud.com) (class=.*hromium)
+    [app] (name=www.soundcloud.com) (class=.*oogle-chrome)
     [app] (name=.*mixcloud.*) (class=.*hromium)
     [app] (name=.*mixcloud.*) (class=.*oogle-chrome)
     [app] (easytag) (title!=Tag and Filename Scan)
+    [app] (audacity) (class=Audacity)
+    [app] (name=pavucontrol)
         [Head]          {2}
         [Workspace]     {3}
-        [Dimensions]    {88% 80%}
+        [Dimensions]    {88% 100%}
         [Position]      (TOPLEFT)   {0% 0%}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Jump]          {no}
-        [Deco]          {TOOL}
-[end]
-[app] (name=audacious) (class=Audacious) (title=Blur Scope)
-        [Head]          {2}
-        [Workspace]     {3}
-        [Dimensions]    {88% 20%}
-        [Position]      (BOTTOMLEFT) {0% 0%}
-        [Layer]         {12}
-        [Deco]          {NONE}
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-        [IconHidden]    {yes}
-[end]
-[app] (name=audacious) (class=Audacious) (title=Album Art)
-        [Head]          {2}
-        [Workspace]     {3}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 80%}
-        [Layer]         {12}
-        [Deco]          {NONE}
-        [FocusNewWindow] {no}
-        [FocusHidden]   {yes}
-        [IconHidden]    {yes}
-[end]
-# audacious fallback
-[app] (name=audacious) (class=Audacious) (title!=Audacious) (title!=Blur Scope) (title!=Album Art)
-        [Head]          {2}
-        [Workspace]     {3}
-        [Position]      (CENTER) {0% 0%}
-        [Layer]         {11}
-        [FocusNewWindow] {yes}
-        [FocusHidden]   {yes}
-[end]
-
-[app] (name=audacity) (class=Audacity)
-        [Head]          {2}
-        [Workspace]     {3}
-        [Jump]          {yes}
-        [Position]      (TOPLEFT) {0% 0%}
-        [Dimensions]    {88% 100%}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-[end]
-
-[app] (name=pavucontrol)
-        [Head]          {1}
-        [Workspace]     {3}
-        [Position]      (BOTTOMRIGHT) {0% 0%}
-        [Dimensions]    {60% 50%}
-        [Layer]         {12}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Deco]          {TINY}
 [end]
 
 #---------------------------------------------------- GKRELLM_CONF
@@ -227,8 +177,8 @@
 [app] (name=calterm)
         [Head]          {1}
         [Sticky]        {yes}
-        [Dimensions]    {25% 50%}
-        [Position]      (BOTTOMRIGHT) {0% 30%}
+        [Dimensions]    {21% 50%}
+        [Position]      (TOPRIGHT) {0% 20%}
         [Deco]          {NONE}
         [Layer]         {12}
         [FocusNewWindow] {no}
@@ -404,7 +354,7 @@
         #[Layer]         {8}
         [Dimensions]    {40% 100%}
         [Head]          {1}
-        [Position]      (BOTTOMLEFT) {0% 0%}
+        [Position]      (TOPLEFT) {0% 0%}
         [FocusNewWindow] {no}
 [end]
 
@@ -416,19 +366,7 @@
     [app] (name=google-chrome) (class=.*oogle-chrome)
         [Head]          {1}
         [Dimensions]    {60% 100%}
-        [Position]      (TOPRIGHT) {0% 0%}
-[end]
-[group] (workspace)
-    [app] (name=.*sound.*) (class=.*hromium)
-    [app] (name=.*sound.*) (class=.*oogle-chrome)
-    [app] (name=.*mixcloud.*) (class=.*hromium)
-    [app] (name=.*mixcloud.*) (class=.*oogle-chrome)
-        [Head]          {2}
-        [Workspace]     {3}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Fullscreen]    {yes}
-        [FocusNewWindow] {no}
+        [Position]      (TOPLEFT) {40% 0%}
 [end]
 # chromium open file dialog. does not work
 [group]
@@ -437,19 +375,6 @@
         [Head]          {1}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
-[end]
-
-# vivaldi
-[group] (workspace)
-    [app] (class=Vivaldi)
-    [app] (class=Vivaldi-preview)
-        [Head]          {1}
-        [Workspace]     {5}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Fullscreen]    {yes}
-        [Position]      (TOPLEFT) {0% 0%}
-        [FocusNewWindow] {no}
 [end]
 
 # iceweasel
@@ -465,231 +390,12 @@
     [app] (name=Opera) (class=Opera)
     [app] (name=Opera) (class=OperaNext)
     [app] (class=Vivaldi.*)
+        [Workspace]     {3}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {1}
-[end]
-
-# ns jira / jira opt
-[group] (workspace)
-    [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*hromium)
-    [app] (name=jira.netstream.ch__secure_Dashboard.jspa) (class=.*oogle-chrome)
-    [app] (name=jira.netstream.ch.*OPT.*) (class=.*hromium)
-    [app] (name=jira.netstream.ch.*OPT.*) (class=.*oogle-chrome)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {45% 100%}
-        [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {no}
-[end]
-
-# ns kayako
-[group] (workspace)
-    [app] (name=support.netstream.ch__staff_index.php) (class=.*hromium)
-    [app] (name=support.netstream.ch__staff_index.php) (class=.*oogle-chrome)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {55% 100%}
-        [Position]      (TOPRIGHT)   {0% 0%}
-        [FocusNewWindow]    {no}
-[end]
-
-# ns agama
-[group] (workspace)
-    # agama iptv
-    [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=.*hromium) # dashboard
-    [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=.*hromium) # real-time matrix
-    [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=.*hromium) # embedded probe
-
-    [app] (name=admin.qoe.iptv.ch__enterprise_dashboard) (class=.*oogle-chrome) # dashboard
-    [app] (name=admin.qoe.iptv.ch__enterprise_tablestatus) (class=.*oogle-chrome) # real-time matrix
-    [app] (name=admin.qoe.iptv.ch__enterprise_empprobegraph) (class=.*oogle-chrome) # embedded probe
-    # agama ott
-    [app] (name=u0494__ria_dashboard) (class=.*hromium) # dashboard
-    [app] (name=u0494__ria_httpstreamingrunning) (class=.*hromium) # running stream tests
-    [app] (name=u0494__ria_httpstreamingresultsearch) (class=.*hromium) # stream test results
-    [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=.*hromium) # secondlevel link lookup
-
-    [app] (name=u0494__ria_dashboard) (class=.*oogle-chrome) # dashboard
-    [app] (name=u0494__ria_httpstreamingrunning) (class=.*oogle-chrome) # running stream tests
-    [app] (name=u0494__ria_httpstreamingresultsearch) (class=.*oogle-chrome) # stream test results
-    [app] (name=intranet.netstream.ch__display_op_Secondlevel.*Link.*Lookup) (class=.*oogle-chrome) # secondlevel link lookup
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {55% 100%}
-        [Position]      (TOPRIGHT)   {0% 0%}
-        [FocusNewWindow]    {no}
-[end]
-
-# ns mdw
-[group] (workspace)
-    [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=.*hromium) # mdw live
-    [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=.*hromium) # mdw live pricing
-    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=.*hromium) # mdw preprod
-    [app] (name=mdw-preprod.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=.*hromium) # mdw preprod pricing
-    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=.*hromium) # mdw preprod
-    [app] (name=mdw-preview.iptv.ch__itvadmin) (class=.*hromium) # mdw preview
-    [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=.*hromium) # mdw preview02
-    [app] (name=mdw-dev.iptv.ch__itvadmin) (class=.*hromium) # mdw dev
-    [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=.*hromium) # mdw hbbtv live
-
-    [app] (name=admin.mdw01.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw live
-    [app] (name=admin.mdw01.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=.*oogle-chrome) # mdw live pricing
-    [app] (name=mdw-preprod.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw preprod
-    [app] (name=mdw-preprod.iptv.ch__itvadmin_xod_pricing_schedule_Browse.html) (class=.*oogle-chrome) # mdw preprod pricing
-    [app] (name=mdw-preview.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw preview
-    [app] (name=mdw-preview02.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw preview02
-    [app] (name=mdw-dev.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw dev
-    [app] (name=admin.mdw01-hbbtv.iptv.ch__itvadmin) (class=.*oogle-chrome) # mdw hbbtv live
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPRIGHT)   {0% 0%}
-        [FocusNewWindow]    {no}
-        [Deco]          {NONE}
-[end]
-
-# ns postman
-[group] (workspace)
-    [app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*hromium)
-    [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=.*hromium)
-
-    [app] (name=crx_fdmmgilgnpjigdojojpjoooidkmcomcm) (class=.*oogle-chrome)
-    [app] (name=crx_fhbjgbiflinjbdggehcddcbncdddomop) (class=.*oogle-chrome)
-
-    [app] (name=postman) (class=Postman)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {no}
-        [Deco]          {NONE}
-[end]
-
-# ns some desktop layered windows
-[group] (workspace)
-    # zabbix
-    [app] (name=zabbix.netstream.ch) (class=.*hromium)
-    [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=.*hromium)
-    [app] (name=nagios.netstream.ch__nagios3) (class=.*hromium)
-
-    [app] (name=zabbix.netstream.ch) (class=.*oogle-chrome)
-    [app] (name=zabbix.netstream.ch__zabbix_tr_status.php) (class=.*oogle-chrome)
-    [app] (name=nagios.netstream.ch__nagios3) (class=.*oogle-chrome)
-
-    # mdw environment overview
-    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=.*hromium) 
-    [app] (name=intranet.netstream.ch__display_ops_MDW.*Environment.*Overview.*) (class=.*oogle-chrome) 
-
-    # mdw own documentation
-    [app] (name=intranet.netstream.ch__display__chdfafa0_MDW) (class=.*hromium) 
-    [app] (name=intranet.netstream.ch__display__chdfafa0_MDW) (class=.*oogle-chrome) 
-
-    # manhattan servers
-    [app] (name=intranet.netstream.ch__display_ops_TVaaS.*servers) (class=.*hromium) 
-    [app] (name=intranet.netstream.ch__display_ops_TVaaS.*servers) (class=.*oogle-chrome) 
-
-    # trello
-    [app] (name=trello.com.*) (class=.*hromium)
-    [app] (name=trello.com.*) (class=.*oogle-chrome)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {no}
-        [Layer]         {12}
-        [Deco]          {NONE}
-        [Fullscreen]    {no}
-        [IconHidden]    {yes}
-[end]
-
-# ns firstclass
-[group] (workspace)
-    [app] (name=fcc32.exe) (class=Wine)
-        [Sticky]        {no}
-        [Workspace]     {2}
-        [Layer]         {12}
-        [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Maximized]     {no}
-        [Fullscreen]    {no}
-        [Position]      (BOTTOMLEFT)   {0% 0%}
-        [FocusNewWindow] {yes}
-        [IconHidden]    {yes}
-[end]
-
-# ns mio
-[group] (workspace)
-    [app] (name=live.mlp.iptv.ch) (class=.*oogle-chrome)
-    [app] (name=live.mlp.iptv.ch) (class=.*hromium)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {no}
-        [Deco]          {NONE}
-[end]
-
-# ns elemental encoder
-[group] (workspace)
-    [app] (name=172.25.1.30__jobs) (class=.*oogle-chrome)
-    [app] (name=172.25.1.30__jobs) (class=.*hromium)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {no}
-        [Deco]          {NONE}
-        [Fullscreen]    {yes}
-[end]
-
-# edgeware gui
-[group] (workspace)
-    [app] (name=u8483.vdc.netstream.com) (class=.*hromium)
-    [app] (name=u8483.vdc.netstream.com) (class=.*oogle-chrome)
-    [app] (name=u8644.vdc.netstream.com) (class=.*hromium)
-    [app] (name=u8644.vdc.netstream.com) (class=.*oogle-chrome)
-    [app] (name=u8648.vdc.netstream.com) (class=.*hromium)
-    [app] (name=u8648.vdc.netstream.com) (class=.*oogle-chrome)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {no}
-        [Deco]          {NONE}
-[end]
-
-# vsphere web client
-[group] (workspace)
-    [app] (name=vsphere__vsphere-client)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {yes}
-        [Deco]          {NONE}
-[end]
-
-# f5 big-ip live + staging
-[group] (workspace)
-    [app] (name=s0698.ndzs.ch.netstream.com__xui)
-    [app] (name=s0699.ndzs.ch.netstream.com__xui)
-    [app] (name=s8366.vdc.netstream.com__xui)
-    [app] (name=s8367.vdc.netstream.com__xui)
-        [Head]          {2}
-        [Workspace]     {2}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Position]      (TOPLEFT)   {0% 0%}
-        [FocusNewWindow]    {yes}
-        [Deco]          {NONE}
+        [Jump]    {no}
 [end]
 
 # teleboy / wilmaa / ewl
@@ -705,29 +411,6 @@
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {yes}
-        [Deco]          {NONE}
-[end]
-
-# iDRAC gui + admin
-[group] (workspace)
-    [app] (name=sun-awt-X11-XFramePeer) (class=com-sun-javaws-Main)
-    [app] (name=.*.ndzs.ch.netstream.com) (class=.*oogle-chrome)
-    [app] (name=.*.ndzs.ch.netstream.com) (class=.*hromium)
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Head]          {2}
-        [FocusNewWindow] {no}
-        [Deco]          {NONE}
-[end]
-
-# splunk
-[group] (workspace)
-    [app] (name=u0735) (class=.*oogle-chrome)
-    [app] (name=u0735) (class=.*hromium)
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Head]          {2}
-        [FocusNewWindow] {no}
         [Deco]          {NONE}
 [end]
 
@@ -911,14 +594,6 @@
         [Maximized]     {yes}
         [Head]          {2}
 [end]
-
-
-## easytag -> moved to audacious/soundcloud
-#[app] (easytag) (title!=Tag and Filename Scan)
-#        [Head]          {2}
-#        [Dimensions]    {100% 100%}
-#        [Maximized]     {yes}
-#[end]
 
 # soap ui
 [app] (name=sun-awt-X11-XFramePeer) (class=com-eviware-soapui-SoapUI)
