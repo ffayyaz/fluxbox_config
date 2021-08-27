@@ -236,8 +236,8 @@
 [group] (workspace)
     [app] (xterm)
         [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPRIGHT) {0% 0%}
+        [Dimensions]    {40% 100%}
+        [Position]      (TOPLEFT) {0% 0%}
 [end]
 
 #---------------------------------------------------- REMOTE
@@ -252,55 +252,6 @@
         [Head]          {1}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
-[end]
-[group] (workspace)
-    [app] (URxvt-remote-convoy)
-        [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
-        [FocusNewWindow]    {no}
-[end]
-[group] (workspace)
-    [app] (URxvt-remote-convoy-new)
-        [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
-        [FocusNewWindow]    {no}
-[end]
-[group] (workspace)
-    [app] (URxvt-remote-orbits)
-        [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
-        [FocusNewWindow]    {no}
-[end]
-[group] (workspace)
-    [app] (URxvt-remote-vod)
-        [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
-        [FocusNewWindow]    {no}
-[end]
-[group] (workspace)
-    [app] (URxvt-remote-verimatrix)
-        [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
-        [FocusNewWindow]    {no}
-[end]
-[group] (workspace)
-    [app] (URxvt-remote-manhattan-live)
-        [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
-        [FocusNewWindow]    {no}
-[end]
-[group] (workspace)
-    [app] (URxvt-remote-manhattan-preprod)
-        [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (TOPLEFT) {0% 50%}
-        [FocusNewWindow]    {no}
 [end]
 
 #---------------------------------------------------- REMOTE CLUSTERSSH
@@ -368,21 +319,13 @@
         [Dimensions]    {60% 100%}
         [Position]      (TOPLEFT) {40% 0%}
 [end]
-# chromium open file dialog. does not work
-[group]
-    [app] (name=chromium) (class=.*hromium) (title=Open File)
-    [app] (name=google-chrome) (class=.*oogle-chrome) (title=Open File)
-        [Head]          {1}
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPRIGHT) {0% 0%}
-[end]
 
-# iceweasel
+# firefox-esr
 [group] (workspace)
-    [app] (name=Navigator) (class=Firefox)
+    [app] (name=Navigator) (class=Firefox-esr)
         [Head]          {1}
-        [Dimensions]    {50% 100%}
-        [Position]      (TOPLEFT) {50% 0%}
+        [Dimensions]    {60% 100%}
+        [Position]      (TOPLEFT) {40% 0%}
 [end]
 
 # opera / vivaldi
@@ -424,27 +367,22 @@
     [app] (name=Preferences) (class=thunderbird) 
         [Head]          {1}
         [Workspace]     {4}
-        [Layer]         {8}
+        [Layer]         {6}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
-        [Fullscreen]    {yes}
+        [Fullscreen]    {no}
         [FocusNewWindow] {no}
-[end]
-[app] (name=Dialog) (class=Thunderbird)
-        [Head]          {1}
-        [Workspace]     {4}
-        [Layer]         {8}
 [end]
 
 #---------------------------------------------------- EDITOR
 [group] (workspace)
-    [app] (name=kate) (class=Kate)
     [app] (name=gedit) (class=Gedit)
     [app] (name=textShell) (class=NEdit)
     [app] (name=kate) (class=kate)
+    [app] (name=kate) (class=Kate)
         [Head]          {1}
-        [Dimensions]    {50% 50%}
-        [Position]      (BOTTOMLEFT) {0% 0%}
+        [Dimensions]    {40% 100%}
+        [Position]      (TOPLEFT) {0% 0%}
 [end]
 
 #---------------------------------------------------- REMOTE DESKTOP
@@ -511,7 +449,7 @@
 [group] (workspace)
     [app] (eog)
     [app] (feh)
-        [Dimensions]    {50% 100%}
+        [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Head]          {1}
 [end]
@@ -591,24 +529,6 @@
         [Deco]          {none}
 [end]
 
-# what was that??
-[app] (name=sun-awt-X11-XFramePeer) (class=com-install4j-runtime-launcher-Launcher)
-        [Head]          {2}
-        [Jump]          {yes}
-        [Position]      (TOPLEFT) {0% 0%}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-[end]
-
-# cisco ucs
-[app] (title=Cisco Unified Computing System Manager.*)
-        [Head]          {2}
-        [Jump]          {yes}
-        [Position]      (TOPLEFT) {0% 0%}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-[end]
-
 # deluge
 [app] (name=deluge)
         [Head]          {1}
@@ -670,6 +590,16 @@
         [Dimensions]    {100% 100%}
 [end]
 
+# gimp
+# [app] (name=gimp) (class=Gimp)
+        # [Workspace]     {0}
+        # [Position]      (TOPRIGHT) {0% 0%}
+        # [Jump]          {yes}
+        # [Dimensions]    {75% 100%}
+        # # [Maximized]     {yes}
+        # [Head]          {1}
+# [end]
+
 # private tax
 [app] (name=sun-awt-X11-XFramePeer) (class=com-install4j-runtime-launcher-UnixLauncher) (title=.*Private.*Tax.*)
         [Workspace]     {0}
@@ -680,50 +610,10 @@
         [Head]          {1}
 [end]
 
-# gimp
-# [app] (name=gimp) (class=Gimp)
-        # [Workspace]     {0}
-        # [Position]      (TOPRIGHT) {0% 0%}
-        # [Jump]          {yes}
-        # [Dimensions]    {75% 100%}
-        # # [Maximized]     {yes}
-        # [Head]          {1}
-# [end]
-# gimp toolbox
-[app]  (role=gimp-toolbox)
-        [Workspace]     {0}
-        [Position]      (TOPLEFT) {0% 0%}
-        [Jump]          {yes}
-        [Dimensions]    {25% 100%}
-        [Head]          {1}
-[end]
-
 # octave
 [app] (name=octave-gui) (class=Octave-gui)
         [Head]          {2}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
         [Jump]          {yes}
-[end]
-
-# meteo.search.ch
-[app] (name=.*meteo.search.ch.*) (class=.*hromium)
-        [Head]          {1}
-        [Position]      (BOTTOMRIGHT) {0% 0%}
-        [Dimensions]    {50% 32%}
-        [Layer]         {12}
-        [Deco]          {NONE}
-        [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-        [Sticky]        {yes}
-[end]
-
-# robo3t / robomongo
-[app] (name=robo3t) (class=robo3t)
-        [Head]          {2}
-        [Position]      (TOPLEFT) {0% 0%}
-        [Maximized]     {yes}
-        [Jump]          {yes}
-        [Fullscreen]    {yes}
 [end]
