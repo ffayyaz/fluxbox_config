@@ -6,7 +6,8 @@
 # transient windows
 # dialogs like save as or print
 # do not show their icon in toolbar
-[transient] (title=.*)
+[transient] (role=GtkFileChooserDialog)
+        [Head]          {1}
         [Position]      (CENTER) {0% 0%}
         [IconHidden]    {yes}
 [end]
@@ -99,6 +100,13 @@
         [FocusNewWindow] {no}
         [Jump]          {no}
         [Deco]          {TINY}
+[end]
+
+# easytag dialog
+[app] (easytag) (title=Tag and Filename Scan)
+        [Head]          {2}
+        [Workspace]     {3}
+        [Position]      (CENTER) {0% 0%}
 [end]
 
 #---------------------------------------------------- GKRELLM_CONF
