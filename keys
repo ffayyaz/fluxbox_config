@@ -97,9 +97,7 @@ Mod1 space                  :WindowMenu
 
 # replace windows topleft,topright,bottomright,bottomleft
 #Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}
-Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 40% 0% TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}}
-
-Mod1 112                    :SendToPrevHead 1 # alt+page up
+Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 40% 0 TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}}
 Mod1 117                    :SendToPrevHead 1 # alt+page down
 
 #------------------------------------------------------- TABS
