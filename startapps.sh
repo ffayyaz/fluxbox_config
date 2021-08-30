@@ -16,9 +16,9 @@ urxvt -name clockterm -title clock -tn clockterm&
 urxvt -name calterm -title cal -tn calterm&
 
 # start 2 terminals
-urxvt -hold -e bash -c "screen -dR root" &
+urxvt -title ROOT -hold -e bash -c "screen -dR root" &
 sleep 1
-urxvt -hold -e bash -c "screen -dR fafa" &
+urxvt -title USER -hold -e bash -c "screen -dR fafa" &
 
 # start chats
 (telegram-desktop 2>&1>/dev/null &)
@@ -58,3 +58,6 @@ if [ "$(hostname)" = "ganja" ]; then
     sleep 1
     pavucontrol &
 fi
+
+# change focus back to the terminal
+wmctrl -a USER
