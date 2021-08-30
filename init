@@ -19,7 +19,7 @@ session.tabPadding:                         0
 session.updateDelayTime:                    0
 
 ! TODO checkthis
-session.screen0.strftimeFormat:             %a %d. %b %Y %02k:%M:%S
+session.screen0.strftimeFormat:             %a %d.%m.%Y %02k:%M:%S
 session.screen0.tabFocusModel:              ClickToTabFocus
 session.screen0.followModel:                Ignore
 session.screen0.resizeMode:                 Center
