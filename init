@@ -68,7 +68,8 @@ session.screen0.toolbar.onTop:              true
 
 !-------------------------------------------------------- ICONBAR
 session.screen0.iconbar.iconWidth:          70
-session.screen0.iconbar.mode:               {static groups} (workspace)
+! mode does not work, just use the default, which desired anyway
+! session.screen0.iconbar.mode:               {static groups} (workspace)
 session.screen0.iconbar.usePixmap:          true
 session.screen0.iconbar.iconTextPadding:    0
 session.screen0.iconbar.deiconifyMode:      Current
