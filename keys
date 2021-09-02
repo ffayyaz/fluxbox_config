@@ -4,11 +4,13 @@
 
 # Control = CTRL
 # Mod1 = Alt
-# Mod4 = Windows
+# Mod4 = Super
 # 115 = End
+# 112 = Page Up
+# 117 = Page Down
 # Mouse1 = Left click
-# Mouse 2 = Middle click
-# Mouse 3 = Right click
+# Mouse2 = Middle click
+# Mouse3 = Right click
 
 Control Mod1 22             :Exit
 Control Mod1 r              :Reconfigure
@@ -65,16 +67,16 @@ Mod1 Tab                    :NextWindow {static groups} (workspace=[current])
 Mod1 Shift Tab              :PrevWindow {static groups} (workspace=[current])
 
 # go to a specific window in current workspace
-Mod1 1                      :GoToWindow 1   {static groups} (workspace=[current])
-Mod1 2                      :GoToWindow 2   {static groups} (workspace=[current])
-Mod1 3                      :GoToWindow 3   {static groups} (workspace=[current])
-Mod1 4                      :GoToWindow 4   {static groups} (workspace=[current])
-Mod1 5                      :GoToWindow 5   {static groups} (workspace=[current])
-Mod1 6                      :GoToWindow 6   {static groups} (workspace=[current])
-Mod1 7                      :GoToWindow 7   {static groups} (workspace=[current])
-Mod1 8                      :GoToWindow 8   {static groups} (workspace=[current])
-Mod1 9                      :GoToWindow 9   {static groups} (workspace=[current])
-Mod1 0                      :GoToWindow 10  {static groups} (workspace=[current])
+Control Mod1 1                      :GoToWindow 1   {static groups} (workspace=[current])
+Control Mod1 2                      :GoToWindow 2   {static groups} (workspace=[current])
+Control Mod1 3                      :GoToWindow 3   {static groups} (workspace=[current])
+Control Mod1 4                      :GoToWindow 4   {static groups} (workspace=[current])
+Control Mod1 5                      :GoToWindow 5   {static groups} (workspace=[current])
+Control Mod1 6                      :GoToWindow 6   {static groups} (workspace=[current])
+Control Mod1 7                      :GoToWindow 7   {static groups} (workspace=[current])
+Control Mod1 8                      :GoToWindow 8   {static groups} (workspace=[current])
+Control Mod1 9                      :GoToWindow 9   {static groups} (workspace=[current])
+Control Mod1 0                      :GoToWindow 10  {static groups} (workspace=[current])
 
 # cycle through windows in order as seen in toolbar ("modified" alt-tab)
 Mod1 Left                   :PrevWindow {static groups} (workspace=[current])
@@ -219,27 +221,7 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 
 #------------------------------------------------------- TESTING
 #Shift Mod4 p                :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
-
-# resize windows
-#Mod4 Control Right          :MacroCmd {ResizeHorizontal 20} {Raise}
-#Mod4 Control Left           :MacroCmd {ResizeHorizontal -20} {Raise}
-#Mod4 Control Up             :MacroCmd {ResizeVertical -20} {Raise}
-#Mod4 Control Down           :MacroCmd {ResizeVertical 20} {Raise}
-## Mod4 Control Up           :MacroCmd {Resize 25% 25%} {Raise}
-## Mod4 Control Down         :MacroCmd {Resize -25% -25%} {Raise}
-
-# move windows
-#Shift Mod4 Right            :MacroCmd {MoveRight 20} {Raise}
-#Shift Mod4 Left             :MacroCmd {MoveLeft 20} {Raise}
-#Shift Mod4 Up               :MacroCmd {MoveUp 20} {Raise}
-#Shift Mod4 Down             :MacroCmd {MoveDown 20} {Raise}
-
-# arrange windows vertically
-#Mod4 a Mod4 v               :ArrangeWindowsVertical {static groups} (workspace=[current]) (layer!=Desktop)
-# arrange windows horizontally
-#Mod4 a Mod4 h               :ArrangeWindowsHorizontal {static groups} (workspace=[current]) (layer!=Desktop)
-# arrange windows
-#Mod4 a Mod4 g               :ArrangeWindows {static groups} (workspace=[current]) (layer!=Desktop)
-
 #Mod4 p :If {Some Matches (name=*xvt*)} {ForEach {Minimize} {Some Matches (name=*xvt*)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
-#Mod4 p :ForEach {Minimize} {Some Matches (class=URxvt)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
+#Mod4 p :ForEach {Minimize} {Matches (class=URxvt)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
+Control b Mod1 c :ForEach {NextWindow (name=chromium)} {Matches (name=chromium)}
+Control b Mod1 b :Exec ~/.fluxbox/find_app.sh /usr/bin/chromium

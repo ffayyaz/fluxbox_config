@@ -235,7 +235,7 @@
 [group] (workspace)
     [app] (xterm)
         [Head]          {1}
-        [Layer]         {8}
+        [Layer]         {4}
         [Dimensions]    {40% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
