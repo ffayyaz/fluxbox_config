@@ -218,6 +218,7 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 
 #------------------------------------------------------- TESTING
 #ChangeWorkspace             :Exec fbsetbg -f ~/.fluxbox/wallpaper/$(ls ~/.fluxbox/wallpaper/|sort -R|tail -1)
+#ChangeWorkspace             :Exec fbsetbg -f $(find ~/xiaomi/photos/camera -iname "*.jpg"|sort -R|tail -1)
 #ChangeWorkspace             :ForEach {Stick} {Some (Name=www.teleboy.ch__player_live)}
 #Shift Mod4 p                :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
 #Mod4 p :If {Some Matches (name=*xvt*)} {ForEach {Minimize} {Some Matches (name=*xvt*)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
