@@ -79,7 +79,7 @@
 [end]
 
 #---------------------------------------------------- MUSIC
-[group]
+[group] (workspace)
     [app] (name=audacious) (class=Audacious) (title=.*Audacious)
     [app] (name=www.soundcloud.com) (class=.*hromium)
     [app] (name=www.soundcloud.com) (class=.*oogle-chrome)
