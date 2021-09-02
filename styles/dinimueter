@@ -26,16 +26,16 @@ menu.title.font:		-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
 menu.title.justify:             Center
 menu.title.textColor:           #ffffff
 
-toolbar.button.color:           rgb:9B/9B/9B
-toolbar.button.colorTo:         rgb:42/42/42
-toolbar.button:                 Gradient Diagonal
-toolbar.button.picColor:        black
-toolbar.button.pressed.color:   #60747d
-toolbar.button.pressed.colorTo: #0e1a27
+toolbar.button.color:           black
+toolbar.button.colorTo:         black
+toolbar.button:                 Flat
+toolbar.button.picColor:        white
+toolbar.button.pressed.color:   #ffffff
+toolbar.button.pressed.colorTo: #60747d
 toolbar.button.pressed:         Flat Gradient CrossDiagonal
 toolbar.clock.color:            #000000
 toolbar.clock.colorTo:          #000000
-toolbar.clock:                  Flat Gradient CrossDiagonal
+toolbar.clock:                  Flat 
 toolbar.clock.font:		-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
 toolbar.clock.textColor:        #ffffff
 toolbar.color:                  #000000
