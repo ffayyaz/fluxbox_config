@@ -199,10 +199,7 @@ Mod1 F5                     :MacroCmd {Exec chromium --app="http://www.teleboy.c
 
 Mod4 t                      :Exec urxvt -name topterm -e top
 
-# ChangeWorkspace             :Exec fbsetbg -f ~/.fluxbox/wallpaper/$(ls ~/.fluxbox/wallpaper/|sort -R|tail -1)
-
 #------------------------------------------------------- TOGGLES
-
 # xcompmgr
 # Mod4 x                      :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95} {Exec pkill xcompmgr}
 Mod4 x                      :ToggleCmd {Exec compton -r12 -o0.75 -l-15 -t-15 -I0.005 -O0.005 -D1 -m1.0 -cC -z -f -G -b} {Exec pkill compton}
@@ -220,6 +217,8 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 
 
 #------------------------------------------------------- TESTING
+#ChangeWorkspace             :Exec fbsetbg -f ~/.fluxbox/wallpaper/$(ls ~/.fluxbox/wallpaper/|sort -R|tail -1)
+#ChangeWorkspace             :ForEach {Stick} {Some (Name=www.teleboy.ch__player_live)}
 #Shift Mod4 p                :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
 #Mod4 p :If {Some Matches (name=*xvt*)} {ForEach {Minimize} {Some Matches (name=*xvt*)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
 #Mod4 p :ForEach {Minimize} {Matches (class=URxvt)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
