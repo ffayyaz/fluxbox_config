@@ -215,6 +215,8 @@ Control Mod4 112            :Exec audacious -f # next track
 Control Mod4 117            :Exec audacious -r # previous track
 Control Mod4 115            :Exec audacious -u # pause / unpause
 
+# jump to workspace 1 and go to user console (name=USER)
+Control Mod4 o :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
 
 #------------------------------------------------------- TESTING
 #ChangeWorkspace             :Exec fbsetbg -f ~/.fluxbox/wallpaper/$(ls ~/.fluxbox/wallpaper/|sort -R|tail -1)
@@ -223,5 +225,5 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 #Shift Mod4 p                :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
 #Mod4 p :If {Some Matches (name=*xvt*)} {ForEach {Minimize} {Some Matches (name=*xvt*)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
 #Mod4 p :ForEach {Minimize} {Matches (class=URxvt)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
-Control b Mod1 c :ForEach {NextWindow (name=chromium)} {Matches (name=chromium)}
-Control b Mod1 b :Exec ~/.fluxbox/find_app.sh /usr/bin/chromium
+Control b Mod1 c :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
+Control b Mod1 b :If {Some (title=USER)} {NextWindow (name=title)}
