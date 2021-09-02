@@ -1,0 +1,165 @@
+style.name:             Dinimueter
+style.author:           Dinimueter
+style.date:             Mon Aug 30 23:02:55 GMT+1 2021
+
+background: 		fullscreen
+background.pixmap:      /usr/share/images/desktop-base/debian-blueish-wallpaper-640x480.png
+
+window.font:			-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+menu.frame.font:		-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+menu.title.font:		-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+toolbar.clock.font:		-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+toolbar.iconbar.focused.font:	-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+toolbar.iconbar.unfocused.font:	-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+toolbar.workspace.font:		-*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+
+! Window settings...
+window.grip.focus:            	Flat Solid
+window.grip.focus.color:        #60747d
+
+window.grip.unfocus:            Flat Solid
+window.grip.unfocus.color:      rgb:42/42/42
+
+window.handle.focus:            Flat Solid
+window.handle.focus.color:      #000000
+
+window.handle.unfocus:          Flat Solid
+window.handle.unfocus.color:    #000000
+
+window.label.focus:             Flat Gradient CrossDiagonal
+window.label.focus.color:       #ffffff
+window.label.focus.colorTo:     #000000
+window.label.focus.textColor:   #ffffff
+window.label.focus.justify:     Left
+
+window.justify:                 Left
+window.label.unfocus:           Flat Gradient CrossDiagonal
+window.label.unfocus.color:     #ffffff
+window.label.unfocus.colorTo:   #000000
+window.label.unfocus.textColor: #dbdbdb
+
+window.title.focus:             Flat Solid Horizontal
+window.title.focus.color:       #000000
+window.title.focus.colorTo:     #ffffff
+
+window.title.unfocus:           Flat Solid Horizontal
+window.title.unfocus.color:     #000000
+window.title.unfocus.colorTo:   #ffffff
+
+window.frame.focusColor:        #000000
+window.frame.unfocusColor:      #000000
+
+window.button.focus:            Gradient Diagonal
+window.button.focus.color:      rgb:FF/FF/FF
+window.button.focus.colorTo:    rgb:55/55/55
+window.button.focus.picColor:   black
+window.button.unfocus:          Solid
+window.button.unfocus.color:    rgb:88/88/88
+window.button.unfocus.colorTo:  rgb:33/33/33
+window.button.unfocus.picColor: black
+window.button.pressed:          Flat Gradient CrossDiagonal
+window.button.pressed.color:    #60747d
+window.button.pressed.colorTo:  #0e1a27
+
+! Toolbar settings...
+
+toolbar.iconbar.focused:		Flat Gradient CrossDiagonal
+toolbar.iconbar.focused.color:  	#ffffff
+toolbar.iconbar.focused.colorTo:	#000000
+toolbar.iconbar.focused.textColor:	#ffffff
+toolbar.iconbar.focused.borderWidth:	1
+toolbar.iconbar.focused.borderColor: 	#ffffff
+
+toolbar.iconbar.unfocused:		Flat Gradient CrossDiagonal
+toolbar.iconbar.unfocused.color:	#ffffff
+toolbar.iconbar.unfocused.colorTo:   	#000000
+toolbar.iconbar.unfocused.textColor:	#dbdbdb
+toolbar.iconbar.unfocused.borderWidth:	1
+toolbar.iconbar.unfocused.borderColor:	#ffffff
+
+toolbar.iconbar.empty:			Flat Gradient CrossDiagonal
+toolbar.iconbar.empty.color:		#ffffff
+toolbar.iconbar.empty.colorTo:		#000000
+toolbar.iconbar.empty.borderWidth:	1
+
+toolbar.iconbar.borderWidth:		1
+toolbar.workspace.borderWidth:		1
+
+toolbar.button:                 Gradient Diagonal
+toolbar.button.color:           rgb:9B/9B/9B
+toolbar.button.colorTo:         rgb:42/42/42
+toolbar.button.picColor:        black
+
+toolbar.button.pressed:         Flat Gradient CrossDiagonal
+toolbar.button.pressed.color:   #60747d
+toolbar.button.pressed.colorTo: #0e1a27
+
+toolbar.label:                  Flat Gradient CrossDiagonal
+toolbar.label.color:            #000000
+toolbar.label.colorTo:          #000000
+toolbar.label.textColor:        #ffffff
+
+toolbar.windowLabel:            Flat Gradient CrossDiagonal
+toolbar.windowLabel.color:      #40545d
+toolbar.windowLabel.colorTo:    #0e1a27
+toolbar.windowLabel.textColor:  #ffffff
+
+toolbar.clock:                  Flat Gradient CrossDiagonal
+toolbar.clock.color:            #000000
+toolbar.clock.colorTo:          #000000
+toolbar.clock.textColor:        #ffffff
+
+toolbar:                        Flat Solid CrossDiagonal
+toolbar.color:                  #000000
+toolbar.textColor:              #ffffff
+toolbar.justify:                Center
+
+
+
+! ----------- tab - explicit for fluxbox, the best wm out there[tm] (;
+window.tab.justify:             Left
+
+window.tab.label.focus:         	Flat Solid
+window.tab.label.focus.color:   	#60747d
+window.tab.label.focus.textColor:	white
+
+window.tab.label.unfocus:       	Sunken Solid
+window.tab.label.unfocus.color:		#40545d
+window.tab.label.unfocus.textColor: 	rgb:90/90/90
+
+window.tab.borderWidth:         1
+window.tab.borderColor:         black
+
+
+! Menu settings...
+menu.frame:                     Flat Gradient CrossDiagonal
+menu.frame.color:               #000000
+menu.frame.colorTo:             #000000
+menu.frame.textColor:           #ffffff
+menu.frame.justify:             Left
+
+menu.title:                     Flat Gradient CrossDiagonal
+menu.title.color:               #000000
+menu.title.colorTo:             #000000
+menu.title.textColor:           #ffffff
+menu.title.justify:             Center
+
+menu.hilite:                    Flat Gradient CrossDiagonal
+menu.hilite.color:              #80949d
+menu.hilite.colorTo:            #80949d
+menu.hilite.textColor:          #ffffff
+
+menu.bullet:                    diamond
+menu.bullet.position:           Left
+menu.frame.disableColor:        #777777
+
+menu.bevelWidth:		1
+
+
+! ---------------
+
+handleWidth:                    2
+frameWidth:                     1
+bevelWidth:                     1
+borderWidth:                    1
+borderColor:                    #AAAAAA

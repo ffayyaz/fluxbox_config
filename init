@@ -5,7 +5,7 @@ session.menuFile:                           ~/.fluxbox/menu
 session.slitlistFile:                       ~/.fluxbox/slitlist
 session.styleOverlay:                       ~/.fluxbox/overlay
 session.groupFile:                          ~/.fluxbox/groups
-session.styleFile:                          /usr/share/fluxbox/styles/debian-blue
+session.styleFile:                          ~/.fluxbox/styles/dinimueter
 session.forcePseudoTransparency:            false
 session.configVersion:                      13
 session.colorsPerChannel:                   4
