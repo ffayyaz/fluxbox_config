@@ -5,15 +5,16 @@
 # start desktop apps
 xscreensaver -no-splash &
 xclock -analog -twentyfour -update 1 -padding 1 -render -sharp &
-#urxvt -name messagesterm -title messages -tn messagesterm&
-#urxvt -name syslogterm -title syslog -tn syslogterm&
-#urxvt -name debuglogterm -title debug -tn debuglogterm&
-#urxvt -name authlogterm -title auth -tn authlogterm&
-#urxvt -name kernlogterm -title kern -tn kernlogterm&
-#urxvt -name topterm -title top -tn topterm&
-urxvt -name mixerterm -title mixer -tn mixerterm&
-urxvt -name clockterm -title clock -tn clockterm&
-urxvt -name calterm -title cal -tn calterm&
+#urxvt -name messagesterm -title messages -tn messagesterm &
+#urxvt -name syslogterm -title syslog -tn syslogterm &
+#urxvt -name debuglogterm -title debug -tn debuglogterm &
+#urxvt -name authlogterm -title auth -tn authlogterm &
+#urxvt -name kernlogterm -title kern -tn kernlogterm &
+#urxvt -name topterm -title top -tn topterm &
+urxvt -name mixerterm -title mixer -tn mixerterm &
+urxvt -name clockterm -title clock -tn clockterm &
+urxvt -name calterm -title cal -tn calterm &
+xpad &
 
 # start 2 terminals
 urxvt -title ROOT -hold -e bash -c "screen -dR root" &
