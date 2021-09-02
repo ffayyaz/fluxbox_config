@@ -8,8 +8,9 @@
 # do not show their icon in toolbar
 [transient] (role=GtkFileChooserDialog)
         [Head]          {1}
+        [Layer]         {8}
         [Position]      (CENTER) {0% 0%}
-        [IconHidden]    {yes}
+        [IconHidden]    {no}
 [end]
 
 ###############################################################################
@@ -26,8 +27,7 @@
         [Dimensions}    {12% 17%}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]        {yes}
         [Deco]          {NONE}
 [end]
 
@@ -39,8 +39,7 @@
         [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]        {yes}
         [Deco]          {NONE}
 [end]
 
@@ -51,8 +50,7 @@
         [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]        {yes}
         [Deco]          {NONE}
 [end]
 
@@ -64,22 +62,20 @@
         [Dimensions]    {12% 100%}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]        {yes}
         [Deco]          {NONE}
 [end]
 
 #---------------------------------------------------- NOTES
 [app] (name=xpad)
         [Head]          {1}
-        [Dimensions]    {12% 20%}
-        [Position]      (TOPRIGHT) {0% 60%}
+        [Dimensions]    {21% 30%}
+        [Position]      (TOPRIGHT) {0% 70%}
         [Sticky]        {yes}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
-        [Deco]          {TOOL}
+        [Hidden]        {yes}
+        [Deco]          {NONE}
 [end]
 
 #---------------------------------------------------- MUSIC
@@ -96,7 +92,7 @@
         [Workspace]     {3}
         [Dimensions]    {88% 100%}
         [Position]      (TOPLEFT)   {0% 0%}
-        [Layer]         {12}
+        [Layer]         {6}
         [FocusNewWindow] {no}
         [Jump]          {no}
         [Deco]          {TINY}
@@ -105,6 +101,7 @@
 # easytag dialog
 [app] (easytag) (title=Tag and Filename Scan)
         [Head]          {2}
+        [Layer]         {6}
         [Workspace]     {3}
         [Position]      (CENTER) {0% 0%}
 [end]
@@ -112,6 +109,7 @@
 #---------------------------------------------------- GKRELLM_CONF
 [app] (name=Gkrellm_conf) (class=Gkrellm)
         [Head]          {1}
+        [Layer]         {8}
         [Position]      (TOPLEFT) {0% 30%}
 [end]
 
@@ -124,8 +122,7 @@
         [Deco]          {10100100101}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]    {yes}
 [end]
 [app] (name=syslogterm)
         [Head]          {1}
@@ -135,8 +132,7 @@
         [Deco]          {10100100101}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]    {yes}
 [end]
 [app] (name=debuglogterm)
         [Head]          {1}
@@ -146,8 +142,7 @@
         [Deco]          {10100100101}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]    {yes}
 [end]
 [app] (name=kernlogterm)
         [Head]          {1}
@@ -157,8 +152,7 @@
         [Deco]          {10100100101}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]    {yes}
 [end]
 [app] (name=authlogterm)
         [Head]          {1}
@@ -168,8 +162,7 @@
         [Deco]          {10100100101}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]    {yes}
 [end]
 [app] (name=cpufreqterm)
         [Head]          {1}
@@ -179,8 +172,7 @@
         [Deco]          {10100100101}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]    {yes}
 [end]
 [app] (name=calterm)
         [Head]          {1}
@@ -190,33 +182,25 @@
         [Deco]          {NONE}
         [Layer]         {12}
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]    {yes}
 [end]
 
 #---------------------------------------------------- VIRTUAL MACHINE
 
 # WM_NAME=Windows 8 [Running] - Oracle VM VirtualBox
-# does not work
-# [app] (name=Qt-subapplication) (class=VirtualBox) (title=.*Running.*)
-# [app] (name=Qt-subapplication) (class=VirtualBox) (title=WindowsXP [Running] - Oracle VM VirtualBox)
-#[app] (name=Qt-subapplication) (class=VirtualBox) (title!=Oracle VM VirtualBox Manager)
 [app] (name=VirtualBox) (class=VirtualBox) (title=.*Oracle VM VirtualBox)
-        # [Sticky]        {yes}
         [Workspace]     {0}
         [Head]          {2}
         [Layer]         {12}
         [Deco]          {NONE}
         [Maximized]     {yes} # this is important
         [FocusNewWindow] {no}
-        [IconHidden]    {yes}
-        [FocusHidden]   {yes}
+        [Hidden]    {yes}
         [Jump]          {yes}
 [end]
 [app] (name=VirtualBox) (class=VirtualBox) (title=Oracle VM VirtualBox Manager)
         [Workspace]     {0}
         [Head]          {1}
-        # [Sticky]        {yes}
         [Layer]         {12}
         [Jump]          {no}
         [Dimensions]    {50% 50%}
@@ -236,6 +220,7 @@
 [group] (workspace)
     [app] (urxvt)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {40% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Sticky]        {yes}
@@ -244,6 +229,7 @@
 [group] (workspace)
     [app] (xterm)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {40% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
@@ -252,12 +238,14 @@
 [group] (workspace)
     [app] (URxvt-remote)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {50% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
 [group] (workspace)
     [app] (URxvt-remote2)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
@@ -324,6 +312,7 @@
     [app] (name=.*hromium) (class=.*hromium)
     [app] (name=google-chrome) (class=.*oogle-chrome)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {60% 100%}
         [Position]      (TOPLEFT) {40% 0%}
 [end]
@@ -332,6 +321,7 @@
 [group] (workspace)
     [app] (name=Navigator) (class=Firefox-esr)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {60% 100%}
         [Position]      (TOPLEFT) {40% 0%}
 [end]
@@ -342,6 +332,7 @@
     [app] (name=Opera) (class=OperaNext)
     [app] (class=Vivaldi.*)
         [Workspace]     {3}
+        [Layer]         {8}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {1}
@@ -356,6 +347,7 @@
     [app] (name=.*mobiletv.ewl-internet.ch.*)
     [app] (name=.*webtv.thurcom.ch.*)
         [Head]          {2}
+        [Layer]         {8}
         [Workspace]     {0}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
@@ -387,18 +379,18 @@
     [app] (name=gedit) (class=Gedit)
     [app] (name=textShell) (class=NEdit)
     [app] (name=kate) (class=kate)
-    [app] (name=kate) (class=Kate)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {40% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
 
 #---------------------------------------------------- REMOTE DESKTOP
 # vncviewer
-# WM_CLASS(STRING) = "VNC: fayyaz:0", "Vncviewer"
 [group] (workspace)
     [app] (class=Vncviewer)
         [Head]          {1}
+        [Layer]         {8}
         [Workspace]     {1}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
@@ -410,6 +402,7 @@
 [group] (workspace)
     [app] (rdesktop)
         [Head]          {1}
+        [Layer]         {8}
         [Workspace]     {1}
         [Jump]          {yes}
         [Dimensions]    {100% 100%}
@@ -428,6 +421,7 @@
     [app] (class=xine)
     [app] (class=smplayer) (name=smplayer)
         [Dimensions]    {100% 100%}
+        [Layer]         {8}
         [Maximized]     {yes}
         [Head]          {2}
         [FocusNewWindow] {no}
@@ -435,8 +429,10 @@
         [Fullscreen]    {yes} 
 [end]
 
-[app] (vlc) (class=Vlc) (title=Advanced Preferences)
+[app] (vlc) (title=.*Preferences)
         [Head]          {2}
+        [Layer]         {8}
+        [Position]      (CENTER) {0% 0%}
 [end]
 
 #---------------------------------------------------- PDFREADER
@@ -448,6 +444,7 @@
     [app] (kpdf)
     [app] (.croread.*)
         [Head]          {2}
+        [Layer]         {8}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Position]      (TOPLEFT) {0% 0%}
@@ -458,6 +455,7 @@
     [app] (eog)
     [app] (feh)
         [Dimensions]    {100% 100%}
+        [Layer]         {8}
         [Position]      (TOPLEFT) {0% 0%}
         [Head]          {1}
 [end]
@@ -466,6 +464,7 @@
 [group] (workspace)
     [app] (name=libreoffice)
         [Head]          {2}
+        [Layer]         {8}
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
@@ -477,6 +476,7 @@
     [app] (name=sun-awt-X11-XFramePeer) (class=NetBeans IDE.*)
     [app] (name=Eclipse) (class=Eclipse)
         [Head]          {2}
+        [Layer]         {8}
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
@@ -484,8 +484,9 @@
 
 # visualvm
 [group] (workspace)
-        [app] (name=sun-awt-X11-XFramePeer) (class=VisualVM.*)
+    [app] (name=sun-awt-X11-XFramePeer) (class=VisualVM.*)
         [Head]          {2}
+        [Layer]         {8}
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
@@ -496,7 +497,6 @@
     [app] (title=top)
             [Dimensions]    {100% 100%}
             [Maximized]     {yes}
-            [Sticky]        {yes}
             [Layer]         {12}
             [Head]          {2}
             [Deco]          {none}
@@ -504,13 +504,12 @@
 [end]
 
 # google earth
-[app] (name=googleearth-bin) (class=Googleearth-bin)
+[app] (name=googleearth-bin)
         [Head]          {2}
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
-        # [Fullscreen]    {yes}
-        [Layer]         {12}
+        [Layer]         {8}
         [Deco]          {none}
 [end]
 
@@ -518,12 +517,14 @@
 [group] (workspace)
     [app] (wireshark)
         [Dimensions]    {100% 100%}
+        [Layer]         {8}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
         [Head]          {2}
 [end]
 [app] (wireshark) (title=Wireshark: Open Capture File)
         [Dimensions]    {50% 100%}
+        [Layer]         {8}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
         [Head]          {2}
@@ -532,6 +533,7 @@
 # soap ui
 [app] (name=sun-awt-X11-XFramePeer) (class=com-eviware-soapui-SoapUI)
         [Dimensions]    {100% 100%}
+        [Layer]         {8}
         [Maximized]     {yes}
         [Head]          {2}
         [Deco]          {none}
@@ -540,6 +542,7 @@
 # deluge
 [app] (name=deluge)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
 [end]
@@ -547,6 +550,7 @@
 # wicd client
 [app] (name=wicd-client.py)
         [Head]          {1}
+        [Layer]         {8}
         [Dimensions]    {50% 100%}
         [Position]      (TOPRIGHT) {0% 0%}
 [end]
@@ -556,6 +560,7 @@
     [app] (filezilla)
     [app] (main) (class=gFTP)
         [Dimensions]    {100% 100%}
+        [Layer]         {8}
         [Maximized]     {yes}
         [Head]          {2}
 [end]
@@ -564,27 +569,7 @@
 [group] (workspace)
     [app] (name=gnuplot) (class=Gnuplot)
         [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Head]          {2}
-[end]
-
-# steam
-[group] (workspace)
-    [app] (title=Steam)
-    [app] (name=Steam)
-        [Workspace]     {0}
-        [Jump]          {yes}
-        [Dimensions]    {100% 100%}
-        [Maximized]     {yes}
-        [Head]          {2}
-[end]
-
-# play on linux
-[group] (workspace)
-    [app] (title=PlayOnLinux)
-        [Workspace]     {0}
-        [Jump]          {yes}
-        [Dimensions]    {100% 100%}
+        [Layer]         {8}
         [Maximized]     {yes}
         [Head]          {2}
 [end]
@@ -592,21 +577,12 @@
 # graphic tools
 [group] (workspace)
     [app] (name=inkscape)
+    [app] (name=gimp) (class=Gimp)
         [Head]          {1}
+        [Layer]         {8}
         [Workspace]     {0}
-        [Jump]          {yes}
         [Dimensions]    {100% 100%}
 [end]
-
-# gimp
-# [app] (name=gimp) (class=Gimp)
-        # [Workspace]     {0}
-        # [Position]      (TOPRIGHT) {0% 0%}
-        # [Jump]          {yes}
-        # [Dimensions]    {75% 100%}
-        # # [Maximized]     {yes}
-        # [Head]          {1}
-# [end]
 
 # private tax
 [app] (name=sun-awt-X11-XFramePeer) (class=com-install4j-runtime-launcher-UnixLauncher) (title=.*Private.*Tax.*)
@@ -616,12 +592,4 @@
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Head]          {1}
-[end]
-
-# octave
-[app] (name=octave-gui) (class=Octave-gui)
-        [Head]          {2}
-        [Position]      (TOPLEFT) {0% 0%}
-        [Maximized]     {yes}
-        [Jump]          {yes}
 [end]

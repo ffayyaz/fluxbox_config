@@ -14,7 +14,6 @@ xclock -analog -twentyfour -update 1 -padding 1 -render -sharp &
 urxvt -name mixerterm -title mixer -tn mixerterm &
 urxvt -name clockterm -title clock -tn clockterm &
 urxvt -name calterm -title cal -tn calterm &
-xpad &
 
 # start 2 terminals
 urxvt -title ROOT -hold -e bash -c "screen -dR root" &
