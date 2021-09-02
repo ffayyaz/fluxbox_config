@@ -10,7 +10,13 @@
         [Head]          {1}
         [Layer]         {8}
         [Position]      (CENTER) {0% 0%}
-        [IconHidden]    {no}
+        [IconHidden]    {yes}
+[end]
+[transient] (name=firefox-esr) (class=Firefox-esr) (title=Print)
+        [Head]          {1}
+        [Layer]         {8}
+        [Position]      (CENTER) {0% 0%}
+        [IconHidden]    {yes}
 [end]
 
 ###############################################################################
@@ -92,7 +98,7 @@
         [Workspace]     {3}
         [Dimensions]    {88% 100%}
         [Position]      (TOPLEFT)   {0% 0%}
-        [Layer]         {6}
+        [Layer]         {8}
         [FocusNewWindow] {no}
         [Jump]          {no}
         [Deco]          {TINY}
