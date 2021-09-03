@@ -79,8 +79,9 @@ Control Mod1 9                      :GoToWindow 9   {static groups} (workspace=[
 Control Mod1 0                      :GoToWindow 10  {static groups} (workspace=[current])
 
 # cycle through windows in order as seen in toolbar ("modified" alt-tab)
-Mod1 Left                   :PrevWindow {static groups} (workspace=[current])
-Mod1 Right                  :NextWindow {static groups} (workspace=[current])
+# Mod1 Left/Right is not a good choice, as this is also used in bash
+#Mod1 Left                   :PrevWindow {static groups} (workspace=[current])
+#Mod1 Right                  :NextWindow {static groups} (workspace=[current])
 
 # close window
 Mod1 F4                     :Close
@@ -190,6 +191,7 @@ Mod4 l                      :MacroCmd {Shade} {Shade}
 Mod1 F1                     :MacroCmd {Exec urxvt} {Focus} {Raise}
 Mod1 F2                     :MacroCmd {Exec urxvt -name URxvt-remote -tn remoteterm} {Focus} {Raise}
 Mod1 F3                     :MacroCmd {Exec chromium} {Focus} {Raise}
+#Mod1 F4 obviously already occupied further above
 Mod1 F5                     :MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Focus} {Raise}
 #Mod1 F6                     :MacroCmd {Exec opera-next} {Focus} {Raise}
 #Mod1 F7                     :MacroCmd {Exec opera} {Focus} {Raise}
@@ -217,6 +219,8 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 
 # jump to workspace 1 and go to user console (name=USER)
 Control Mod4 o :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
+# jump to workspace 1 and go to chats
+Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=telegram-desktop)}} {Matches (name=telegram-desktop)}
 
 #------------------------------------------------------- TESTING
 #ChangeWorkspace             :Exec fbsetbg -f ~/.fluxbox/wallpaper/$(ls ~/.fluxbox/wallpaper/|sort -R|tail -1)

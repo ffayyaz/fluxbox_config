@@ -94,7 +94,7 @@ window.button.unfocus.color:                rgb:88/88/88
 window.button.unfocus.colorTo:              rgb:33/33/33
 window.button.unfocus.picColor:             black
 window.button.unfocus:                      Solid
-window.borderColor:                         black
+window.borderColor:                         darkgray
 window.borderWidth:                         1
 window.font:			                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
 window.frame.focusColor:                    #000000
