@@ -428,12 +428,14 @@
     [app] (class=xine)
     [app] (class=smplayer) (name=smplayer)
         [Dimensions]    {100% 100%}
+        [Workspace]     {0}
         [Layer]         {8}
         [Maximized]     {yes}
         [Head]          {2}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
         [Fullscreen]    {yes} 
+        [Jump]          {yes}
 [end]
 
 [app] (vlc) (title=.*Preferences)
