@@ -351,12 +351,8 @@
         [Jump]    {no}
 [end]
 
-# teleboy / wilmaa / ewl
-[group] (workspace)
-    [app] (name=www.teleboy.ch.*)
-    [app] (name=.*wilmaa.com.*)
-    [app] (name=.*mobiletv.ewl-internet.ch.*)
-    [app] (name=.*webtv.thurcom.ch.*)
+# teleboy
+[app] (name=www.teleboy.ch__player_live) {1}
         [Head]          {2}
         [Layer]         {8}
         [Workspace]     {0}
