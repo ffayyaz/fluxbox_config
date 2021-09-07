@@ -145,17 +145,12 @@ Mod1 d                :DetachClient
 Control Mod1 Left           :PrevWorkspace
 Control Mod1 Right          :NextWorkspace
 
-# change to a specific workspace
-Control 1                   :Workspace 1
-Control 2                   :Workspace 2
-Control 3                   :Workspace 3
-Control 4                   :Workspace 4
-Control 5                   :MacroCmd {Workspace 5} {NextWindow (name=Mail)}
-Control 6                   :Workspace 6
-Control 7                   :Workspace 7
-Control 8                   :Workspace 8
-Control 9                   :Workspace 9
-Control 0                   :Workspace 10
+# change to a specific workspace (also take the tv there)
+Control 1                   :MacroCmd {Workspace 1} {ForEach {MacroCmd {SendToWorkspace 1} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
+Control 2                   :MacroCmd {Workspace 2} {ForEach {MacroCmd {SendToWorkspace 2} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
+Control 3                   :MacroCmd {Workspace 3} {ForEach {MacroCmd {SendToWorkspace 3} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
+Control 4                   :MacroCmd {Workspace 4} {ForEach {MacroCmd {SendToWorkspace 4} {SetHead 1} {Raise}} {Matches (name=www.teleboy.ch__player_live)}}
+Control 5                   :MacroCmd {Workspace 5} {NextWindow (name=Mail)} {ForEach {MacroCmd {SendToWorkspace 5} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
 
 # send the current window to a specific workspace
 Shift Mod4 1                :SendToWorkspace 1
@@ -163,11 +158,6 @@ Shift Mod4 2                :SendToWorkspace 2
 Shift Mod4 3                :SendToWorkspace 3
 Shift Mod4 4                :SendToWorkspace 4
 Shift Mod4 5                :SendToWorkspace 5
-Shift Mod4 6                :SendToWorkspace 6
-Shift Mod4 7                :SendToWorkspace 7
-Shift Mod4 8                :SendToWorkspace 8
-Shift Mod4 9                :SendToWorkspace 9
-Shift Mod4 0                :SendToWorkspace 10
 
 # send the current window and change to a specific workspace
 Control Mod4 1              :TakeToWorkspace 1
@@ -175,11 +165,6 @@ Control Mod4 2              :TakeToWorkspace 2
 Control Mod4 3              :TakeToWorkspace 3
 Control Mod4 4              :TakeToWorkspace 4
 Control Mod4 5              :TakeToWorkspace 5
-Control Mod4 6              :TakeToWorkspace 6
-Control Mod4 7              :TakeToWorkspace 7
-Control Mod4 8              :TakeToWorkspace 8
-Control Mod4 9              :TakeToWorkspace 9
-Control Mod4 0              :TakeToWorkspace 10
 
 #------------------------------------------------------- SHORTCUTS
 
@@ -229,5 +214,5 @@ Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=telegram-deskt
 #Shift Mod4 p                :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
 #Mod4 p :If {Some Matches (name=*xvt*)} {ForEach {Minimize} {Some Matches (name=*xvt*)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
 #Mod4 p :ForEach {Minimize} {Matches (class=URxvt)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
-Control b Mod1 c :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
-Control b Mod1 b :If {Some (title=USER)} {NextWindow (name=title)}
+#Control b Mod1 c :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
+#Control b Mod1 b :If {Some (title=USER)} {NextWindow (title=USER)}
