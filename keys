@@ -103,8 +103,8 @@ Mod1 space                  :WindowMenu
 # otherwise attach to each corner
 #Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}
 Mod1 m                      :If {Matches (Head=1)} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 40% 0 TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}}} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}}
-Mod1 117                    :If {Matches (Workspace=[0-2])} {SendToPrevHead 1} # alt+page down
-Mod1 112                    :If {Matches (Workspace=[0-2])} {SendToNextHead 1} # alt+page up
+Mod1 117                    :If {Matches (Workspace=[0-2]) (Head=2)} {MacroCmd {SetHead 1} {ResizeTo 40% 100%}} # alt+page down
+Mod1 112                    :If {Matches (Workspace=[0-2]) (Head=1)} {MacroCmd {SetHead 2} {ResizeTo 100% 100%}} # alt+page up
 
 #------------------------------------------------------- TABS
 
