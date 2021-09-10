@@ -102,8 +102,8 @@ None 135                    :WindowMenu
 # otherwise attach to each corner
 #Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}
 Mod1 m                      :If {Matches (Head=1)} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 40% 0 TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}}} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}}
-Mod1 117                    :If {Matches (Workspace=[0-2]) (Head=2)} {MacroCmd {SetHead 1}} # alt+page down
-Mod1 112                    :If {Matches (Workspace=[0-2]) (Head=1)} {MacroCmd {SetHead 2}} # alt+page up
+Mod1 117                    :If {Matches (Workspace=[0-4]) (Head=2)} {MacroCmd {SetHead 1}} # alt+page down
+Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {SetHead 2}} # alt+page up
 
 #------------------------------------------------------- TABS
 
@@ -148,7 +148,7 @@ Control Mod1 Right          :NextWorkspace
 Control 1                   :MacroCmd {Workspace 1} {ForEach {MacroCmd {SendToWorkspace 1} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
 Control 2                   :MacroCmd {Workspace 2} {ForEach {MacroCmd {SendToWorkspace 2} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
 Control 3                   :MacroCmd {Workspace 3} {ForEach {MacroCmd {SendToWorkspace 3} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
-Control 4                   :MacroCmd {Workspace 4} {ForEach {MacroCmd {SendToWorkspace 4} {SetHead 1} {Raise}} {Matches (name=www.teleboy.ch__player_live)}}
+Control 4                   :MacroCmd {Workspace 4} {ForEach {MacroCmd {SendToWorkspace 4} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
 Control 5                   :MacroCmd {Workspace 5} {NextWindow (name=Mail)} {ForEach {MacroCmd {SendToWorkspace 5} {SetHead 2}} {Matches (name=www.teleboy.ch__player_live)}}
 
 # send the current window to a specific workspace
