@@ -60,14 +60,14 @@ toolbar.iconbar.focused.borderColor: 	    white
 toolbar.iconbar.focused.borderWidth:	    1
 toolbar.iconbar.focused.color:  	        black
 toolbar.iconbar.focused.colorTo:	        lightgray
-toolbar.iconbar.focused:		            Flat Gradient Pyramid 
+toolbar.iconbar.focused:		            Raised Gradient Pyramid 
 toolbar.iconbar.focused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 toolbar.iconbar.focused.textColor:	        white
 toolbar.iconbar.unfocused.borderColor:	    lightgray
 toolbar.iconbar.unfocused.borderWidth:      1
 toolbar.iconbar.unfocused.color:            black
 toolbar.iconbar.unfocused.colorTo:   	    black
-toolbar.iconbar.unfocused:                  Flat Solid
+toolbar.iconbar.unfocused:                  Sunken Solid
 toolbar.iconbar.unfocused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 toolbar.iconbar.unfocused.textColor:	    white
 toolbar.justify:                            Center
