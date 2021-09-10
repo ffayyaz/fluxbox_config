@@ -2,8 +2,8 @@ style.author:                               Dinimueter
 style.date:                                 Mon Aug 30 23:02:55 GMT+1 2021
 style.name:                                 Dinimueter
 
-!background: 		                        fullscreen
-!background.pixmap:                          /usr/share/images/desktop-base/debian-blueish-wallpaper-640x480.png
+background: 		                        fullscreen
+background.pixmap:                          /usr/share/images/desktop-base/debian-blueish-wallpaper-640x480.png
 
 menu.bevelWidth:		                    1
 menu.bullet:                                diamond
@@ -14,7 +14,7 @@ menu.frame.color:                           black
 menu.frame.colorTo:                         black
 menu.frame.disableColor:                    #777777
 menu.frame:                                 Flat Solid
-menu.frame.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+menu.frame.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 menu.frame.justify:                         Left
 menu.frame.textColor:                       white
 menu.hilite.color:                          #80949d
@@ -24,7 +24,7 @@ menu.hilite.textColor:                      white
 menu.title.color:                           black
 menu.title.colorTo:                         black
 menu.title:                                 Flat Solid
-menu.title.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+menu.title.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 menu.title.justify:                         Left
 menu.title.textColor:                       white
 
@@ -46,7 +46,7 @@ toolbar.clock.borderWidth:                  1
 toolbar.clock.color:                        black
 toolbar.clock.colorTo:                      black
 toolbar.clock:                              Flat Solid
-toolbar.clock.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+toolbar.clock.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 toolbar.clock.textColor:                    white
 toolbar.color:                              darkgray
 toolbar:                                    Flat Solid
@@ -61,14 +61,14 @@ toolbar.iconbar.focused.borderWidth:	    1
 toolbar.iconbar.focused.color:  	        black
 toolbar.iconbar.focused.colorTo:	        lightgray
 toolbar.iconbar.focused:		            Flat Gradient Pyramid 
-toolbar.iconbar.focused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+toolbar.iconbar.focused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 toolbar.iconbar.focused.textColor:	        white
 toolbar.iconbar.unfocused.borderColor:	    lightgray
 toolbar.iconbar.unfocused.borderWidth:      1
 toolbar.iconbar.unfocused.color:            black
 toolbar.iconbar.unfocused.colorTo:   	    black
 toolbar.iconbar.unfocused:                  Flat Solid
-toolbar.iconbar.unfocused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+toolbar.iconbar.unfocused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 toolbar.iconbar.unfocused.textColor:	    white
 toolbar.justify:                            Center
 toolbar.label.color:                        black
@@ -82,22 +82,22 @@ toolbar.windowLabel:                        Flat Gradient CrossDiagonal ! ????
 toolbar.windowLabel.textColor:              white ! ????
 toolbar.workspace.borderColor:		        white
 toolbar.workspace.borderWidth:		        1
-toolbar.workspace.font:		                -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+toolbar.workspace.font:		                -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 
-window.button.focus.color:                  lightgray
-window.button.focus.colorTo:                lightgray
-window.button.focus:                        Flat Solid
-window.button.focus.picColor:               black
-window.button.pressed.color:                black
+window.button.focus.color:                  darkgray
+window.button.focus.colorTo:                darkgray
+window.button.focus:                        Raised Solid
+window.button.focus.picColor:               white
+window.button.pressed.color:                lightgray
 window.button.pressed.colorTo:              lightgray
-window.button.pressed:                      Sunken Gradient CrossDiagonal
-window.button.unfocus.color:                darkgray
-window.button.unfocus.colorTo:              darkgray
-window.button.unfocus.picColor:             black
-window.button.unfocus:                      Flat Solid
+window.button.pressed:                      Sunken Solid
+window.button.unfocus.color:                lightgray
+window.button.unfocus.colorTo:              lightgray
+window.button.unfocus.picColor:             white
+window.button.unfocus:                      Raised Solid
 window.borderColor:                         darkgray
 window.borderWidth:                         1
-window.font:			                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso10646-1
+window.font:			                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 window.frame.focusColor:                    black
 window.frame.unfocusColor:                  black
 window.grip.focus.color:                    #60747d ! ????
@@ -110,8 +110,8 @@ window.handle.unfocus.color:                #000000 ! ????
 window.handle.unfocus:                      Flat Solid ! ????
 window.justify:                             Left
 window.label.focus.color:                   black
-window.label.focus.colorTo:                 lightgray
-window.label.focus:                         Raised Gradient Horizontal Interlaced
+window.label.focus.colorTo:                 darkgray
+window.label.focus:                         Raised Gradient Pyramid Interlaced
 window.label.focus.justify:                 Left
 window.label.focus.textColor:               white
 window.label.unfocus.color:                 black
@@ -127,12 +127,13 @@ window.tab.label.focus.textColor:	        white ! ????
 window.tab.label.unfocus.color:		        #40545d ! ????
 window.tab.label.unfocus:       	        Sunken Solid ! ????
 window.tab.label.unfocus.textColor: 	    white ! ????
-window.title.focus.color:                   darkgray
-window.title.focus.colorTo:                 darkgray
+window.title.focus.color:                   black
+window.title.focus.colorTo:                 black
 window.title.focus:                         Flat Solid
 window.title.unfocus.color:                 black
 window.title.unfocus.colorTo:               black
 window.title.unfocus:                       Flat Solid
+
 
 bevelWidth:                                 1
 borderColor:                                darkgray
