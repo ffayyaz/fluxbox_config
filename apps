@@ -101,7 +101,6 @@
         [Layer]         {8}
         [FocusNewWindow] {no}
         [Jump]          {no}
-        [Deco]          {TINY}
 [end]
 
 # easytag dialog
@@ -508,7 +507,7 @@
             [Maximized]     {yes}
             [Layer]         {12}
             [Head]          {2}
-            [Deco]          {none}
+            [Deco]          {NONE}
             [IconHidden]    {yes}
 [end]
 
@@ -519,7 +518,7 @@
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
         [Layer]         {8}
-        [Deco]          {none}
+        [Deco]          {NONE}
 [end]
 
 # wireshark
@@ -545,7 +544,7 @@
         [Layer]         {8}
         [Maximized]     {yes}
         [Head]          {2}
-        [Deco]          {none}
+        [Deco]          {NONE}
 [end]
 
 # deluge

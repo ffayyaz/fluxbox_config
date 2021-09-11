@@ -19,11 +19,11 @@ session.tabsAttachArea:                     Titlebar
 session.tabs:                               true
 session.updateDelayTime:                    0
 
-! TODO checkthis
+!-------------------------------------------------------- SCREEN0
+session.screen0.resizeMode:                 Center
 session.screen0.strftimeFormat:             %a %d.%m.%Y %02k:%M:%S
 session.screen0.tabFocusModel:              ClickToTabFocus
 session.screen0.followModel:                Ignore
-session.screen0.resizeMode:                 Center
 session.screen0.decorateTransient:          false
 session.screen0.showposinsidewinow:         true
 session.screen0.menuMode:                   Delay
@@ -45,15 +45,16 @@ session.screen0.slit.onTop:                 false
 session.screen0.slit.direction:             Vertical
 
 !-------------------------------------------------------- TAB(S)
+session.screen0.tabs.intitlebar:            true
+session.screen0.tabs.maxOver:               false
+session.screen0.tabs.usePixmap:             true
+
 ! check this. does it all work?
 session.screen0.tab.alignment:              Left
 session.screen0.tab.height:                 16
 session.screen0.tab.width:                  32
 session.screen0.tab.placement:              TopLeft
-session.screen0.tab.rotatevertical:         True
-session.screen0.tabs.usePixmap:             true
-session.screen0.tabs.maxOver:               false
-session.screen0.tabs.intitlebar:            true
+session.screen0.tab.rotatevertical:         true
 
 !-------------------------------------------------------- TOOLBAR
 session.screen0.toolbar.autoHide:           false
@@ -73,7 +74,7 @@ session.screen0.iconbar.iconWidth:          70
 ! mode does not work, just use the default, which desired anyway
 ! session.screen0.iconbar.mode:               {static groups} (workspace)
 session.screen0.iconbar.usePixmap:          true
-session.screen0.iconbar.iconTextPadding:    0
+session.screen0.iconbar.iconTextPadding:    10l
 session.screen0.iconbar.deiconifyMode:      Current
 session.screen0.iconbar.wheelMode:          Screen
 session.screen0.iconbar.alignment:          Relative
@@ -83,7 +84,7 @@ session.screen0.iconbar.clientWidth:        0
 session.screen0.menu.alpha:                 255
 session.screen0.clientMenu.usePixmap:       true
 session.screen0.menuDelay:                  0
-session.screen0.menuDelayClose:0
+session.screen0.menuDelayClose:             0
 
 !-------------------------------------------------------- WINDOW
 session.screen0.windowMenu:                 ~/.fluxbox/windowmenu
@@ -105,7 +106,7 @@ session.screen0.noFocusWhileTypingDelay:    500
 session.screen0.fullMaximization:           false
 session.screen0.sloppywindowgrouping:       false
 session.screen0.demandsAttentionTimeout:    500
-session.screen0.defaultDeco:                NORMAL
+session.screen0.defaultDeco:                TOOL
 session.screen0.allowRemoteActions:         false
 session.screen0.tooltipDelay:               300
 session.screen0.focusSameHead:              false
