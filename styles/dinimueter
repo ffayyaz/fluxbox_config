@@ -135,9 +135,9 @@ window.title.unfocus.colorTo:               black
 window.title.unfocus:                       Flat Solid
 
 
-bevelWidth:                                 1
-borderColor:                                darkgray
-borderWidth:                                1
-frameWidth:                                 1
-handleWidth:                                2
-textColor:                                  white
+*bevelWidth:                                 1
+*borderColor:                                darkgray
+*borderWidth:                                1
+*frameWidth:                                 1
+*handleWidth:                                2
+*textColor:                                  white
