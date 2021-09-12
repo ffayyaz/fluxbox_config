@@ -125,7 +125,7 @@
         [Workspace]     {0}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 0%}
-        [Deco]          {10100100101}
+        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
@@ -136,7 +136,7 @@
         [Workspace]     {0}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
-        [Deco]          {10100100101}
+        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
@@ -147,7 +147,7 @@
         [Workspace]     {0}
         [Dimensions]    {50% 34%}
         [Position]      (TOPLEFT) {50% 0%}
-        [Deco]          {10100100101}
+        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
@@ -158,7 +158,7 @@
         [Workspace]     {0}
         [Dimensions]    {50% 33%}
         [Position]      (TOPLEFT) {50% 34%}
-        [Deco]          {10100100101}
+        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
@@ -169,7 +169,7 @@
         [Workspace]     {0}
         [Dimensions]    {50% 33%}
         [Position]      (TOPLEFT) {50% 67%}
-        [Deco]          {10100100101}
+        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
@@ -179,7 +179,7 @@
         [Workspace]     {0}
         [Dimensions]    {11% 21%}
         [Position]      (TOPRIGHT) {0% 78%}
-        [Deco]          {10100100101}
+        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}

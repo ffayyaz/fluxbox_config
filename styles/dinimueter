@@ -87,13 +87,13 @@ toolbar.workspace.font:		                -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso
 window.button.focus.color:                  darkgray
 window.button.focus.colorTo:                darkgray
 window.button.focus:                        Raised Solid
-window.button.focus.picColor:               white
-window.button.pressed.color:                lightgray
-window.button.pressed.colorTo:              lightgray
+window.button.focus.picColor:               black
+window.button.pressed.color:                darkgray
+window.button.pressed.colorTo:              darkgray
 window.button.pressed:                      Sunken Solid
-window.button.unfocus.color:                lightgray
-window.button.unfocus.colorTo:              lightgray
-window.button.unfocus.picColor:             white
+window.button.unfocus.color:                darkgray
+window.button.unfocus.colorTo:              darkgray
+window.button.unfocus.picColor:             black
 window.button.unfocus:                      Raised Solid
 window.borderColor:                         darkgray
 window.borderWidth:                         1
