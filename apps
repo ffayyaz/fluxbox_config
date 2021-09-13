@@ -503,11 +503,13 @@
 # google earth
 [app] (name=googleearth-bin)
         [Head]          {2}
+        [Workspace]     {0}
         [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
         [Maximized]     {yes}
         [Layer]         {8}
         [Deco]          {NONE}
+        [Jump]          {yes}
 [end]
 
 # wireshark
