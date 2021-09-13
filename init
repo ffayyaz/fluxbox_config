@@ -6,17 +6,19 @@ session.slitlistFile:                       ~/.fluxbox/slitlist
 session.styleOverlay:                       ~/.fluxbox/overlay
 session.groupFile:                          ~/.fluxbox/groups
 session.styleFile:                          ~/.fluxbox/styles/dinimueter
-session.forcePseudoTransparency:            false
+session.forcePseudoTransparency:            False
 session.configVersion:                      13
 session.colorsPerChannel:                   4
 session.autoRaiseDelay:                     0
-session.cacheMax:                           200
+session.cacheMax:                           1024
 session.cacheLife:                          5
-session.ignoreBorder:                       false
+session.ignoreBorder:                       False
 session.doubleClickInterval:                250
 session.tabPadding:                         0
 session.tabsAttachArea:                     Titlebar
-session.tabs:                               true
+session.tabs:                               True
+session.titlebar.left:                      MenuIcon
+session.titlebar.right:                     Minimize Maximize Close
 session.updateDelayTime:                    0
 
 !-------------------------------------------------------- SCREEN0
@@ -24,57 +26,47 @@ session.screen0.resizeMode:                 Center
 session.screen0.strftimeFormat:             %a %d.%m.%Y %02k:%M:%S
 session.screen0.tabFocusModel:              ClickToTabFocus
 session.screen0.followModel:                Ignore
-session.screen0.decorateTransient:          false
-session.screen0.showposinsidewinow:         true
+session.screen0.decorateTransient:          False
+session.screen0.showposinsidewinow:         True
 session.screen0.menuMode:                   Delay
 !session.screen0.rootCommand:                fbsetbg -f ~/.fluxbox/backgrounds/black.jpg
-
-!-------------------------------------------------------- TITLEBAR
-session.screen0.titlebar.left:              MenuIcon LHalf RHalf
-session.screen0.titlebar.right:             Minimize Maximize Close
 
 !-------------------------------------------------------- SLIT
 session.screen0.slit.alpha:                 255
 session.screen0.slit.onhead:                1
-session.screen0.slit.autoHide:              false
-session.screen0.slit.maxOver:               true
+session.screen0.slit.autoHide:              False
+session.screen0.slit.maxOver:               True
 session.screen0.slit.layer:                 Desktop
 session.screen0.slit.placement:             LeftCenter
-session.screen0.slit.acceptKdeDockapps:     true
-session.screen0.slit.onTop:                 false
+session.screen0.slit.acceptKdeDockapps:     True
+session.screen0.slit.onTop:                 False
 session.screen0.slit.direction:             Vertical
 
 !-------------------------------------------------------- TAB(S)
-session.screen0.tabs.intitlebar:            true
-session.screen0.tabs.maxOver:               false
-session.screen0.tabs.usePixmap:             true
-
-! check this. does it all work?
-session.screen0.tab.alignment:              Left
-session.screen0.tab.height:                 16
-session.screen0.tab.width:                  32
+session.screen0.tabs.intitlebar:            True
+session.screen0.tabs.maxOver:               False
+session.screen0.tabs.usePixmap:             True
 session.screen0.tab.placement:              TopLeft
-session.screen0.tab.rotatevertical:         true
+session.screen0.tab.width:                  64
 
 !-------------------------------------------------------- TOOLBAR
-session.screen0.toolbar.autoHide:           false
+session.screen0.toolbar.autoHide:           False
 session.screen0.toolbar.widthPercent:       100
-session.screen0.toolbar.visible:            true
+session.screen0.toolbar.visible:            True
 session.screen0.toolbar.placement:          TopLeft
 session.screen0.toolbar.height:             0
 session.screen0.toolbar.onhead:             1
 session.screen0.toolbar.alpha:              255
-session.screen0.toolbar.maxOver:            false
+session.screen0.toolbar.maxOver:            False
 session.screen0.toolbar.tools:              prevworkspace, workspacename, nextworkspace, prevwindow, nextwindow, iconbar, clock, systemtray
 session.screen0.toolbar.layer:              Desktop
-session.screen0.toolbar.onTop:              true
+session.screen0.toolbar.onTop:              True
 
 !-------------------------------------------------------- ICONBAR
-session.screen0.iconbar.iconWidth:          70
-! mode does not work, just use the default, which desired anyway
-! session.screen0.iconbar.mode:               {static groups} (workspace)
-session.screen0.iconbar.usePixmap:          true
-session.screen0.iconbar.iconTextPadding:    10l
+session.screen0.iconbar.iconWidth:          128
+session.screen0.iconbar.mode:               {static groups} (workspace)
+session.screen0.iconbar.usePixmap:          True
+session.screen0.iconbar.iconTextPadding:    10
 session.screen0.iconbar.deiconifyMode:      Current
 session.screen0.iconbar.wheelMode:          Screen
 session.screen0.iconbar.alignment:          Relative
@@ -82,7 +74,7 @@ session.screen0.iconbar.clientWidth:        0
 
 !-------------------------------------------------------- MENU
 session.screen0.menu.alpha:                 255
-session.screen0.clientMenu.usePixmap:       true
+session.screen0.clientMenu.usePixmap:       True
 session.screen0.menuDelay:                  0
 session.screen0.menuDelayClose:             0
 
@@ -91,28 +83,28 @@ session.screen0.windowMenu:                 ~/.fluxbox/windowmenu
 session.screen0.window.focus.alpha:         255
 session.screen0.window.unfocus.alpha:       255
 session.screen0.windowPlacement:            RowSmartPlacement
-session.screen0.showwindowposition:         true
-session.screen0.focusNewWindows:            true
-session.screen0.autoRaise:                  false
-session.screen0.focusModel:                 MouseFocus
+session.screen0.showwindowposition:         True
+session.screen0.focusNewWindows:            True
+session.screen0.autoRaise:                  False
+session.screen0.focusModel:                 StrictMouseFocus
 session.screen0.colPlacementDirection:      TopToBottom
 session.screen0.rowPlacementDirection:      LeftToRight
-session.screen0.clickRaises:                true
-session.screen0.maxIgnoreIncrement:         false
-session.screen0.maxDisableMove:             true
-session.screen0.maxDisableResize:           true
+session.screen0.clickRaises:                True
+session.screen0.maxIgnoreIncrement:         False
+session.screen0.maxDisableMove:             True
+session.screen0.maxDisableResize:           True
 session.screen0.edgeSnapThreshold:          10
 session.screen0.noFocusWhileTypingDelay:    500
-session.screen0.fullMaximization:           false
-session.screen0.sloppywindowgrouping:       false
+session.screen0.fullMaximization:           False
+session.screen0.sloppywindowgrouping:       False
 session.screen0.demandsAttentionTimeout:    500
 session.screen0.defaultDeco:                NORMAL
-session.screen0.allowRemoteActions:         false
+session.screen0.allowRemoteActions:         False
 session.screen0.tooltipDelay:               300
-session.screen0.focusSameHead:              false
-session.screen0.opaqueMove:                 false
+session.screen0.focusSameHead:              False
+session.screen0.opaqueMove:                 False
 
 !-------------------------------------------------------- WORKSPACE
 session.screen0.workspaces:                 5
 session.screen0.workspaceNames:             Surf,Remote,Work,Music,Mail
-session.screen0.workspacewarping:           true
+session.screen0.workspacewarping:           True
