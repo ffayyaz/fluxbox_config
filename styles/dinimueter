@@ -2,138 +2,206 @@ style.author:                               Dinimueter
 style.date:                                 Mon Aug 30 23:02:55 GMT+1 2021
 style.name:                                 Dinimueter
 
-background: 		                        fullscreen
-background.pixmap:                          /usr/share/images/desktop-base/debian-blueish-wallpaper-640x480.png
+background: 		                        none
+!background.color:                           black
+!background.colorTo:                         black
+!background.modX:                            0
+!background.modY:                            0
+!background.pixmap:                          /usr/share/images/desktop-base/debian-blueish-wallpaper-640x480.png
 
 menu.bevelWidth:		                    1
-menu.bullet:                                diamond
-menu.bullet.position:                       Left
-menu.borderColor:                           white
+menu.borderColor:                           darkgray
 menu.borderWidth:                           1
+menu.bullet:                                diamond
+menu.bullet.position:                       left
+menu.frame:                                 Flat Solid
 menu.frame.color:                           black
 menu.frame.colorTo:                         black
-menu.frame.disableColor:                    #777777
-menu.frame:                                 Flat Solid
+menu.frame.disableColor:                    darkgray
 menu.frame.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
-menu.frame.justify:                         Left
+menu.frame.justify:                         left
+!menu.frame.pixmap:                          <filename>
 menu.frame.textColor:                       white
-menu.hilite.color:                          #80949d
-menu.hilite.colorTo:                        #80949d
 menu.hilite:                                Flat Solid
+menu.hilite.color:                          darkgray
+menu.hilite.colorTo:                        darkgray
+!menu.hilite.font:                           -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
+menu.hilite.justify:                        left
+!menu.hilite.pixmap:                         <filename>
 menu.hilite.textColor:                      white
+!menu.itemHeight:                            1
+menu.title:                                 Flat Solid
 menu.title.color:                           black
 menu.title.colorTo:                         black
-menu.title:                                 Flat Solid
 menu.title.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
-menu.title.justify:                         Left
+!menu.title.pixmap:		                     <filename>
 menu.title.textColor:                       white
+menu.title.justify:                         left
+!menu.titleHeight:                           1 
+!menu.roundCorners:                          Top
+!menu.title.effect:                          halo
+!menu.title.shadow.color:                    green
+!menu.title.shadow.x:                        3
+!menu.title.shadow.y:                        3
 
-slit.borderColor:                           white
+slit:                                       Flat Solid
+slit.bevelWidth:                            1
+slit.borderColor:                           darkgray
 slit.borderWidth:                           1
+slit.color:                                 black
+slit.colorTo:                               black
+!slit.pixmap:                                <filename>
 
+toolbar:                                    Flat Solid
+toolbar.bevelWidth:                         1
+toolbar.borderColor:                        black
+toolbar.borderWidth:                        1
 toolbar.button.color:                       black
 toolbar.button.colorTo:                     black
 toolbar.button:                             Flat Solid
 toolbar.button.picColor:                    white
 toolbar.button.pressed.color:               black
-toolbar.button.pressed.colorTo:             lightgray
+toolbar.button.pressed.colorTo:             darkgray
 toolbar.button.pressed.picColor:            white
 toolbar.button.pressed:                     Sunken Gradient Crossdiagonal
-toolbar.borderColor:                        black
-toolbar.borderWidth:                        1
+!toolbar.button.scale:                       1
+toolbar.color:                              darkgray
+toolbar.colorTo:                            darkgray
+toolbar.clock:                              Flat Solid
 toolbar.clock.borderColor:                  white
 toolbar.clock.borderWidth:                  1
+toolbar.clock.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
+toolbar.clock.justify:		                center
+!toolbar.clock.pixmap:		                 <filename>
 toolbar.clock.color:                        black
 toolbar.clock.colorTo:                      black
-toolbar.clock:                              Flat Solid
-toolbar.clock.font:		                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 toolbar.clock.textColor:                    white
-toolbar.color:                              darkgray
-toolbar:                                    Flat Solid
+!toolbar.height:                             18
+toolbar.iconbar.focused:		            Raised Gradient Pyramid 
+toolbar.iconbar.focused.borderColor: 	    white
+toolbar.iconbar.focused.borderWidth:	    1
+toolbar.iconbar.focused.color:  	        black
+toolbar.iconbar.focused.colorTo:	        darkgray
+toolbar.iconbar.focused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
+!toolbar.iconbar.focused.pixmap:             <filename>
+toolbar.iconbar.focused.textColor:	        white
+toolbar.iconbar.unfocused:                  Sunken Solid
+toolbar.iconbar.unfocused.borderColor:	    white
+toolbar.iconbar.unfocused.borderWidth:      1
+toolbar.iconbar.unfocused.color:            black
+toolbar.iconbar.unfocused.colorTo:   	    black
+toolbar.iconbar.unfocused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
+toolbar.iconbar.unfocused.textColor:	    white
 toolbar.iconbar.borderColor:		        darkgray
 toolbar.iconbar.borderWidth:		        1
 toolbar.iconbar.empty.borderWidth:	        1
 toolbar.iconbar.empty.color:		        white
 toolbar.iconbar.empty.colorTo:		        black
 toolbar.iconbar.empty:			            Flat Solid
-toolbar.iconbar.focused.borderColor: 	    white
-toolbar.iconbar.focused.borderWidth:	    1
-toolbar.iconbar.focused.color:  	        black
-toolbar.iconbar.focused.colorTo:	        lightgray
-toolbar.iconbar.focused:		            Raised Gradient Pyramid 
-toolbar.iconbar.focused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
-toolbar.iconbar.focused.textColor:	        white
-toolbar.iconbar.unfocused.borderColor:	    lightgray
-toolbar.iconbar.unfocused.borderWidth:      1
-toolbar.iconbar.unfocused.color:            black
-toolbar.iconbar.unfocused.colorTo:   	    black
-toolbar.iconbar.unfocused:                  Sunken Solid
-toolbar.iconbar.unfocused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
-toolbar.iconbar.unfocused.textColor:	    white
-toolbar.justify:                            Center
-toolbar.label.color:                        black
-toolbar.label.colorTo:                      black
-toolbar.label:                              Flat Solid
-toolbar.label.textColor:                    white
-toolbar.textColor:                          white
-toolbar.windowLabel.color:                  #40545d ! ????
-toolbar.windowLabel.colorTo:                #0e1a27 ! ????
-toolbar.windowLabel:                        Flat Gradient CrossDiagonal ! ????
-toolbar.windowLabel.textColor:              white ! ????
+toolbar.justify:                            center
+!toolbar.pixmap:                             <filename>
+toolbar.shaped:                             false
+toolbar.workspace:                          Flat Solid
 toolbar.workspace.borderColor:		        white
 toolbar.workspace.borderWidth:		        1
+toolbar.workspace.color:                    black
+toolbar.workspace.colorTo:                  black
 toolbar.workspace.font:		                -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
+toolbar.workspace.justify:                  center
+!toolbar.workspace.pixmap:                   <filename>
+toolbar.workspace.textColor:                white
 
-window.button.focus.color:                  darkgray
-window.button.focus.colorTo:                darkgray
-window.button.focus:                        Raised Solid
-window.button.focus.picColor:               black
-window.button.pressed.color:                darkgray
-window.button.pressed.colorTo:              darkgray
-window.button.pressed:                      Sunken Solid
-window.button.unfocus.color:                darkgray
-window.button.unfocus.colorTo:              darkgray
-window.button.unfocus.picColor:             black
-window.button.unfocus:                      Raised Solid
+window.bevelWidth:                          1
 window.borderColor:                         darkgray
 window.borderWidth:                         1
+window.button.focus:                        Flat Solid
+window.button.focus.color:                  black
+window.button.focus.colorTo:                black
+window.button.focus.picColor:               white
+!window.button.focus.pixmap:                 <filename>
+window.button.pressed:                      Sunken Solid
+window.button.pressed.color:                darkgray
+window.button.pressed.colorTo:              darkgray
+!window.button.pressed.pixmap:               <filename>
+window.button.unfocus:                      Flat Solid
+window.button.unfocus.color:                black
+window.button.unfocus.colorTo:              black
+window.button.unfocus.picColor:             white
+!window.button.unfocus.pixmap:               <filename>
+!window.close.pixmap:                        <filename>
+!window.close.pressed.pixmap:                <filename>
+!window.close.unfocus.pixmap:                <filename>
 window.font:			                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 window.frame.focusColor:                    black
 window.frame.unfocusColor:                  black
-window.grip.focus.color:                    #60747d ! ????
 window.grip.focus:            	            Flat Solid
-window.grip.unfocus.color:                  rgb:42/42/42 ! ????
-window.grip.unfocus:                        Flat Solid ! ????
-window.handle.focus.color:                  #000000 ! ????
-window.handle.focus:                        Flat Solid ! ????
-window.handle.unfocus.color:                #000000 ! ????
-window.handle.unfocus:                      Flat Solid ! ????
-window.justify:                             Left
+window.grip.focus.color:                    red
+window.grip.focus.colorTo:                  blue
+!window.grip.focus.pixmap:                   <filename>
+window.grip.unfocus:                        Flat Solid
+window.grip.unfocus.color:                  yellow
+window.grip.unfocus.colorTo:                orange
+!window.grip.unfocus.pixmap:                 <filename>
+window.handle.focus:                        Flat Solid
+window.handle.focus.color:                  red
+window.handle.focus.colorTo:                blue
+!window.handle.focus.pixmap:                 <filename>
+window.handle.unfocus:                      Flat Solid
+window.handle.unfocus.color:                yellow
+window.handle.unfocus.colorTo:              orange
+!window.handle.unfocus.pixmap:               <filename>
+window.justify:                             left
+window.label.active:                        Raised Gradient Pyramid Interlaced
+window.label.active.textColor:              white
+window.label.focus:                         Raised Gradient Pyramid Interlaced
 window.label.focus.color:                   black
 window.label.focus.colorTo:                 darkgray
-window.label.focus:                         Raised Gradient Pyramid Interlaced
-window.label.focus.justify:                 Left
+window.label.focus.justify:                 left
 window.label.focus.textColor:               white
+!window.label.focus.pixmap:                  <filename>
+window.label.unfocus:                       Sunken Solid
 window.label.unfocus.color:                 black
 window.label.unfocus.colorTo:               black
-window.label.unfocus:                       Sunken Solid
+window.label.unfocus.justify:               left
 window.label.unfocus.textColor:             white
-window.tab.borderColor:                     black ! ????
-window.tab.borderWidth:                     1
-window.tab.justify:                         Left
-window.tab.label.focus.color:   	        black ! ????
-window.tab.label.focus:         	        Flat Gradient ! ????
-window.tab.label.focus.textColor:	        white ! ????
-window.tab.label.unfocus.color:		        #40545d ! ????
-window.tab.label.unfocus:       	        Sunken Solid ! ????
-window.tab.label.unfocus.textColor: 	    white ! ????
+!window.label.unfocus.pixmap:                <filename>
+!window.maximize.pixmap:                     <filename>
+!window.maximize.pressed.pixmap:             <filename>
+!window.maximize.unfocus.pixmap:             <filename>
+!window.roundCorners:                        TopLeft
+!window.shade.pixmap:                        <filename>
+!window.shade.pressed.pixmap:                <filename>
+!window.shade.unfocus.pixmap:                <filename>
+!window.stick.pixmap:                        <filename>
+!window.stick.pressed.pixmap:                <filename>
+!window.stick.unfocus.pixmap:                <filename>
+!window.stuck.pixmap:                        <filename>
+!window.stuck.unfocus.pixmap:                <filename>
+!window.lhalf.pixmap:                        <filename>
+!window.lhalf.unfocus.pixmap:                <filename>
+!window.rhalf.pixmap:                        <filename>
+!window.rhalf.unfocus.pixmap:                <filename>
+window.title.focus:                         Flat Solid
 window.title.focus.color:                   black
 window.title.focus.colorTo:                 black
-window.title.focus:                         Flat Solid
+!window.title.focus.pixmap:                  <filename>
+!window.title.height:                        17
+window.title.unfocus:                       Flat Solid
 window.title.unfocus.color:                 black
 window.title.unfocus.colorTo:               black
-window.title.unfocus:                       Flat Solid
+!window.title.unfocus.pixmap:                <filename>
 
+window.tab.borderColor:                     black
+window.tab.borderWidth:                     1
+window.tab.justify:                         left
+window.tab.label.focus:         	        Raised Solid
+window.tab.label.focus.color:   	        black
+window.tab.label.focus.colorTo:   	        black
+window.tab.label.focus.textColor:	        white
+window.tab.label.unfocus:       	        Sunken Solid
+window.tab.label.unfocus.color:		        darkgray
+window.tab.label.unfocus.colorTo:		    darkgray
+window.tab.label.unfocus.textColor: 	    white
 
 *bevelWidth:                                 1
 *borderColor:                                darkgray
