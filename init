@@ -17,7 +17,8 @@ session.doubleClickInterval:                250
 session.tabPadding:                         0
 session.tabsAttachArea:                     Titlebar
 session.tabs:                               True
-session.titlebar.left:                      MenuIcon
+! MenuIcon is actually Stick (??)
+session.titlebar.left:                      MenuIcon 
 session.titlebar.right:                     Minimize Maximize Close
 session.updateDelayTime:                    0
 
