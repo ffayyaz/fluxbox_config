@@ -121,65 +121,54 @@
 #---------------------------------------------------- TERMINALS
 [app] (name=messagesterm)
         [Head]          {2}
-        [Sticky]        {yes}
-        [Workspace]     {0}
+        [Workspace]     {2}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 0%}
-        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
 [end]
 [app] (name=syslogterm)
         [Head]          {2}
-        [Sticky]        {yes}
-        [Workspace]     {0}
+        [Workspace]     {2}
         [Dimensions]    {50% 50%}
         [Position]      (TOPLEFT) {0% 50%}
-        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
 [end]
 [app] (name=debuglogterm)
         [Head]          {2}
-        [Sticky]        {yes}
-        [Workspace]     {0}
+        [Workspace]     {2}
         [Dimensions]    {50% 34%}
         [Position]      (TOPLEFT) {50% 0%}
-        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
 [end]
 [app] (name=kernlogterm)
         [Head]          {2}
-        [Sticky]        {yes}
-        [Workspace]     {0}
+        [Workspace]     {2}
         [Dimensions]    {50% 33%}
         [Position]      (TOPLEFT) {50% 34%}
-        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
 [end]
 [app] (name=authlogterm)
         [Head]          {2}
-        [Sticky]        {yes}
-        [Workspace]     {0}
+        [Workspace]     {2}
         [Dimensions]    {50% 33%}
         [Position]      (TOPLEFT) {50% 67%}
-        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
 [end]
 [app] (name=cpufreqterm)
         [Head]          {1}
-        [Workspace]     {0}
+        [Workspace]     {2}
         [Dimensions]    {11% 21%}
         [Position]      (TOPRIGHT) {0% 78%}
-        [Deco]          {TOOL}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
