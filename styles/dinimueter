@@ -203,9 +203,14 @@ window.tab.label.unfocus.color:		        darkgray
 window.tab.label.unfocus.colorTo:		    darkgray
 window.tab.label.unfocus.textColor: 	    white
 
-*bevelWidth:                                 1
-*borderColor:                                darkgray
-*borderWidth:                                1
-*frameWidth:                                 1
-*handleWidth:                                2
-*textColor:                                  white
+*bevelWidth:                                1
+*borderColor:                               darkgray
+*borderWidth:                               1
+*frameWidth:                                1
+*handleWidth:                               2
+*textColor:                                 white
+*font:                                      -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
+*color:                                     black
+*colorTo:                                   darkgray
+*unfocus.color:                             darkgray
+*unfocus.colorTo:                           darkgray
