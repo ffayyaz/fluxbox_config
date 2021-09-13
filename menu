@@ -7,4 +7,5 @@
     ! [submenu](Wallpapers)
        !  [wallpapers] (/usr/share/wallpapers)
     ! [end]
+    [exec] (Teleboy) {chromium --app="http://www.teleboy.ch/player/live"}
 [end]
