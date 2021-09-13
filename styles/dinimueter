@@ -135,20 +135,20 @@ window.font:			                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 window.frame.focusColor:                    black
 window.frame.unfocusColor:                  black
 window.grip.focus:            	            Flat Solid
-window.grip.focus.color:                    red
-window.grip.focus.colorTo:                  blue
+window.grip.focus.color:                    black
+window.grip.focus.colorTo:                  black
 !window.grip.focus.pixmap:                   <filename>
 window.grip.unfocus:                        Flat Solid
-window.grip.unfocus.color:                  yellow
-window.grip.unfocus.colorTo:                orange
+window.grip.unfocus.color:                  darkgray
+window.grip.unfocus.colorTo:                darkgray
 !window.grip.unfocus.pixmap:                 <filename>
 window.handle.focus:                        Flat Solid
-window.handle.focus.color:                  red
-window.handle.focus.colorTo:                blue
+window.handle.focus.color:                  black
+window.handle.focus.colorTo:                black
 !window.handle.focus.pixmap:                 <filename>
 window.handle.unfocus:                      Flat Solid
-window.handle.unfocus.color:                yellow
-window.handle.unfocus.colorTo:              orange
+window.handle.unfocus.color:                darkgray
+window.handle.unfocus.colorTo:              darkgray
 !window.handle.unfocus.pixmap:               <filename>
 window.justify:                             left
 window.label.active:                        Raised Gradient Pyramid Interlaced
