@@ -176,7 +176,6 @@ Mod1 F2                     :MacroCmd {Exec urxvt -name URxvt-remote -tn remotet
 Mod1 F3                     :MacroCmd {Exec chromium} {Focus} {Raise}
 #Mod1 F4 obviously already occupied further above
 Mod1 F5                     :MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Focus} {Raise}
-#Mod1 F5                     :If {Some Matches (Name=vlc)} {MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {MacroCmd {SetHead 1} {ResizeTo 50% 50%}}}
 #Mod1 F6                     :MacroCmd {Exec opera-next} {Focus} {Raise}
 #Mod1 F7                     :MacroCmd {Exec opera} {Focus} {Raise}
 #Mod1 F8                     :MacroCmd {Exec icedove} {Focus} {Raise}

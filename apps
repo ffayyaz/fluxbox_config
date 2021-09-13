@@ -349,7 +349,7 @@
         [Maximized]     {yes}
         [Position]      (TOPLEFT)   {0% 0%}
         [FocusNewWindow]    {yes}
-        [Deco]          {NONE}
+        #[Deco]          {NONE}
 [end]
 
 #---------------------------------------------------- MAIL
@@ -422,7 +422,7 @@
         [Head]          {2}
         [FocusNewWindow] {no}
         [FocusHidden]   {yes}
-        [Fullscreen]    {yes} 
+        [Fullscreen]    {no}
         [Jump]          {yes}
 [end]
 
