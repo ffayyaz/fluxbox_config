@@ -107,7 +107,7 @@ Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {
 
 # arrange windows on head 2. for some reason the mouse pointer needs to be there
 # to get it working
-#Mod1 x                      :ToggleCmd {ArrangeWindowsVertical (Workspace=0) (Head=2)} {ForEach {Maximize} {Matches (Workspace=0) (Head=2)}}
+Mod1 x                      :ToggleCmd {ArrangeWindowsVertical (Workspace=0) (Head=2)} {ForEach {MacroCmd {Maximize}} {Matches (Workspace=0) (Head=2)}}
 
 #------------------------------------------------------- TABS
 
@@ -179,7 +179,7 @@ Mod1 F1                     :MacroCmd {Exec urxvt} {Focus} {Raise}
 Mod1 F2                     :MacroCmd {Exec urxvt -name URxvt-remote -tn remoteterm} {Focus} {Raise}
 Mod1 F3                     :MacroCmd {Exec chromium} {Focus} {Raise}
 #Mod1 F4 obviously already occupied further above
-Mod1 F5                     :MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Focus} {Raise}
+Mod1 F5                     :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Focus} {Raise}}
 #Mod1 F6                     :MacroCmd {Exec opera-next} {Focus} {Raise}
 #Mod1 F7                     :MacroCmd {Exec opera} {Focus} {Raise}
 #Mod1 F8                     :MacroCmd {Exec icedove} {Focus} {Raise}
