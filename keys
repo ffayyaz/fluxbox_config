@@ -109,6 +109,10 @@ Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {
 # to get it working
 Mod1 x                      :ToggleCmd {ArrangeWindowsVertical (Workspace=0) (Head=2)} {ForEach {MacroCmd {Maximize}} {Matches (Workspace=0) (Head=2)}}
 
+# testing for raising all the "work" like windows and lowering the "illegal" apps,
+# if you are surfing too much..
+#Mod1 y                      :ForEach {MacroCmd {Focus} {Raise}} {Matches (Class=URxvt)}}
+
 #------------------------------------------------------- TABS
 
 # cycle through tabs in the current window
