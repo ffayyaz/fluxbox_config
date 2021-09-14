@@ -11,7 +11,7 @@ background: 		                        none
 
 menu.bevelWidth:		                    1
 menu.borderColor:                           darkgray
-menu.borderWidth:                           1
+menu.borderWidth:                           0
 menu.bullet:                                diamond
 menu.bullet.position:                       left
 menu.frame:                                 Flat Solid
@@ -55,7 +55,7 @@ slit.colorTo:                               black
 toolbar:                                    Flat Solid
 toolbar.bevelWidth:                         1
 toolbar.borderColor:                        black
-toolbar.borderWidth:                        1
+toolbar.borderWidth:                        0
 toolbar.button.color:                       black
 toolbar.button.colorTo:                     black
 toolbar.button:                             Flat Solid
@@ -77,7 +77,7 @@ toolbar.clock.color:                        black
 toolbar.clock.colorTo:                      black
 toolbar.clock.textColor:                    white
 !toolbar.height:                             18
-toolbar.iconbar.focused:		            Raised Gradient Pyramid 
+toolbar.iconbar.focused:		            Sunken Gradient Pyramid
 toolbar.iconbar.focused.borderColor: 	    white
 toolbar.iconbar.focused.borderWidth:	    1
 toolbar.iconbar.focused.color:  	        black
@@ -85,16 +85,16 @@ toolbar.iconbar.focused.colorTo:	        darkgray
 toolbar.iconbar.focused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 !toolbar.iconbar.focused.pixmap:             <filename>
 toolbar.iconbar.focused.textColor:	        white
-toolbar.iconbar.unfocused:                  Sunken Solid
+toolbar.iconbar.unfocused:                  Raised Solid
 toolbar.iconbar.unfocused.borderColor:	    white
-toolbar.iconbar.unfocused.borderWidth:      1
+toolbar.iconbar.unfocused.borderWidth:      0
 toolbar.iconbar.unfocused.color:            black
 toolbar.iconbar.unfocused.colorTo:   	    black
 toolbar.iconbar.unfocused.font:	            -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 toolbar.iconbar.unfocused.textColor:	    white
 toolbar.iconbar.borderColor:		        darkgray
-toolbar.iconbar.borderWidth:		        1
-toolbar.iconbar.empty.borderWidth:	        1
+toolbar.iconbar.borderWidth:		        0
+toolbar.iconbar.empty.borderWidth:	        0
 toolbar.iconbar.empty.color:		        white
 toolbar.iconbar.empty.colorTo:		        black
 toolbar.iconbar.empty:			            Flat Solid
@@ -192,7 +192,7 @@ window.title.unfocus.colorTo:               black
 !window.title.unfocus.pixmap:                <filename>
 
 window.tab.borderColor:                     black
-window.tab.borderWidth:                     1
+window.tab.borderWidth:                     0
 window.tab.justify:                         left
 window.tab.label.focus:         	        Raised Solid
 window.tab.label.focus.color:   	        black
@@ -205,9 +205,9 @@ window.tab.label.unfocus.textColor: 	    white
 
 *bevelWidth:                                1
 *borderColor:                               darkgray
-*borderWidth:                               1
-*frameWidth:                                1
-*handleWidth:                               2
+*borderWidth:                               0
+*frameWidth:                                0
+*handleWidth:                               1
 *textColor:                                 white
 *font:                                      -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 *color:                                     black
