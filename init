@@ -86,7 +86,7 @@ session.screen0.windowPlacement:            RowSmartPlacement
 session.screen0.showwindowposition:         True
 session.screen0.focusNewWindows:            True
 session.screen0.autoRaise:                  False
-session.screen0.focusModel:                 StrictMouseFocus
+session.screen0.focusModel:                 MouseFocus
 session.screen0.colPlacementDirection:      TopToBottom
 session.screen0.rowPlacementDirection:      LeftToRight
 session.screen0.clickRaises:                True

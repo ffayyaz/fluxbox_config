@@ -25,7 +25,7 @@ Mod1 115                    :Exec xscreensaver-command -lock  # Alt+End
 Mod4 d                      :ShowDesktop
 
 OnDesktop Mouse1            :HideMenus
-#OnDesktop Mouse2            :WorkspaceMenu
+OnDesktop Mouse2            :WorkspaceMenu
 OnDesktop Mouse3            :RootMenu
 
 # scroll on the desktop to change workspaces (rather annoying sometimes)
@@ -47,7 +47,7 @@ OnWindow Mod1 Mouse3        :MacroCmd {Focus} {Raise} {StartResizing NearestCorn
 # lower the window / bring underneath window up in the stack
 OnWindow Mod1 Mouse2        :Lower
 
-# control-click a window's titlebar and drag to attach windows
+# middle-click a window's titlebar and drag to attach windows
 OnTitlebar Mouse2           :StartTabbing
 
 # double click on the titlebar to maximize
@@ -104,6 +104,10 @@ None 135                    :WindowMenu
 Mod1 m                      :If {Matches (Head=1)} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 40% 0 TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}}} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}}
 Mod1 117                    :If {Matches (Workspace=[0-4]) (Head=2)} {MacroCmd {SetHead 1}} # alt+page down
 Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {SetHead 2}} # alt+page up
+
+# arrange windows on head 2. for some reason the mouse pointer needs to be there
+# to get it working
+#Mod1 x                      :ToggleCmd {ArrangeWindowsVertical (Workspace=0) (Head=2)} {ForEach {Maximize} {Matches (Workspace=0) (Head=2)}}
 
 #------------------------------------------------------- TABS
 
@@ -214,3 +218,26 @@ Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=telegram-deskt
 #Mod4 p :ForEach {Minimize} {Matches (class=URxvt)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
 #Control b Mod1 c :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
 #Control b Mod1 b :If {Some (title=USER)} {NextWindow (title=USER)}
+
+####### testing KeyMode
+## ResizeMode
+#Mod4 w Mod4 r               :KeyMode ResizeMode
+#ResizeMode: None Up         :ResizeVertical -2
+#ResizeMode: None Down       :ResizeVertical +2
+#ResizeMode: None Left       :ResizeHorizontal -2
+#ResizeMode: None Right      :ResizeHorizontal +2
+#ResizeMode: Shift Up        :ResizeVertical -10
+#ResizeMode: Shift Down      :ResizeVertical +10
+#ResizeMode: Shift Left      :ResizeHorizontal -10
+#ResizeMode: Shift Right     :ResizeHorizontal +10
+
+## MoveMode
+#Mod4 w Mod4 m               :MacroCmd {Exec echo "MoveMode" | xcowsay} {KeyMode MoveMode}
+#MoveMode: None Up           :MoveUp 2
+#MoveMode: None Down         :MoveDown 2
+#MoveMode: None Left         :MoveLeft 2
+#MoveMode: None Right        :MoveRight 2
+#MoveMode: Shift Up          :MoveUp 10
+#MoveMode: Shift Down        :MoveDown 10
+#MoveMode: Shift Left        :MoveLeft 10
+#MoveMode: Shift Right       :MoveRight 10
