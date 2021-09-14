@@ -11,6 +11,7 @@
         [Layer]         {8}
         [Position]      (CENTER) {0% 0%}
         [IconHidden]    {yes}
+        [Maximized]     {yes}
 [end]
 [transient] (name=firefox-esr) (class=Firefox-esr) (title=Print)
         [Head]          {1}
@@ -362,11 +363,20 @@
     [app] (name=Preferences) (class=thunderbird) 
         [Head]          {1}
         [Workspace]     {4}
-        [Layer]         {6}
+        [Layer]         {8}
         [Dimensions]    {100% 100%}
         [Maximized]     {yes}
         [Fullscreen]    {no}
         [FocusNewWindow] {no}
+[end]
+
+# thunderbird print dialog
+[app] (name=thunderbird) (class=thunderbird) (title=Print)
+        [Head]          {1}
+        [Workspace]     {4}
+        [Layer]         {8}
+        [Dimensions]    {100% 100%}
+        [Maximized]     {yes}
 [end]
 
 #---------------------------------------------------- EDITOR
