@@ -8,7 +8,11 @@
 # 115 = End
 # 112 = Page Up
 # 117 = Page Down
+# 122 = Lower volume
+# 121 = Mute volume
+# 123 = Upper volume
 # 135 = Menu
+# 148 = Calculator
 # Mouse1 = Left click
 # Mouse2 = Middle click
 # Mouse3 = Right click
@@ -183,6 +187,7 @@ Mod1 F2                     :MacroCmd {Exec urxvt -name URxvt-remote -tn remotet
 Mod1 F3                     :MacroCmd {Exec chromium} {Focus} {Raise}
 #Mod1 F4 obviously already occupied further above
 Mod1 F5                     :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Focus} {Raise}}
+None 148                    :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Focus} {Raise}}
 #Mod1 F6                     :MacroCmd {Exec opera-next} {Focus} {Raise}
 #Mod1 F7                     :MacroCmd {Exec opera} {Focus} {Raise}
 #Mod1 F8                     :MacroCmd {Exec icedove} {Focus} {Raise}
@@ -201,6 +206,9 @@ Mod4 x                      :ToggleCmd {Exec compton -r12 -o0.75 -l-15 -t-15 -I0
 Mod4 112                    :Exec amixer -D pulse sset Master 5%+       # Super+PageUp
 Mod4 117                    :Exec amixer -D pulse sset Master 5%-       # Super+PageDown
 Mod4 115                    :Exec amixer -D pulse sset Master,0 toggle  # Super+End
+None 123                    :Exec amixer -D pulse sset Master 5%+       # Lower volume
+None 122                    :Exec amixer -D pulse sset Master 5%-       # Upper volume
+None 121                    :Exec amixer -D pulse sset Master,0 toggle  # Mute volume
 
 # control audio player
 Control Mod4 112            :Exec audacious -f # next track
