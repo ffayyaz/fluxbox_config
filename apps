@@ -149,8 +149,8 @@
 [app] (name=kernlogterm)
         [Head]          {2}
         [Workspace]     {2}
-        [Dimensions]    {50% 33%}
-        [Position]      (TOPLEFT) {50% 34%}
+        [Dimensions]    {50% 35%}
+        [Position]      (TOPLEFT) {50% 33%}
         [Layer]         {12}
         [FocusNewWindow] {no}
         [Hidden]    {yes}
@@ -158,7 +158,7 @@
 [app] (name=authlogterm)
         [Head]          {2}
         [Workspace]     {2}
-        [Dimensions]    {50% 33%}
+        [Dimensions]    {50% 34%}
         [Position]      (TOPLEFT) {50% 67%}
         [Layer]         {12}
         [FocusNewWindow] {no}
