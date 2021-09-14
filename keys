@@ -100,7 +100,6 @@ None 135                    :WindowMenu
 # replace windows 
 # if head=1, just switch between left and right, 
 # otherwise attach to each corner
-#Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}
 Mod1 m                      :If {Matches (Head=1)} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 40% 0 TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}}} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}}
 Mod1 117                    :If {Matches (Workspace=[0-4]) (Head=2)} {MacroCmd {SetHead 1}} # alt+page down
 Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {SetHead 2}} # alt+page up
@@ -111,7 +110,7 @@ Mod1 x                      :ToggleCmd {ArrangeWindowsVertical (Workspace=0) (He
 
 # testing for raising all the "work" like windows and lowering the "illegal" apps,
 # if you are surfing too much..
-#Mod1 y                      :ForEach {MacroCmd {Focus} {Raise}} {Matches (Class=URxvt)}}
+#Mod1 y                      :ToggleCmd {ForEach {MacroCmd {ShowDesktop} {Maximize} {Focus} {Raise}} {Matches (title=USER)}}
 
 #------------------------------------------------------- TABS
 
