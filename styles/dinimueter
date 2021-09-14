@@ -77,7 +77,7 @@ toolbar.clock.color:                        black
 toolbar.clock.colorTo:                      black
 toolbar.clock.textColor:                    white
 !toolbar.height:                             18
-toolbar.iconbar.focused:		            Sunken Gradient Pyramid
+toolbar.iconbar.focused:		            Sunken Gradient Pyramid Interlaced
 toolbar.iconbar.focused.borderColor: 	    white
 toolbar.iconbar.focused.borderWidth:	    1
 toolbar.iconbar.focused.color:  	        black
@@ -153,13 +153,13 @@ window.handle.unfocus.colorTo:              darkgray
 window.justify:                             left
 window.label.active:                        Raised Gradient Pyramid Interlaced
 window.label.active.textColor:              white
-window.label.focus:                         Raised Gradient Pyramid Interlaced
+window.label.focus:                         Sunken Gradient Pyramid Interlaced
 window.label.focus.color:                   black
 window.label.focus.colorTo:                 darkgray
 window.label.focus.justify:                 left
 window.label.focus.textColor:               white
 !window.label.focus.pixmap:                  <filename>
-window.label.unfocus:                       Sunken Solid
+window.label.unfocus:                       Raised Solid
 window.label.unfocus.color:                 black
 window.label.unfocus.colorTo:               black
 window.label.unfocus.justify:               left
@@ -192,7 +192,7 @@ window.title.unfocus.colorTo:               black
 !window.title.unfocus.pixmap:                <filename>
 
 window.tab.borderColor:                     black
-window.tab.borderWidth:                     0
+window.tab.borderWidth:                     1
 window.tab.justify:                         left
 window.tab.label.focus:         	        Raised Solid
 window.tab.label.focus.color:   	        black
