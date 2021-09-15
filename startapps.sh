@@ -28,7 +28,7 @@ sleep 1
 (slack 2>&1>/dev/null &)
 sleep 1
 (signal-desktop 2>&1>/dev/null &)
-sleep 3
+sleep 4
 chromium --app=https://web.whatsapp.com/ &
 sleep 1
 
@@ -57,7 +57,12 @@ if [ "$(hostname)" = "ganja" ]; then
     chromium --app="https://www.mixcloud.com" &
     sleep 1
     pavucontrol &
+    # start radio
+    /media/stuff/music/playlists/radio/restartradio.sh &>/dev/null
 fi
 
+# switch to first terminal, as some apps (chromium)
+# take focus altough they are configure in apps not to do so.
+wmctrl -s 0
 # change focus back to the terminal
 wmctrl -a USER
