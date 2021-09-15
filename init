@@ -91,7 +91,7 @@ session.screen0.colPlacementDirection:      TopToBottom
 session.screen0.rowPlacementDirection:      LeftToRight
 session.screen0.clickRaises:                True
 session.screen0.maxIgnoreIncrement:         False
-session.screen0.maxDisableMove:             True
+session.screen0.maxDisableMove:             False
 session.screen0.maxDisableResize:           True
 session.screen0.edgeSnapThreshold:          10
 session.screen0.noFocusWhileTypingDelay:    500
