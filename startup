@@ -13,6 +13,12 @@ fbsetroot -solid black
 # turn off beeps
 xset b off
 
+# turn off screen blanking
+xset s off
+
+# turn on energy star features (aka monitor powersavings)
+xset dpms 7200 10800 14400
+
 # own font path
 # xset +fp "~/.fonts"
 
@@ -60,5 +66,8 @@ sleep 2
 }
 
 wait $fbpid
+
+# restore the x font path
+# xset fp default
 
 # END AUTOSTART -----------------------------------------------------------
