@@ -67,8 +67,8 @@ OnTitlebar Mouse1           :MacroCmd {Focus} {Raise} {ActivateTab}
 OnTitlebar Mouse3           :WindowMenu
 
 # alt-tab
-Mod1 Tab                    :NextWindow {static groups} (workspace=[current])
-Mod1 Shift Tab              :PrevWindow {static groups} (workspace=[current])
+Mod1 Tab                    :NextWindow {groups} (workspace=[current]) (iconhidden=no)
+Mod1 Shift Tab              :PrevWindow {groups} (workspace=[current]) (iconhidden=no)
 
 # go to a specific window in current workspace
 Control Mod1 1              :GoToWindow 1   {static groups} (workspace=[current])
