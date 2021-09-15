@@ -1,6 +1,6 @@
 ! The following line will prevent styles from setting the following
 ! however we use just the styles in styles/dinimueter
-!background: none
+background: unset
 !menu.title.font: sans-8:bold
 !menu.frame.font: sans-8:bold
 !toolbar.clock.font: sans-8:bold
