@@ -1,7 +1,8 @@
-! The following line will prevent styles from setting the background.
-background: none
-menu.title.font: sans-6:bold
-menu.frame.font: sans-6:bold
-toolbar.clock.font: sans-6:bold
-toolbar.workspace.font: sans-6:bold
-*font: sans-7
+! The following line will prevent styles from setting the following
+! however we use just the styles in styles/dinimueter
+!background: none
+!menu.title.font: sans-8:bold
+!menu.frame.font: sans-8:bold
+!toolbar.clock.font: sans-8:bold
+!toolbar.workspace.font: sans-8:bold
+!*font: sans-8
