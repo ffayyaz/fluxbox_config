@@ -112,6 +112,7 @@ Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {
 # arrange windows on head 2. for some reason the mouse pointer needs to be there
 # to get it working
 Mod1 x                      :ToggleCmd {ArrangeWindowsVertical (Workspace=0) (Head=2)} {ForEach {MacroCmd {Maximize}} {Matches (Workspace=0) (Head=2)}}
+Mod1 y                      :ToggleCmd {ArrangeWindowsHorizontal (Workspace=0) (Head=2)} {ForEach {MacroCmd {Maximize}} {Matches (Workspace=0) (Head=2)}}
 
 # testing for raising all the "work" like windows and lowering the "illegal" apps,
 # if you are surfing too much..
