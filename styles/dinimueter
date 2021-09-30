@@ -135,7 +135,7 @@ window.font:			                    -*-terminus-bold-r-*-*-12-*-*-*-*-*-iso8859-1
 window.frame.focusColor:                    black
 window.frame.unfocusColor:                  black
 window.grip.focus:            	            Raised Gradient Pyramid
-window.grip.focus.color:                    #000045
+window.grip.focus.color:                    #00001c
 window.grip.focus.colorTo:                  white
 !window.grip.focus.pixmap:                   <filename>
 window.grip.unfocus:                        Flat Solid
@@ -143,7 +143,7 @@ window.grip.unfocus.color:                  black
 window.grip.unfocus.colorTo:                black
 !window.grip.unfocus.pixmap:                 <filename>
 window.handle.focus:                        Raised Gradient Pyramid
-window.handle.focus.color:                  #000045
+window.handle.focus.color:                  #00001c
 window.handle.focus.colorTo:                white
 !window.handle.focus.pixmap:                 <filename>
 window.handle.unfocus:                      Flat Solid
