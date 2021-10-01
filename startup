@@ -19,6 +19,9 @@ xset s off
 # turn on energy star features (aka monitor powersavings)
 xset dpms 7200 10800 14400
 
+# turn on sceensaver
+xset s on
+
 # own font path
 # xset +fp "~/.fonts"
 
