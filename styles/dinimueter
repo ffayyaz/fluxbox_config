@@ -194,11 +194,11 @@ window.title.unfocus.colorTo:               black
 window.tab.borderColor:                     black
 window.tab.borderWidth:                     1
 window.tab.justify:                         left
-window.tab.label.focus:         	        Raised Solid
+window.tab.label.focus:         	        Sunken Solid
 window.tab.label.focus.color:   	        black
 window.tab.label.focus.colorTo:   	        black
 window.tab.label.focus.textColor:	        white
-window.tab.label.unfocus:       	        Sunken Solid
+window.tab.label.unfocus:       	        Raised Solid
 window.tab.label.unfocus.color:		        darkgray
 window.tab.label.unfocus.colorTo:		    darkgray
 window.tab.label.unfocus.textColor: 	    white
