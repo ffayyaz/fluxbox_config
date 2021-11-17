@@ -113,6 +113,15 @@
         [Position]      (CENTER) {0% 0%}
 [end]
 
+# alsamixer gui (which is toggled by volume keys, see keys)
+# DOES NOT WORK, window name not recognize
+[app] (name=ALSA.*) {1}
+        [Head]          {1}
+        #[Layer]         {Top}
+        [Position]      (TOPRIGHT)   {0% 0%}
+        #[Dimensions]    {100 247}
+[end]
+
 #---------------------------------------------------- GKRELLM_CONF
 [app] (name=Gkrellm_conf) (class=Gkrellm)
         [Head]          {1}
