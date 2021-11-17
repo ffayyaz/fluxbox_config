@@ -212,6 +212,7 @@ Mod4 115                    :Exec amixer -D pulse sset Master,0 toggle  # Super+
 None 123                    :Exec amixer -D pulse sset Master 5%+       # Upper volume
 None 122                    :Exec amixer -D pulse sset Master 5%-       # Lower volume
 None 121                    :Exec amixer -D pulse sset Master,0 toggle  # Mute volume
+#None 121                    :Exec alsamixergui & amixer -D pulse sset Master,0 toggle && sleep 2 && kill -9 $(pgrep alsamixergui) # Mute volume
 
 # control audio player
 Control Mod4 112            :Exec audacious -f # next track
