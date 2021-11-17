@@ -14,6 +14,7 @@ urxvt -name kernlogterm -title kern -tn kernlogterm &
 urxvt -name mixerterm -title mixer -tn mixerterm &
 #urxvt -name clockterm -title clock -tn clockterm & # does not display correctly since style update
 urxvt -name calterm -title cal -tn calterm &
+volumeicon &
 
 # start 2 terminals
 urxvt -title ROOT -hold -e bash -c "screen -dR root" &
