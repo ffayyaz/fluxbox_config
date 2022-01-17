@@ -106,8 +106,11 @@ None 135                    :WindowMenu
 # if head=1, just switch between left and right, 
 # otherwise attach to each corner
 Mod1 m                      :If {Matches (Head=1)} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 40% 0 TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}}} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}}
-Mod1 117                    :If {Matches (Workspace=[0-4]) (Head=2)} {MacroCmd {SetHead 1} {MaximizeVertical}} # alt+page down
-Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {SetHead 2} {MaximizeVertical}} # alt+page up
+
+#Mod1 117                    :If {Matches (Workspace=[0-4]) (Head=2)} {MacroCmd {SetHead 1} {MaximizeVertical}} # alt+page down
+Mod1 117                    :If {Matches (Workspace=[0-4]) (Head=2)} {MacroCmd {SetHead 1}} # alt+page down
+#Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {SetHead 2} {MaximizeVertical}} # alt+page up
+Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {SetHead 2}} # alt+page up
 
 # arrange windows on head 2. for some reason the mouse pointer needs to be there
 # to get it working
