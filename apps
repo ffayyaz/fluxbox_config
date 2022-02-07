@@ -360,7 +360,9 @@
 [end]
 
 # teleboy
-[app] (name=www.teleboy.ch__player_live) {1}
+[group] (workspace)
+    [app] (name=www.teleboy.ch__player_live) {1}
+    [app] (name=www.wilmaa.com) {1}
         [Head]          {2}
         [Layer]         {8}
         [Workspace]     {0}
