@@ -361,8 +361,8 @@
 
 # teleboy
 [group] (workspace)
-    [app] (name=www.teleboy.ch__player_live) {1}
-    [app] (name=www.wilmaa.com) {1}
+    [app] (name=www.teleboy.ch__player_live)
+    [app] (name=www.wilmaa.com)
         [Head]          {2}
         [Layer]         {8}
         [Workspace]     {0}
