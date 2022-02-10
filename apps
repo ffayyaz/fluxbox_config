@@ -363,6 +363,7 @@
 [group] (workspace)
     [app] (name=www.teleboy.ch__player_live)
     [app] (name=www.wilmaa.com)
+    [app] (name=zattoo.com__channels)
         [Head]          {2}
         [Layer]         {8}
         [Workspace]     {0}
