@@ -163,7 +163,7 @@ Control Mod1 Left           :PrevWorkspace
 Control Mod1 Right          :NextWorkspace
 
 # change to a specific workspace (also take the tv there)
-Control 1                   :MacroCmd {Workspace 1} {NextWindow (name=urxvt)} {ForEach {MacroCmd {SendToWorkspace 1} {SetHead 2} {Focus} {Raise}} {Matches (name=www.teleboy.ch__player_live)}}
+Control 1                   :MacroCmd {Workspace 1} {ForEach {MacroCmd {SendToWorkspace 1} {SetHead 2} {Focus} {Raise}} {Matches (name=www.teleboy.ch__player_live)}}
 Control 2                   :MacroCmd {Workspace 2} {ForEach {MacroCmd {SendToWorkspace 2} {SetHead 2} {Focus} {Raise}} {Matches (name=www.teleboy.ch__player_live)}}
 Control 3                   :MacroCmd {Workspace 3} {ForEach {MacroCmd {SendToWorkspace 3} {SetHead 2} {Focus} {Raise}} {Matches (name=www.teleboy.ch__player_live)}}
 Control 4                   :MacroCmd {Workspace 4} {NextWindow (name=chromium) (workspace=3)} {ForEach {MacroCmd {SendToWorkspace 4} {SetHead 1} {Focus} {Raise}} {Matches (name=www.teleboy.ch__player_live)}}
