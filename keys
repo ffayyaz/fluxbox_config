@@ -156,6 +156,9 @@ Mod4 0                      :Tab 10
 # detach a window (tab) from group
 Mod1 d                      :DetachClient
 
+# move window to end of toolbar
+Control Shift Mod4 x        :Exec /home/fafa/.fluxbox/move-to-end-of-taskbar.sh
+
 #------------------------------------------------------- WORKSPACE
 
 # change to previous/next workspace
