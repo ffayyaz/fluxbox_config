@@ -30,11 +30,11 @@ sleep 1
 sleep 1
 (signal-desktop 2>&1>/dev/null &)
 sleep 4
-chromium --app=https://web.whatsapp.com/ &
+chromium --disable-features=SendMouseLeaveEvents --app=https://web.whatsapp.com/ &
 sleep 1
 
 # always start a browser
-chromium &
+chromium --disable-features=SendMouseLeaveEvents &
 sleep 1
 
 #_______ Autostart Home only _______________________________________________
@@ -53,9 +53,9 @@ if [ "$(hostname)" = "ganja" ]; then
     # sound
     audacious &
     sleep 1
-    chromium --app="https://www.soundcloud.com" &
+    chromium --disable-features=SendMouseLeaveEvents --app="https://www.soundcloud.com" &
     sleep 1
-    chromium --app="https://www.mixcloud.com" &
+    chromium --disable-features=SendMouseLeaveEvents --app="https://www.mixcloud.com" &
     sleep 1
     pavucontrol &
     # start radio

@@ -194,21 +194,21 @@ Control Mod4 5              :TakeToWorkspace 5
 # programs
 Mod1 F1                     :MacroCmd {Exec urxvt} {Focus} {Raise}
 Mod1 F2                     :MacroCmd {Exec urxvt -name URxvt-remote -tn remoteterm} {Focus} {Raise}
-Mod1 F3                     :MacroCmd {Exec chromium} {Focus} {Raise}
+Mod1 F3                     :MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvents} {Focus} {Raise}
 Mod1 F5                     :MacroCmd {KeyMode TVChooser2}
-None 180                    :MacroCmd {Exec chromium} {Focus} {Raise}
+None 180                    :MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvents} {Focus} {Raise}
 None 148                    :MacroCmd {KeyMode TVChooser1}
 Mod4 t                      :Exec urxvt -name topterm -e top
 
 # TVChooser1 (using 148)
-TVChooser1: None 87          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
-TVChooser1: None 88          :If {Some Matches (name=www.wilmaa.com)} {NextWindow (name=www.wilmaa.com)} {MacroCmd {Exec chromium --app="http://www.wilmaa.com"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
-TVChooser1: None 89          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser1: None 87          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvent s--app="http://www.teleboy.ch/player/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser1: None 88          :If {Some Matches (name=www.wilmaa.com)} {NextWindow (name=www.wilmaa.com)} {MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvents --app="http://www.wilmaa.com"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser1: None 89          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvents --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 
 # TVChooser2 (using Mod1 F5)
-TVChooser2: None 10          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="http://www.teleboy.ch/player/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
-TVChooser2: None 11          :If {Some Matches (name=www.wilmaa.com)} {NextWindow (name=www.wilmaa.com)} {MacroCmd {Exec chromium --app="http://www.wilmaa.com"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
-TVChooser2: None 12          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser2: None 10          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvents --app="http://www.teleboy.ch/player/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser2: None 11          :If {Some Matches (name=www.wilmaa.com)} {NextWindow (name=www.wilmaa.com)} {MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvents --app="http://www.wilmaa.com"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser2: None 12          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvents --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 
 #------------------------------------------------------- TOGGLES
 # xcompmgr

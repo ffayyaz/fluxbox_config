@@ -1,6 +1,6 @@
 [begin] (fluxbox)
     [include] (/etc/X11/fluxbox/fluxbox-menu)
-    [exec] (Teleboy) {chromium --app="http://www.teleboy.ch/player/live"}
+    [exec] (Teleboy) {chromium --disable-features=SendMouseLeaveEvents --app="http://www.teleboy.ch/player/live"}
 
 
     ![submenu](Wallpapers)
