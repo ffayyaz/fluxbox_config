@@ -313,6 +313,7 @@
     [app] (xchat)
     [app] (name=skype)
     [app] (name=telegram-desktop)
+    [app] (name=web.telegram.org__z)
     [app] (name=slack)
     [app] (name=web.whatsapp.com)
     [app] (name=signal)

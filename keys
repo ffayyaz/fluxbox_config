@@ -233,7 +233,7 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 # jump to workspace 1 and go to user console (name=USER)
 Control Mod4 o :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
 # jump to workspace 1 and go to chats window (select telegram)
-Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=telegram-desktop)}} {Matches (name=telegram-desktop)}
+Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=web.telegram.org__z)}} {Matches (name=web.telegram.org__z)}
 
 #------------------------------------------------------- TESTING
 #ChangeWorkspace             :Exec fbsetbg -f ~/.fluxbox/wallpaper/$(ls ~/.fluxbox/wallpaper/|sort -R|tail -1)
