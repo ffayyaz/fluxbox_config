@@ -23,7 +23,7 @@ urxvt -title USER -hold -e bash -c "screen -dR fafa" &
 
 # start chats
 #(telegram-desktop 2>&1>/dev/null &)
-chromium --app=https://web.telegram.org/z/
+chromium --app=https://web.telegram.org/z/ &
 sleep 1
 skypeforlinux &
 sleep 1
