@@ -56,7 +56,7 @@ if [ "$(hostname)" = "ganja" ]; then
     sleep 1
     chromium --disable-features=SendMouseLeaveEvents --app="https://www.soundcloud.com" &
     sleep 1
-    chromium --disable-features=SendMouseLeaveEvents --app="https://www.soundcloud.com" &
+    chromium --incognito --disable-features=SendMouseLeaveEvents --app="https://www.soundcloud.com" &
     sleep 1
     chromium --disable-features=SendMouseLeaveEvents --app="https://www.mixcloud.com" &
     sleep 1
