@@ -5,6 +5,7 @@
 # Control = CTRL
 # Mod1 = Alt
 # Mod4 = Super
+# 22  = Num Backspace
 # 87  = Num 1
 # 88  = Num 2
 # 115 = End
@@ -258,3 +259,5 @@ Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=web.telegram.o
 #ResizeMode: Shift Left      :ResizeHorizontal -10
 #ResizeMode: Shift Right     :ResizeHorizontal +10
 
+# STILL TESTING. MOVE ALL WINDOWS TO HEAD 2.
+Mod1 22                     :ForEach {MacroCmd {SetHead 2}} # alt+num-backspace
