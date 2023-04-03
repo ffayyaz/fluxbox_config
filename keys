@@ -157,9 +157,6 @@ Mod4 0                      :Tab 10
 # detach a window (tab) from group
 Mod1 d                      :DetachClient
 
-# move window to end of toolbar
-Control Shift Mod4 x        :Exec /home/fafa/.fluxbox/move-to-end-of-taskbar.sh
-
 #------------------------------------------------------- WORKSPACE
 
 # change to previous/next workspace
@@ -259,5 +256,11 @@ Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=web.telegram.o
 #ResizeMode: Shift Left      :ResizeHorizontal -10
 #ResizeMode: Shift Right     :ResizeHorizontal +10
 
-# STILL TESTING. MOVE ALL WINDOWS TO HEAD 2.
-Mod1 22                     :ForEach {MacroCmd {SetHead 2}} # alt+num-backspace
+# move window to end of taskbar (does NOT work)
+# https://bgstack15.wordpress.com/2019/09/05/rearrange-windows-on-iconbar-in-fluxbox/
+#Control Shift Mod4 x :Exec /home/fafa/move-to-end-of-taskbar.sh
+#Mod1 p :Exec /home/fafa/move-to-end-of-taskbar.sh
+
+# STILL TESTING. MOVE ALL WINDOWS (Layer Normal) TO OTHER HEAD
+# Moves also windows that are not particularly wished to be moved.
+Mod4 Mod1 Up                :ToggleCmd {ForEach {MacroCmd {SetHead 2} {MaximizeVertical}} {Matches (Head=1) (Layer=Normal) (Workspace=[current])}} {ForEach {MacroCmd {SetHead 1} {MaximizeVertical}} {Matches (Head=2) (Layer=Normal) (Workspace=[current])}}

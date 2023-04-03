@@ -17,4 +17,7 @@
   [separator]
   [kill]
   [close]
+  [exec] (Teleboy) {chromium --disable-features=SendMouseLeaveEvents --app="http://www.teleboy.ch/player/live"}
+  [exec] (Wilmaa) {chromium --disable-features=SendMouseLeaveEvents --app="http://www.wilmaa.com"}
+  [exec] (Zattoo) {chromium --disable-features=SendMouseLeaveEvents --app="https://zattoo.com/channels?channel=srf1"}
 [end]
