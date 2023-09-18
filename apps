@@ -13,7 +13,7 @@
         [IconHidden]    {yes}
         [Maximized]     {yes}
 [end]
-[transient] (name=firefox-esr) (class=Firefox-esr) (title=Print)
+[transient] (name=Navigatorr) (class=Firefox.*) (title=Print)
         [Head]          {1}
         [Layer]         {8}
         [Position]      (CENTER) {0% 0%}
@@ -337,9 +337,9 @@
         [Position]      (TOPLEFT) {40% 0%}
 [end]
 
-# firefox-esr
+# firefox(-esr)
 [group] (workspace)
-    [app] (name=Navigator) (class=Firefox-esr)
+    [app] (name=Navigator) (class=Firefox.*)
         [Head]          {1}
         [Layer]         {8}
         [Dimensions]    {60% 100%}
