@@ -13,7 +13,7 @@
         [IconHidden]    {yes}
         [Maximized]     {yes}
 [end]
-[transient] (name=Navigatorr) (class=Firefox.*) (title=Print)
+[transient] (name=Navigator) (class=Firefox.*) (title=Print)
         [Head]          {1}
         [Layer]         {8}
         [Position]      (CENTER) {0% 0%}

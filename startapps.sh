@@ -12,7 +12,7 @@ urxvt -name authlogterm -title auth -tn authlogterm &
 urxvt -name kernlogterm -title kern -tn kernlogterm &
 #urxvt -name topterm -title top -tn topterm &
 urxvt -name mixerterm -title mixer -tn mixerterm &
-#urxvt -name clockterm -title clock -tn clockterm & # does not display correctly since style update
+urxvt -name clockterm -title clock -tn clockterm & # does not display correctly since style update
 urxvt -name calterm -title cal -tn calterm &
 volumeicon &
 
