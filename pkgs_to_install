@@ -17,8 +17,6 @@ opera-beta
 opera-developer
 opera-stable
 kate
-virtualbox
-xvnc4viewer
 rdesktop
 wireshark
 gkrellm
@@ -93,7 +91,7 @@ wmfire
 wmsun
 gnome-weather
 alsamixergui
-volumeicon
+volumeicon-alsa
 p7zip
 rar
 unrar
