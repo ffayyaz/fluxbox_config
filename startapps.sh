@@ -22,14 +22,14 @@ sleep 1
 urxvt -title USER -hold -e bash -c "screen -dR fafa" &
 
 # start chats
-(telegram-desktop 2>&1>/dev/null &)
+pkill -9 -f telegram-desktop;(telegram-desktop &>/dev/null &)
 #chromium --app=https://web.telegram.org/z/ &
 sleep 1
-skypeforlinux &
+pkill -9 -f skypeforlinux;(skypeforlinux &>/dev/null &)
 sleep 1
-(slack 2>&1>/dev/null &)
+pkill -9 -f slack;(slack &>/dev/null &)
 sleep 1
-(signal-desktop 2>&1>/dev/null &)
+pkill -9 -f signal-desktop;(signal-desktop &>/dev/null &)
 sleep 4
 chromium --disable-features=SendMouseLeaveEvents --app=https://web.whatsapp.com/ &
 sleep 1
