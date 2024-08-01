@@ -8,6 +8,7 @@
 # 22  = Num Backspace
 # 87  = Num 1
 # 88  = Num 2
+# 89  = Num 3
 # 115 = End
 # 112 = Page Up
 # 117 = Page Down
@@ -222,7 +223,6 @@ Mod4 115                    :Exec pactl set-sink-mute @DEFAULT_SINK@ toggle  #am
 None 123                    :Exec pactl set-sink-volume @DEFAULT_SINK@ +5% #amixer -D pipewire sset Master 5%+       # Upper volume # amixer -D pulse gives an error
 None 122                    :Exec pactl set-sink-volume @DEFAULT_SINK@ -5% #amixer -D pipewire sset Master 5%-       # Lower volume # amixer -D pulse gives an error
 None 121                    :Exec pactl set-sink-mute @DEFAULT_SINK@ toggle  #amixer -D pipewire sset Master,0 toggle  # Mute volume # amixer -D pulse gives an error
-#None 121                    :Exec alsamixergui & amixer -D pulse sset Master,0 toggle && sleep 2 && kill -9 $(pgrep alsamixergui) # Mute volume
 
 # control audio player
 Control Mod4 112            :Exec audacious -f # next track
@@ -232,12 +232,12 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 # jump to workspace 1 and go to user console (name=USER)
 Control Mod4 o :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
 # jump to workspace 1 and go to chats window (select telegram)
-Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=web.telegram.org__z)}} {Matches (name=web.telegram.org__z)}
+#Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=web.telegram.org__z)}} {Matches (name=web.telegram.org__z)}
+Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=telegram-desktop)}} {Matches (name=telegram-desktop)}
 
 #------------------------------------------------------- TESTING
 #ChangeWorkspace             :Exec fbsetbg -f ~/.fluxbox/wallpaper/$(ls ~/.fluxbox/wallpaper/|sort -R|tail -1)
 #ChangeWorkspace             :Exec fbsetbg -f $(find ~/xiaomi/photos/camera -iname "*.jpg"|sort -R|tail -1)
-#ChangeWorkspace             :ForEach {Stick} {Some (Name=www.teleboy.ch__player_live)}
 #Shift Mod4 p                :If { Some Matches (Chromium) } { MacroCmd { NextWindow (class=Chromium) } }
 #Mod4 p :If {Some Matches (name=*xvt*)} {ForEach {Minimize} {Some Matches (name=*xvt*)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
 #Mod4 p :ForEach {Minimize} {Matches (class=URxvt)}} #{NextWindow (class=URxvt)} #{Exec urxvt}
@@ -245,7 +245,7 @@ Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=web.telegram.o
 #Control b Mod1 b :If {Some (title=USER)} {NextWindow (title=USER)}
 
 ####### testing KeyMode
-# See also TVChoooser (productive example)
+# See also TVChooser (productive example)
 ## ResizeMode
 #Mod4 w Mod4 r               :KeyMode ResizeMode
 #ResizeMode: None Up         :ResizeVertical -2
@@ -256,11 +256,6 @@ Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=web.telegram.o
 #ResizeMode: Shift Down      :ResizeVertical +10
 #ResizeMode: Shift Left      :ResizeHorizontal -10
 #ResizeMode: Shift Right     :ResizeHorizontal +10
-
-# move window to end of taskbar (does NOT work)
-# https://bgstack15.wordpress.com/2019/09/05/rearrange-windows-on-iconbar-in-fluxbox/
-#Control Shift Mod4 x :Exec /home/fafa/move-to-end-of-taskbar.sh
-#Mod1 p :Exec /home/fafa/move-to-end-of-taskbar.sh
 
 # STILL TESTING. MOVE ALL WINDOWS (Layer Normal) TO OTHER HEAD
 # Moves also windows that are not particularly wished to be moved.
