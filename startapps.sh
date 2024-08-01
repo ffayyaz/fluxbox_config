@@ -22,8 +22,8 @@ sleep 1
 urxvt -title USER -hold -e bash -c "screen -dR fafa" &
 
 # start chats
-pkill -9 -f telegram-desktop;(telegram-desktop &>/dev/null &)
-#chromium --app=https://web.telegram.org/z/ &
+#pkill -9 -f telegram-desktop;(telegram-desktop &>/dev/null &)
+chromium --app=https://web.telegram.org/z/ &
 sleep 1
 pkill -9 -f skypeforlinux;(skypeforlinux &>/dev/null &)
 sleep 1
