@@ -64,7 +64,8 @@ OnTitlebar Double Mouse1    :MacroCmd {Maximize} {Focus} {Raise}
 
 # activate a tab
 OnTitlebar Mouse1           :MacroCmd {Focus} {Raise} {ActivateTab}
-# left click on the titlebar to move the window
+
+# left click on the titlebar to move the window (use middle click as workaround)
 # OnTitlebar Mouse1          :StartMoving
 
 # right click on the titlebar for a menu of options
@@ -87,7 +88,7 @@ Control Mod1 9              :GoToWindow 9   {static groups} (workspace=[current]
 Control Mod1 0              :GoToWindow 10  {static groups} (workspace=[current])
 
 # cycle through windows in order as seen in toolbar ("modified" alt-tab)
-# Mod1 Left/Right is not a good choice, as this is also used in bash
+#   Mod1 Left/Right is not a good choice, as this is also used in bash
 #Mod1 Left                   :PrevWindow {static groups} (workspace=[current])
 #Mod1 Right                  :NextWindow {static groups} (workspace=[current])
 
@@ -100,31 +101,29 @@ Mod1 F11                    :Fullscreen
 # minimize maximize
 Mod1 Down                   :Minimize
 Mod1 Up                     :ToggleCmd {MacroCmd {Maximize} {Focus} {Raise}}
-#Mod4 Down                   :MacroCmd {MaximizeHorizontal} {Focus} {Raise}
-#Mod4 Up                     :MacroCmd {MaximizeVertical} {Focus} {Raise}
 
 # open the window menu
 None 135                    :WindowMenu
 
 # replace windows 
-# if head=1, just switch between left and right, 
-# otherwise attach to each corner
+#   if head=1, just switch between left and right, 
+#   otherwise attach to each corner
 #Mod1 m                      :If {Matches (Head=1)} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 40% 0 TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}}} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}}
 Mod1 m                      :ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {ResizeTo 40% 100%} {Focus} {Raise}} {MacroCmd {MoveTo 40% 0 TopLeft} {ResizeTo 60% 100%} {Focus} {Raise}} {ToggleCmd {MacroCmd {MoveTo 0 0 TopLeft} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 TopRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomRight} {Focus} {Raise}} {MacroCmd {MoveTo 0 0 BottomLeft} {Focus} {Raise}}}
 
-#Mod1 117                    :If {Matches (Workspace=[0-4]) (Head=2)} {MacroCmd {SetHead 1} {MaximizeVertical}} # alt+page down
+# move window to left head
 Mod1 117                    :If {Matches (Workspace=[0-4]) (Head=2)} {MacroCmd {SetHead 1}} # alt+page down
-#Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {SetHead 2} {MaximizeVertical}} # alt+page up
+# move window to right head
 Mod1 112                    :If {Matches (Workspace=[0-4]) (Head=1)} {MacroCmd {SetHead 2}} # alt+page up
 
 # arrange windows on head 2. for some reason the mouse pointer needs to be there
-# to get it working
-Mod1 x                      :ToggleCmd {ArrangeWindowsVertical (Workspace=0) (Head=2)} {ForEach {MacroCmd {Maximize}} {Matches (Workspace=0) (Head=2)}}
-Mod1 y                      :ToggleCmd {ArrangeWindowsHorizontal (Workspace=0) (Head=2)} {ForEach {MacroCmd {Maximize}} {Matches (Workspace=0) (Head=2)}}
+#   to get it working
+#Mod1 x                      :ToggleCmd {ArrangeWindowsVertical (Workspace=0) (Head=2)} {ForEach {MacroCmd {Maximize}} {Matches (Workspace=0) (Head=2)}}
+#Mod1 y                      :ToggleCmd {ArrangeWindowsHorizontal (Workspace=0) (Head=2)} {ForEach {MacroCmd {Maximize}} {Matches (Workspace=0) (Head=2)}}
 
 # testing for raising all the "work" like windows and lowering the "illegal" apps,
-# if you are surfing too much..
-#Mod1 y                      :ToggleCmd {ForEach {MacroCmd {ShowDesktop} {Maximize} {Focus} {Raise}} {Matches (title=USER)}}
+#   if you are surfing too much..
+Mod1 y                      :ToggleCmd {ForEach {MacroCmd {ShowDesktop} {Maximize} {Focus} {Raise}} {Matches (title=USER)}}
 
 #------------------------------------------------------- TABS
 
@@ -211,18 +210,19 @@ TVChooser2: None 11          :If {Some Matches (name=www.wilmaa.com)} {NextWindo
 TVChooser2: None 12          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --disable-features=SendMouseLeaveEvents --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 
 #------------------------------------------------------- TOGGLES
-# xcompmgr
-# Mod4 x                      :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95} {Exec pkill xcompmgr}
-Mod4 x                      :ToggleCmd {Exec compton -r12 -o0.75 -l-15 -t-15 -I0.005 -O0.005 -D1 -m1.0 -cC -z -f -G -b} {Exec pkill compton}
+
+# graphical effects (xcompngr, compton)
+#Mod4 x                      :ToggleCmd {Exec xcompmgr -cC -fF -r6 -l-6 -t-6 -I-0.004 -O-0.004 -D1.95} {Exec pkill xcompmgr}
+#Mod4 x                      :ToggleCmd {Exec compton -r12 -o0.75 -l-15 -t-15 -I0.005 -O0.005 -D1 -m1.0 -cC -z -f -G -b} {Exec pkill compton}
 
 # volume settings, using common keycodes
-# if these don't work, use xev to find out your real keycodes
-Mod4 112                    :Exec pactl set-sink-volume @DEFAULT_SINK@ +5% #amixer -D pipewire sset Master 5%+       # Super+PageUp # amixer -D pulse gives an error
-Mod4 117                    :Exec pactl set-sink-volume @DEFAULT_SINK@ -5% #amixer -D pipewire sset Master 5%-       # Super+PageDown # amixer -D pulse gives an error
-Mod4 115                    :Exec pactl set-sink-mute @DEFAULT_SINK@ toggle  #amixer -D pipewire sset Master,0 toggle  # Super+End # amixer -D pulse gives an error
-None 123                    :Exec pactl set-sink-volume @DEFAULT_SINK@ +5% #amixer -D pipewire sset Master 5%+       # Upper volume # amixer -D pulse gives an error
-None 122                    :Exec pactl set-sink-volume @DEFAULT_SINK@ -5% #amixer -D pipewire sset Master 5%-       # Lower volume # amixer -D pulse gives an error
-None 121                    :Exec pactl set-sink-mute @DEFAULT_SINK@ toggle  #amixer -D pipewire sset Master,0 toggle  # Mute volume # amixer -D pulse gives an error
+#   if these don't work, use xev to find out your real keycodes
+Mod4 112                    :Exec pactl set-sink-volume @DEFAULT_SINK@ +5%  #amixer -D pipewire sset Master 5%+       # Super+PageUp # amixer -D pulse gives an error
+Mod4 117                    :Exec pactl set-sink-volume @DEFAULT_SINK@ -5%  #amixer -D pipewire sset Master 5%-       # Super+PageDown # amixer -D pulse gives an error
+Mod4 115                    :Exec pactl set-sink-mute @DEFAULT_SINK@ toggle #amixer -D pipewire sset Master,0 toggle  # Super+End # amixer -D pulse gives an error
+None 123                    :Exec pactl set-sink-volume @DEFAULT_SINK@ +5%  #amixer -D pipewire sset Master 5%+       # Upper volume # amixer -D pulse gives an error
+None 122                    :Exec pactl set-sink-volume @DEFAULT_SINK@ -5%  #amixer -D pipewire sset Master 5%-       # Lower volume # amixer -D pulse gives an error
+None 121                    :Exec pactl set-sink-mute @DEFAULT_SINK@ toggle #amixer -D pipewire sset Master,0 toggle  # Mute volume # amixer -D pulse gives an error
 
 # control audio player
 Control Mod4 112            :Exec audacious -f # next track
@@ -231,6 +231,7 @@ Control Mod4 115            :Exec audacious -u # pause / unpause
 
 # jump to workspace 1 and go to user console (name=USER)
 Control Mod4 o :ForEach {MacroCmd {Workspace 1} {NextWindow (title=USER)}} {Matches (title=USER)}
+
 # jump to workspace 1 and go to chats window (select telegram)
 #Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=web.telegram.org__z)}} {Matches (name=web.telegram.org__z)}
 Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=telegram-desktop)}} {Matches (name=telegram-desktop)}
@@ -258,5 +259,5 @@ Control Mod4 p :ForEach {MacroCmd {Workspace 1} {NextWindow (name=telegram-deskt
 #ResizeMode: Shift Right     :ResizeHorizontal +10
 
 # STILL TESTING. MOVE ALL WINDOWS (Layer Normal) TO OTHER HEAD
-# Moves also windows that are not particularly wished to be moved.
+#   Moves also windows that are not particularly wished to be moved.
 Mod4 Mod1 Up                :ToggleCmd {ForEach {MacroCmd {SetHead 2} {MaximizeVertical}} {Matches (Head=1) (Layer=Normal) (Workspace=[current])}} {ForEach {MacroCmd {SetHead 1} {MaximizeVertical}} {Matches (Head=2) (Layer=Normal) (Workspace=[current])}}
