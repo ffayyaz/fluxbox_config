@@ -317,6 +317,7 @@
     [app] (name=slack)
     [app] (name=web.whatsapp.com)
     [app] (name=signal)
+    [app] (name=web.skype.com) (class=.*hromium)
         [Sticky]        {yes}
         [Layer]         {8}
         [Dimensions]    {40% 100%}
