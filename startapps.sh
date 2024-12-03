@@ -25,7 +25,8 @@ urxvt -title USER -hold -e bash -c "screen -dR fafa" &
 #pkill -9 -f telegram-desktop;(telegram-desktop &>/dev/null &)
 chromium --app=https://web.telegram.org/z/ &
 sleep 1
-pkill -9 -f skypeforlinux;(skypeforlinux &>/dev/null &)
+#pkill -9 -f skypeforlinux;(skypeforlinux &>/dev/null &)
+chromium --app=https://web.skype.com/ &
 sleep 1
 pkill -9 -f slack;(slack &>/dev/null &)
 sleep 1
