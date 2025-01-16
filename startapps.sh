@@ -28,8 +28,8 @@ sleep 1
 #pkill -9 -f skypeforlinux;(skypeforlinux &>/dev/null &)
 chromium --app=https://web.skype.com/ &
 sleep 1
-pkill -9 -f slack;(slack &>/dev/null &)
-sleep 1
+#pkill -9 -f slack;(slack &>/dev/null &)
+#sleep 1
 pkill -9 -f signal-desktop;(signal-desktop &>/dev/null &)
 sleep 4
 chromium --disable-features=SendMouseLeaveEvents --app=https://web.whatsapp.com/ &
