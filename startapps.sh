@@ -14,7 +14,12 @@ urxvt -name kernlogterm -title kern -tn kernlogterm &
 urxvt -name mixerterm -title mixer -tn mixerterm &
 urxvt -name clockterm -title clock -tn clockterm & # does not display correctly since style update
 urxvt -name calterm -title cal -tn calterm &
-volumeicon &
+#volumeicon &
+
+sleep 5
+
+# switch to workspace Surf
+wmctrl -s 0
 
 # start 2 terminals
 urxvt -title ROOT -hold -e bash -c "screen -dR root" &
@@ -32,12 +37,15 @@ sleep 1
 #sleep 1
 pkill -9 -f signal-desktop;(signal-desktop &>/dev/null &)
 sleep 4
-chromium --disable-features=SendMouseLeaveEvents --app=https://web.whatsapp.com/ &
+#chromium --disable-features=SendMouseLeaveEvents --app=https://web.whatsapp.com/ &
+chromium --app=https://web.whatsapp.com/ &
 sleep 1
 
 # always start a browser
-chromium --disable-features=SendMouseLeaveEvents &
-sleep 1
+#chromium --disable-features=SendMouseLeaveEvents &
+chromium &
+
+sleep 5
 
 #_______ Autostart Home only _______________________________________________
 
@@ -50,7 +58,8 @@ if [ "$(hostname)" = "ganja" ]; then
     #urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile" &
     #urxvt -hold -name URxvt-remote -tn remoteterm & #-e bash -c "ssh mobile-old" &
 
-    thunderbird &
+    # switch to workspace Music
+    wmctrl -s 3
 
     # sound
     audacious &
@@ -64,6 +73,13 @@ if [ "$(hostname)" = "ganja" ]; then
     pavucontrol &
     # start radio
     /media/stuff/music/playlists/radio/restartradio.sh &>/dev/null
+
+    sleep 5
+
+    # switch to workspace Mail
+    wmctrl -s 4
+
+    thunderbird &
 fi
 
 # switch to first terminal, as some apps (chromium)
