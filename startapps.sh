@@ -84,6 +84,7 @@ if [ "$(hostname)" = "ganja" ]; then
     wmctrl -s 4
 
     thunderbird &
+    sleep 5
 fi
 
 # switch to first terminal, as some apps (chromium)
