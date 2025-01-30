@@ -63,7 +63,7 @@ if [ "$(hostname)" = "ganja" ]; then
 
     # sound
     audacious &
-    sleep 1
+    sleep 5
     chromium --disable-features=SendMouseLeaveEvents --app="https://www.soundcloud.com" &
     sleep 1
     chromium --incognito --disable-features=SendMouseLeaveEvents --app="https://www.soundcloud.com" &
@@ -71,6 +71,10 @@ if [ "$(hostname)" = "ganja" ]; then
     chromium --disable-features=SendMouseLeaveEvents --app="https://www.mixcloud.com" &
     sleep 1
     pavucontrol &
+    sleep 1
+    easytag /home/fafa &
+    sleep 1
+
     # start radio
     /media/stuff/music/playlists/radio/restartradio.sh &>/dev/null
 
