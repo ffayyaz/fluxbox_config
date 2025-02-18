@@ -217,12 +217,12 @@ TVChooser2: None 12          :If {Some Matches (name=zattoo.com__channels)} {Nex
 
 # volume settings, using common keycodes
 #   if these don't work, use xev to find out your real keycodes
-Mod4 112                    :Exec pactl set-sink-volume @DEFAULT_SINK@ +5%  #amixer -D pipewire sset Master 5%+       # Super+PageUp # amixer -D pulse gives an error
-Mod4 117                    :Exec pactl set-sink-volume @DEFAULT_SINK@ -5%  #amixer -D pipewire sset Master 5%-       # Super+PageDown # amixer -D pulse gives an error
-Mod4 115                    :Exec pactl set-sink-mute @DEFAULT_SINK@ toggle #amixer -D pipewire sset Master,0 toggle  # Super+End # amixer -D pulse gives an error
-None 123                    :Exec pactl set-sink-volume @DEFAULT_SINK@ +5%  #amixer -D pipewire sset Master 5%+       # Upper volume # amixer -D pulse gives an error
-None 122                    :Exec pactl set-sink-volume @DEFAULT_SINK@ -5%  #amixer -D pipewire sset Master 5%-       # Lower volume # amixer -D pulse gives an error
-None 121                    :Exec pactl set-sink-mute @DEFAULT_SINK@ toggle #amixer -D pipewire sset Master,0 toggle  # Mute volume # amixer -D pulse gives an error
+Mod4 112                    :Exec amixer -c 1 sset 'Master',0 3dB+    #pactl set-sink-volume @DEFAULT_SINK@ +5%  #amixer -D pipewire sset Master 5%+       # Super+PageUp # amixer -D pulse gives an error
+Mod4 117                    :Exec amixer -c 1 sset 'Master',0 3dB-    #pactl set-sink-volume @DEFAULT_SINK@ -5%  #amixer -D pipewire sset Master 5%-       # Super+PageDown # amixer -D pulse gives an error
+Mod4 115                    :Exec amixer -c 1 sset 'Master',0 toggle #pactl set-sink-mute @DEFAULT_SINK@ toggle #amixer -D pipewire sset Master,0 toggle  # Super+End # amixer -D pulse gives an error
+None 123                    :Exec amixer -c 1 sset 'Master',0 3dB+    #pactl set-sink-volume @DEFAULT_SINK@ +5%  #amixer -D pipewire sset Master 5%+       # Upper volume # amixer -D pulse gives an error
+None 122                    :Exec amixer -c 1 sset 'Master',0 3dB-    #pactl set-sink-volume @DEFAULT_SINK@ -5%  #amixer -D pipewire sset Master 5%-       # Lower volume # amixer -D pulse gives an error
+None 121                    :Exec amixer -c 1 sset 'Master',0 toggle #pactl set-sink-mute @DEFAULT_SINK@ toggle #amixer -D pipewire sset Master,0 toggle  # Mute volume # amixer -D pulse gives an error
 
 # control audio player
 Control Mod4 112            :Exec audacious -f # next track
