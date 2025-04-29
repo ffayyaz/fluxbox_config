@@ -408,7 +408,7 @@
     [app] (name=gedit) (class=Gedit)
     [app] (name=textShell) (class=NEdit)
     [app] (name=kate) (class=kate)
-        [Head]          {1}
+        [Head]          {2}
         [Layer]         {8}
         [Dimensions]    {40% 100%}
         [Position]      (TOPLEFT) {0% 0%}
