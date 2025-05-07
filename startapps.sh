@@ -14,7 +14,6 @@ urxvt -name kernlogterm -title kern -tn kernlogterm &
 urxvt -name mixerterm -title mixer -tn mixerterm &
 urxvt -name clockterm -title clock -tn clockterm & # does not display correctly since style update
 urxvt -name calterm -title cal -tn calterm &
-#volumeicon &
 
 sleep 5
 
@@ -27,22 +26,17 @@ sleep 1
 urxvt -title USER -hold -e bash -c "screen -dR fafa" &
 
 # start chats
-#pkill -9 -f telegram-desktop;(telegram-desktop &>/dev/null &)
-chromium --app=https://web.telegram.org/z/ &
+pkill -9 -f telegram-desktop;(telegram-desktop &>/dev/null &)
+#chromium --incognito --app=https://web.telegram.org/z/ &
 sleep 1
-#pkill -9 -f skypeforlinux;(skypeforlinux &>/dev/null &)
 chromium --app=https://web.skype.com/ &
 sleep 1
-#pkill -9 -f slack;(slack &>/dev/null &)
-#sleep 1
 pkill -9 -f signal-desktop;(signal-desktop &>/dev/null &)
 sleep 4
-#chromium --disable-features=SendMouseLeaveEvents --app=https://web.whatsapp.com/ &
 chromium --app=https://web.whatsapp.com/ &
 sleep 1
 
 # always start a browser
-#chromium --disable-features=SendMouseLeaveEvents &
 chromium &
 
 sleep 5
@@ -64,11 +58,11 @@ if [ "$(hostname)" = "ganja" ]; then
     # sound
     audacious &
     sleep 5
-    chromium --disable-features=SendMouseLeaveEvents --app="https://www.soundcloud.com" &
+    chromium --app="https://www.soundcloud.com" &
     sleep 1
-    chromium --incognito --disable-features=SendMouseLeaveEvents --app="https://www.soundcloud.com" &
+    chromium --incognito --app="https://www.soundcloud.com" &
     sleep 1
-    chromium --disable-features=SendMouseLeaveEvents --app="https://www.mixcloud.com" &
+    chromium --app="https://www.mixcloud.com" &
     sleep 1
     pavucontrol &
     sleep 1
