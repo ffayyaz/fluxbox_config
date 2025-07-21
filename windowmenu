@@ -15,7 +15,7 @@
   [separator]
   [extramenus]
   [separator]
-  [kill]
+  #[kill]
   [close]
   [separator]
   [exec] (Teleboy) {chromium --disable-features=SendMouseLeaveEvents --app="http://www.teleboy.ch/player/live"}
