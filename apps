@@ -472,6 +472,7 @@
     [app] (name=win) (class=Xpdf)
     [app] (vprerex)
     [app] (evince)
+    [app] (org.gnome.Evince)
     [app] (kpdf)
     [app] (.croread.*)
         [Head]          {2}
@@ -493,7 +494,7 @@
 
 #---------------------------------------------------- OFFICE
 [group] (workspace)
-    [app] (name=libreoffice)
+    [app] (name=libreoffice.*)
         [Head]          {2}
         [Layer]         {8}
         [Dimensions]    {100% 100%}
