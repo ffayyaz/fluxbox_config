@@ -340,7 +340,7 @@
 
 # firefox(-esr)
 [group] (workspace)
-    [app] (name=Navigator) (class=Firefox.*)
+    [app] (name=Navigator) (class=.*irefox.*)
         [Head]          {1}
         [Layer]         {8}
         [Dimensions]    {60% 100%}
