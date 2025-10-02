@@ -338,6 +338,15 @@
         [Position]      (TOPLEFT) {40% 0%}
 [end]
 
+# brave
+[group] (workspace)
+    [app] (name=.*rave-browser) (class=.*rave-browser)
+        [Head]          {1}
+        [Layer]         {8}
+        [Dimensions]    {60% 100%}
+        [Position]      (TOPLEFT) {40% 0%}
+[end]
+
 # firefox(-esr)
 [group] (workspace)
     [app] (name=Navigator) (class=firefox-esr)
