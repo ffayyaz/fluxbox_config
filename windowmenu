@@ -18,7 +18,7 @@
   #[kill]
   [close]
   [separator]
-  [exec] (Teleboy) {chromium --app="http://www.teleboy.ch/player/live"}
+  [exec] (Teleboy) {chromium --app="https://tv.teleboy.ch/live"}
   [exec] (Wilmaa) {chromium --app="http://www.wilmaa.com"}
   [exec] (Zattoo) {chromium --app="https://zattoo.com/channels?channel=srf1"}
 [end]

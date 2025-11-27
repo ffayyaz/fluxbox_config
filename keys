@@ -200,12 +200,12 @@ None 148                    :MacroCmd {KeyMode TVChooser1}
 Mod4 t                      :Exec urxvt -name topterm -e top
 
 # TVChooser1 (using 148)
-TVChooser1: None 87          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="https://www.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser1: None 87          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="https://tv.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 TVChooser1: None 88          :If {Some Matches (name=www.wilmaa.com)} {NextWindow (name=www.wilmaa.com)} {MacroCmd {Exec chromium --app="http://www.wilmaa.com"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 TVChooser1: None 89          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 
 # TVChooser2 (using Mod1 F5)
-TVChooser2: None 10          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="https://www.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser2: None 10          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="https://tv.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 TVChooser2: None 11          :If {Some Matches (name=www.wilmaa.com)} {NextWindow (name=www.wilmaa.com)} {MacroCmd {Exec chromium --app="http://www.wilmaa.com"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 TVChooser2: None 12          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 
