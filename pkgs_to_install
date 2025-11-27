@@ -7,6 +7,7 @@ pidgin
 pidgin-sipe
 #xchat
 chromium
+brave-browse
 #google-chrome-stable
 #google-chrome-beta
 #google-chrome-unstable
@@ -70,7 +71,6 @@ vim
 rsync
 pavucontrol
 audacity
-skypeforlinux
 vlc
 bind9-dnsutils
 strace
