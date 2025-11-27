@@ -26,7 +26,7 @@ sleep 1
 urxvt -title USER -hold -e bash -c "screen -dR fafa" &
 
 # start chats
-pkill -9 -f telegram-desktop;(telegram-desktop &>/dev/null &)
+pkill -9 -f telegram-web;(telegram-web &>/dev/null &)
 #chromium --incognito --app=https://web.telegram.org/z/ &
 sleep 1
 chromium --app=https://web.skype.com/ &
