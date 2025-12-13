@@ -373,6 +373,7 @@
 # teleboy
 [group] (workspace)
     [app] (name=www.teleboy.ch__player_live)
+    [app] (name=tv.teleboy.ch__live)
     [app] (name=www.wilmaa.com)
     [app] (name=zattoo.com__channels)
         [Head]          {2}
@@ -388,12 +389,12 @@
 
 #---------------------------------------------------- MAIL
 [group] (workspace)
-    [app] (name=Mail) (class=thunderbird) 
-    [app] (name=Activity) (class=thunderbird) 
-    [app] (name=Global) (class=thunderbird) 
-    [app] (name=Msgcompose) (class=thunderbird) 
-    [app] (name=Calendar) (class=thunderbird) 
-    [app] (name=Preferences) (class=thunderbird) 
+    [app] (name=Mail) (class=thunderbird-default) 
+    [app] (name=Activity) (class=thunderbird-default) 
+    [app] (name=Global) (class=thunderbird-default) 
+    [app] (name=Msgcompose) (class=thunderbird-default) 
+    [app] (name=Calendar) (class=thunderbird-default) 
+    [app] (name=Preferences) (class=thunderbird-default) 
         [Head]          {1}
         [Workspace]     {4}
         [Layer]         {8}
@@ -404,7 +405,7 @@
 [end]
 
 # thunderbird print dialog
-[app] (name=thunderbird) (class=thunderbird) (title=Print)
+[app] (name=thunderbird) (class=thunderbird-default) (title=Print)
         [Head]          {1}
         [Workspace]     {4}
         [Layer]         {8}
