@@ -318,6 +318,7 @@
     [app] (name=web.whatsapp.com)
     [app] (name=signal)
     [app] (name=web.skype.com) (class=.*hromium)
+    [app] (name=web.skype.com) (class=.*rave-browser)
         [Sticky]        {yes}
         [Layer]         {8}
         [Dimensions]    {40% 100%}

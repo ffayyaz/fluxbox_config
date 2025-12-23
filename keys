@@ -165,11 +165,11 @@ Control Mod1 Left           :PrevWorkspace
 Control Mod1 Right          :NextWorkspace
 
 # change to a specific workspace (also take the tv there)
-Control 1                   :MacroCmd {Workspace 1} {ForEach {MacroCmd {SendToWorkspace 1} {SetHead 2} {Raise}} {Matches (name=(www.teleboy.ch__player_live|www.wilmaa.com))}}
-Control 2                   :MacroCmd {Workspace 2} {ForEach {MacroCmd {SendToWorkspace 2} {SetHead 2} {Raise}} {Matches (name=(www.teleboy.ch__player_live|www.wilmaa.com))}}
-Control 3                   :MacroCmd {Workspace 3} {ForEach {MacroCmd {SendToWorkspace 3} {SetHead 2} {Raise}} {Matches (name=(www.teleboy.ch__player_live|www.wilmaa.com))}}
-Control 4                   :MacroCmd {Workspace 4} {NextWindow (name=chromium) (workspace=3)} {ForEach {MacroCmd {SendToWorkspace 4} {SetHead 1} {Focus} {Raise}} {Matches (name=(www.teleboy.ch__player_live|www.wilmaa.com))}}
-Control 5                   :MacroCmd {Workspace 5} {NextWindow (name=Mail)} {ForEach {MacroCmd {SendToWorkspace 5} {SetHead 2} {Raise}} {Matches (name=(www.teleboy.ch__player_live|www.wilmaa.com))}}
+Control 1                   :MacroCmd {Workspace 1} {ForEach {MacroCmd {SendToWorkspace 1} {SetHead 2} {Raise}} {Matches (name=(tv.teleboy.ch__live|www.wilmaa.com))}}
+Control 2                   :MacroCmd {Workspace 2} {ForEach {MacroCmd {SendToWorkspace 2} {SetHead 2} {Raise}} {Matches (name=(tv.teleboy.ch__live|www.wilmaa.com))}}
+Control 3                   :MacroCmd {Workspace 3} {ForEach {MacroCmd {SendToWorkspace 3} {SetHead 2} {Raise}} {Matches (name=(tv.teleboy.ch__live|www.wilmaa.com))}}
+Control 4                   :MacroCmd {Workspace 4} {NextWindow (name=chromium) (workspace=3)} {ForEach {MacroCmd {SendToWorkspace 4} {SetHead 1} {Focus} {Raise}} {Matches (name=(tv.teleboy.ch__live|www.wilmaa.com))}}
+Control 5                   :MacroCmd {Workspace 5} {NextWindow (name=Mail)} {ForEach {MacroCmd {SendToWorkspace 5} {SetHead 2} {Raise}} {Matches (name=(tv.teleboy.ch__live|www.wilmaa.com))}}
 
 # send the current window to a specific workspace
 Shift Mod4 1                :SendToWorkspace 1
@@ -200,12 +200,12 @@ None 148                    :MacroCmd {KeyMode TVChooser1}
 Mod4 t                      :Exec urxvt -name topterm -e top
 
 # TVChooser1 (using 148)
-TVChooser1: None 87          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="https://tv.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser1: None 87          :If {Some Matches (name=tv.teleboy.ch__live)} {NextWindow (name=tv.teleboy.ch__live)} {MacroCmd {Exec chromium --app="https://tv.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 TVChooser1: None 88          :If {Some Matches (name=www.wilmaa.com)} {NextWindow (name=www.wilmaa.com)} {MacroCmd {Exec chromium --app="http://www.wilmaa.com"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 TVChooser1: None 89          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 
 # TVChooser2 (using Mod1 F5)
-TVChooser2: None 10          :If {Some Matches (name=www.teleboy.ch__player_live)} {NextWindow (name=www.teleboy.ch__player_live)} {MacroCmd {Exec chromium --app="https://tv.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
+TVChooser2: None 10          :If {Some Matches (name=tv.teleboy.ch__live)} {NextWindow (name=tv.teleboy.ch__live)} {MacroCmd {Exec chromium --app="https://tv.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 TVChooser2: None 11          :If {Some Matches (name=www.wilmaa.com)} {NextWindow (name=www.wilmaa.com)} {MacroCmd {Exec chromium --app="http://www.wilmaa.com"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 TVChooser2: None 12          :If {Some Matches (name=zattoo.com__channels)} {NextWindow (name=zattoo.com__channels)} {MacroCmd {Exec chromium --app="https://zattoo.com/channels?channel=srf1"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
 
