@@ -15,6 +15,9 @@ urxvt -name mixerterm -title mixer -tn mixerterm &
 urxvt -name clockterm -title clock -tn clockterm & # does not display correctly since style update
 urxvt -name calterm -title cal -tn calterm &
 
+# add volumeicon to systray
+volumeicon &
+
 sleep 5
 
 # switch to workspace Surf
