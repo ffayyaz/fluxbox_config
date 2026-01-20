@@ -17,6 +17,8 @@ urxvt -name calterm -title cal -tn calterm &
 
 # add volumeicon to systray
 volumeicon &
+# add pnmixer to systray
+pnmixer &
 
 sleep 5
 
