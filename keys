@@ -9,6 +9,7 @@
 # 87  = Num 1
 # 88  = Num 2
 # 89  = Num 3
+# 107 = PrintScreen
 # 115 = End
 # 112 = Page Up
 # 117 = Page Down
@@ -198,6 +199,7 @@ Mod1 F5                     :MacroCmd {KeyMode TVChooser2}
 None 180                    :MacroCmd {Exec chromium} {Focus} {Raise}
 None 148                    :MacroCmd {KeyMode TVChooser1}
 Mod4 t                      :Exec urxvt -name topterm -e top
+None 107                    :Exec flameshot gui
 
 # TVChooser1 (using 148)
 TVChooser1: None 87          :If {Some Matches (name=tv.teleboy.ch__live)} {NextWindow (name=tv.teleboy.ch__live)} {MacroCmd {Exec chromium --app="https://tv.teleboy.ch/live"} {Focus} {Raise} {ForEach {MacroCmd {SetHead 1} {Maximize} {Raise}} {Matches (name=vlc)}}}
