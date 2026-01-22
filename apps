@@ -421,7 +421,7 @@
     [app] (name=kate) (class=kate)
         [Head]          {2}
         [Layer]         {8}
-        [Dimensions]    {40% 100%}
+        [Dimensions]    {100% 100%}
         [Position]      (TOPLEFT) {0% 0%}
 [end]
 
