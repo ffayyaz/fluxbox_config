@@ -64,10 +64,10 @@ if [ "$(hostname)" = "ganja" ]; then
     sleep 5
     chromium --app="https://www.soundcloud.com" &
     sleep 1
-    chromium --incognito --app="https://www.soundcloud.com" &
-    sleep 1
-    chromium --app="https://www.mixcloud.com" &
-    sleep 1
+    #chromium --incognito --app="https://www.soundcloud.com" &
+    #sleep 1
+    #chromium --app="https://www.mixcloud.com" &
+    #sleep 1
     pavucontrol &
     sleep 1
     easytag /home/fafa &
