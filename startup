@@ -40,7 +40,7 @@ env > ~/.xenv
 gkrellm -w &
 wmmoonclock &
 wmsun  -lat 47.38242601548223 -lon 8.54117080288414 &
-wmauda -t &
+#wmauda -t & # doesnt work
 wmfire &
 
 # visual effects
