@@ -31,7 +31,8 @@ sleep 1
 urxvt -title USER -hold -e bash -c "screen -dR fafa" &
 
 # start chats
-pkill -9 -f telegram-web;(telegram-web &>/dev/null &) # telegram-web is a bash function
+#pkill -9 -f telegram-web;(telegram-web &>/dev/null &) # telegram-web is a bash function
+chromium --app=https://web.telegram.org/z/ &
 sleep 1
 chromium --app=https://web.skype.com/ &
 sleep 1
