@@ -486,6 +486,7 @@
     [app] (org.gnome.Evince)
     [app] (kpdf)
     [app] (.croread.*)
+    [app] (atril)
         [Head]          {2}
         [Layer]         {8}
         [Dimensions]    {100% 100%}
